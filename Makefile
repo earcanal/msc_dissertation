@@ -1,0 +1,2 @@
+dissertation:
+	pdflatex dissertation.tex
