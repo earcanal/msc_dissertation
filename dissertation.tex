@@ -1,6 +1,6 @@
 % This file was converted to LaTeX by Writer2LaTeX ver. 1.4
 % see http://writer2latex.sourceforge.net for more info
-\documentclass[man,a4paper,biblatex]{apa6}
+\documentclass[man,floatsintext,a4paper,biblatex]{apa6}
 \usepackage[english, british]{babel}
 \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
 \DeclareLanguageMapping{british}{british-apa}
@@ -26,8 +26,10 @@
     pdfpagelayout=TwoPageRight
 }
 \usepackage[textwidth=2cm,color=green,textsize=tiny]{todonotes}
-%\usepackage[marginparwidth=1cm]{geometry}
 \reversemarginpar
+\usepackage{graphicx}
+\usepackage{afterpage}
+%\usepackage[marginparwidth=1cm]{geometry}
 
 %\usepackage{setspace}
 %\doublespace
@@ -48,6 +50,9 @@
 \abstract{300 words max}
 % body: 8000 words max (excluding footnotes, tables, figures, references)
 % appendices: 4000 words max (~250 words/page i.e. 16 pages)
+
+\newcommand{\grswidth}{width=90mm}
+\newcommand{\grsheight}{height=65mm}
 \begin{document}
 % FIXME: Include word count of main text on front page (see latexcount.pl)
 \listoftodos[Todo list]
@@ -481,8 +486,20 @@ secure \ digital filing system and the latter in a locked filing cabinet.
 
 
 \section{Results}
+P16 didn't complete GRS and PANAS for session 8 but told me scores were the same as for session 7.
 \subsection{Pre/Post Measures}
 \subsection{Visual Analysis}
+\begin{figure}[p]
+\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_0.jpg}
+\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_1.jpg}
+\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_2.jpg}
+\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_3.jpg}
+\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_4.jpg}
+\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_5.jpg}
+\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_6.jpg}
+\caption{GRS scores for all participants\label{overflow}}
+\end{figure}
+
 \subsection{Inferential Statistics}
 
 \section{Discussion}
