@@ -25,6 +25,9 @@
     pdfpagemode=UseOutlines,    % this is the option you were lookin for
     pdfpagelayout=TwoPageRight
 }
+\usepackage[textwidth=2cm,color=green,textsize=tiny]{todonotes}
+%\usepackage[marginparwidth=1cm]{geometry}
+\reversemarginpar
 
 %\usepackage{setspace}
 %\doublespace
@@ -47,6 +50,7 @@
 % appendices: 4000 words max (~250 words/page i.e. 16 pages)
 \begin{document}
 % FIXME: Include word count of main text on front page (see latexcount.pl)
+\listoftodos[Todo list]
 \maketitle
 \pdfbookmark{\contentsname}{toc}
 \tableofcontents
@@ -153,14 +157,67 @@ framework \textcite{watkins_habit-goal_2014} and would be proof of
 principle for a potential clinical application of ABM to change RNT.
 
 \section{Method}
+
 \subsection{Design}
-A single-case series design was chosen as this is a small-scale, proof-of-principle study with limited funds for recruiting participant numbers required for a group study. \ More specifically, an AB randomised sequential replication design (Onghena \& Edgington, 2005) will be used to allow a comparison of each participant's baseline (phase A) scores against their post-training (phase B) scores and a meta-analysis across all participants.
+
+This is a single-case AB phase nonconcurrent multiple baseline
+replication design across participants \parencite{bulte_when_2012}
+\parencite{onghena_customization_2005}
+
+doesn't control for historical factors which you
+would get if all participants started at the same time
+\parencite{watson_non-concurrent_1981}.
+
+
+A single-case series design was chosen as this is a small-scale,
+proof-of-principle study with limited funds for recruiting participant
+numbers required for a group study. \ More specifically, an AB randomised
+sequential replication design \parencite{onghena_customization_2005} will
+be used to allow a comparison of each participant's baseline (phase A)
+scores against their post-training (phase B) scores and a meta-analysis
+across all participants.
 
 \subsection{Participants}
-The University of Exeter Research Participation System (SONA) and on-campus posters will be used to recruit 10 student participants who will be invited to evaluate a computer-based experimental task which may improve how they relate to an unresolved problem. \ Participants will receive course credits and/or be entered into a draw for a {\pounds}20 prize. \ Inclusion criteria will require no concurrent psychotherapy or psychotropic medication and a PHQ-8 score {\textless} 10 (Kroenke et al., 2009). \ To ensure enough participants are recruited, a liberal inclusion criterion of Ruminative Responses Scale (RRS) ${\geq}$ 50 (Treynor, Gonzalez, \& Nolen-Hoeksema, 2003) will be used initially. \ If recruitment responses are high then this threshold may be increased to recruit participants with the highest possible RRS scores.
+
+Participants affiliated with the University of Exeter were recruited using
+the psychology research participation system, on-campus posters, email
+and Facebook,  inviting them to evaluate a computer-based experimental
+task which could improve how they relate to an unresolved problem.
+A maximum payment of {\pounds}20 was offered to participants who
+completed all 35 sessions.  Inclusion criteria will require no concurrent
+psychotherapy or psychotropic medication and a PHQ-8 score {\textless}
+10 \parencite{kroenke_phq-8_2009}.  To ensure enough participants are
+recruited, a liberal inclusion criterion of Ruminative Responses Scale
+(RRS) ${\geq}$ 50 \parencite{treynor_rumination_2003} will be used
+initially. \ If recruitment responses are high then this threshold may
+be increased to recruit participants with the highest possible RRS scores.
 
 \subsection{Measures}
-Anxiety and depression will both be measured due to their close association, and uncertainty whether the procedure will affect brooding, worry or both. \ Measurements will be taken pre and post-ABM training for trait rumination using the RRS (Treynor et al., 2003), and trait anxiety using the STAI (Spielberger, 1983). \ Scales will relate to the previous 4 weeks of participants' lives. \ Depression will be measured pre and post-ABM training using the PHQ-9, which has good diagnostic performance for screening for Major Depressive Disorder (Manea, Gilbody, \& McMillan, 2015). \ Primary measures will be taken daily during the case series for attentional bias using the dot-probe (MacLeod, Mathews, \& Tata, 1986), state rumination using the Goal Rumination Scale (GRS) (Schultheiss, Jones, Davis, \& Kley, 2008), and state anxiety using the STAI-T (Spielberger, 1983). \ Secondary daily measures of mood will be taken using the I-PANAS-SF (Mackinnon et al., 1999) supplemented with 2 items 'Sad' and 'Anxious'. \ The GRS and STAI-T and I-PANAS-SF will cover the last 24 hours of participants' lives. \ Age and gender demographics will also be recorded.
+
+Anxiety and depression were measured due to their close association, and
+uncertainty whether the procedure would affect brooding \todo{brooding
+is a subtype of past-focussed rumination?} worry or both. Measurements
+were taken pre and post-ABM training for trait rumination using the RRS
+\parencite{treynor_rumination_2003}, and trait anxiety using the GAD-7
+\parencite{spitzer_rl_brief_2006}. Scales related to the previous 4
+weeks of participants' lives.  Depression was measured pre and post-ABM
+training using the PHQ-9, which has good diagnostic performance for
+screening for Major Depressive Disorder \parencite{manea_diagnostic_2015}
+\todo{or possibly \parencite{wahl_standardization_2014}}. Primary measures
+of attentional (dot-probe) \parencite{macleod_attentional_1986}, state
+rumination (Goal Rumination Scale; GRS) \parencite{schultheiss_role_2008}
+were taken approximately every 24 hours, except where sessions were
+posponed or skipped.  A secondary measure of mood (10 item I-PANAS-SF)
+\parencite{mackinnon_short_1999} supplemented with 2 PA (negatively end of
+scale) items 'Sad', 'Depressed' and 2 NA items 'Anxious', 'Worried' was
+also taken with each session.  Questions in the GRS and I-PANAS-SF were
+asked in relation to the last 24 hours. \todo{Nick:OK, I think anxious
+and worried would map quite cleanly (+ve) onto NA whereas sad, depressed,
+would map (-ve) on both PA and (+ve) on NA because they have an aversive
+component (rather like depression is supposed to be both low PA and high
+NA). Doing this reminds me that we added those 2 + 2 adjectives because
+they more closely map on to depression (low PA, high NA) and anxiety
+(high NA).} Age and gender demographics were also recorded.
 
 \subsection{Materials}
 
@@ -262,6 +319,7 @@ score = [(NuPl + NlPu) = (NuPu + NlPl)]/2 \ \ \ \ (1)
 where N = Negative word, P = Probe, u = upper, t = lower (Bradley et al., 1997).
 
 \subsection{Procedure}
+
 An introductory session will take place at the University of Exeter after the participant gives informed, written consent to take part in the study. \ A self-relevant, unresolved goal will be chosen by asking participants to think of {}``an ongoing and unresolved concern that [has] repeatedly come into their mind and caused them to feel negative or stressed during the previous week'' (Roberts, Watkins, and Wills, 2013, p. 451). \ Examples of appropriate problems will be provided. \ Participants will then be asked to generate a list of at least 18 words describing the personal ``causes, meanings and implications'' (Watkins, Baeyens, \& Read, 2009, p. 55) of their unresolved goal. \ The wording will encourage abstract construal, which has been associated with RNT (Watkins et al., 2009). \ The experimenter will leave the room after the participant begins writing their word list. \ After 15 minutes the experimenter will return and guide the participant to create the 'G set' by ranking the top 18 words in decreasing order of negative affect which they evoke in relation to their goal.
 
 Participants will complete measures of trait rumination (RRS), trait anxiety (STAI) and depression (PHQ-9) using the Lime Survey website, before being introduced to the experimental task. \ They will be instructed to sit about 60 cm from the computer screen and to allocate sufficient time in this, and future sessions, to complete the session without interruption (a maximum of about 20 minutes for training blocks and self-report measures). \ Participants will be encouraged to carry out the task at time of day which will be consistently convenient throughout the study. \ A training dot-probe test session will be delivered to record the initial attentional bias measurement. \ This practice session will include 5 P set words and no G set words. \ On completion, the experimenter will answer any questions regarding the task, explain the schedule for subsequent days and remind the participant of their 1 in 10 chance of winning a {\pounds}20 prize. \ After the participant leaves, the experimenter will match words to create the G set. \ Participants will carry out all experimental sessions on a computer at their home. \ The total study length for each participant will be 36 days.
@@ -277,6 +335,12 @@ Participants will be emailed daily, instructing them to first complete the measu
 
 \subsubsection[Stimulus allocation]{Stimulus allocation}
 \ \ See et al. (2009) note that the most desirable change in attentional bias is in relation to emotional tone in general rather than to any specific stimuli. \ To maximise both the measurement and modification of attention to emotional tone in general, each assessment block will only contain stimulus materials not previously exposed in any preceding training block (See, MacLeod, \& Bridle, 2009). \ Table 1 provides an example of how subsets of the P and G sets will be introduced as the experiment progresses. \ Dot-probe blocks will always consist of 5 word pairs; the next 4 pairs from the P set and 1 pair from the G set. \ The G pair will change to the next highest rated pair every 2 blocks. \ To maximise stimulus variety during ABM, these blocks will include word pairs from all preceding dot-probe blocks. \ Thus, the number of stimulus word pairs will increase with each ABM block. \ To emphasise ideographic stimuli, G pairs will appear twice as frequently as P pairs. \ Each word in the pair will appear with equal frequency at upper and lower screen locations. \ Where necessary, stimuli will be randomly excluded from a stimulus subset until the total exposures for the block is exactly divisible by the stimulus subset.
+
+To keep people completing sessions when they unexpectedly lose access
+to their initial computer (go on holiday, etc.) I have allowed them
+to install the task on multiple machines and carry out the task in
+different locations.  I'll mention this for the participants I know
+needed to do this.
 
 \captionof{table}[]{}
 Example stimulus allocation for a randomisation pattern which transitions from phase A (dot-probe test) to phase B (ABM training) at session 12.
@@ -393,7 +457,6 @@ b Where total stimuli * 2 {\textgreater} exposures, stimuli will be randomly exc
 Visual analyses of each case series will be made using graphs generated by the R package 'SCVA' (Bult\'e \& Onghena, 2012). \ Inferential statistics comparing \ A and B phases for measures of attentional bias, trait rumination, trait anxiety and mood within each case series will be calculated using nonparametric randomisation tests provided by the R package 'SCRT' (Bult\'e \& Onghena, 2008). \ Effect sizes and a meta-analysis across all participants will be calculated using the R package 'SCMA' (Bult\'e \& Onghena, 2013). \ Paired samples t-tests will be used to compare pre and post ABM scores for trait rumination, trait anxiety and depression scores, although these will be mostly descriptive as they will be underpowered.
 
 \subsection{planned}
-This is a single-case AB phase direct sequential replication design \parencite{bulte_when_2012} \parencite{onghena_customization_2005}
 
 \begin{APAenumerate}
      \item Multiple comparison corrections
@@ -418,6 +481,9 @@ secure \ digital filing system and the latter in a locked filing cabinet.
 
 
 \section{Results}
+\subsection{Pre/Post Measures}
+\subsection{Visual Analysis}
+\subsection{Inferential Statistics}
 
 \section{Discussion}
 
