@@ -53,11 +53,18 @@
 
 \newcommand{\grswidth}{width=90mm}
 \newcommand{\grsheight}{height=65mm}
+
+\usepackage{amsmath,siunitx,caption}
+\newcommand{\IE}[1][1]{% indent entry
+  \hspace{#1em}\ignorespaces
+}
 \begin{document}
+
 % FIXME: Include word count of main text on front page (see latexcount.pl)
 \listoftodos[Todo list]
 \maketitle
 \pdfbookmark{\contentsname}{toc}
+% ToC not included in the word count (but not essential in any case).
 \tableofcontents
 \clearpage\setcounter{page}{1}
 
@@ -183,6 +190,12 @@ scores against their post-training (phase B) scores and a meta-analysis
 across all participants.
 
 \subsection{Participants}
+
+\todo{recruitment flowchart, how many: responsed to advert, met
+screening criteria, dropout and its predictability in relation to
+screening measures}
+
+\todo{numbers, age, gender}
 
 Participants affiliated with the University of Exeter were recruited using
 the psychology research participation system, on-campus posters, email
@@ -486,11 +499,179 @@ secure \ digital filing system and the latter in a locked filing cabinet.
 
 
 \section{Results}
+
+\subsection{paragraph on included Ps}
+
+\todo{Central tendency and range on initial measures (screening).}
+
+\subsection{next paragraph}
+\todo{mean/SD: rate of completion, sessions skipped, dropout and its predictability in relation to screening measures}
+
+One participant thought it was going to make them feel worse.  Another
+found they were too busy to complete the study.  Looking at the scores
+from these participants they were typical/atypical.
+
 P16 didn't complete GRS and PANAS for session 8 but told me scores were the same as for session 7.
+
 \subsection{Pre/Post Measures}
+
+\todo{table with P sex M(SD) t p d * PHQ-9, PSWQ, GAD-7, RRS}
+
+<<prepost, results='asis', echo=FALSE>>=
+library(plyr)
+
+# read pre and post outcomes
+datadir <- '/media/paul/2E95-1293/study/participants/'
+participants <- c(5:13,15,16,18,19)
+
+read_data <- function(t) {
+  data_f <- paste(datadir,t,'.csv',sep='')
+  data   <- read.csv(data_f, header = TRUE, sep = ",", quote = "\"", dec = ".", fill = TRUE, comment.char = "")
+  # http://stackoverflow.com/questions/7112872/removing-specific-rows-from-a-dataframe
+  data <- data[ data$participant %in% participants, ] # only real participant rows
+  rrs_items  <- sprintf("rrspre.SQ%03d.",1:22)
+  # FIXME: set pre/post columns when we have post data
+  data$rrspre   <- rowSums(subset(data,select = rrs_items))  # RRS total
+  pswq_items <- sprintf("pswqpre.SQ%03d.",1:16)
+  # FIXME: set pre/post columns when we have post data
+  data$pswqpre  <- rowSums(subset(data,select = pswq_items)) # PSWQ total
+  data
+}
+
+## pre
+pre <- read_data('pre')
+pre <- pre[order(pre$participant), ]
+
+## post
+pre_items  <- c('participant','rrspre','pswqpre','phq9pretotal','gad7pretotal')
+pre  <- subset(pre,select = pre_items)
+post <- pre
+# FIXME: uncomment the next line when we have some post data!
+# then replace pre data with real post data
+#post <- read_data('post')
+post <- rename(post, c("rrspre"="rrspost", 'pswqpre'='pswqpost', 'phq9pretotal'='phq9posttotal', 'gad7pretotal'='gad7posttotal'))
+
+post_items <- c('participant',"rrspost",'pswqpost','phq9posttotal','gad7posttotal')
+prepost <- merge(pre, post, by='participant')
+
+## generate some random post data
+prepost$rrspost  <- sample(22:88,13)
+prepost$pswqpost <- sample(16:64,13)
+prepost$phq9posttotal <- sample(0:27,13)
+prepost$gad7posttotal <- sample(0:21,13)
+
+## t-tests (recipe 9.15)
+# Student's t-test: var.equal=TRUE
+#http://stackoverflow.com/questions/21840021/grabbing-certain-results-out-of-multiple-t-test-outputs-to-create-a-table
+tests <- list()
+tests[['RRS']] <- t.test(prepost$rrspre,prepost$rrspost, paired=TRUE, var.equal=TRUE)
+tests[['PSWQ']] <- t.test(prepost$pswqpre,prepost$pswqpost, paired=TRUE, var.equal=TRUE)
+tests[['PHQ-9']] <- t.test(prepost$phq9pretotal,prepost$phq9posttotal, paired=TRUE, var.equal=TRUE)
+tests[['GAD-7']] <- t.test(prepost$gad7pretotal,prepost$gad7posttotal, paired=TRUE, var.equal=TRUE)
+
+# need M(SD) for each
+
+# extract values using `sapply`
+df <- sapply(tests, function(x) {
+#x$estimate[1],
+#x$estimate[2],
+     c(x$statistic,x$parameter,p.value = x$p.value,ci.lower = x$conf.int[1],ci.upper = x$conf.int[2])
+})
+df <- t(df)
+#cohensD(prepost$rrspre, prepost$rrspost, method="paired")
+
+library(xtable)
+strCaption <- paste0("\\textbf{Table n} Pre-post comparisons")
+print(xtable(df, digits=2, caption=strCaption, label="prepost"), 
+      size="footnotesize",
+      include.rownames=FALSE,
+      include.colnames=FALSE,
+      caption.placement="top", 
+      hline.after=NULL,
+      add.to.row = list(pos     = list(-1, nrow(df)),
+                        command = c(paste("\\toprule \n",
+                                          "${t}$ & ${df}$ & ${p}$ & CI(lower) & CI(upper)\\\\\n", 
+                                          "\\midrule \n"),
+                                          "\\bottomrule \n")
+                        )
+      )
+@
+
+Here is our minimal example:
+<<Code_chunk_Minimal_example, results='asis', echo=FALSE>>=
+library(xtable)
+#Just some random data
+x1 <- rnorm(1000); x2 <- rnorm(1000); x3 <- rnorm(1000)
+y  <- 2 + 1 *x1 + rnorm(1000)
+#Run regressions
+reg1 <- summary(lm(y ~ x1))
+reg2 <- summary(lm(y ~ x2))
+reg3 <- summary(lm(y ~ x3))
+#Create data.frame
+df <- data.frame(Model = 1:3,
+                 Alpha = c(reg1$coef[1,1], reg2$coef[1,1], reg3$coef[1,1]),
+                 Beta  = c(reg1$coef[2,1], reg2$coef[2,1], reg3$coef[2,1]),
+                 tV    = c(reg1$coef[2,2], reg2$coef[2,2], reg3$coef[2,2]),
+                 AdjR  = c(reg1$adj.r.s,  reg2$adj.r.s,   reg3$adj.r.s))
+strCaption <- paste0("\\textbf{Table Whatever} This table is just produced with some",
+                     "random data and does not mean anything. Just to show you how ",
+                     "things work.")
+print(xtable(df, digits=2, caption=strCaption, label="Test_table"), 
+      size="footnotesize", #Change size; useful for bigger tables
+      include.rownames=FALSE, #Don't print rownames
+      include.colnames=FALSE, #We create them ourselves
+      caption.placement="top", 
+      hline.after=NULL, #We don't need hline; we use booktabs
+      add.to.row = list(pos = list(-1, 
+                                   nrow(df)),
+                        command = c(paste("\\toprule \n",
+                                          "Model & $\\alpha$ & $\\beta$ & t-value & $R^2$ \\\\\n", 
+                                          "\\midrule \n"),
+                                    "\\bottomrule \n")
+                        )
+      )
+@
+From table \ref{Test_table} you can't learn a lot, only how it looks is important here.
+
+\begin{table}[htp]
+\centering
+\addtolength{\tabcolsep}{3pt} % some more room between columns
+
+\caption{Pre-post Comparisons}
+
+\begin{tabular}{llllll}
+\toprule
+Participant & Sex & {$M$}({${SD}$}) & {$t$} & {$p$} & {$d$}\\
+\midrule
+5 & F & m(sd) & t & p & $\pi=\Sexpr{pi}$ \\
+\midrule[\heavyrulewidth]
+%\multicolumn{6}{l}{$M=\text{mean}$, ${SD}=\text{standard deviation}$}
+\end{tabular}
+\end{table}
+
+This study was under-powered ... *surprise!* n/s because of small sample.  Also, these are trait measures.
+
+... but now we can look at things individually, visually and inferentially ...
+
+Limitation: relatively coarse (trait) measures.  Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.
+
 \subsection{Visual Analysis}
+\todo{can PA/NA be combined on graphs practically and because they are separated in terms of score so will work visually?}
+
 \begin{figure}[p]
+% try 6 per page, so 2 pages per outcome = 12 pages
+% is there any difference between the mbd and individual graphs?
+%\includegraphics[]{grs.jpg}
+\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_i.jpg}
+\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_n.jpg}
+\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_grs.jpg}
+\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_panas.jpg}
+\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/1/p1_grs.jpg}
+\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
+\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_grs.jpg}
+\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
 \includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_0.jpg}
+\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/1/p1_grs.jpg}
 \includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_1.jpg}
 \includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_2.jpg}
 \includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_3.jpg}
@@ -502,13 +683,27 @@ P16 didn't complete GRS and PANAS for session 8 but told me scores were the same
 
 \subsection{Inferential Statistics}
 
+\todo{table with P sex M(SD) p PND}
+
+\subsubsection{Meta analysis}
+
+Ecological validity: daily measures in real environment.
+
 \section{Discussion}
+
+Limitation: how long lasting is treatment?
+Would ABA revert?
+What happens when problem resolves?
 
 \printbibliography
 \appendix
 % http://tex.stackexchange.com/questions/172496/adding-appendix-chapters-without-sections-in-table-of-contents
 %\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 \section{N-word stimulus pair}
+
 \section{I-word stimulus pair}
+% don't include P concerns
+% redact people's names <Male|Female Name>
+
 \end{document}
 % FIXME: Ethics appendix (email without identifying details)
