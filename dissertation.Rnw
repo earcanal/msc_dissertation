@@ -198,16 +198,17 @@ screening measures}
 \todo{numbers, age, gender}
 
 Participants affiliated with the University of Exeter were recruited using
-the psychology research participation system, on-campus posters, email
-and Facebook,  inviting them to evaluate a computer-based experimental
+the research participation system in the school of Psychology, on-campus posters, email
+and Facebook, inviting them to evaluate a computer-based experimental
 task which could improve how they relate to an unresolved problem.
 A maximum payment of {\pounds}20 was offered to participants who
-completed all 35 sessions.  Inclusion criteria will require no concurrent
+completed all 35 sessions.  Inclusion criteria were no concurrent
 psychotherapy or psychotropic medication and a PHQ-8 score {\textless}
 10 \parencite{kroenke_phq-8_2009}.  To ensure enough participants are
 recruited, a liberal inclusion criterion of Ruminative Responses Scale
-(RRS) ${\geq}$ 50 \parencite{treynor_rumination_2003} will be used
-initially. \ If recruitment responses are high then this threshold may
+(RRS) ${\geq}$ 50 \parencite{treynor_rumination_2003} or Penn State Worry
+Questionnaire (PSWQ) ${\geq}$ was used. Initial recruitment responses were low,
+so ... are high then this threshold may
 be increased to recruit participants with the highest possible RRS scores.
 
 \subsection{Measures}
@@ -502,10 +503,13 @@ secure \ digital filing system and the latter in a locked filing cabinet.
 
 \subsection{paragraph on included Ps}
 
-\todo{Central tendency and range on initial measures (screening).}
+The combined screening scores of the 15 participants who of PHQ-8 ${M}$= ${SD}$=, RRS${M}$= ${SD}$=, PSWQ${M}$= ${SD}$=
+
+\todo{Calculate M and SD for screening measures.}
 
 \subsection{next paragraph}
 \todo{mean/SD: rate of completion, sessions skipped, dropout and its predictability in relation to screening measures}
+\todo{(calculate) M/SD accuracy}
 
 One participant thought it was going to make them feel worse.  Another
 found they were too busy to complete the study.  Looking at the scores
@@ -517,8 +521,10 @@ P16 didn't complete GRS and PANAS for session 8 but told me scores were the same
 
 \todo{table with P sex M(SD) t p d * PHQ-9, PSWQ, GAD-7, RRS}
 
-<<prepost, results='asis', echo=FALSE>>=
+<<prepost, results='asis', echo=FALSE, error=TRUE>>=
 library(plyr)
+library(methods)
+library(lsr)
 
 # read pre and post outcomes
 datadir <- '/media/paul/2E95-1293/study/participants/'
@@ -568,17 +574,33 @@ tests[['RRS']] <- t.test(prepost$rrspre,prepost$rrspost, paired=TRUE, var.equal=
 tests[['PSWQ']] <- t.test(prepost$pswqpre,prepost$pswqpost, paired=TRUE, var.equal=TRUE)
 tests[['PHQ-9']] <- t.test(prepost$phq9pretotal,prepost$phq9posttotal, paired=TRUE, var.equal=TRUE)
 tests[['GAD-7']] <- t.test(prepost$gad7pretotal,prepost$gad7posttotal, paired=TRUE, var.equal=TRUE)
+#cohensD(prepost$rrspre, prepost$rrspost, method="paired")
 
-# need M(SD) for each
+# calculate M and SD for each
 
 # extract values using `sapply`
-df <- sapply(tests, function(x) {
+results <- sapply(tests, function(x) {
 #x$estimate[1],
 #x$estimate[2],
      c(x$statistic,x$parameter,p.value = x$p.value,ci.lower = x$conf.int[1],ci.upper = x$conf.int[2])
 })
-df <- t(df)
-#cohensD(prepost$rrspre, prepost$rrspost, method="paired")
+results <- t(results)
+
+library(stringr)
+pval <- function(x) {
+  sig <- if (round(x, digits=2) <= 0.05) 'a' else 'no'
+  if (round(x, digits=2) < 0.001) {
+    p <- '< .001'
+  } else {
+    x <- sprintf("%0.3f",x)
+    p <- str_replace(as.character(x), "^0\\.", ".")
+  }
+  c(sig,p)
+}
+# FIXME: include CIs?
+# FIXME: check assumptions
+p   <- pval(results['RRS','p.value'])
+rrs <- sprintf("There was %s significant difference between pre (${M}$=%0.2f, ${SD}$=%0.2f) and post (${M}$=%0.2f, ${SD}$=%0.2f) RRS scores, with ${t}$(%d) = %0.2f, ${p}$ = %s",p[1],mean(prepost$rrspre),sd(prepost$rrspre),mean(prepost$rrspost),sd(prepost$rrspost),results['RRS','df'],results['RRS','t'],p[2]) 
 
 library(xtable)
 strCaption <- paste0("\\textbf{Table n} Pre-post comparisons")
@@ -596,6 +618,8 @@ print(xtable(df, digits=2, caption=strCaption, label="prepost"),
                         )
       )
 @
+
+\Sexpr{rrs}
 
 Here is our minimal example:
 <<Code_chunk_Minimal_example, results='asis', echo=FALSE>>=
