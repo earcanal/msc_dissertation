@@ -566,112 +566,95 @@ prepost$pswqpost <- sample(16:64,13)
 prepost$phq9posttotal <- sample(0:27,13)
 prepost$gad7posttotal <- sample(0:21,13)
 
-## t-tests (recipe 9.15)
-# Student's t-test: var.equal=TRUE
-#http://stackoverflow.com/questions/21840021/grabbing-certain-results-out-of-multiple-t-test-outputs-to-create-a-table
+## get the stats!
 tests <- list()
-tests[['RRS']] <- t.test(prepost$rrspre,prepost$rrspost, paired=TRUE, var.equal=TRUE)
-tests[['PSWQ']] <- t.test(prepost$pswqpre,prepost$pswqpost, paired=TRUE, var.equal=TRUE)
-tests[['PHQ-9']] <- t.test(prepost$phq9pretotal,prepost$phq9posttotal, paired=TRUE, var.equal=TRUE)
-tests[['GAD-7']] <- t.test(prepost$gad7pretotal,prepost$gad7posttotal, paired=TRUE, var.equal=TRUE)
-#cohensD(prepost$rrspre, prepost$rrspost, method="paired")
-
-# calculate M and SD for each
-
-# extract values using `sapply`
-results <- sapply(tests, function(x) {
-#x$estimate[1],
-#x$estimate[2],
-     c(x$statistic,x$parameter,p.value = x$p.value,ci.lower = x$conf.int[1],ci.upper = x$conf.int[2])
+outcomes <- c('RRS','PSWQ','PHQ-9','GAD-7','rrspre','pswqpre','phq9pretotal','gad7pretotal','rrspost','pswqpost','phq9posttotal','gad7posttotal')
+dim(outcomes) <- c(4,3)
+foo <- data.frame(1:4,1:4,1:4,row.names=outcomes[,1])
+colnames(foo) <- c('ct_pre','ct_post','d')
+tests <- apply(outcomes, 1, function(o) {
+  outcome <- o[1]
+  pre     <- o[2]
+  post    <- o[3]
+  foo[outcome,'mean_pre']  <<- mean(prepost[[pre]])
+  foo[outcome,'sd_pre']    <<- sd(prepost[[pre]])
+  foo[outcome,'mean_post'] <<- mean(prepost[[post]])
+  foo[outcome,'sd_post']   <<- sd(prepost[[post]])
+  foo[outcome,'d']         <<- cohensD(prepost[[pre]],prepost[[post]],method="paired")
+  # t-tests (recipe 9.15); Student's t-test: var.equal=TRUE
+  t.test(prepost[[pre]],prepost[[post]], paired=TRUE, var.equal=TRUE)
 })
-results <- t(results)
+names(tests) <- outcomes[,1]
+
+#http://stackoverflow.com/questions/21840021/grabbing-certain-results-out-of-multiple-t-test-outputs-to-create-a-table
+results <- sapply(tests, function(x) {
+  c(x$statistic,x$parameter,p.value = x$p.value,ci.lower = x$conf.int[1],ci.upper = x$conf.int[2])
+})
+results <- t(results) # put outcome measures in the rows
+#http://stackoverflow.com/questions/7739578/merge-data-frames-based-on-rownames-in-r
+results <- merge(results,foo,by="row.names")
 
 library(stringr)
-pval <- function(x) {
-  sig <- if (round(x, digits=2) <= 0.05) 'a' else 'no'
-  if (round(x, digits=2) < 0.001) {
+format <- function(x) {
+  #sig <- if (round(x, digits=2) <= 0.05) 'a' else 'no'
+  p <- x['p.value']
+  if (round(p, digits=2) < 0.001) {
     p <- '< .001'
   } else {
-    x <- sprintf("%0.3f",x)
-    p <- str_replace(as.character(x), "^0\\.", ".")
+    p <- sprintf("%0.3f",p)
+    p <- str_replace(as.character(p), "^0\\.", ".")
   }
-  c(sig,p)
+  pre  <- sprintf("%0.2f(%0.2f)",x['mean_pre'],x['sd_pre'])
+  post <- sprintf("%0.2f(%0.2f)",x['mean_post'],x['sd_post'])
+  df   <- sprintf("%d",x['df'])
+  t    <- sprintf("%0.2f",x['t'])
+  d    <- sprintf("%0.3f",x['d'])
+  d    <- str_replace(as.character(d), "^0\\.", ".")
+  cil  <- sprintf("%0.2f",x['ci.lower'])
+  ciu  <- sprintf("%0.2f",x['ci.upper'])
+  x['ct_pre']  <- pre
+  x['ct_post'] <- post
+  x['df']      <- df
+  x['t']       <- t
+  x['p.value'] <- p
+  x['d']       <- d
+  x['ci.lower'] <- cil
+  x['ci.upper'] <- ciu
+  x
 }
+row.names(results) <- results$Row.names
+results <- apply(subset(results,select = -Row.names),1,format)
+results <- t(results)
+results <- subset(results,select = c('ct_pre','ct_post','t','df','p.value','ci.lower','ci.upper','d'))
+
 # FIXME: include CIs?
 # FIXME: check assumptions
-p   <- pval(results['RRS','p.value'])
-rrs <- sprintf("There was %s significant difference between pre (${M}$=%0.2f, ${SD}$=%0.2f) and post (${M}$=%0.2f, ${SD}$=%0.2f) RRS scores, with ${t}$(%d) = %0.2f, ${p}$ = %s",p[1],mean(prepost$rrspre),sd(prepost$rrspre),mean(prepost$rrspost),sd(prepost$rrspost),results['RRS','df'],results['RRS','t'],p[2]) 
+words <- apply(results,1,function(r) {
+  #sprintf("There was %s significant difference between pre (${M}$=%0.2f, ${SD}$=%0.2f) and post (${M}$=%0.2f, ${SD}$=%0.2f) RRS scores, with ${t}$(%s) = %s, ${p}$ = %s, Cohen's ${d}$ = %s.",'a/no',1,2,3,4,r['df'],r['t'],r['p.value'],r['d'])
+  sprintf("There was %s significant difference between pre (${M}$(${SD}$) = %s) and post (${M}$(${SD}$) = %s) RRS scores, with ${t}$(%s) = %s, ${p}$ = %s, Cohen's ${d}$ = %s.",'a/no',r['ct_pre'],r['ct_post'],r['df'],r['t'],r['p.value'],r['d'])
+})
 
 library(xtable)
-strCaption <- paste0("\\textbf{Table n} Pre-post comparisons")
-print(xtable(df, digits=2, caption=strCaption, label="prepost"), 
+strCaption <- paste0("\\textbf{Table n} Pre-post comparisons as a table")
+print(xtable(results, caption=strCaption, label="prepost"), 
       size="footnotesize",
-      include.rownames=FALSE,
+      include.rownames=TRUE,
       include.colnames=FALSE,
       caption.placement="top", 
       hline.after=NULL,
-      add.to.row = list(pos     = list(-1, nrow(df)),
+      add.to.row = list(pos     = list(-1, nrow(results)),
                         command = c(paste("\\toprule \n",
-                                          "${t}$ & ${df}$ & ${p}$ & CI(lower) & CI(upper)\\\\\n", 
+                                          "& Pre & Post\\\\\n", 
+                                          "Measure & ${M}$(${SD}$) & ${M}$(${SD}$) & ${t}$ & ${df}$ & ${p}$ & CI(lower) & CI(upper) & d\\\\\n", 
                                           "\\midrule \n"),
                                           "\\bottomrule \n")
                         )
-      )
+)
 @
 
-\Sexpr{rrs}
+Or in words ... \\
 
-Here is our minimal example:
-<<Code_chunk_Minimal_example, results='asis', echo=FALSE>>=
-library(xtable)
-#Just some random data
-x1 <- rnorm(1000); x2 <- rnorm(1000); x3 <- rnorm(1000)
-y  <- 2 + 1 *x1 + rnorm(1000)
-#Run regressions
-reg1 <- summary(lm(y ~ x1))
-reg2 <- summary(lm(y ~ x2))
-reg3 <- summary(lm(y ~ x3))
-#Create data.frame
-df <- data.frame(Model = 1:3,
-                 Alpha = c(reg1$coef[1,1], reg2$coef[1,1], reg3$coef[1,1]),
-                 Beta  = c(reg1$coef[2,1], reg2$coef[2,1], reg3$coef[2,1]),
-                 tV    = c(reg1$coef[2,2], reg2$coef[2,2], reg3$coef[2,2]),
-                 AdjR  = c(reg1$adj.r.s,  reg2$adj.r.s,   reg3$adj.r.s))
-strCaption <- paste0("\\textbf{Table Whatever} This table is just produced with some",
-                     "random data and does not mean anything. Just to show you how ",
-                     "things work.")
-print(xtable(df, digits=2, caption=strCaption, label="Test_table"), 
-      size="footnotesize", #Change size; useful for bigger tables
-      include.rownames=FALSE, #Don't print rownames
-      include.colnames=FALSE, #We create them ourselves
-      caption.placement="top", 
-      hline.after=NULL, #We don't need hline; we use booktabs
-      add.to.row = list(pos = list(-1, 
-                                   nrow(df)),
-                        command = c(paste("\\toprule \n",
-                                          "Model & $\\alpha$ & $\\beta$ & t-value & $R^2$ \\\\\n", 
-                                          "\\midrule \n"),
-                                    "\\bottomrule \n")
-                        )
-      )
-@
-From table \ref{Test_table} you can't learn a lot, only how it looks is important here.
-
-\begin{table}[htp]
-\centering
-\addtolength{\tabcolsep}{3pt} % some more room between columns
-
-\caption{Pre-post Comparisons}
-
-\begin{tabular}{llllll}
-\toprule
-Participant & Sex & {$M$}({${SD}$}) & {$t$} & {$p$} & {$d$}\\
-\midrule
-5 & F & m(sd) & t & p & $\pi=\Sexpr{pi}$ \\
-\midrule[\heavyrulewidth]
-%\multicolumn{6}{l}{$M=\text{mean}$, ${SD}=\text{standard deviation}$}
-\end{tabular}
-\end{table}
+\Sexpr{paste(words,sep='  ')} \\
 
 This study was under-powered ... *surprise!* n/s because of small sample.  Also, these are trait measures.
 
