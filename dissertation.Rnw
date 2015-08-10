@@ -61,6 +61,8 @@
 \begin{document}
 
 % FIXME: Include word count of main text on front page (see latexcount.pl)
+\setlength{\marginparwidth}{2cm}
+\todototoc
 \listoftodos[Todo list]
 \maketitle
 \pdfbookmark{\contentsname}{toc}
@@ -609,34 +611,32 @@ format <- function(x) {
   df   <- sprintf("%d",x['df'])
   t    <- sprintf("%0.2f",x['t'])
   d    <- sprintf("%0.3f",x['d'])
-  d    <- str_replace(as.character(d), "^0\\.", ".")
-  cil  <- sprintf("%0.2f",x['ci.lower'])
-  ciu  <- sprintf("%0.2f",x['ci.upper'])
+  # FIXME: What is the range?!
+  #d    <- str_replace(as.character(d), "^0\\.", ".")
+  ci  <- sprintf("%0.2f; %0.2f",x['ci.lower'],x['ci.upper'])
   x['ct_pre']  <- pre
   x['ct_post'] <- post
   x['df']      <- df
   x['t']       <- t
   x['p.value'] <- p
   x['d']       <- d
-  x['ci.lower'] <- cil
-  x['ci.upper'] <- ciu
+  x['ci']      <- ci
   x
 }
 row.names(results) <- results$Row.names
 results <- apply(subset(results,select = -Row.names),1,format)
 results <- t(results)
-results <- subset(results,select = c('ct_pre','ct_post','t','df','p.value','ci.lower','ci.upper','d'))
+results <- subset(results,select = c('ct_pre','ct_post','t','df','p.value','ci','d'))
 
-# FIXME: include CIs?
+# FIXME: report CIs? Does t.test produce 95% CIs?
 # FIXME: check assumptions
 words <- apply(results,1,function(r) {
   #sprintf("There was %s significant difference between pre (${M}$=%0.2f, ${SD}$=%0.2f) and post (${M}$=%0.2f, ${SD}$=%0.2f) RRS scores, with ${t}$(%s) = %s, ${p}$ = %s, Cohen's ${d}$ = %s.",'a/no',1,2,3,4,r['df'],r['t'],r['p.value'],r['d'])
-  sprintf("There was %s significant difference between pre (${M}$(${SD}$) = %s) and post (${M}$(${SD}$) = %s) RRS scores, with ${t}$(%s) = %s, ${p}$ = %s, Cohen's ${d}$ = %s.",'a/no',r['ct_pre'],r['ct_post'],r['df'],r['t'],r['p.value'],r['d'])
 })
 
 library(xtable)
 strCaption <- paste0("\\textbf{Table n} Pre-post comparisons as a table")
-print(xtable(results, caption=strCaption, label="prepost"), 
+print(xtable(results, caption=strCaption, label="prepost",align=c('c','l','l','r','l','r','l','r')), 
       size="footnotesize",
       include.rownames=TRUE,
       include.colnames=FALSE,
@@ -645,16 +645,15 @@ print(xtable(results, caption=strCaption, label="prepost"),
       add.to.row = list(pos     = list(-1, nrow(results)),
                         command = c(paste("\\toprule \n",
                                           "& Pre & Post\\\\\n", 
-                                          "Measure & ${M}$(${SD}$) & ${M}$(${SD}$) & ${t}$ & ${df}$ & ${p}$ & CI(lower) & CI(upper) & d\\\\\n", 
+					  "\\cline{2-3} \\\n",
+                                          "Measure & ${M}$(${SD}$) & ${M}$(${SD}$) & ${t}$ & ${df}$ & ${p}$ & CI$_{95\\%}$ & Cohen's d\\\\\n", 
                                           "\\midrule \n"),
                                           "\\bottomrule \n")
                         )
 )
 @
 
-Or in words ... \\
-
-\Sexpr{paste(words,sep='  ')} \\
+\todo{Description of table}
 
 This study was under-powered ... *surprise!* n/s because of small sample.  Also, these are trait measures.
 
