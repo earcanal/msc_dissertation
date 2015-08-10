@@ -521,9 +521,7 @@ P16 didn't complete GRS and PANAS for session 8 but told me scores were the same
 
 \subsection{Pre/Post Measures}
 
-\todo{table with P sex M(SD) t p d * PHQ-9, PSWQ, GAD-7, RRS}
-
-<<foo, cache=FALSE, echo=FALSE>>=
+<<external, cache=FALSE, echo=FALSE>>=
 knitr::read_chunk('../opensesame/dotprobe/prepost.R')
 @
 
