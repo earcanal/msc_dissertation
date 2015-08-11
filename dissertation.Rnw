@@ -174,22 +174,22 @@ principle for a potential clinical application of ABM to change RNT.
 
 \subsection{Design}
 
-This is a single-case AB phase nonconcurrent multiple baseline
-replication design across participants \parencite{bulte_when_2012}
-\parencite{onghena_customization_2005}
-
-doesn't control for historical factors which you
-would get if all participants started at the same time
-\parencite{watson_non-concurrent_1981}.
-
-
 A single-case series design was chosen as this is a small-scale,
 proof-of-principle study with limited funds for recruiting participant
-numbers required for a group study. \ More specifically, an AB randomised
-sequential replication design \parencite{onghena_customization_2005} will
-be used to allow a comparison of each participant's baseline (phase A)
-scores against their post-training (phase B) scores and a meta-analysis
+numbers required for a group study. More specifically, this was
+an AB phase nonconcurrent multiple baseline replication design
+across participants\todo{sure?!!} \parencite{bulte_when_2012}
+\parencite{onghena_customization_2005}
+
+Comparisons were made between each participant's baseline (phase A)
+scores and their post-training (phase B) scores and a meta-analysis
 across all participants.
+
+\cite[][p.64]{onghena_customization_2005} describe the theory behind this use of meta-analysis
+
+Didn't control for historical factors which you would
+get if all participants started at the same time
+\parencite{watson_non-concurrent_1981}.
 
 \subsection{Participants}
 
@@ -589,7 +589,7 @@ The main analyses are the daily measures ...
 
 \subsection{paragraph on included Ps}
 
-Fifteen participants (n female) meeting the screening criteria completed the setup session (see Table n).
+Fifteen participants (12 female) meeting the screening criteria completed the setup session (see Table n).
 \todo{Calculate M and SD for screening measures.}
 
 The combined screening scores of the 15 participants who of PHQ-8 ${M}$= ${SD}$=, RRS${M}$= ${SD}$=, PSWQ${M}$= ${SD}$=
@@ -627,6 +627,10 @@ This study was under-powered ... *surprise!* n/s because of small sample.  Also,
 
 
 \subsection{Visual Analysis}
+\todo{Will present each participant's day by day data.  This allows you to analyse things visually.  Explain what people look for (cite): variability within each phase, change from A to B, trend in baseline that complicates interpretation ...  This is what to look out for ...}
+
+\todo{Do it for each outcome.  Probably not much more than a couple of sentences for each.  Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.}
+
 \todo{can PA/NA be combined on graphs practically and because they are separated in terms of score so will work visually?}
 
 \begin{figure}[p]
@@ -655,7 +659,8 @@ This study was under-powered ... *surprise!* n/s because of small sample.  Also,
 \subsection{Inferential Statistics}
 
 \todo{check how to create input to meta analysis}
-\todo{table (see table design scribbled on printout which combines inferentials and meta analysis}
+\todo{3 tables (see design scribbled on printout) combining inferentials and meta analysis}
+\todo{Describe any patterns in each table, see \parencite{watkins_rumination-focused_2007} including MA}
 
 Ecological validity vs. pre/post measures: daily measures took place in real environment.
 
