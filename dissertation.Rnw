@@ -193,9 +193,7 @@ across all participants.
 
 \subsection{Participants}
 
-\todo{recruitment flowchart, how many: responsed to advert, met
-screening criteria, dropout and its predictability in relation to
-screening measures}
+\todo{recruitment flowchart, how many: responsed to advert, met screening criteria}
 
 \todo{numbers, age, gender}
 
@@ -341,21 +339,89 @@ where N = Negative word, P = Probe, u = upper, t = lower (Bradley et al., 1997).
 
 \subsection{Procedure}
 
-An introductory session will take place at the University of Exeter after the participant gives informed, written consent to take part in the study. \ A self-relevant, unresolved goal will be chosen by asking participants to think of {}``an ongoing and unresolved concern that [has] repeatedly come into their mind and caused them to feel negative or stressed during the previous week'' (Roberts, Watkins, and Wills, 2013, p. 451). \ Examples of appropriate problems will be provided. \ Participants will then be asked to generate a list of at least 18 words describing the personal ``causes, meanings and implications'' (Watkins, Baeyens, \& Read, 2009, p. 55) of their unresolved goal. \ The wording will encourage abstract construal, which has been associated with RNT (Watkins et al., 2009). \ The experimenter will leave the room after the participant begins writing their word list. \ After 15 minutes the experimenter will return and guide the participant to create the 'G set' by ranking the top 18 words in decreasing order of negative affect which they evoke in relation to their goal.
+An introductory session will take place at the University of Exeter
+after the participant gives informed, written consent to take part in
+the study. \ A self-relevant, unresolved goal will be chosen by asking
+participants to think of {}``an ongoing and unresolved concern that
+[has] repeatedly come into their mind and caused them to feel negative
+or stressed during the previous week'' (Roberts, Watkins, and Wills,
+2013, p. 451). \ Examples of appropriate problems will be provided. \
+Participants will then be asked to generate a list of at least 18 words
+describing the personal ``causes, meanings and implications'' (Watkins,
+Baeyens, \& Read, 2009, p. 55) of their unresolved goal. \ The wording
+will encourage abstract construal, which has been associated with RNT
+(Watkins et al., 2009). \ The experimenter will leave the room after
+the participant begins writing their word list. \ After 15 minutes the
+experimenter will return and guide the participant to create the 'G set'
+by ranking the top 18 words in decreasing order of negative affect which
+they evoke in relation to their goal.
 
-Participants will complete measures of trait rumination (RRS), trait anxiety (STAI) and depression (PHQ-9) using the Lime Survey website, before being introduced to the experimental task. \ They will be instructed to sit about 60 cm from the computer screen and to allocate sufficient time in this, and future sessions, to complete the session without interruption (a maximum of about 20 minutes for training blocks and self-report measures). \ Participants will be encouraged to carry out the task at time of day which will be consistently convenient throughout the study. \ A training dot-probe test session will be delivered to record the initial attentional bias measurement. \ This practice session will include 5 P set words and no G set words. \ On completion, the experimenter will answer any questions regarding the task, explain the schedule for subsequent days and remind the participant of their 1 in 10 chance of winning a {\pounds}20 prize. \ After the participant leaves, the experimenter will match words to create the G set. \ Participants will carry out all experimental sessions on a computer at their home. \ The total study length for each participant will be 36 days.
+Participants will complete measures of trait rumination (RRS), trait
+anxiety (STAI) and depression (PHQ-9) using the Lime Survey website,
+before being introduced to the experimental task. \ They will be
+instructed to sit about 60 cm from the computer screen and to allocate
+sufficient time in this, and future sessions, to complete the session
+without interruption (a maximum of about 20 minutes for training blocks
+and self-report measures). \ Participants will be encouraged to carry out
+the task at time of day which will be consistently convenient throughout
+the study. \ A training dot-probe test session will be delivered to
+record the initial attentional bias measurement. \ This practice session
+will include 5 P set words and no G set words. \ On completion, the
+experimenter will answer any questions regarding the task, explain the
+schedule for subsequent days and remind the participant of their 1 in 10
+chance of winning a {\pounds}20 prize. \ After the participant leaves,
+the experimenter will match words to create the G set. \ Participants
+will carry out all experimental sessions on a computer at their home. \
+The total study length for each participant will be 36 days.
 
 \subsubsection{Day 1}
-The experimenter will telephone participants on the first day of the experiment to help them install any software required to run the dot-probe and ABM tasks. \ Participants will follow emailed instructions guiding them to complete state rumination (GRS), state anxiety (STAI-T) and mood (I-PANAS-SF) measurements followed by the first phase A dot-probe test block. \ The experimenter will call the participant after this first session to answer any questions regarding the task.
+The experimenter will telephone participants on the first day of the
+experiment to help them install any software required to run the dot-probe
+and ABM tasks. \ Participants will follow emailed instructions guiding
+them to complete state rumination (GRS), state anxiety (STAI-T) and mood
+(I-PANAS-SF) measurements followed by the first phase A dot-probe test
+block. \ The experimenter will call the participant after this first
+session to answer any questions regarding the task.
 
 \subsubsection{Days 2 to 36}
-Participants will be emailed daily, instructing them to first complete the measurement instruments followed by instructions on how to run the computer task which matches the next phase in their randomisation schedule. \ This will be a test block for phases A and B, followed by an ABM training block in phase B only (see Figure 1). \ The experimenter will telephone participants twice in week 1 to ensure their well-being and motivation. \ Thereafter they will be telephoned weekly and the day after any missed session. \ In the final week, the experimenter and participant will agree a time for the debriefing session on the day following the last experimental session.
+Participants will be emailed daily, instructing them to first complete
+the measurement instruments followed by instructions on how to run
+the computer task which matches the next phase in their randomisation
+schedule. \ This will be a test block for phases A and B, followed by an
+ABM training block in phase B only (see Figure 1). \ The experimenter
+will telephone participants twice in week 1 to ensure their well-being
+and motivation. \ Thereafter they will be telephoned weekly and the
+day after any missed session. \ In the final week, the experimenter
+and participant will agree a time for the debriefing session on the day
+following the last experimental session.
 
 \subsubsection{Day 37}
-\ The final session will take place at the University of Exeter. \ Participants will complete trait (RRS) rumination, trait anxiety (STAI) and depression (PHQ-9) measures and will be invited to write down their current feelings towards their personal goal and overall experience of the training before being thanked for their participation, remunerated and debriefed.
+\ The final session will take place at the University of Exeter. \
+Participants will complete trait (RRS) rumination, trait anxiety (STAI)
+and depression (PHQ-9) measures and will be invited to write down their
+current feelings towards their personal goal and overall experience of
+the training before being thanked for their participation, remunerated
+and debriefed.
 
 \subsubsection[Stimulus allocation]{Stimulus allocation}
-\ \ See et al. (2009) note that the most desirable change in attentional bias is in relation to emotional tone in general rather than to any specific stimuli. \ To maximise both the measurement and modification of attention to emotional tone in general, each assessment block will only contain stimulus materials not previously exposed in any preceding training block (See, MacLeod, \& Bridle, 2009). \ Table 1 provides an example of how subsets of the P and G sets will be introduced as the experiment progresses. \ Dot-probe blocks will always consist of 5 word pairs; the next 4 pairs from the P set and 1 pair from the G set. \ The G pair will change to the next highest rated pair every 2 blocks. \ To maximise stimulus variety during ABM, these blocks will include word pairs from all preceding dot-probe blocks. \ Thus, the number of stimulus word pairs will increase with each ABM block. \ To emphasise ideographic stimuli, G pairs will appear twice as frequently as P pairs. \ Each word in the pair will appear with equal frequency at upper and lower screen locations. \ Where necessary, stimuli will be randomly excluded from a stimulus subset until the total exposures for the block is exactly divisible by the stimulus subset.
+See et al. (2009) note that the most desirable change in attentional
+bias is in relation to emotional tone in general rather than to any
+specific stimuli. \ To maximise both the measurement and modification
+of attention to emotional tone in general, each assessment block will
+only contain stimulus materials not previously exposed in any preceding
+training block (See, MacLeod, \& Bridle, 2009). \ Table 1 provides an
+example of how subsets of the P and G sets will be introduced as the
+experiment progresses. \ Dot-probe blocks will always consist of 5 word
+pairs; the next 4 pairs from the P set and 1 pair from the G set. \
+The G pair will change to the next highest rated pair every 2 blocks. \
+To maximise stimulus variety during ABM, these blocks will include word
+pairs from all preceding dot-probe blocks. \ Thus, the number of stimulus
+word pairs will increase with each ABM block. \ To emphasise ideographic
+stimuli, G pairs will appear twice as frequently as P pairs. \ Each word
+in the pair will appear with equal frequency at upper and lower screen
+locations. \ Where necessary, stimuli will be randomly excluded from
+a stimulus subset until the total exposures for the block is exactly
+divisible by the stimulus subset.
 
 To keep people completing sessions when they unexpectedly lose access
 to their initial computer (go on holiday, etc.) I have allowed them
@@ -364,7 +430,8 @@ different locations.  I'll mention this for the participants I know
 needed to do this.
 
 \captionof{table}[]{}
-Example stimulus allocation for a randomisation pattern which transitions from phase A (dot-probe test) to phase B (ABM training) at session 12.
+Example stimulus allocation for a randomisation pattern which transitions
+from phase A (dot-probe test) to phase B (ABM training) at session 12.
 
 \begin{flushleft}
 \tablefirsthead{}
@@ -469,21 +536,8 @@ a Where necessary, stimuli will be randomly excluded until exposures are exactly
 
 b Where total stimuli * 2 {\textgreater} exposures, stimuli will be randomly excluded until total stimuli * 2 = exposures.
 
-\section{Analyses}
-
-\subsection{proposed}
-
-\ \ Randomisation procedures will be used to allow nonparametric inferential statistics to be calculated for each participant (Bult\'e \& Onghena, 2008). \ With a minimum of 8 ABM training sessions and 36 measurements in total, there are 21 possible AB transition points, which allows significance testing above the .05 level for each case (Onghena \& Edgington, 2005). \ To avoid having to discard complete cases where a small number sessions are not completed, missing values for these sessions will be replaced by values carried forward the the previous day's measurements.
-
-Visual analyses of each case series will be made using graphs generated by the R package 'SCVA' (Bult\'e \& Onghena, 2012). \ Inferential statistics comparing \ A and B phases for measures of attentional bias, trait rumination, trait anxiety and mood within each case series will be calculated using nonparametric randomisation tests provided by the R package 'SCRT' (Bult\'e \& Onghena, 2008). \ Effect sizes and a meta-analysis across all participants will be calculated using the R package 'SCMA' (Bult\'e \& Onghena, 2013). \ Paired samples t-tests will be used to compare pre and post ABM scores for trait rumination, trait anxiety and depression scores, although these will be mostly descriptive as they will be underpowered.
-
-\subsection{planned}
-
-\begin{APAenumerate}
-     \item Multiple comparison corrections
-\end{APAenumerate}
-
 \section{Ethical Considerations}
+
 Because recruitment measures will be submitted remotely, depression will
 be measured using the PHQ-8 which omits one item measuring suicidal
 ideation. \ Anyone scoring ${\geq}$ 10 on the PHQ-8 (Kroenke et al.,
@@ -500,18 +554,53 @@ raised with the PI's supervisor. \ Participants will not be identifiable
 from their electronic or written data. \ The former will be stored on a
 secure \ digital filing system and the latter in a locked filing cabinet.
 
+\section{Planned Analyses}
+
+\todo{past tense}
+
+Randomisation procedures were planned to allow nonparametric
+inferential statistics to be calculated for each participant
+\parencite{bulte_r_2008}.  With a minimum of 8 ABM training sessions and
+36 measurements in total, there were 21 possible AB transition points,
+which allows significance testing above the .05 level for each case
+\parencite{onghena_customization_2005}.  To avoid having to discard
+complete cases where a small number sessions are not completed, missing
+values for these sessions will be replaced by values carried forward
+the the previous day's measurements.
+
+Visual analyses of each case series will be made using graphs generated
+by the R package 'SCVA' \parencite{bulte_when_2012}.  Inferential
+statistics comparing A and B phases for measures of attentional bias,
+trait rumination, trait anxiety and mood within each case series will
+be calculated using nonparametric randomisation tests provided by the R
+package 'SCRT' \parencite{bulte_r_2008}.  Effect sizes and a meta-analysis
+across all participants will be calculated using the R package 'SCMA'
+\parencite{bulte_single-case_2013}.  Paired samples t-tests were used
+to compare pre and post ABM training measures of trait rumination
+(RRS), trait anxiety (PSWQ) and depression (PHQ-9).  However, mostly
+descriptive as trait measures the RRS and PSWQ are relatively coarse,
+and all comparisons were under-powered due to the small sample size.
+
+The main analyses are the daily measures ...
+
+\todo{Multiple comparison corrections}
 
 \section{Results}
 
 \subsection{paragraph on included Ps}
 
-The combined screening scores of the 15 participants who of PHQ-8 ${M}$= ${SD}$=, RRS${M}$= ${SD}$=, PSWQ${M}$= ${SD}$=
-
+Fifteen participants (n female) meeting the screening criteria completed the setup session (see Table n).
 \todo{Calculate M and SD for screening measures.}
 
+The combined screening scores of the 15 participants who of PHQ-8 ${M}$= ${SD}$=, RRS${M}$= ${SD}$=, PSWQ${M}$= ${SD}$=
+
 \subsection{next paragraph}
-\todo{mean/SD: rate of completion, sessions skipped, dropout and its predictability in relation to screening measures}
+
+\todo{dropout and its predictability in relation to screening measures}
 \todo{(calculate) M/SD accuracy}
+\todo{visual representation of completion, sessions skipped, accuracy}
+\todo{All questions for the daily measures were mandatory, so there was no missing data.}
+\todo{Outliers > 3SD on all measures @ screening and pre}
 
 One participant thought it was going to make them feel worse.  Another
 found they were too busy to complete the study.  Looking at the scores
@@ -527,14 +616,15 @@ knitr::read_chunk('../opensesame/dotprobe/prepost.R')
 
 <<prepost, results='asis', echo=FALSE, error=TRUE>>=
 @
-
-\todo{Description of table}
+\todo{How to indicate the CIs are pre-post difference e.g. "The only scale on which Ps showed a significant difference was ...  All others were NS"}
+\todo{Description of table pointing out sig. and NS differences}
+\todo{Check understanding of CIs}
+\todo{"reverse power analysis"}
 
 This study was under-powered ... *surprise!* n/s because of small sample.  Also, these are trait measures.
 
 ... but now we can look at things individually, visually and inferentially ...
 
-Limitation: relatively coarse (trait) measures.  Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.
 
 \subsection{Visual Analysis}
 \todo{can PA/NA be combined on graphs practically and because they are separated in terms of score so will work visually?}
@@ -564,17 +654,17 @@ Limitation: relatively coarse (trait) measures.  Only 2 measurement times (pre/p
 
 \subsection{Inferential Statistics}
 
-\todo{table with P sex M(SD) p PND}
+\todo{check how to create input to meta analysis}
+\todo{table (see table design scribbled on printout which combines inferentials and meta analysis}
 
-\subsubsection{Meta analysis}
-
-Ecological validity: daily measures in real environment.
+Ecological validity vs. pre/post measures: daily measures took place in real environment.
 
 \section{Discussion}
 
-Limitation: how long lasting is treatment?
-Would ABA revert?
-What happens when problem resolves?
+\todo{Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.}
+\todo{Limitation: how long lasting is treatment?}
+\todo{Would ABA revert?}
+\todo{What happens when problem resolves?}
 
 \printbibliography
 \appendix
