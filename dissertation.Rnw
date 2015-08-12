@@ -58,6 +58,7 @@
 \newcommand{\IE}[1][1]{% indent entry
   \hspace{#1em}\ignorespaces
 }
+\usepackage{rotating}
 \begin{document}
 
 % FIXME: Include word count of main text on front page (see latexcount.pl)
@@ -612,6 +613,7 @@ P16 didn't complete GRS and PANAS for session 8 but told me scores were the same
 
 <<external, cache=FALSE, echo=FALSE>>=
 knitr::read_chunk('../opensesame/dotprobe/prepost.R')
+knitr::read_chunk('../opensesame/dotprobe/analyse.R')
 @
 
 <<prepost, results='asis', echo=FALSE, error=TRUE>>=
@@ -658,7 +660,9 @@ This study was under-powered ... *surprise!* n/s because of small sample.  Also,
 
 \subsection{Inferential Statistics}
 
-\todo{check how to create input to meta analysis}
+<<inferentials, results='asis', echo=FALSE, error=TRUE>>=
+@
+
 \todo{3 tables (see design scribbled on printout) combining inferentials and meta analysis}
 \todo{Describe any patterns in each table, see \parencite{watkins_rumination-focused_2007} including MA}
 
