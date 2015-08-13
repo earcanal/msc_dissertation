@@ -30,7 +30,6 @@
 \usepackage{graphicx}
 \usepackage{afterpage}
 %\usepackage[marginparwidth=1cm]{geometry}
-
 %\usepackage{setspace}
 %\doublespace
 \makeatletter
@@ -40,16 +39,15 @@
 \renewcommand\arraystretch{1.3}
 \newcounter{Figure}
 \renewcommand\theFigure{\arabic{Figure}}
-% (suggestion) < 13 (key)words
+\todo{(suggestion) < 13 (key)words}
 \title{The effects of attentional bias modification on rumination about an ideographic concern: a case-series}
 \shorttitle{The effects of ABM on rumination about an ideographic concern}
 \author{Paul Sharpe}
 \affiliation{University of Exeter}
 \leftheader{Attentional bias modification of rumination towards a self-relevant goal: A case-series}
-% use keywords
+\todo{use keywords}
 \abstract{300 words max}
-% body: 8000 words max (excluding footnotes, tables, figures, references)
-% appendices: 4000 words max (~250 words/page i.e. 16 pages)
+\todo{body: 8000 words max (excluding footnotes, tables, figures, references)}
 
 \newcommand{\grswidth}{width=90mm}
 \newcommand{\grsheight}{height=65mm}
@@ -61,13 +59,15 @@
 \usepackage{rotating}
 \begin{document}
 
-% FIXME: Include word count of main text on front page (see latexcount.pl)
+\todo{check draft against Monsell and Pinker}
+\todo{plagiarism statement}
+\todo{Include word count of main text on front page (see latexcount.pl)}
 \setlength{\marginparwidth}{2cm}
 \todototoc
 \listoftodos[Todo list]
 \maketitle
 \pdfbookmark{\contentsname}{toc}
-% ToC not included in the word count (but not essential in any case).
+\todo{ToC not included in the word count (but not essential in any case).}
 \tableofcontents
 \clearpage\setcounter{page}{1}
 
@@ -241,31 +241,24 @@ they more closely map on to depression (low PA, high NA) and anxiety
 
 \subsection{Materials}
 
-Two sets of visual word stimuli will be used. \ The 18 words chosen by
+Two sets of visual word stimuli will be used.  The 18 words chosen by
 the participant in relation to their incomplete goal will be referred
-to as the 'G set'. \ The 'P set' will be common to all participants
-and comprise 167 words selected from a pool of abstract, sad words
-following the procedure in MacLeod, Rutherford, Campbell, Ebsworthy, \&
-Holker (2002). \ Each word from the G and P sets will be paired with
-a corresponding neutral word, matched for letter length, frequency of
-usage (van Heuven, Mandera, Keuleers, \& Brysbaert, 2014), valence,
-arousal, imagery, familiarity and relevance to sadness (Yang et al.,
-2014). \ In contrast with the abstract words, the neutral pair words will
-be concrete. \ The rationale for this is that concreteness training has
-been shown to reduce depressive symptoms and state rumination (Watkins \&
-Moberly, 2009), therefore ABM training which directs attention towards
-neutral word locations may be enhanced if the negative words in the
-pairs are abstract but the neutral words are concrete. \ The total of
-185 word pairs allows for 1 practice and 36 experimental dot-probe test
-sessions even when the 18 G set words fully overlap with P set words. \
-Dot-probe and ABM tasks will be developed using OpenSesame (Math\^ot,
-Schreij, \& Theeuwes, 2011) and measurement instruments administered
-online using Lime Survey.
+to as the 'G set'. The 'P set' will be common to all participants and
+comprise 167 words selected from a pool of abstract, sad words following
+the procedure in \textcite{macleod_selective_2002}. Each word from the G
+and P sets will be paired with a corresponding neutral word, matched for
+letter length, frequency of usage, valence, arousal, imagery, familiarity
+and relevance to sadness \parencite{yang_attention_2014}. The total
+of 185 word pairs allows for 1 practice and 36 experimental dot-probe
+test sessions even when the 18 G set words fully overlap with P set
+words.  Dot-probe and ABM tasks will be developed using OpenSesame
+\parencite{mathot_opensesame:_2011} and measurement instruments
+administered online using Lime Survey \parencite{limesurvey}.
 
 \subsubsection{N-word pairs}
 
 N-word stimulus pairs (see Appendix 1) were created using the Sussex
-Affective Word List (Citron et al., 2014). Starting with the 66
+Affective Word List \parencite{citron_how_2014}. Starting with the 66
 words rated most negative and and 66 rated most neutral, pairs were
 created by matching words of equivalent length (number of characters).
 Additional words were drawn from the pool to ensure that all pairs were of
@@ -313,69 +306,97 @@ Appendix 2.
 \subsection{Attentional Bias Modification (ABM)}
 
 \subsubsection{Dot-probe task}
-The dot-probe task will be based on Yang et al. (2014), and consist of 96 trials (see Figure 1).
 
-
+The dot-probe task was based on \textcite{yang_attention_2014}, and
+consisted of 96 trials (see Figure 1).
 
 \begin{center}
 \begin{minipage}{20.99cm}
   [Warning: Image ignored] % Unhandled or unsupported graphics:
 %\includegraphics[width=16.459cm,height=7.103cm]{proposal-img001.svm}
  
-
-Figure \stepcounter{Figure}{\theFigure}: Example dot-probe sequence where the negative word appears at the upper location (Trials 1 \& 2) and the probe appears at the neutral location (Trial 1) and negative location (Trial 2).
+Figure \stepcounter{Figure}{\theFigure}: Example dot-probe sequence where
+the negative word appears at the upper location (Trials 1 \& 2) and the
+probe appears at the neutral location (Trial 1) and negative location
+(Trial 2).
 \end{minipage}
+
 \end{center}
-Each trial will begin with an 8mm x 8mm white fixation cross centred on a black screen. \ After 500-ms, this will be replaced by a word pair from a subset of 5 word pairs, 4 from the P set and 1 from the G set. \ One word from the pair will appear above the fixation cross location and one below. \ Word pairs will be 50mm high with 30mm separating the words. \ Negative words will occur with equal frequency at the upper or lower positions. \ After 2000 ms, the word pair will disappear and one 3mm diameter dot or two 3mm diameter dots with a 2mm centre-to-centre distance will appear at one of the previous word locations. \ Dot-probes will appear with equal frequency at negative and neutral locations. \ Participants will respond to the single dot by pressing the left mouse button and the two dots by pressing the right mouse button. \ After responding, a random inter-trial interval (ITI) between 100-500 ms with a blank screen will precede the next trial. \ Participants will be asked to respond as quickly and accurately as possible. \ Each dot-probe block will take approximately 5 minutes.
+
+\todo{RAT: 1250ms exposure}
+\todo{update method}
+
+Each trial began with an 8mm x 8mm white fixation cross centred on a black
+screen. After 500ms, this was replaced by a word pair from a subset of
+5 word pairs, 4 from the P set and 1 from the G set.  One word from the
+pair appeared above the fixation cross location and one below. Word pairs
+were 50mm high with 30mm separating the words. Negative words occurred
+with equal frequency at the upper or lower positions. After 1250 ms, the
+word pair will disappear and one 3mm diameter dot or two 3mm diameter
+dots with a 2mm centre-to-centre distance will appear at one of the
+previous word locations. Dot-probes appeared with equal frequency at
+negative and neutral locations. Participants responded to the single
+dot by pressing the left mouse button and the two dots by pressing the
+right mouse button. After responding, a random inter-trial interval (ITI)
+between 100-500 ms with a blank screen will precede the next trial. \
+Participants will be asked to respond as quickly and accurately as
+possible. \ Each dot-probe block will take approximately 5 minutes.
 
 \subsubsection{ABM task}
-The ABM task will be identical to the dot-probe task but, to train attentional allocation away from the negative words, will consist of 192 trials using word pairs from both G and P sets, with probes which always appear at the neutral word location. \ Each ABM block will take approximately 15 minutes.
+
+The ABM task will be identical to the dot-probe task but, to train
+attentional allocation away from the negative words, will consist of
+192 trials using word pairs from both G and P sets, with probes which
+always appear at the neutral word location. Each ABM block took
+approximately 15 minutes.
 
 \subsubsection{Attentional Bias Assessment}
-Inaccurate trials or those with response times exceeding 3 standard deviations beyond the mean will be excluded. \ Attentional bias scores will be calculated from the remaining response times using the equation
 
-score = [(NuPl + NlPu) = (NuPu + NlPl)]/2 \ \ \ \ (1)
-
-where N = Negative word, P = Probe, u = upper, t = lower (Bradley et al., 1997).
+Inaccurate trials or those with response times exceeding 3 standard
+deviations beyond the mean were excluded from analyses. Attentional
+bias scores were calculated from the remaining response times using
+the equation \begin{displaymath}score = [(NuPl + NlPu) = (NuPu + NlPl)]/2 \ \ \ \
+(1) \end{displaymath} where ${N}$ = Negative word, ${P}$ = Probe, ${u}$ = upper, ${t}$ = lower
+\parencite{bradley_attentional_1997}.
 
 \subsection{Procedure}
 
-An introductory session will take place at the University of Exeter
-after the participant gives informed, written consent to take part in
-the study. \ A self-relevant, unresolved goal will be chosen by asking
-participants to think of {}``an ongoing and unresolved concern that
-[has] repeatedly come into their mind and caused them to feel negative
-or stressed during the previous week'' (Roberts, Watkins, and Wills,
-2013, p. 451). \ Examples of appropriate problems will be provided. \
-Participants will then be asked to generate a list of at least 18 words
-describing the personal ``causes, meanings and implications'' (Watkins,
-Baeyens, \& Read, 2009, p. 55) of their unresolved goal. \ The wording
-will encourage abstract construal, which has been associated with RNT
-(Watkins et al., 2009). \ The experimenter will leave the room after
-the participant begins writing their word list. \ After 15 minutes the
-experimenter will return and guide the participant to create the 'G set'
-by ranking the top 18 words in decreasing order of negative affect which
-they evoke in relation to their goal.
+An introductory session took place at the University of Exeter
+after the participant gave informed, written consent to take
+part in the study. A self-relevant, unresolved goal will be
+chosen by asking participants to think of \enquote{an ongoing and
+unresolved concern that [has] repeatedly come into their mind and
+caused them to feel negative or stressed during the previous week}
+\parencite{roberts_cueing_2013}. Examples of appropriate problems
+were provided.  Participants will then be asked to generate a list of
+at least 18 words describing the personal \enquote{causes, meanings and
+implications} \parencite[][p.55]{watkins_concreteness_2009}
+ of their unresolved goal. This wording has been shown to encourage
+ abstract construal, which has been associated with
+rumination \parencite{watkins_concreteness_2009}.  the experimenter
+guided the participant to create the 'G set' by ranking the top 18 words
+in decreasing order of negative affect which they evoke in relation to
+their goal.
 
-Participants will complete measures of trait rumination (RRS), trait
-anxiety (STAI) and depression (PHQ-9) using the Lime Survey website,
-before being introduced to the experimental task. \ They will be
-instructed to sit about 60 cm from the computer screen and to allocate
-sufficient time in this, and future sessions, to complete the session
-without interruption (a maximum of about 20 minutes for training blocks
-and self-report measures). \ Participants will be encouraged to carry out
-the task at time of day which will be consistently convenient throughout
-the study. \ A training dot-probe test session will be delivered to
-record the initial attentional bias measurement. \ This practice session
-will include 5 P set words and no G set words. \ On completion, the
-experimenter will answer any questions regarding the task, explain the
-schedule for subsequent days and remind the participant of their 1 in 10
-chance of winning a {\pounds}20 prize. \ After the participant leaves,
-the experimenter will match words to create the G set. \ Participants
-will carry out all experimental sessions on a computer at their home. \
+Participants will completed measures of trait rumination (RRS),
+trait anxiety (STAI) and depression (PHQ-9) using Lime Survey
+\parencite{limesurvey}, before being introduced to the experimental
+task. They were instructed to sit about 60 cm from the computer
+screen and to allocate sufficient time in this, and future sessions,
+to complete the session without interruption (a maximum of about 20
+minutes for training blocks and self-report measures). Participants were
+encouraged to carry out the task at time of day which will be consistently
+convenient throughout the study. A training dot-probe test session will
+be delivered to record the initial attentional bias measurement. This
+practice session included 5 P set words and no G set words. On completion,
+the experimenter answered any questions regarding the task, explained
+the schedule for subsequent days and ... After the participant left,
+the experimenter will match words to create the G set. Participants
+carried out all experimental sessions on a computer at their home.
 The total study length for each participant will be 36 days.
 
 \subsubsection{Day 1}
+
 The experimenter will telephone participants on the first day of the
 experiment to help them install any software required to run the dot-probe
 and ABM tasks. \ Participants will follow emailed instructions guiding
@@ -385,6 +406,7 @@ block. \ The experimenter will call the participant after this first
 session to answer any questions regarding the task.
 
 \subsubsection{Days 2 to 36}
+
 Participants will be emailed daily, instructing them to first complete
 the measurement instruments followed by instructions on how to run
 the computer task which matches the next phase in their randomisation
@@ -397,7 +419,8 @@ and participant will agree a time for the debriefing session on the day
 following the last experimental session.
 
 \subsubsection{Day 37}
-\ The final session will take place at the University of Exeter. \
+
+The final session will take place at the University of Exeter. \
 Participants will complete trait (RRS) rumination, trait anxiety (STAI)
 and depression (PHQ-9) measures and will be invited to write down their
 current feelings towards their personal goal and overall experience of
@@ -405,32 +428,36 @@ the training before being thanked for their participation, remunerated
 and debriefed.
 
 \subsubsection[Stimulus allocation]{Stimulus allocation}
-See et al. (2009) note that the most desirable change in attentional
-bias is in relation to emotional tone in general rather than to any
-specific stimuli. \ To maximise both the measurement and modification
-of attention to emotional tone in general, each assessment block will
-only contain stimulus materials not previously exposed in any preceding
-training block (See, MacLeod, \& Bridle, 2009). \ Table 1 provides an
-example of how subsets of the P and G sets will be introduced as the
-experiment progresses. \ Dot-probe blocks will always consist of 5 word
-pairs; the next 4 pairs from the P set and 1 pair from the G set. \
-The G pair will change to the next highest rated pair every 2 blocks. \
-To maximise stimulus variety during ABM, these blocks will include word
-pairs from all preceding dot-probe blocks. \ Thus, the number of stimulus
-word pairs will increase with each ABM block. \ To emphasise ideographic
-stimuli, G pairs will appear twice as frequently as P pairs. \ Each word
-in the pair will appear with equal frequency at upper and lower screen
-locations. \ Where necessary, stimuli will be randomly excluded from
-a stimulus subset until the total exposures for the block is exactly
-divisible by the stimulus subset.
+
+\textcite{see_reduction_2009} point out that the strongest claims come
+from detecting a ${general}$ change in attentional bias in relation
+to emotional valence, rather than to a change in bias to specific
+stimuli. To maximise both the measurement and modification of attention
+to emotional tone in general, each assessment block will only contain
+stimulus materials not previously exposed in any preceding training
+block \textcite{see_reduction_2009}. Table 1 provides an example of
+how subsets of the P and G sets will be introduced as the experiment
+progresses. Dot-probe blocks will always consist of 5 word pairs;
+the next 4 pairs from the P set and 1 pair from the G set. The G pair
+will change to the next highest rated pair every 2 blocks.  To maximise
+stimulus variety during ABM, these blocks will include word pairs from all
+preceding dot-probe blocks. Thus, the number of stimulus word pairs will
+increase with each ABM block. To emphasise ideographic stimuli, G pairs
+will appear twice as frequently as P pairs. Each word in the pair will
+appear with equal frequency at upper and lower screen locations. Where
+necessary, stimuli will be randomly excluded from a stimulus subset
+until the total exposures for the block is exactly divisible by the
+stimulus subset.
 
 To keep people completing sessions when they unexpectedly lose access
-to their initial computer (go on holiday, etc.) I have allowed them
+to their initial computer (go on holiday, etc.) I allowed them
 to install the task on multiple machines and carry out the task in
 different locations.  I'll mention this for the participants I know
 needed to do this.
 
+\todo{stimulus allocation table needs a major fixup}
 \captionof{table}[]{}
+
 Example stimulus allocation for a randomisation pattern which transitions
 from phase A (dot-probe test) to phase B (ABM training) at session 12.
 
@@ -514,9 +541,9 @@ Exposures/P pairs &
 ~
  &
 \centering 96/48 = 2 &
-\centering 96/52ab &
+\centering 96/52\footnote{Where necessary, stimuli will be randomly excluded until exposures are exactly divisible by total stimuli.}\footnote{\label{stimuli}Where total stimuli * 2 {\textgreater} exposures, stimuli will be randomly excluded until total stimuli * 2 = exposures.} &
 \centering ... &
-\centering\arraybslash 96/144b\\\hhline{~---------}
+\centering\arraybslash 96/144\textsuperscript{\ref{stimuli}}\\\hhline{~---------}
  &
 Exposures/G pairs &
 ~
@@ -533,56 +560,55 @@ Exposures/G pairs &
 \centering\arraybslash 96/18a\\\hhline{~---------}
 \end{supertabular}
 \end{flushleft}
-a Where necessary, stimuli will be randomly excluded until exposures are exactly divisible by total stimuli.
-
-b Where total stimuli * 2 {\textgreater} exposures, stimuli will be randomly excluded until total stimuli * 2 = exposures.
 
 \section{Ethical Considerations}
 
-Because recruitment measures will be submitted remotely, depression will
-be measured using the PHQ-8 which omits one item measuring suicidal
-ideation. \ Anyone scoring ${\geq}$ 10 on the PHQ-8 (Kroenke et al.,
-2009) will be signposted towards resources helpful for people who may be
-suffering from depression. \ The PI completed risk training at the Mood
-Disorders Centre in January 2015 and the process for implementing the
-approved protocol will be rehearsed with the PI's supervisor in advance. \
-The protocol will be triggered by participants scoring ${\geq}$ 10 on
-their initial PHQ-9 and final PHQ-9. \ The potential risk of harm arising
-from increasing rumination in high trait ruminators, along with the burden
-of a long testing period, will be continuously monitored in the regular
-contact that the PI makes with participants. \ Any concerns will be
-raised with the PI's supervisor. \ Participants will not be identifiable
-from their electronic or written data. \ The former will be stored on a
-secure \ digital filing system and the latter in a locked filing cabinet.
+Because screening measures were be submitted remotely, depression was
+measured using the PHQ-8 which omits one item measuring suicidal ideation.
+Anyone scoring ${\geq}$ 10 on the PHQ-8 \parencite{kroenke_phq-8_2009}
+ was signposted towards resources helpful for people who may be
+suffering from depression. The researcher completed risk training at the
+Mood Disorders Centre in January 2015 and the process for implementing
+the approved protocol will be rehearsed with the researcher's supervisor
+in advance.  The protocol was triggered by participants scoring ${\geq}$
+10 on their initial PHQ-9 and final PHQ-9. The potential risk of harm
+arising from increasing rumination in high trait ruminators, along with
+the burden of a long testing period, was continuously monitored in the
+regular contact that the researcher had with participants.  Any concerns
+were raised with the researcher's supervisor. Participants were not
+identifiable from their electronic or written data. The former were
+stored on a secure digital filing system and the latter in a locked
+filing cabinet.
 
 \section{Planned Analyses}
 
 \todo{past tense}
 
-Randomisation procedures were planned to allow nonparametric
-inferential statistics to be calculated for each participant
-\parencite{bulte_r_2008}.  With a minimum of 8 ABM training sessions and
-36 measurements in total, there were 21 possible AB transition points,
-which allows significance testing above the .05 level for each case
-\parencite{onghena_customization_2005}.  To avoid having to discard
-complete cases where a small number sessions are not completed, missing
-values for these sessions will be replaced by values carried forward
-the the previous day's measurements.
+Randomisation procedures were planned to allow nonparametric inferential
+statistics to be calculated for each participant \parencite{bulte_r_2008}.
+With a minimum of 8 ABM training sessions and 35 measurement times (MTs)
+in total, there were 21 possible transition points between phases A and B,
+which allowed significance testing at the .05 level for each participant
+who completed all sessions \parencite{onghena_customization_2005}.
+All questions on the daily outcome measures were mandatory on the online
+survey, so there was no missing data for any completed survey.
 
-Visual analyses of each case series will be made using graphs generated
-by the R package 'SCVA' \parencite{bulte_when_2012}.  Inferential
-statistics comparing A and B phases for measures of attentional bias,
-trait rumination, trait anxiety and mood within each case series will
-be calculated using nonparametric randomisation tests provided by the R
-package 'SCRT' \parencite{bulte_r_2008}.  Effect sizes and a meta-analysis
-across all participants will be calculated using the R package 'SCMA'
-\parencite{bulte_single-case_2013}.  Paired samples t-tests were used
-to compare pre and post ABM training measures of trait rumination
-(RRS), trait anxiety (PSWQ) and depression (PHQ-9).  However, mostly
-descriptive as trait measures the RRS and PSWQ are relatively coarse,
-and all comparisons were under-powered due to the small sample size.
+Paired samples t-tests were used to compare pre and post ABM training
+measures of trait rumination (RRS), trait anxiety (PSWQ) and depression
+(PHQ-9).  However, these analyses were mostly descriptive as trait
+measures the RRS and PSWQ are relatively coarse, and all comparisons
+were under-powered due to the small sample size \todo{"reverse power
+analysis"}.
 
-The main analyses are the daily measures ...
+The main analyses are the daily measures ...Visual analyses of each
+outcome measure was planned using graphs generated by the R package
+'SCVA' \parencite{bulte_when_2012}.  Inferential statistics and effect
+sizes (PND) comparing A and B phases for measures of attentional bias
+(I-words and N-words), state rumination (GRS) and mood (I-PANAS-SF) was
+calculated for each case using nonparametric randomisation tests provided
+by the R package 'SCRT' \parencite{bulte_r_2008}.  A meta-analysis for
+each outcome across all participants was carried out using the R package
+'SCMA' \parencite{bulte_single-case_2013}.
 
 \todo{Multiple comparison corrections}
 
@@ -600,14 +626,14 @@ The combined screening scores of the 15 participants who of PHQ-8 ${M}$= ${SD}$=
 \todo{dropout and its predictability in relation to screening measures}
 \todo{(calculate) M/SD accuracy}
 \todo{visual representation of completion, sessions skipped, accuracy}
-\todo{All questions for the daily measures were mandatory, so there was no missing data.}
 \todo{Outliers > 3SD on all measures @ screening and pre}
 
 One participant thought it was going to make them feel worse.  Another
 found they were too busy to complete the study.  Looking at the scores
 from these participants they were typical/atypical.
 
-P16 didn't complete GRS and PANAS for session 8 but told me scores were the same as for session 7.
+P16 didn't complete GRS and PANAS for session 8 but told me scores were
+the same as for session 7.
 
 \subsection{Pre/Post Measures}
 
@@ -621,7 +647,7 @@ knitr::read_chunk('../opensesame/dotprobe/analyse.R')
 \todo{How to indicate the CIs are pre-post difference e.g. "The only scale on which Ps showed a significant difference was ...  All others were NS"}
 \todo{Description of table pointing out sig. and NS differences}
 \todo{Check understanding of CIs}
-\todo{"reverse power analysis"}
+
 
 This study was under-powered ... *surprise!* n/s because of small sample.  Also, these are trait measures.
 
@@ -629,15 +655,12 @@ This study was under-powered ... *surprise!* n/s because of small sample.  Also,
 
 
 \subsection{Visual Analysis}
+
 \todo{Will present each participant's day by day data.  This allows you to analyse things visually.  Explain what people look for (cite): variability within each phase, change from A to B, trend in baseline that complicates interpretation ...  This is what to look out for ...}
 
 \todo{Do it for each outcome.  Probably not much more than a couple of sentences for each.  Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.}
 
-\todo{can PA/NA be combined on graphs practically and because they are separated in terms of score so will work visually?}
-
 \begin{figure}[p]
-% try 6 per page, so 2 pages per outcome = 12 pages
-% is there any difference between the mbd and individual graphs?
 %\includegraphics[]{grs.jpg}
 \includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_i.jpg}
 \includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_n.jpg}
@@ -663,7 +686,7 @@ This study was under-powered ... *surprise!* n/s because of small sample.  Also,
 <<inferentials, results='asis', echo=FALSE, error=TRUE>>=
 @
 
-\todo{3 tables (see design scribbled on printout) combining inferentials and meta analysis}
+\todo{add meta analysis to tables}
 \todo{Describe any patterns in each table, see \parencite{watkins_rumination-focused_2007} including MA}
 
 Ecological validity vs. pre/post measures: daily measures took place in real environment.
@@ -677,13 +700,14 @@ Ecological validity vs. pre/post measures: daily measures took place in real env
 
 \printbibliography
 \appendix
+\todo{appendices: 4000 words max (~250 words/page i.e. 16 pages)}
 % http://tex.stackexchange.com/questions/172496/adding-appendix-chapters-without-sections-in-table-of-contents
 %\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 \section{N-word stimulus pair}
 
 \section{I-word stimulus pair}
-% don't include P concerns
-% redact people's names <Male|Female Name>
+\todo{don't include P concerns}
+\todo{redact people's names <Male|Female Name>}
 
 \end{document}
-% FIXME: Ethics appendix (email without identifying details)
+\todo{Ethics appendix (email without identifying details)}
