@@ -39,15 +39,12 @@
 \renewcommand\arraystretch{1.3}
 \newcounter{Figure}
 \renewcommand\theFigure{\arabic{Figure}}
-\todo{(suggestion) < 13 (key)words}
 \title{The effects of attentional bias modification on rumination about an ideographic concern: a case-series}
 \shorttitle{The effects of ABM on rumination about an ideographic concern}
 \author{Paul Sharpe}
 \affiliation{University of Exeter}
 \leftheader{Attentional bias modification of rumination towards a self-relevant goal: A case-series}
-\todo{use keywords}
 \abstract{300 words max}
-\todo{body: 8000 words max (excluding footnotes, tables, figures, references)}
 
 \newcommand{\grswidth}{width=90mm}
 \newcommand{\grsheight}{height=65mm}
@@ -58,6 +55,10 @@
 }
 \usepackage{rotating}
 \begin{document}
+
+\todo{ABSTRACT body: 8000 words max excluding footnotes, tables, figures, references}
+\todo{ABSTRACT use keywords}
+\todo{ABSTRACT suggestion less than 13 key words}
 
 \todo{check draft against Monsell and Pinker}
 \todo{plagiarism statement}
@@ -128,6 +129,7 @@ thought per-se is a normal cognitive response to self-evaluation,
 but hypothesise that one driver of RNT, particularly brooding, is
 an impaired attentional ability to disengage from negative thoughts
 \textcite{koster_understanding_2011}.
+\todo{signpost lack of demonstrating attentional engagement}
 
 Although it is resistant to change \textcite{watkins_habit-goal_2014},
 it seems possible that habitual rumination could be altered using
@@ -358,6 +360,10 @@ bias scores were calculated from the remaining response times using
 the equation \begin{displaymath}score = [(NuPl + NlPu) = (NuPu + NlPl)]/2 \ \ \ \
 (1) \end{displaymath} where ${N}$ = Negative word, ${P}$ = Probe, ${u}$ = upper, ${t}$ = lower
 \parencite{bradley_attentional_1997}.
+
+More positive scores reflect an attentional bias towards (i.e., vigilance
+for) negative words relative to neutral words, whereas more negative
+scores indicate avoidance \parencite{bradley_attentional_1997}.
 
 \subsection{Procedure}
 
@@ -610,6 +616,11 @@ by the R package 'SCRT' \parencite{bulte_r_2008}.  A meta-analysis for
 each outcome across all participants was carried out using the R package
 'SCMA' \parencite{bulte_single-case_2013}.
 
+" additive method is shown to be more powerful than the multiplicative method, having
+a greater probability than the multiplicative method of yielding significant
+results when there actually are treatment effects." \parencite{edgington_additive_1972}
+
+
 \todo{Multiple comparison corrections}
 
 \section{Results}
@@ -683,10 +694,10 @@ This study was under-powered ... *surprise!* n/s because of small sample.  Also,
 
 \subsection{Inferential Statistics}
 
+\todo{Should I calculate M(SD) across participants for attentional bias so it's clear which direction it's going in?}
 <<inferentials, results='asis', echo=FALSE, error=TRUE>>=
 @
 
-\todo{add meta analysis to tables}
 \todo{Describe any patterns in each table, see \parencite{watkins_rumination-focused_2007} including MA}
 
 Ecological validity vs. pre/post measures: daily measures took place in real environment.
