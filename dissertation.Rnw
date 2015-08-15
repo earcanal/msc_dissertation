@@ -45,6 +45,10 @@
 \affiliation{University of Exeter}
 \leftheader{Attentional bias modification of rumination towards a self-relevant goal: A case-series}
 \abstract{300 words max}
+\authornote{I certify that all material in this dissertation \textbf{which
+is not my own work} has been identified with appropriate acknowledgement
+and referencing and I also certify that no material is included for
+which a degree has previously been conferred upon me.}
 
 \newcommand{\grswidth}{width=90mm}
 \newcommand{\grsheight}{height=65mm}
@@ -61,7 +65,6 @@
 \todo{ABSTRACT suggestion less than 13 key words}
 
 \todo{check draft against Monsell and Pinker}
-\todo{plagiarism statement}
 \todo{Include word count of main text on front page (see latexcount.pl)}
 \setlength{\marginparwidth}{2cm}
 \todototoc
@@ -146,7 +149,7 @@ an impaired attentional ability to disengage from negative thoughts
 \textcite{koster_understanding_2011}.
 \todo{signpost lack of demonstrating attentional engagement}
 
-\subsection{Goals and "Current concerns"}
+\subsection{Goals and current concerns}
 
 \textcite[][p.249]{klinger_motivation_2011} define a current concern as
 \enquote{the state of an organism between the time it becomes committed
