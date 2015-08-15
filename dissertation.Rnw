@@ -72,6 +72,10 @@
 \tableofcontents
 \clearpage\setcounter{page}{1}
 
+\section{Introduction}
+
+\subsection{Current state of anxiety and depression and treatments}
+
 Mixed anxiety and depression is the most common mood disorder in Britain
 \parencite{haliwell_fundamental_2007}.  Its predicted growth (World
 Health Organisation, 2001) makes the associated negative individual and
@@ -86,6 +90,8 @@ currently average six to nine months, and can be as long as two years
 \parencite{haliwell_fundamental_2007}.  There is a need for cheap but
 effective interventions which target the cognitive mechanisms underlying
 depression and anxiety.
+
+\subsection{What rumination is}
 
 Rumination is a thought process consistently linked to both the onset and
 maintenance of depression \parencite{watkins_habit-goal_2014}.  In their
@@ -108,16 +114,25 @@ label which captures these similarities whilst distinguishing RNT from
 the constructive role played by repetitive thought in problem solving
 \parencite{watkins_constructive_2008}.
 
+... the phenomenology of how adults \parencite{pearson_frequency_2008}
+and young people \parencite{oliver_all_2015} experience rumination.
+
+\subsection{Theories of rumination}
+
 Two accounts of rumination have been particularly influential. Response
 Styles Theory \parencite{nolen-hoeksema_responses_1991} defines rumination
 as a particular response to depressed mood where a person tends to
 focus on ``causes, consequences and symptoms of one's negative affect''
 \parencite[][p. 117]{smith_roadmap_2009}
- thereby prolonging low mood and depressive episodes.  Control Theory
+ thereby prolonging low mood and depressive episodes.
+
+  Control Theory
  \parencite{martin_ruminative_1996} is broader in that it explains
 rumination as a thought process which arises when progress towards a
 goal is perceived to be unsatisfactory, a state within which low mood
-frequently co-occurs. \textcite{watkins_habit-goal_2014} have sought to
+frequently co-occurs.
+
+\textcite{watkins_habit-goal_2014} have sought to
 unify these theories by proposing that RNT may be a habit, initiated
 by goal discrepancies and subsequently cued by contingent contexts
 such as mood or physical location.  They suggest that such automatic,
@@ -130,6 +145,18 @@ but hypothesise that one driver of RNT, particularly brooding, is
 an impaired attentional ability to disengage from negative thoughts
 \textcite{koster_understanding_2011}.
 \todo{signpost lack of demonstrating attentional engagement}
+
+\subsection{Goals and "Current concerns"}
+
+\textcite[][p.249]{klinger_motivation_2011} define a current concern as
+\enquote{the state of an organism between the time it becomes committed
+to pursuing a goal and the time it either gains the goal or abandons
+the pursuit.}
+
+Explain how this relates to \textbf{motivation} and \textbf{cues}.
+\todo{cf. \textcite{martin_ruminative_1996}}
+
+\subsection{RAT}
 
 Although it is resistant to change \textcite{watkins_habit-goal_2014},
 it seems possible that habitual rumination could be altered using
@@ -164,6 +191,8 @@ the habit-goal framework \textcite{watkins_habit-goal_2014}, as this
 arrangement should create a context likely to trigger RNT within which
 the counterconditioning effects of ABM training can be measured.
 
+\subsection{Hypotheses}
+
 Reduced attentional bias, state rumination, state anxiety and low mood
 scores are predicted after ABM training (phase B) in comparison with
 baseline (phase A) measures.  Initial measures of trait rumination, trait
@@ -177,7 +206,7 @@ principle for a potential clinical application of ABM to change RNT.
 
 \subsection{Design}
 
-A single-case series design was chosen as this is a small-scale,
+A case series design was chosen as this is a small-scale,
 proof-of-principle study with limited funds for recruiting participant
 numbers required for a group study. More specifically, this was
 an AB phase nonconcurrent multiple baseline replication design
