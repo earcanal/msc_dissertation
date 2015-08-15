@@ -346,11 +346,11 @@ possible. \ Each dot-probe block will take approximately 5 minutes.
 
 \subsubsection{ABM task}
 
-The ABM task will be identical to the dot-probe task but, to train
-attentional allocation away from the negative words, will consist of
-192 trials using word pairs from both G and P sets, with probes which
-always appear at the neutral word location. Each ABM block took
-approximately 15 minutes.
+The ABM task was identical to the dot-probe task, except there were
+192 trials using only N-word pairs, and probes always appeared at the
+neutral word location.  Thus, responses required repeated orientation
+of attention away from the negative word in the pair. Each ABM block
+took approximately 15 minutes.
 
 \subsubsection{Attentional Bias Assessment}
 
