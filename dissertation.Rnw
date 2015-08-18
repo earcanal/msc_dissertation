@@ -232,19 +232,17 @@ the design can be found in the \nameref{analyses} section.
 
 \subsection{Participants}
 
-\todo{recruitment flowchart, how many: responsed to advert, met screening criteria}
-\todo{numbers, age, gender}
-
-Participants were recruited at the University of Exeter, using the
-school of Psychology research participation system, on-campus posters,
-email and Facebook. People were invited to evaluate a computer-based
-task with the potential to reduce rumination towards an unresolved
-problem of their own choosing.  A maximum payment of {\pounds}20 was
-offered to participants who completed all 35 sessions. Participants had
-to be fluent in English, have normal, or corrected to normal vision,
-have access to a home computer running Windows, Macintosh (OS X 10.9
-or later), or Linux operating systems, and not concurrently undergoing
-psychotherapy or taking psychotropic medication.
+Participants were recruited  using the University of Exeter school of
+Psychology research participation system, on-campus posters, departmental
+email lists and Facebook groups linked to the University. People
+were invited to evaluate a computer-based task with the potential to
+reduce rumination towards an unresolved problem of their own choosing.
+A maximum payment of {\pounds}20 was offered to participants who completed
+all 35 sessions. Participants had to be fluent in English, have normal,
+or corrected to normal vision, have access to a home computer running
+Windows, Macintosh (OS X 10.9 or later), or Linux operating systems,
+and not concurrently undergoing psychotherapy or taking psychotropic
+medication.
 
 Screening criteria were a PHQ-8 \parencite{kroenke_phq8_2009} score
 {\textless} 11, to exclude people with mild depression or above,
@@ -254,15 +252,34 @@ and, to include high trait ruminatiors or trait worriers,
 \parencite{treynor_rumination_2003} score ${\geq}$ 53 or a Penn
 State Worry Questionnaire (PSWQ) \parencite{meyer_development_1990}
 score ${\geq}$ 55. The RRS and PSWQ cutpoints were calculated to place
-participants in the top 33\% of these measures, based on a sample of
-210 University of Exeter undergraduate students measured on RRS (${M}$
-= 46.9, ${SD}$ = 12.7) and PSWQ (${M}$ = 48.2, ${SD}$ = 14.9)\todo{cite?}.
+participants in the top 33\% of these measures, based on a sample of 210
+University of Exeter undergraduate students measured on RRS (${M}$ = 46.9,
+${SD}$ = 12.7) and PSWQ (${M}$ = 48.2, ${SD}$ = 14.9)\todo{cite?}.
+
+Figure \ref{flowchart} summarises the recruitment procedure.  Of the
+15 people (12 female), who met the screening criteria and offered to
+participate, 6 were members of staff, 5 were postgraduate students,
+2 were undergraduate students, 1 was a recent graduate, and 1 was the
+partner of an undergraduate student.  The mean age of participants was
+31.38 years (${SD}$ = 9.99 years).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=90mm,height=90mm]{/home/paul/Documents/psychology/msc/M210/apprenticeship/dissertation/figure/recruitment.png}
+  \caption{Recruitment flowchart}
+  \label{flowchart}
+\end{figure}
+
+\todo{recruitment flowchart, how many: responsed to advert, met screening criteria}
+\todo{Calculate M and SD for screening measures.}
 
 \subsection{Measures}
 
 Anxiety and depression were measured due to their close association, and
 uncertainty whether the procedure would affect brooding \todo{brooding
-is a subtype of past-focussed rumination?} worry or both. Measurements
+is a subtype of past-focussed rumination?} worry or both.
+
+Measurements
 were taken pre and post-ABM training for trait rumination using the RRS
 \parencite{treynor_rumination_2003}, and trait anxiety using the GAD-7
 \parencite{spitzerrl_brief_2006}. Scales related to the previous 4
@@ -876,10 +893,10 @@ knitr::read_chunk('../opensesame/dotprobe/analyse.R')
 
 <<prepost, results='asis', echo=FALSE, error=TRUE>>=
 @
+\todo{add age and gender to table}
 \todo{How to indicate the CIs are pre-post difference e.g. "The only scale on which Ps showed a significant difference was ...  All others were NS"}
 \todo{Description of table pointing out sig. and NS differences}
 \todo{Check understanding of CIs}
-
 
 This study was under-powered ... *surprise!* n/s because of small sample.  Also, these are trait measures.
 
