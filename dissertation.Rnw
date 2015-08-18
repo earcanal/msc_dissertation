@@ -58,6 +58,7 @@ which a degree has previously been conferred upon me.}
   \hspace{#1em}\ignorespaces
 }
 \usepackage{rotating}
+\usepackage{mathtools}
 \begin{document}
 
 \todo{ABSTRACT body: 8000 words max excluding footnotes, tables, figures, references}
@@ -119,6 +120,13 @@ the constructive role played by repetitive thought in problem solving
 
 ... the phenomenology of how adults \parencite{pearson_frequency_2008}
 and young people \parencite{oliver_all_2015} experience rumination.
+
+\subsubsection{worry}
+
+Worry has been defined as \enquote{a chain of thoughts and
+images, negatively affect-laden and relatively uncontrollable}
+\parencite[][p. 10]{borkovec1983preliminary}.
+
 
 \subsection{Theories of rumination}
 
@@ -212,6 +220,11 @@ the counterconditioning effects of ABM training can be measured.
 
 \subsection{Hypotheses}
 
+Because the 
+Anxiety and depression were measured due to their close association, and
+uncertainty whether the procedure would affect brooding \todo{brooding
+is a subtype of past-focussed rumination?} worry or both.
+
 Reduced attentional bias, state rumination, state anxiety and low mood
 scores are predicted after ABM training (phase B) in comparison with
 baseline (phase A) measures.  Initial measures of trait rumination, trait
@@ -251,7 +264,7 @@ and, to include high trait ruminatiors or trait worriers,
  a Ruminative Responses Scale (RRS)
 \parencite{treynor_rumination_2003} score ${\geq}$ 53 or a Penn
 State Worry Questionnaire (PSWQ) \parencite{meyer_development_1990}
-score ${\geq}$ 55. The RRS and PSWQ cutpoints were calculated to place
+score ${\geq}$ 55. The RRS and PSWQ cut points were calculated to place
 participants in the top 33\% of these measures, based on a sample of 210
 University of Exeter undergraduate students measured on RRS (${M}$ = 46.9,
 ${SD}$ = 12.7) and PSWQ (${M}$ = 48.2, ${SD}$ = 14.9)\todo{cite?}.
@@ -275,79 +288,67 @@ partner of an undergraduate student.  The mean age of participants was
 
 \subsection{Measures}
 
-Anxiety and depression were measured due to their close association, and
-uncertainty whether the procedure would affect brooding \todo{brooding
-is a subtype of past-focussed rumination?} worry or both.
+\subsubsection{Primary Measures}
 
-Measurements
-were taken pre and post-ABM training for trait rumination using the RRS
-\parencite{treynor_rumination_2003}, and trait anxiety using the GAD-7
-\parencite{spitzerrl_brief_2006}. Scales related to the previous 4
-weeks of participants' lives.  Depression was measured pre and post-ABM
-training using the PHQ-9, which has good diagnostic performance for
-screening for Major Depressive Disorder \parencite{manea_diagnostic_2015}
-\todo{or possibly \parencite{wahl_standardization_2014}}. Primary measures
-of attentional (dot-probe) \parencite{macleod_attentional_1986}, state
-rumination (Goal Rumination Scale; GRS) \parencite{schultheiss_role_2008}
-were taken approximately every 24 hours, except where sessions were
-posponed or skipped.  A secondary measure of mood (10 item I-PANAS-SF)
-\parencite{mackinnon_short_1999} supplemented with 2 PA (negatively end of
-scale) items 'Sad', 'Depressed' and 2 NA items 'Anxious', 'Worried' was
-also taken with each session.  Questions in the GRS and I-PANAS-SF were
-asked in relation to the last 24 hours. \todo{Nick:OK, I think anxious
-and worried would map quite cleanly (+ve) onto NA whereas sad, depressed,
-would map (-ve) on both PA and (+ve) on NA because they have an aversive
-component (rather like depression is supposed to be both low PA and high
-NA). Doing this reminds me that we added those 2 + 2 adjectives because
-they more closely map on to depression (low PA, high NA) and anxiety
-(high NA).} Age and gender demographics were also recorded.
+Participants were measured on primary outcomes approximately every
+24 hours (except where sessions postponed). Attentional bias was
+measured using a computer-based dot-probe task with word-pair stimuli
+\parencite{macleod_attentional_1986}.  State rumination was measured using
+the Goal Rumination Scale (GRS) \parencite{schultheiss_role_2008}, the
+best scale we were aware of that would measure state rumination towards
+a current concern, in line with our hypotheses\todo{H1?}. Reliability of
+the GRS is good (Cronbach's $\alpha$ = .87), based on a single sample
+of $N$ = 101. Positive and negative affect were measured using the
+10 item, short form Positive and Negative Affect Schedule (PANAS-SF)
+\parencite{mackinnon_short_1999}, which has Cronbach's $\alpha$ of .78
+for positive affect (PA) and .87 for negative affect (NA).  Because we
+were specifically interested in changes in depression and anxiety, we
+added 4 items to the PANAS-SF.  Items 'sad' and 'depressed' were added
+as a state measure of depression, with the rationale that they would
+correlate negatively with PA and positively with NA.  Items 'anxious'
+and 'worried' were added as state measures of worry \todo{I need to have
+committed to anxiety or worry by this point!} as they were expected to
+correlate positively with NA. \todo{need a reference to show lack of
+items at low end of PA and that low PA/high NA == depression}. Questions
+on the GRS and PANAS-SF were asked in relation to the last 24 hours.
 
-\begin{itemize}
-\item {
-Baseline}
+\subsubsection{Secondary Measures}
 
-\begin{itemize}
-\item {
-PHQ-9}
-\item {
-RRS}
+Secondary measures were taken before and after the dot-probe/ABM sessions.
+Trait rumination was measured using the Ruminative Responses Scale
+(RRS), which is reliable and valid, having an expected Cronbach's
+$\alpha$ of .85 \parencite{treynor_rumination_2003}. Trait anxiety was
+measured using the 7 item Generalised Anxiety Disorder (GAD-7) scale,
+an efficient, valid (Cronbach's $\alpha$ > .85), tool for assessing
+GAD severity in clinical research, with good test-retest reliability
+\parencite{spitzerrl_brief_2006}. Depression was measured using
+the PHQ-9, a brief, reliable (Cronbach's $\alpha$ > .85) and valid
+measure of depression severity \parencite{kroenke_phq9_2001}. Trait
+worry was measured using the Penn State Worry Questionnaire (PSWQ),
+an an internally consistent measure with good test-retest reliability
+\parencite{meyer_development_1990}.  Questions on the RRS and GAD-7
+were asked in relation to the previous 4 weeks of participants' lives,
+to correspond approximately with their time within the study\todo{see
+appendix}.
 
-\begin{itemize}
-\item {
-Last month, tense modified where necessary}
-\end{itemize}
-\end{itemize}
-\item {
-State}
+\subsection{Materials}
 
-\begin{itemize}
-\item {
-PANAS, STAI-Y, GRS}
+Two sets of visual word stimuli will be used.  The 18 words chosen by
+the participant in relation to their incomplete goal will be referred
+to as the 'G set'. The 'P set' will be common to all participants and
+comprise 167 words selected from a pool of abstract, sad words following
+the procedure in \textcite{macleod_selective_2002}. Each word from the G
+and P sets will be paired with a corresponding neutral word, matched for
+letter length, frequency of usage, valence, arousal, imagery, familiarity
+and relevance to sadness \parencite{yang_attention_2014}. The total
+of 185 word pairs allows for 1 practice and 36 experimental dot-probe
+test sessions even when the 18 G set words fully overlap with P set
+words.  Dot-probe and ABM tasks will be developed using OpenSesame
+\parencite{mathot_opensesame_2011} and measurement instruments
+administered online using Lime Survey \parencite{limesurvey}.
 
-\begin{itemize}
-\item {
-Last 24 hours, tense modified where necessary}
-\end{itemize}
-\end{itemize}
-\item {
-Post treatment}
-
-\begin{itemize}
-\item {
-PHQ-9}
-\item {
-RRS}
-
-\begin{itemize}
-\item {
-Last month, tense modified where necessary}
-\end{itemize}
-\end{itemize}
-\end{itemize}
-\subsubsection{SAWL}
-{
-\textbf{\textit{How are affective word ratings related to lexicosemantic properties? Evidence from the Sussex Affective
-Word List }}\textbf{\textit{(Citron, Weekes, \& Ferstl, 2014)}}}
+\todo{SAWL - How are affective word ratings related to lexicosemantic
+properties? (Citron, Weekes, \& Ferstl, 2014)}
 
 \begin{itemize}
 \item {
@@ -412,21 +413,6 @@ member differed in emotional valence and relevance to sadness (ps {\textless} 0.
 pair was at least 1.45 (Mean: 2.64 [SD = 0.56]).''}
 
 
-\subsection{Materials}
-
-Two sets of visual word stimuli will be used.  The 18 words chosen by
-the participant in relation to their incomplete goal will be referred
-to as the 'G set'. The 'P set' will be common to all participants and
-comprise 167 words selected from a pool of abstract, sad words following
-the procedure in \textcite{macleod_selective_2002}. Each word from the G
-and P sets will be paired with a corresponding neutral word, matched for
-letter length, frequency of usage, valence, arousal, imagery, familiarity
-and relevance to sadness \parencite{yang_attention_2014}. The total
-of 185 word pairs allows for 1 practice and 36 experimental dot-probe
-test sessions even when the 18 G set words fully overlap with P set
-words.  Dot-probe and ABM tasks will be developed using OpenSesame
-\parencite{mathot_opensesame_2011} and measurement instruments
-administered online using Lime Survey \parencite{limesurvey}.
 
 \subsubsection{N-word pairs}
 
@@ -578,6 +564,11 @@ scores indicate avoidance \parencite{bradley_attentional_1997}.
 
 \subsection{Procedure}
 
+Participants provided baseline measures of trait rumination, trait worry,
+trait anxiety and depression at their initial meeting with the researcher
+(i.e. before they had completed ther first dot-probe session), and again
+within 12 hours of completing the final session.
+
 People meeting the screening criteria where invited to participate, and those who agreed
 met the researcher at the University of Exeter to complete the initial session.
 
@@ -622,6 +613,23 @@ the experimenter will match words to create the G set. Participants
 carried out all experimental sessions on a computer at their home.
 The total study length for each participant will be 36 days.
 
+\subsection{measurement times}
+
+of attentional (dot-probe) \parencite{macleod_attentional_1986}, state
+rumination (Goal Rumination Scale; GRS) \parencite{schultheiss_role_2008}
+were taken approximately every 24 hours, except where sessions were
+posponed or skipped.  A secondary measure of mood (10 item I-PANAS-SF)
+\parencite{mackinnon_short_1999} supplemented with 2 PA (negatively end of
+scale) items 'Sad', 'Depressed' and 2 NA items 'Anxious', 'Worried' was
+also taken with each session.  Questions in the GRS and I-PANAS-SF were
+asked in relation to the last 24 hours. \todo{Nick:OK, I think anxious
+and worried would map quite cleanly (+ve) onto NA whereas sad, depressed,
+would map (-ve) on both PA and (+ve) on NA because they have an aversive
+component (rather like depression is supposed to be both low PA and high
+NA). Doing this reminds me that we added those 2 + 2 adjectives because
+they more closely map on to depression (low PA, high NA) and anxiety
+(high NA).} Age and gender demographics were also recorded.
+
 \subsubsection{Day 1}
 
 The experimenter will telephone participants on the first day of the
@@ -654,7 +662,6 @@ current feelings towards their personal goal and overall experience of
 the training before being thanked for their participation, remunerated
 and debriefed.
 
-Ps did the final survey within 12 hours of the final session.
 
 \subsubsection[Stimulus allocation]{Stimulus allocation}
 
@@ -865,10 +872,9 @@ results when there actually are treatment effects." \parencite{edgington_additiv
 
 \subsection{paragraph on included Ps}
 
-Fifteen participants (12 female) meeting the screening criteria completed the setup session (see Table n).
-\todo{Calculate M and SD for screening measures.}
-
 The combined screening scores of the 15 participants who of PHQ-8 ${M}$= ${SD}$=, RRS${M}$= ${SD}$=, PSWQ${M}$= ${SD}$=
+
+\todo{Calculate M and SD for screening measures.}
 
 \subsection{next paragraph}
 
@@ -942,6 +948,17 @@ Ecological validity vs. pre/post measures: daily measures took place in real env
 
 \section{Discussion}
 
+\subsection{rumination}
+
+\enquote{Thus, people with high implicit motivation were less prone to ruminate
+about their goals and people with high goal commitment were more likely
+to ruminate. This effect was qual- ified by a marginally significant
+goal commitment x implicit motivation effect, B = 0.319, SE = 0.177,
+t(91) = 1.80, p = .07. As shown in Table 5, the interaction was due to a
+damping effect of implicit motivation on goal rumination in low-commitment
+participants.} \parencite{schultheiss_role_2008}
+
+
 \todo{Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.}
 \todo{Would ABA revert?}
 \todo{What happens when problem resolves?}
@@ -950,7 +967,11 @@ Ecological validity vs. pre/post measures: daily measures took place in real env
 Differences in stimulus type e.g. words vs. faces
 ABM training other than the dot-probe Sigurjonsdottir et. al 2015
 What is an effective dose?
-\todo{Limitation: longevity of effects treatment?}
+
+\subsubsection{Limitation}
+
+\todo{self-report measures}
+\todo{longevity of effects treatment?}
 
 \printbibliography
 \appendix
@@ -965,7 +986,8 @@ What is an effective dose?
 \tablehead{}
 \tabletail{}
 \tablelasttail{}
-\begin{supertabular}{m{2.102cm}m{14.511001cm}}
+{\footnotesize
+\begin{supertabular}{m{3cm}m{14.511001cm}}
 \hline
 { Pair number} &
 \centering\arraybslash{ N-word pairs (Negative-Neutral)\footnotemark{}%
@@ -1110,10 +1132,10 @@ What is an effective dose?
 ~
 \\
 \end{supertabular}
+}
 \end{flushleft}
 \footnotetext{N-word pairs 61-66 in \textit{italic} make up the ``spare'' block which was drawn on when I-words were
 also N-words. }
-
 
 \section{I-word stimulus pair}
 \todo{don't include P concerns}
