@@ -289,6 +289,122 @@ NA). Doing this reminds me that we added those 2 + 2 adjectives because
 they more closely map on to depression (low PA, high NA) and anxiety
 (high NA).} Age and gender demographics were also recorded.
 
+\begin{itemize}
+\item{Screening}
+
+\begin{itemize}
+\item {
+PHQ-8 {\textless} 11, RRS {\textgreater}= 53, PSWQ {\textgreater}= 55}
+\end{itemize}
+\item {
+Baseline}
+
+\begin{itemize}
+\item {
+PHQ-9}
+\item {
+RRS}
+
+\begin{itemize}
+\item {
+Last month, tense modified where necessary}
+\end{itemize}
+\end{itemize}
+\item {
+State}
+
+\begin{itemize}
+\item {
+PANAS, STAI-Y, GRS}
+
+\begin{itemize}
+\item {
+Last 24 hours, tense modified where necessary}
+\end{itemize}
+\end{itemize}
+\item {
+Post treatment}
+
+\begin{itemize}
+\item {
+PHQ-9}
+\item {
+RRS}
+
+\begin{itemize}
+\item {
+Last month, tense modified where necessary}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\subsubsection{SAWL}
+{
+\textbf{\textit{How are affective word ratings related to lexicosemantic properties? Evidence from the Sussex Affective
+Word List }}\textbf{\textit{(Citron, Weekes, \& Ferstl, 2014)}}}
+
+\begin{itemize}
+\item {
+94 negative}
+
+\begin{itemize}
+\item {
+84 abstract}
+\item {
+10 concrete}
+\end{itemize}
+\item {
+80 neutral}
+
+\begin{itemize}
+\item {
+30 concrete}
+\item {
+50 abstract}
+\end{itemize}
+\end{itemize}
+\subsubsection{MRC}
+{
+{}``These programs permit the construction of word sets for psycholinguistic experiments that control for the attributes
+specified in the dictionary.'' (Wilson, 1988)}
+
+{
+Web UI to dictionary software: http://websites.psychology.uwa.edu.au/school/MRCDatabase/uwa\_mrc.htm}
+
+{
+Word ratings \ (9-point scales) (Yang, Ding, Dai, Peng, \& Zhang, 2014)}
+
+\begin{itemize}
+\item {
+valence}
+\item {
+arousal}
+\item {
+imagery}
+\item {
+familiarity}
+\item {
+relevance to sadness}
+\end{itemize}
+\subsubsection{Yang et al.}
+{
+{}``The 247 candidate words were rated by an independent sample of 53 college students (25 female, mean age: 19.8 [SD =
+1.00], BDI-II score: 9.04 [SD = 7.74], range: 0-42, including 8 dysphoric individuals)''}
+
+{
+{}``Each pair selected for use contained a sad member and a neutral member, in which the mean ratings of sad and neutral
+member differed in emotional valence and relevance to sadness (ps {\textless} 0.001)%
+%t{}-tests
+%Paul Sharpe
+%March 30, 2015 4:09 PM
+, but matched in terms of arousal, imagery, familiarity and the number of strokes comprising the words (ps
+{\textgreater} 0.05)%
+%More t{}-tests
+%Paul Sharpe
+%March 30, 2015 4:24 PM
+ (see Supplemental Table 1). In addition, the difference of the mean valence between the two members of any selected
+pair was at least 1.45 (Mean: 2.64 [SD = 0.56]).''}
+
+
 \subsection{Materials}
 
 Two sets of visual word stimuli will be used.  The 18 words chosen by
@@ -324,6 +440,23 @@ lowest difference were assigned to the “spare” block.  The remaining
 60 items were divided into 6 groups, and the experimental blocks were
 created by taking the next highest ranked pair from each group.
 
+{
+N-word stimulus pairs (see Appendix 1) were created using the Sussex Affective Word List (Citron et al., 2014). Starting
+with the 66 words rated most negative and and 66 rated most neutral, pairs were created by matching words of equivalent
+length (number of characters). \ Additional words were drawn from the pool to ensure that all pairs were of equal
+length. \ A small number of pairings which the researcher considered to be semantically related where adjusted by
+swapping neutral words in the pair. \ Independent samples t-tests showed significant differences for mean ratings of
+valence and arousal (\textit{ps} {\textless} .001). \ Pairs were matched for frequency, imageability, familiarity,
+number of characters and number of syllables (all \ \textit{ps} {\textgreater} .16).%
+%Add t{}-tests in appendix
+%Paul Sharpe
+%May 31, 2015 4:25 PM
+ \ In addition, the mean valence between members of any pair was at least 1.44 \ (Mean: 2.15 [\textit{SD} = 0.37]).
+\ Pairs were ranked by mean valence difference. \ \textcolor{black}{The 6 pairs with the lowest difference were
+assigned to the ``spare'' block. \ The remaining 60 items were divided into 6 groups, and the experimental blocks were
+created by taking the next highest ranked pair from each group.}}
+
+
 \subsubsection{I-word pairs}
 
 I-words were paired with neutrally valenced words using a database
@@ -352,6 +485,29 @@ were present in the N-words, the N-word pair was substituted with the
 pair from the spare N-words block with the largest valence difference.
 Descriptive statistics for each participant's I-word pairs are shown in
 Appendix 2.
+
+I-words were paired with neutrally valenced words using a database populated with frequency, imageability, familiarity,
+word length and number of syllables from letter from the MRC psycholinguistic database (Wilson, 1988), supplemented
+with 1030 word valence means from the Affective Norms for English Words (ANEW) dataset (Bradley \& Lang, 1999). \ Two
+different matching approaches were used, depending on whether the I-word was present in, or absent from, the MRC
+database. \ If present, a pair was selected from a pool of words with a frequency {\textpm}15\% that of the I-word, an
+ANEW valence mean (range 1-9) between 4.00 and 6.00 and an equal number of characters. \ After selecting a pool of
+matched words on the preceding criteria, a best match was found by inspection of candidate words based on number of
+syllables, imageability and familiarity. \ Some I-words, such as long words or high frequency words, could not be
+matched using these criteria due to lack of available data. \ In these cases, a word with the most neutral valence was
+chosen that also minimised differences in length
+
+\todo{And frequency?}
+
+ between the word pair. \ I-words absent from the MRC database were paired with words selected from a pool of 56 words
+having both an ANEW valence rating and a frequency of 1 (on the assumption that words missing from the database would
+most likely be of low frequency). \ A word was selected from this pool having an ANEW valence mean between 4.00 and
+6.00 and an equal number of characters to the I-word. \ If an I-word or its pair were present in the N-words, the
+N-word pair was substituted with the pair from the spare N-words block with the largest valence difference. \ %
+
+\todo{Where an I{}-word is already and N{}-word, should its pair be selected using same procedure as for other I{}-words or should the N{}-word pair be used?}
+
+Descriptive statistics for each participant's I-word pairs are shown in Appendix 2.
 
 \subsection{Attentional Bias Modification (ABM)}
 
@@ -769,11 +925,244 @@ What is an effective dose?
 \todo{appendices: 4000 words max (~250 words/page i.e. 16 pages)}
 % http://tex.stackexchange.com/questions/172496/adding-appendix-chapters-without-sections-in-table-of-contents
 %\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
 \section{N-word stimulus pair}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{2.102cm}m{14.511001cm}}
+\hline
+{ Pair number} &
+\centering\arraybslash{ N-word pairs (Negative-Neutral)\footnotemark{}%
+%Present these organised by their blocks (see 66\_nwords.csv)
+%Paul Sharpe
+%July 3, 2015 3:07 PM
+}\\\hline
+\centering{ 1} &
+\centering\arraybslash{ Conflict-Opposite}\\
+\centering{ 2} &
+\centering\arraybslash{ Misfortune-Collective}\\
+\centering{ 3} &
+\centering\arraybslash{ Cry-Boy}\\
+\centering{ 4} &
+\centering\arraybslash{ Murder-Tricky}\\
+\centering{ 5} &
+\centering\arraybslash{ Afraid-Leader}\\
+\centering{ 6} &
+\centering\arraybslash{ Betrayed-Matching}\\
+\centering{ 7} &
+\centering\arraybslash{ Defeated-Scissors}\\
+\centering{ 8} &
+\centering\arraybslash{ Devil-Weave}\\
+\centering{ 9} &
+\centering\arraybslash{ Victim-Desert}\\
+\centering{ 10} &
+\centering\arraybslash{ Lonely-Cellar}\\
+\centering{ 11} &
+\centering\arraybslash{ Argument-Remember}\\
+\centering{ 12} &
+\centering\arraybslash{ Agony-Abbey}\\
+\centering{ 13} &
+\centering\arraybslash{ Suspicious-Discussion}\\
+\centering{ 14} &
+\centering\arraybslash{ Disappointed-Concentrated}\\
+\centering{ 15} &
+\centering\arraybslash{ Worthless-Situation}\\
+\centering{ 16} &
+\centering\arraybslash{ Anxious-Release}\\
+\centering{ 17} &
+\centering\arraybslash{ Loss-Bold}\\
+\centering{ 18} &
+\centering\arraybslash{ Failure-Joining}\\
+\centering{ 19} &
+\centering\arraybslash{ Excluded-Ordinary}\\
+\centering{ 20} &
+\centering\arraybslash{ Terrified-Apathetic}\\
+\centering{ 21} &
+\centering\arraybslash{ Damage-Memory}\\
+\centering{ 22} &
+\centering\arraybslash{ Crime-Guest}\\
+\centering{ 23} &
+\centering\arraybslash{ Furious-Meeting}\\
+\centering{ 24} &
+\centering\arraybslash{ Divorce-Teacher}\\
+\centering{ 25} &
+\centering\arraybslash{ Punished-Follower}\\
+\centering{ 26} &
+\centering\arraybslash{ Brag-Tree}\\
+\centering{ 27} &
+\centering\arraybslash{ Weapon-Valley}\\
+\centering{ 28} &
+\centering\arraybslash{ Loser-Faith}\\
+\centering{ 29} &
+\centering\arraybslash{ Nazi-Tell}\\
+\centering{ 30} &
+\centering\arraybslash{ Depressed-Abundance}\\
+\centering{ 31} &
+\centering\arraybslash{ Bad-Job}\\
+\centering{ 32} &
+\centering\arraybslash{ Cowardly-Sympathy}\\
+\centering{ 33} &
+\centering\arraybslash{ Hateful-Defence}\\
+\centering{ 34} &
+\centering\arraybslash{ Attack-Return}\\
+\centering{ 35} &
+\centering\arraybslash{ Hurt-Book}\\
+\centering{ 36} &
+\centering\arraybslash{ Poverty-Morning}\\
+\centering{ 37} &
+\centering\arraybslash{ Abandon-Witness}\\
+\centering{ 38} &
+\centering\arraybslash{ Distressed-Astonished}\\
+\centering{ 39} &
+\centering\arraybslash{ Harm-Milk}\\
+\centering{ 40} &
+\centering\arraybslash{ Ashamed-Opinion}\\
+\centering{ 41} &
+\centering\arraybslash{ Angry-Build}\\
+\centering{ 42} &
+\centering\arraybslash{ Hell-Poet}\\
+\centering{ 43} &
+\centering\arraybslash{ Illness-Herring}\\
+\centering{ 44} &
+\centering\arraybslash{ Lie-Vow}\\
+\centering{ 45} &
+\centering\arraybslash{ Threat-Source}\\
+\centering{ 46} &
+\centering\arraybslash{ Accused-Curious}\\
+\centering{ 47} &
+\centering\arraybslash{ Prison-Member}\\
+\centering{ 48} &
+\centering\arraybslash{ Bomb-Lake}\\
+\centering{ 49} &
+\centering\arraybslash{ Frightened-Intonation}\\
+\centering{ 50} &
+\centering\arraybslash{ Destroy-Ceiling}\\
+\centering{ 51} &
+\centering\arraybslash{ Useless-Whisper}\\
+\centering{ 52} &
+\centering\arraybslash{ Nightmare-Housewife}\\
+\centering{ 53} &
+\centering\arraybslash{ Crisis-Forest}\\
+\centering{ 54} &
+\centering\arraybslash{ Evil-Rise}\\
+\centering{ 55} &
+\centering\arraybslash{ Stinking-Receiver}\\
+\centering{ 56} &
+\centering\arraybslash{ Enemy-Organ}\\
+\centering{ 57} &
+\centering\arraybslash{ Collapse-Activity}\\
+\centering{ 58} &
+\centering\arraybslash{ Stressed-Language}\\
+\centering{ 59} &
+\centering\arraybslash{ Sad-Lip}\\
+\centering{ 60} &
+\centering\arraybslash{ Corpse-Salary}\\
+\centering{\itshape 61} &
+\centering\arraybslash{\itshape Despair-Parting}\\
+\centering{\itshape 62} &
+\centering\arraybslash{\itshape Wound-Attic}\\
+\centering{\itshape 63} &
+\centering\arraybslash{\itshape Battle-Choose}\\
+\centering{\itshape 64} &
+\centering\arraybslash{\itshape Punch-Change}\\
+\centering{\itshape 65} &
+\centering\arraybslash{\itshape Chaos-Pupil}\\
+\centering{\itshape 66} &
+\centering\arraybslash{\itshape Burden-Accent}\\\hline
+~
+ &
+~
+\\
+\end{supertabular}
+\end{flushleft}
+\footnotetext{N-word pairs 61-66 in \textit{italic} make up the ``spare'' block which was drawn on when I-words were
+also N-words. }
+
 
 \section{I-word stimulus pair}
 \todo{don't include P concerns}
 \todo{redact people's names <Male|Female Name>}
+
+\todo{Nick: As you are going to the trouble of presenting this info and you have few participants, it probably makes sense to present the means and SDs for the group of I words AND \ the group of paired words separately for each participant. You could use some kind of subscript to indicate which database the relevant statistic was taken from. T{}-test doesn{}'t make much sense here so descriptives alone are fine.}
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.59400004cm}m{4.4300003cm}m{1.731cm}m{1.731cm}m{1.731cm}m{1.8899999cm}m{1.573cm}m{1.731cm}}
+\hline
+~
+ &
+~
+ &
+\multicolumn{6}{m{11.387cm}}{\centering{ Mean (\textit{SD}) for words paired with I-words}}\\
+{ P\#} &
+{ I-word pairs\footnotemark{}} &
+{ Frequency} &
+{ Letters} &
+{ Syllables} &
+{ Imageability%
+%May need to explain or cite MRC for where these ratings came from?
+%Paul Sharpe
+%May 31, 2015 3:26 PM
+} &
+{ Familiarity} &
+{ Valence}\\\hline
+{ 1} &
+{ \textit{Failure}{}-Teacher}
+
+{ \textit{Money}{}-Board}
+
+{ \textit{Happiness}{}-Sentiment}
+
+{ \textit{Ability}{}-Village}
+
+{ \textit{Life}{}-Part}
+
+{ \textit{Psychology}{}-Suspicious}
+
+{ \textit{Contribution}{}-Destruction}
+
+{ \textit{Learning}{}-Orchestra} &
+{ 102.88 (161.21)} &
+{ 7.75}
+
+{ (2.43)} &
+{ 2.25}
+
+{ (0.89)} &
+{ 532.88}
+
+{ (42.58)} &
+{ 493.13}
+
+{ (116.16)} &
+{ 5.06}
+
+{ (1.09)}\\\hline
+~
+ &
+~
+ &
+~
+ &
+~
+ &
+~
+ &
+~
+ &
+~
+ &
+~
+\\
+\end{supertabular}
+\end{flushleft}
+\footnotetext{Ideographic (I) words generated by participant for their unresolved problem are italicised.}
 
 \end{document}
 \todo{Ethics appendix (email without identifying details)}
