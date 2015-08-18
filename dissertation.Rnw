@@ -97,7 +97,7 @@ depression and anxiety.
 \subsection{What rumination is}
 
 Rumination is a thought process consistently linked to both the onset and
-maintenance of depression \parencite{watkins_habit-goal_2014}.  In their
+maintenance of depression \parencite{watkins_habitgoal_2014}.  In their
 review of the rumination literature, \textcite{smith_roadmap_2009}
 note that rumination as a construct is robust but that ``there
 is no unified definition [...] or standard way of measuring
@@ -122,32 +122,29 @@ and young people \parencite{oliver_all_2015} experience rumination.
 
 \subsection{Theories of rumination}
 
-Two accounts of rumination have been particularly influential. Response
-Styles Theory \parencite{nolen-hoeksema_responses_1991} defines rumination
-as a particular response to depressed mood where a person tends to
-focus on ``causes, consequences and symptoms of one's negative affect''
-\parencite[][p. 117]{smith_roadmap_2009}
+Two theories of rumination have been influential.
+
+\subsubsection{Response Styles Theory}
+
+Response Styles Theory (RST) \parencite{nolen-hoeksema_responses_1991} defines
+rumination as a particular response to depressed mood where a person
+tends to focus on ``causes, consequences and symptoms of one's negative
+affect'' \parencite[][p. 117]{smith_roadmap_2009}
  thereby prolonging low mood and depressive episodes.
 
-  Control Theory
- \parencite{martin_ruminative_1996} is broader in that it explains
+\subsubsection{Control Theory}
+ \parencite{martin_ruminative_1996} is broader than RST in that it explains
 rumination as a thought process which arises when progress towards a
 goal is perceived to be unsatisfactory, a state within which low mood
 frequently co-occurs.
 
-\textcite{watkins_habit-goal_2014} have sought to
+\textcite{watkins_habitgoal_2014} have sought to
 unify these theories by proposing that RNT may be a habit, initiated
 by goal discrepancies and subsequently cued by contingent contexts
 such as mood or physical location.  They suggest that such automatic,
 habitual responses come to depend on context more than the content
 of particular unresolved goals, especially when contingent responses
 involve passive focus on abstractly construed, negative content.
-\textcite{koster_understanding_2011} claim that cued repetitive
-thought per-se is a normal cognitive response to self-evaluation,
-but hypothesise that one driver of RNT, particularly brooding, is
-an impaired attentional ability to disengage from negative thoughts
-\textcite{koster_understanding_2011}.
-\todo{signpost lack of demonstrating attentional engagement}
 
 \subsection{Goals and current concerns}
 
@@ -159,9 +156,28 @@ the pursuit.}
 Explain how this relates to \textbf{motivation} and \textbf{cues}.
 \todo{cf. \textcite{martin_ruminative_1996}}
 
+\subsection{Koster's disengaement hypothesis}
+
+\textcite{koster_understanding_2011} claim that cued repetitive
+thought per-se is a normal cognitive response to self-evaluation,
+but hypothesise that one driver of RNT, particularly brooding, is
+an impaired attentional ability to disengage from negative thoughts
+\textcite{koster_understanding_2011}.
+\todo{signpost lack of demonstrating attentional engagement}
+
+\subsection{Cognitive bias modification}
+
+\subsubsection{CBM-I}
+
+There is CBM-I ...
+
+\subsubsection{CBM-A}
+
+... but this is about CBM-A
+
 \subsection{RAT}
 
-Although it is resistant to change \textcite{watkins_habit-goal_2014},
+Although it is resistant to change \textcite{watkins_habitgoal_2014},
 it seems possible that habitual rumination could be altered using
 counterconditioning techniques.  Counterconditioning is one of
 the basic mechanisms which cognitive bias modification (CBM)
@@ -175,7 +191,7 @@ is a common form of CBM training in which participants use a computer
 task to repeatedly attend towards or away from a particular stimulus such
 as negatively valenced words or pictures \parencite[see][for a recent
 review]{macleod_attentional_2015}.  This type of training resembles the
-counterconditioning mechanism which \textcite{watkins_habit-goal_2014}
+counterconditioning mechanism which \textcite{watkins_habitgoal_2014}
  suggest may reduce RNT.  A recent randomised controlled trial
 of ABM on individuals with depressive symptoms
 \parencite{yang_attention_2014} met the independent, but
@@ -190,7 +206,7 @@ study aims to extend these findings by testing whether ABM reduces
 RNT and elevates mood in non-depressed, high ruminators exposed to
 abstract, negative, ideographic cue words associated with an incomplete
 self-relevant goal.  This is a novel and more direct test of RNT within
-the habit-goal framework \textcite{watkins_habit-goal_2014}, as this
+the habit-goal framework \textcite{watkins_habitgoal_2014}, as this
 arrangement should create a context likely to trigger RNT within which
 the counterconditioning effects of ABM training can be measured.
 
@@ -202,7 +218,7 @@ baseline (phase A) measures.  Initial measures of trait rumination, trait
 anxiety and depression are also predicted to reduce after ABM training.
 Positive findings would add weight to the impaired disengagement
 hypothesis \textcite{koster_understanding_2011} and the habit-goal
-framework \textcite{watkins_habit-goal_2014} and would be proof of
+framework \textcite{watkins_habitgoal_2014} and would be proof of
 principle for a potential clinical application of ABM to change RNT.
 
 \section{Method}
@@ -224,7 +240,7 @@ across all participants.
 
 Didn't control for historical factors which you would
 get if all participants started at the same time
-\parencite{watson_non-concurrent_1981}.
+\parencite{watson_nonconcurrent_1981}.
 
 \subsection{Participants}
 
@@ -239,7 +255,7 @@ task which could improve how they relate to an unresolved problem.
 A maximum payment of {\pounds}20 was offered to participants who
 completed all 35 sessions.  Inclusion criteria were no concurrent
 psychotherapy or psychotropic medication and a PHQ-8 score {\textless}
-10 \parencite{kroenke_phq-8_2009}.  To ensure enough participants are
+10 \parencite{kroenke_phq8_2009}.  To ensure enough participants are
 recruited, a liberal inclusion criterion of Ruminative Responses Scale
 (RRS) ${\geq}$ 50 \parencite{treynor_rumination_2003} or Penn State Worry
 Questionnaire (PSWQ) ${\geq}$ was used. Initial recruitment responses were low,
@@ -253,7 +269,7 @@ uncertainty whether the procedure would affect brooding \todo{brooding
 is a subtype of past-focussed rumination?} worry or both. Measurements
 were taken pre and post-ABM training for trait rumination using the RRS
 \parencite{treynor_rumination_2003}, and trait anxiety using the GAD-7
-\parencite{spitzer_rl_brief_2006}. Scales related to the previous 4
+\parencite{spitzerrl_brief_2006}. Scales related to the previous 4
 weeks of participants' lives.  Depression was measured pre and post-ABM
 training using the PHQ-9, which has good diagnostic performance for
 screening for Major Depressive Disorder \parencite{manea_diagnostic_2015}
@@ -286,7 +302,7 @@ and relevance to sadness \parencite{yang_attention_2014}. The total
 of 185 word pairs allows for 1 practice and 36 experimental dot-probe
 test sessions even when the 18 G set words fully overlap with P set
 words.  Dot-probe and ABM tasks will be developed using OpenSesame
-\parencite{mathot_opensesame:_2011} and measurement instruments
+\parencite{mathot_opensesame_2011} and measurement instruments
 administered online using Lime Survey \parencite{limesurvey}.
 
 \subsubsection{N-word pairs}
@@ -465,6 +481,8 @@ current feelings towards their personal goal and overall experience of
 the training before being thanked for their participation, remunerated
 and debriefed.
 
+Ps did the final survey within 12 hours of the final session.
+
 \subsubsection[Stimulus allocation]{Stimulus allocation}
 
 \textcite{see_reduction_2009} point out that the strongest claims come
@@ -603,7 +621,7 @@ Exposures/G pairs &
 
 Because screening measures were be submitted remotely, depression was
 measured using the PHQ-8 which omits one item measuring suicidal ideation.
-Anyone scoring ${\geq}$ 10 on the PHQ-8 \parencite{kroenke_phq-8_2009}
+Anyone scoring ${\geq}$ 10 on the PHQ-8 \parencite{kroenke_phq8_2009}
  was signposted towards resources helpful for people who may be
 suffering from depression. The researcher completed risk training at the
 Mood Disorders Centre in January 2015 and the process for implementing
@@ -646,7 +664,7 @@ sizes (PND) comparing A and B phases for measures of attentional bias
 calculated for each case using nonparametric randomisation tests provided
 by the R package 'SCRT' \parencite{bulte_r_2008}.  A meta-analysis for
 each outcome across all participants was carried out using the R package
-'SCMA' \parencite{bulte_single-case_2013}.
+'SCMA' \parencite{bulte_singlecase_2013}.
 
 " additive method is shown to be more powerful than the multiplicative method, having
 a greater probability than the multiplicative method of yielding significant
@@ -737,9 +755,14 @@ Ecological validity vs. pre/post measures: daily measures took place in real env
 \section{Discussion}
 
 \todo{Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.}
-\todo{Limitation: how long lasting is treatment?}
 \todo{Would ABA revert?}
 \todo{What happens when problem resolves?}
+\todo{Could individual's current concern(s) indicate the type of bias modification which might be beneficial?}
+\todo{ABM vs. IBM?}
+Differences in stimulus type e.g. words vs. faces
+ABM training other than the dot-probe Sigurjonsdottir et. al 2015
+What is an effective dose?
+\todo{Limitation: longevity of effects treatment?}
 
 \printbibliography
 \appendix
