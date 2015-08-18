@@ -225,42 +225,38 @@ principle for a potential clinical application of ABM to change RNT.
 
 \subsection{Design}
 
-A case series design was chosen as this is a small-scale,
-proof-of-principle study with limited funds for recruiting participant
-numbers required for a group study. More specifically, this was
-an AB phase nonconcurrent multiple baseline replication design
-across participants\todo{sure?!!} \parencite{bulte_when_2012}
-\parencite{onghena_customization_2005}
-
-Comparisons were made between each participant's baseline (phase A)
-scores and their post-training (phase B) scores and a meta-analysis
-across all participants.
-
-\cite[][p.64]{onghena_customization_2005} describe the theory behind this use of meta-analysis
-
-Didn't control for historical factors which you would
-get if all participants started at the same time
-\parencite{watson_nonconcurrent_1981}.
+We chose a case series design, as this was a small-scale,
+proof-of-principle study with insufficient funds for recruiting sufficient
+participants required for an adequately powered group study.  Details of
+the design can be found in the \nameref{analyses} section.
 
 \subsection{Participants}
 
 \todo{recruitment flowchart, how many: responsed to advert, met screening criteria}
-
 \todo{numbers, age, gender}
 
-Participants affiliated with the University of Exeter were recruited using
-the research participation system in the school of Psychology, on-campus posters, email
-and Facebook, inviting them to evaluate a computer-based experimental
-task which could improve how they relate to an unresolved problem.
-A maximum payment of {\pounds}20 was offered to participants who
-completed all 35 sessions.  Inclusion criteria were no concurrent
-psychotherapy or psychotropic medication and a PHQ-8 score {\textless}
-10 \parencite{kroenke_phq8_2009}.  To ensure enough participants are
-recruited, a liberal inclusion criterion of Ruminative Responses Scale
-(RRS) ${\geq}$ 50 \parencite{treynor_rumination_2003} or Penn State Worry
-Questionnaire (PSWQ) ${\geq}$ was used. Initial recruitment responses were low,
-so ... are high then this threshold may
-be increased to recruit participants with the highest possible RRS scores.
+Participants were recruited at the University of Exeter, using the
+school of Psychology research participation system, on-campus posters,
+email and Facebook. People were invited to evaluate a computer-based
+task with the potential to reduce rumination towards an unresolved
+problem of their own choosing.  A maximum payment of {\pounds}20 was
+offered to participants who completed all 35 sessions. Participants had
+to be fluent in English, have normal, or corrected to normal vision,
+have access to a home computer running Windows, Macintosh (OS X 10.9
+or later), or Linux operating systems, and not concurrently undergoing
+psychotherapy or taking psychotropic medication.
+
+Screening criteria were a PHQ-8 \parencite{kroenke_phq8_2009} score
+{\textless} 11, to exclude people with mild depression or above,
+\todo{PHQ-8 >= 10 vs. PHQ-9 < 11 \parencite{wahl_standardization_2014}}
+and, to include high trait ruminatiors or trait worriers,
+ a Ruminative Responses Scale (RRS)
+\parencite{treynor_rumination_2003} score ${\geq}$ 53 or a Penn
+State Worry Questionnaire (PSWQ) \parencite{meyer_development_1990}
+score ${\geq}$ 55. The RRS and PSWQ cutpoints were calculated to place
+participants in the top 33\% of these measures, based on a sample of
+210 University of Exeter undergraduate students measured on RRS (${M}$
+= 46.9, ${SD}$ = 12.7) and PSWQ (${M}$ = 48.2, ${SD}$ = 14.9)\todo{cite?}.
 
 \subsection{Measures}
 
@@ -290,12 +286,6 @@ they more closely map on to depression (low PA, high NA) and anxiety
 (high NA).} Age and gender demographics were also recorded.
 
 \begin{itemize}
-\item{Screening}
-
-\begin{itemize}
-\item {
-PHQ-8 {\textless} 11, RRS {\textgreater}= 53, PSWQ {\textgreater}= 55}
-\end{itemize}
 \item {
 Baseline}
 
@@ -571,6 +561,16 @@ scores indicate avoidance \parencite{bradley_attentional_1997}.
 
 \subsection{Procedure}
 
+People meeting the screening criteria where invited to participate, and those who agreed
+met the researcher at the University of Exeter to complete the initial session.
+
+Psychology department  and take about 45
+minutes to complete.  During this session you will be asked to generate
+some words associated with an unresolved problem or concern that you
+currently have. You will then complete some questionnaires about your
+thoughts and mood, and a computer task which involves reading pairs of
+words and then detecting the location of dots on the screen.
+
 An introductory session took place at the University of Exeter
 after the participant gave informed, written consent to take
 part in the study. A self-relevant, unresolved goal will be
@@ -792,9 +792,24 @@ identifiable from their electronic or written data. The former were
 stored on a secure digital filing system and the latter in a locked
 filing cabinet.
 
-\section{Planned Analyses}
+\section{\label{analyses}Planned Analyses}
 
 \todo{past tense}
+
+ More specifically, this was
+an AB phase nonconcurrent multiple baseline replication design
+across participants\todo{sure?!!} \parencite{bulte_when_2012}
+\parencite{onghena_customization_2005}
+
+Comparisons were made between each participant's baseline (phase A)
+scores and their post-training (phase B) scores and a meta-analysis
+across all participants.
+
+\cite[][p.64]{onghena_customization_2005} describe the theory behind this use of meta-analysis
+
+Didn't control for historical factors which you would
+get if all participants started at the same time
+\parencite{watson_nonconcurrent_1981}.
 
 Randomisation procedures were planned to allow nonparametric inferential
 statistics to be calculated for each participant \parencite{bulte_r_2008}.
