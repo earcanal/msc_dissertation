@@ -413,8 +413,6 @@ member differed in emotional valence and relevance to sadness (ps {\textless} 0.
  (see Supplemental Table 1). In addition, the difference of the mean valence between the two members of any selected
 pair was at least 1.45 (Mean: 2.64 [SD = 0.56]).''}
 
-
-
 \subsubsection{N-word pairs}
 
 N-word stimulus pairs (see Appendix 1) were created using the Sussex
@@ -425,31 +423,16 @@ Additional words were drawn from the pool to ensure that all pairs were of
 equal length.  A small number of pairings which the researcher considered
 to be semantically related where adjusted by swapping neutral words in
 the pair.  Independent samples t-tests showed significant differences for
-mean ratings of valence and arousal (ps < .001).  Pairs were matched
+mean ratings of valence and arousal (${P}$s {\textless} .001).  Pairs were matched
 for frequency, imageability, familiarity, number of characters and
-number of syllables (all  ps > .16).  In addition, the mean valence
-between members of any pair was at least 1.44  (Mean: 2.15 [SD = 0.37]).
+number of syllables (all ${P}$s {\textgreater} .16).  In addition, the mean valence
+between members of any pair was at least 1.44 (Mean: 2.15 [SD = 0.37]).
 Pairs were ranked by mean valence difference.  The 6 pairs with the
-lowest difference were assigned to the “spare” block.  The remaining
+lowest difference were assigned to the ``spare'' block.  The remaining
 60 items were divided into 6 groups, and the experimental blocks were
 created by taking the next highest ranked pair from each group.
 
-{
-N-word stimulus pairs (see Appendix 1) were created using the Sussex Affective Word List (Citron et al., 2014). Starting
-with the 66 words rated most negative and and 66 rated most neutral, pairs were created by matching words of equivalent
-length (number of characters). \ Additional words were drawn from the pool to ensure that all pairs were of equal
-length. \ A small number of pairings which the researcher considered to be semantically related where adjusted by
-swapping neutral words in the pair. \ Independent samples t-tests showed significant differences for mean ratings of
-valence and arousal (\textit{ps} {\textless} .001). \ Pairs were matched for frequency, imageability, familiarity,
-number of characters and number of syllables (all \ \textit{ps} {\textgreater} .16).%
-%Add t{}-tests in appendix
-%Paul Sharpe
-%May 31, 2015 4:25 PM
- \ In addition, the mean valence between members of any pair was at least 1.44 \ (Mean: 2.15 [\textit{SD} = 0.37]).
-\ Pairs were ranked by mean valence difference. \ \textcolor{black}{The 6 pairs with the lowest difference were
-assigned to the ``spare'' block. \ The remaining 60 items were divided into 6 groups, and the experimental blocks were
-created by taking the next highest ranked pair from each group.}}
-
+\todo{Add t{}-tests to appendix}
 
 \subsubsection{I-word pairs}
 
@@ -459,45 +442,26 @@ and number of syllables from letter from the MRC psycholinguistic
 database \parencite{wilson_mrc_1988}, supplemented with 1030 word
 valence means from the Affective Norms for English Words (ANEW) dataset
 \parencite{bradley_affective_1999}.  Two different matching approaches
-were used, depending on whether the I-word was present in, or absent
-from, the MRC database.  If present, a pair was selected from a pool of
-words with a frequency ±15\% that of the I-word, an ANEW valence mean
+were used, depending on whether the I-word was present in, or absent from,
+the MRC database.  If present, a pair was selected from a pool of words
+with a frequency {\textpm}15\% that of the I-word, an ANEW valence mean
 (range 1-9) between 4.00 and 6.00 and an equal number of characters.
 After selecting a pool of matched words on the preceding criteria, a
 best match was found by inspection of candidate words based on number
-of syllables, imageability and familiarity.  Some I-words, such as long
-words or high frequency words, could not be matched using these criteria
-due to lack of available data.  In these cases, a word with the most
-neutral valence was chosen that also minimised differences in length
-between the word pair.  I-words absent from the MRC database were paired
-with words selected from a pool of 56 words having both an ANEW valence
-rating and a frequency of 1 (on the assumption that words missing from
-the database would most likely be of low frequency).  A word was selected
-from this pool having an ANEW valence mean between 4.00 and 6.00 and
-an equal number of characters to the I-word.  If an I-word or its pair
-were present in the N-words, the N-word pair was substituted with the
-pair from the spare N-words block with the largest valence difference.
-Descriptive statistics for each participant's I-word pairs are shown in
-Appendix 2.
-
-I-words were paired with neutrally valenced words using a database populated with frequency, imageability, familiarity,
-word length and number of syllables from letter from the MRC psycholinguistic database (Wilson, 1988), supplemented
-with 1030 word valence means from the Affective Norms for English Words (ANEW) dataset (Bradley \& Lang, 1999). \ Two
-different matching approaches were used, depending on whether the I-word was present in, or absent from, the MRC
-database. \ If present, a pair was selected from a pool of words with a frequency {\textpm}15\% that of the I-word, an
-ANEW valence mean (range 1-9) between 4.00 and 6.00 and an equal number of characters. \ After selecting a pool of
-matched words on the preceding criteria, a best match was found by inspection of candidate words based on number of
-syllables, imageability and familiarity. \ Some I-words, such as long words or high frequency words, could not be
-matched using these criteria due to lack of available data. \ In these cases, a word with the most neutral valence was
-chosen that also minimised differences in length
-
-\todo{And frequency?}
-
- between the word pair. \ I-words absent from the MRC database were paired with words selected from a pool of 56 words
-having both an ANEW valence rating and a frequency of 1 (on the assumption that words missing from the database would
-most likely be of low frequency). \ A word was selected from this pool having an ANEW valence mean between 4.00 and
-6.00 and an equal number of characters to the I-word. \ If an I-word or its pair were present in the N-words, the
-N-word pair was substituted with the pair from the spare N-words block with the largest valence difference. \ %
+of syllables, imageability and familiarity.  Some I-words, such as
+long words or high frequency words, could not be matched using these
+criteria due to lack of available data.  In these cases, a word with
+the most neutral valence was chosen that also minimised differences
+in length\todo{And frequency?} between the word pair.  I-words absent
+from the MRC database were paired with words selected from a pool of 56
+words having both an ANEW valence rating and a frequency of 1 (on the
+assumption that words missing from the database would most likely be
+of low frequency).  A word was selected from this pool having an ANEW
+valence mean between 4.00 and 6.00 and an equal number of characters
+to the I-word.  If an I-word or its pair were present in the N-words,
+the N-word pair was substituted with the pair from the spare N-words
+block with the largest valence difference.  Descriptive statistics for
+each participant's I-word pairs are shown in Appendix 2.
 
 \todo{Where an I{}-word is already and N{}-word, should its pair be selected using same procedure as for other I{}-words or should the N{}-word pair be used?}
 
