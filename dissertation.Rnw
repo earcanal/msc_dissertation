@@ -869,6 +869,7 @@ the same as for session 7.
 <<external, cache=FALSE, echo=FALSE>>=
 knitr::read_chunk('../opensesame/dotprobe/prepost.R')
 knitr::read_chunk('../opensesame/dotprobe/analyse.R')
+knitr::read_chunk('../opensesame/dotprobe/nwords.R')
 @
 
 <<prepost, results='asis', echo=FALSE, error=TRUE>>=
@@ -968,6 +969,11 @@ What is an effective dose?
   \end{tabular}
 }
 \end{sidewaystable}
+
+\section{N-word t-tests}
+
+<<nwords, results='asis', echo=FALSE, error=TRUE>>=
+@
 
 \section{I-word stimulus pair}
 \todo{don't include P concerns}
