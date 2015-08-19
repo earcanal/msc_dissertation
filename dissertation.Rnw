@@ -25,6 +25,7 @@
     pdfpagemode=UseOutlines,    % this is the option you were lookin for
     pdfpagelayout=TwoPageRight
 }
+\usepackage{cleveref}
 \usepackage[textwidth=2cm,color=green,textsize=tiny]{todonotes}
 \reversemarginpar
 \usepackage{graphicx}
@@ -416,7 +417,7 @@ pair was at least 1.45 (Mean: 2.64 [SD = 0.56]).''}
 
 \subsubsection{Negative-neutral word pairs}
 
-Negative-neutral word stimulus pairs (N-words) were created using the
+Negative-neutral word stimulus pairs (N-word pairs) were created using the
 Sussex Affective Word List (SAWL) \parencite{citron_how_2014}. Starting
 with the 66 words rated most negative and and 66 rated most neutral,
 word pairs were created by matching words of equivalent character length,
@@ -440,11 +441,11 @@ The remaining
 60 items were divided into 10 groups, and the experimental blocks were
 created by taking the next highest ranked pair from each group.
 
-(see Appendix 1)
+The complete N-word list can be seen in \cref{sec:nwordlist}
 
-\subsubsection{I-word pairs}
+\subsubsection{Ideographic-neutral word pairs}
 
-I-words were paired with neutrally valenced words using a database
+Ideographic words were paired with neutrally valenced words using a database
 populated with frequency, imageability, familiarity, word length
 and number of syllables from letter from the MRC psycholinguistic
 database \parencite{wilson_mrc_1988}, supplemented with 1030 word
@@ -948,11 +949,14 @@ What is an effective dose?
 
 \printbibliography
 \appendix
+\label{appendix}
+
 \todo{appendices: 4000 words max (~250 words/page i.e. 16 pages)}
 % http://tex.stackexchange.com/questions/172496/adding-appendix-chapters-without-sections-in-table-of-contents
 %\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
 \section{N-word stimulus pairs}
+\label{sec:nwordlist}
 
 \begin{sidewaystable}
 {\tiny
