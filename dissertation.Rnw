@@ -59,6 +59,7 @@ which a degree has previously been conferred upon me.}
 }
 \usepackage{rotating}
 \usepackage{mathtools}
+\usepackage{csvsimple}
 \begin{document}
 
 \todo{ABSTRACT body: 8000 words max excluding footnotes, tables, figures, references}
@@ -413,26 +414,33 @@ member differed in emotional valence and relevance to sadness (ps {\textless} 0.
  (see Supplemental Table 1). In addition, the difference of the mean valence between the two members of any selected
 pair was at least 1.45 (Mean: 2.64 [SD = 0.56]).''}
 
-\subsubsection{N-word pairs}
+\subsubsection{Negative-neutral word pairs}
 
-N-word stimulus pairs (see Appendix 1) were created using the Sussex
-Affective Word List \parencite{citron_how_2014}. Starting with the 66
-words rated most negative and and 66 rated most neutral, pairs were
-created by matching words of equivalent length (number of characters).
-Additional words were drawn from the pool to ensure that all pairs were of
-equal length.  A small number of pairings which the researcher considered
-to be semantically related where adjusted by swapping neutral words in
-the pair.  Independent samples t-tests showed significant differences for
+Negative-neutral word stimulus pairs (N-words) were created using the
+Sussex Affective Word List (SAWL) \parencite{citron_how_2014}. Starting
+with the 66 words rated most negative and and 66 rated most neutral,
+word pairs were created by matching words of equivalent character length,
+drawing additional words from the SAWL as necessary to ensure that all
+pairs were matched. A small number of pairs which appeared to be
+semantically related were adjusted by replacing the neutral word in
+the pair with an alternative from the SAWL.
+
+  Independent samples t-tests showed significant differences for
 mean ratings of valence and arousal (${P}$s {\textless} .001).  Pairs were matched
 for frequency, imageability, familiarity, number of characters and
 number of syllables (all ${P}$s {\textgreater} .16).  In addition, the mean valence
 between members of any pair was at least 1.44 (Mean: 2.15 [SD = 0.37]).
-Pairs were ranked by mean valence difference.  The 6 pairs with the
-lowest difference were assigned to the ``spare'' block.  The remaining
-60 items were divided into 6 groups, and the experimental blocks were
-created by taking the next highest ranked pair from each group.
 
 \todo{Add t{}-tests to appendix}
+
+Pairs were then ranked by descending mean valence difference.  The 6 pairs with the
+lowest difference were assigned to the ``spare'' block.
+
+The remaining
+60 items were divided into 10 groups, and the experimental blocks were
+created by taking the next highest ranked pair from each group.
+
+(see Appendix 1)
 
 \subsubsection{I-word pairs}
 
@@ -944,163 +952,18 @@ What is an effective dose?
 % http://tex.stackexchange.com/questions/172496/adding-appendix-chapters-without-sections-in-table-of-contents
 %\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
-\section{N-word stimulus pair}
+\section{N-word stimulus pairs}
 
-\begin{flushleft}
-\tablefirsthead{}
-\tablehead{}
-\tabletail{}
-\tablelasttail{}
-{\footnotesize
-\begin{supertabular}{m{3cm}m{14.511001cm}}
-\hline
-{ Pair number} &
-\centering\arraybslash{ N-word pairs (Negative-Neutral)\footnotemark{}%
-%Present these organised by their blocks (see 66\_nwords.csv)
-%Paul Sharpe
-%July 3, 2015 3:07 PM
-}\\\hline
-\centering{ 1} &
-\centering\arraybslash{ Conflict-Opposite}\\
-\centering{ 2} &
-\centering\arraybslash{ Misfortune-Collective}\\
-\centering{ 3} &
-\centering\arraybslash{ Cry-Boy}\\
-\centering{ 4} &
-\centering\arraybslash{ Murder-Tricky}\\
-\centering{ 5} &
-\centering\arraybslash{ Afraid-Leader}\\
-\centering{ 6} &
-\centering\arraybslash{ Betrayed-Matching}\\
-\centering{ 7} &
-\centering\arraybslash{ Defeated-Scissors}\\
-\centering{ 8} &
-\centering\arraybslash{ Devil-Weave}\\
-\centering{ 9} &
-\centering\arraybslash{ Victim-Desert}\\
-\centering{ 10} &
-\centering\arraybslash{ Lonely-Cellar}\\
-\centering{ 11} &
-\centering\arraybslash{ Argument-Remember}\\
-\centering{ 12} &
-\centering\arraybslash{ Agony-Abbey}\\
-\centering{ 13} &
-\centering\arraybslash{ Suspicious-Discussion}\\
-\centering{ 14} &
-\centering\arraybslash{ Disappointed-Concentrated}\\
-\centering{ 15} &
-\centering\arraybslash{ Worthless-Situation}\\
-\centering{ 16} &
-\centering\arraybslash{ Anxious-Release}\\
-\centering{ 17} &
-\centering\arraybslash{ Loss-Bold}\\
-\centering{ 18} &
-\centering\arraybslash{ Failure-Joining}\\
-\centering{ 19} &
-\centering\arraybslash{ Excluded-Ordinary}\\
-\centering{ 20} &
-\centering\arraybslash{ Terrified-Apathetic}\\
-\centering{ 21} &
-\centering\arraybslash{ Damage-Memory}\\
-\centering{ 22} &
-\centering\arraybslash{ Crime-Guest}\\
-\centering{ 23} &
-\centering\arraybslash{ Furious-Meeting}\\
-\centering{ 24} &
-\centering\arraybslash{ Divorce-Teacher}\\
-\centering{ 25} &
-\centering\arraybslash{ Punished-Follower}\\
-\centering{ 26} &
-\centering\arraybslash{ Brag-Tree}\\
-\centering{ 27} &
-\centering\arraybslash{ Weapon-Valley}\\
-\centering{ 28} &
-\centering\arraybslash{ Loser-Faith}\\
-\centering{ 29} &
-\centering\arraybslash{ Nazi-Tell}\\
-\centering{ 30} &
-\centering\arraybslash{ Depressed-Abundance}\\
-\centering{ 31} &
-\centering\arraybslash{ Bad-Job}\\
-\centering{ 32} &
-\centering\arraybslash{ Cowardly-Sympathy}\\
-\centering{ 33} &
-\centering\arraybslash{ Hateful-Defence}\\
-\centering{ 34} &
-\centering\arraybslash{ Attack-Return}\\
-\centering{ 35} &
-\centering\arraybslash{ Hurt-Book}\\
-\centering{ 36} &
-\centering\arraybslash{ Poverty-Morning}\\
-\centering{ 37} &
-\centering\arraybslash{ Abandon-Witness}\\
-\centering{ 38} &
-\centering\arraybslash{ Distressed-Astonished}\\
-\centering{ 39} &
-\centering\arraybslash{ Harm-Milk}\\
-\centering{ 40} &
-\centering\arraybslash{ Ashamed-Opinion}\\
-\centering{ 41} &
-\centering\arraybslash{ Angry-Build}\\
-\centering{ 42} &
-\centering\arraybslash{ Hell-Poet}\\
-\centering{ 43} &
-\centering\arraybslash{ Illness-Herring}\\
-\centering{ 44} &
-\centering\arraybslash{ Lie-Vow}\\
-\centering{ 45} &
-\centering\arraybslash{ Threat-Source}\\
-\centering{ 46} &
-\centering\arraybslash{ Accused-Curious}\\
-\centering{ 47} &
-\centering\arraybslash{ Prison-Member}\\
-\centering{ 48} &
-\centering\arraybslash{ Bomb-Lake}\\
-\centering{ 49} &
-\centering\arraybslash{ Frightened-Intonation}\\
-\centering{ 50} &
-\centering\arraybslash{ Destroy-Ceiling}\\
-\centering{ 51} &
-\centering\arraybslash{ Useless-Whisper}\\
-\centering{ 52} &
-\centering\arraybslash{ Nightmare-Housewife}\\
-\centering{ 53} &
-\centering\arraybslash{ Crisis-Forest}\\
-\centering{ 54} &
-\centering\arraybslash{ Evil-Rise}\\
-\centering{ 55} &
-\centering\arraybslash{ Stinking-Receiver}\\
-\centering{ 56} &
-\centering\arraybslash{ Enemy-Organ}\\
-\centering{ 57} &
-\centering\arraybslash{ Collapse-Activity}\\
-\centering{ 58} &
-\centering\arraybslash{ Stressed-Language}\\
-\centering{ 59} &
-\centering\arraybslash{ Sad-Lip}\\
-\centering{ 60} &
-\centering\arraybslash{ Corpse-Salary}\\
-\centering{\itshape 61} &
-\centering\arraybslash{\itshape Despair-Parting}\\
-\centering{\itshape 62} &
-\centering\arraybslash{\itshape Wound-Attic}\\
-\centering{\itshape 63} &
-\centering\arraybslash{\itshape Battle-Choose}\\
-\centering{\itshape 64} &
-\centering\arraybslash{\itshape Punch-Change}\\
-\centering{\itshape 65} &
-\centering\arraybslash{\itshape Chaos-Pupil}\\
-\centering{\itshape 66} &
-\centering\arraybslash{\itshape Burden-Accent}\\\hline
-~
- &
-~
-\\
-\end{supertabular}
+\begin{sidewaystable}
+{\tiny
+  \begin{tabular}{cllllll}\hline%
+    \textbf{Block} & \textbf{Pair 1} & \textbf{Pair 2} & \textbf {Pair 3} & \textbf{Pair 4} & \textbf {Pair 5} & \textbf {Pair 6}\\\hline 
+    \csvreader[late after line=\\]{../experiment/66_nwords.csv}{Block=\block}%
+      {\block & \csvcolii-\csvcoliii & \csvcoliv-\csvcolv & \csvcolvi-\csvcolvii & \csvcolviii-\csvcolix & \csvcolx-\csvcolxi & \csvcolxii-\csvcolxiii}%
+    \hline
+  \end{tabular}
 }
-\end{flushleft}
-\footnotetext{N-word pairs 61-66 in \textit{italic} make up the ``spare'' block which was drawn on when I-words were
-also N-words. }
+\end{sidewaystable}
 
 \section{I-word stimulus pair}
 \todo{don't include P concerns}
