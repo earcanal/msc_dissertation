@@ -288,19 +288,62 @@ partner of an undergraduate student.  The mean age of participants was
 \todo{recruitment flowchart, how many: responsed to advert, met screening criteria}
 \todo{Calculate M and SD for screening measures.}
 
-\subsection{Measures}
+\subsection{Pre/Post Measures}
 
-\subsubsection{Primary Measures}
+Questions on the RRS and GAD-7 were asked in relation to the previous
+4 weeks of participants' lives, to correspond approximately with the
+month before the study (pre) and time within the study (post).\todo{see
+appendix}
 
-Participants were measured on primary outcomes approximately every
-24 hours (except where sessions were postponed). Attentional bias was
-measured using a computer-based dot-probe task with word-pair stimuli
-\parencite{macleod_attentional_1986}.  State rumination was measured using
+\subsubsection{Ruminative Responses Scale}
+
+Trait rumination was measured using the Ruminative Responses Scale (RRS),
+which is reliable and valid, having an expected Cronbach's $\alpha$
+of .85 \parencite{treynor_rumination_2003}.
+
+\subsubsection{Generalised Anxiety Disorder}
+
+Trait anxiety was measured using the 7 item Generalised Anxiety Disorder
+(GAD-7) scale, an efficient, valid (Cronbach's $\alpha$ > .85) tool
+for assessing GAD severity in clinical research, with good test-retest
+reliability \parencite{spitzerrl_brief_2006}.
+
+\subsubsection{Patient Health Questionnaire}
+
+Depression was measured using the PHQ-9, a brief, reliable
+(Cronbach's $\alpha$ > .85) and valid measure of depression severity
+\parencite{kroenke_phq9_2001}.
+
+\subsubsection{Penn State Worry Questionnaire}
+
+Trait worry was measured using the Penn State Worry Questionnaire (PSWQ),
+an an internally consistent measure with good test-retest reliability
+\parencite{meyer_development_1990}.
+
+
+\subsection{Daily Measures}
+
+Participants were measured approximately every 24 hours (except where
+sessions were postponed). Questions on the GRS and PANAS-SF were asked
+in relation to the last 24 hours.
+
+\subsubsection{Attentional bias}
+
+Attentional bias was measured using a computer-based dot-probe task with
+word-pair stimuli \parencite{macleod_attentional_1986}.
+
+\subsubsection{Goal Rumination Scale}
+
+State rumination was measured using
 the Goal Rumination Scale (GRS) \parencite{schultheiss_role_2008}, the
 best scale we were aware of that would measure state rumination towards
 a current concern, in line with our hypotheses\todo{H1?}. Reliability of
 the GRS is good (Cronbach's $\alpha$ = .87), based on a single sample
-of $N$ = 101. Positive and negative affect were measured using the
+of $N$ = 101.
+
+\subsubsection{Positive and Negative Affect Schedule}
+
+Positive and negative affect were measured using the
 10 item, short form Positive and Negative Affect Schedule (PANAS-SF)
 \parencite{mackinnon_short_1999}, which has Cronbach's $\alpha$ of .78
 for positive affect (PA) and .87 for negative affect (NA).  Because we
@@ -311,33 +354,13 @@ correlate negatively with PA and positively with NA.  Items 'anxious'
 and 'worried' were added as a state measure of worry \todo{I need to have
 committed to anxiety or worry by this point!} as they were expected to
 correlate positively with NA. \todo{need a reference to show lack of
-items at low end of PA and that low PA/high NA == depression.} Questions
-on the GRS and PANAS-SF were asked in relation to the last 24 hours.
-
-\subsubsection{Secondary Measures}
-
-Secondary measures were taken before the first and after the
-last dot-probe/ABM sessions.  Trait rumination was measured
-using the Ruminative Responses Scale (RRS), which is reliable
-and valid, having an expected Cronbach's $\alpha$ of .85
-\parencite{treynor_rumination_2003}. Trait anxiety was measured
-using the 7 item Generalised Anxiety Disorder (GAD-7) scale, an
-efficient, valid (Cronbach's $\alpha$ > .85) tool for assessing GAD
-severity in clinical research, with good test-retest reliability
-\parencite{spitzerrl_brief_2006}. Depression was measured using
-the PHQ-9, a brief, reliable (Cronbach's $\alpha$ > .85) and valid
-measure of depression severity \parencite{kroenke_phq9_2001}. Trait
-worry was measured using the Penn State Worry Questionnaire (PSWQ),
-an an internally consistent measure with good test-retest reliability
-\parencite{meyer_development_1990}.  Questions on the RRS and GAD-7
-were asked in relation to the previous 4 weeks of participants' lives,
-to correspond approximately with their time within the study\todo{see
-appendix}.
+items at low end of PA and that low PA/high NA == depression.}
 
 \subsection{Materials}
 
 Two sets of visual word stimuli were used; Negative-Neutral (N-word)
 pairs, and Ideographic-Neutral (I-word) pairs.
+
 \subsubsection{N-word pairs}
 
 \todo{SAWL - How are affective word ratings related to lexicosemantic properties? (Citron, Weekes, \& Ferstl, 2014)}
