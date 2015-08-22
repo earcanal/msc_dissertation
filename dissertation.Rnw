@@ -827,6 +827,8 @@ the same as for session 7.
 
 \subsection{Pre/Post Measures}
 
+\todo{calculate $\alpha$ for all measures: pre and post and daily (range)}
+
 <<external, cache=FALSE, echo=FALSE>>=
 knitr::read_chunk('../opensesame/dotprobe/prepost.R')
 knitr::read_chunk('../opensesame/dotprobe/analyse.R')
@@ -884,6 +886,32 @@ Ecological validity vs. pre/post measures: daily measures took place in real env
 
 \section{Discussion}
 
+\subsection{Does CBM-A work?}
+
+\enquote{When anxiety and depression were examined separately,
+CBM significantly modified anxiety but not depression. There was
+a nonsignificant trend toward a larger effect for studies including
+multiple training sessions.} \parencite{hallion_metaanalysis_2011}
+
+\enquote{The therapeutic benefit of ABM is rather small for anxiety, while the amount of data
+for other symptom categories is limited.} \parencite{mogoase_clinical_2014}
+
+\subsection{vs. CBM-I}
+
+\enquote{CBM had a medium effect on biases (g = 0.49) that was stronger
+for interpretation (g = 0.81) than for attention (g = 0.29) biases} \parencite{hallion_metaanalysis_2011}
+
+\subsection{moderators}
+
+\enquote{The effects of ABM on attention bias were moderated by stimulus
+type (words vs pictures) and sample characteristics (healthy vs. high
+symptomatology).} \parencite{beard_efficacy_2012}
+
+\enquote{Moderation analysis of the between-groups effect revealed
+a significant effect for ABMT delivered in the clinic (d = 0.34, P =
+0.01, CI = 0.07–0.62), and a nonsignificant effect for ABMT delivered
+at home} \parencite{linetzky_quantitative_2015}
+
 \subsection{rumination}
 
 \enquote{Thus, people with high implicit motivation were less prone to ruminate
@@ -899,8 +927,6 @@ participants.} \parencite{schultheiss_role_2008}
 \todo{Would ABA revert?}
 \todo{What happens when problem resolves?}
 \todo{Could individual's current concern(s) indicate the type of bias modification which might be beneficial?}
-\todo{ABM vs. IBM?}
-Differences in stimulus type e.g. words vs. faces
 ABM training other than the dot-probe Sigurjonsdottir et. al 2015
 What is an effective dose?
 
@@ -920,7 +946,7 @@ What is an effective dose?
 \section{N-word stimulus pairs}
 \label{sec:nwordlist}
 
-\begin{sidewaystable}
+\begin{sidewaystable}[!htbp]
 {\tiny
   \begin{tabular}{cllllll}\hline%
     \textbf{Block} & \textbf{Pair 1} & \textbf{Pair 2} & \textbf {Pair 3} & \textbf{Pair 4} & \textbf {Pair 5} & \textbf {Pair 6}\\\hline 
