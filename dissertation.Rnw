@@ -880,7 +880,7 @@ This study was under-powered ... *surprise!* n/s because of small sample.  Also,
 <<inferentials, results='asis', echo=FALSE, error=TRUE>>=
 @
 
-\todo{Describe any patterns in each table, see \parencite{watkins_rumination-focused_2007} including MA}
+\todo{Describe any patterns in each table, see \parencite{watkins_ruminationfocused_2007} including MA}
 
 Ecological validity vs. pre/post measures: daily measures took place in real environment.
 
