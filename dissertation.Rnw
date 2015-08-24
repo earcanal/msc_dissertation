@@ -4,6 +4,23 @@
 \usepackage[english, british]{babel}
 \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
 \DeclareLanguageMapping{british}{british-apa}
+% http://tex.stackexchange.com/questions/162212/initials-in-the-bibliography-firstinits-uniquename-not-working-correctly-in-bib
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+       \step[fieldsource=sortname]
+       \step[fieldset=namea, origfieldval, final]
+    }
+  }
+}
+\DeclareLabelname{
+  \field{namea}
+  \field{shortauthor}
+  \field{author}
+  \field{shorteditor}
+  \field{editor}
+  \field{translator}
+}
 \addbibresource{bibliography.bib}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -94,8 +111,9 @@ effects of ADM and there are high costs associated with delivering
 psychological therapies.  Consequently, waiting times in Britain
 currently average six to nine months, and can be as long as two years
 \parencite{haliwell_fundamental_2007}.  There is a need for cheap but
-effective interventions which target the cognitive mechanisms underlying
-depression and anxiety.
+effective interventions which target the cognitive mechanisms\todo{need
+to introduce things before referring to them} underlying depression
+and anxiety.
 
 \subsection{What rumination is}
 
@@ -241,9 +259,9 @@ principle for a potential clinical application of ABM to change RNT.
 \subsection{Design}
 
 We chose a case series design, as this was a small-scale,
-proof-of-principle study with insufficient funds for recruiting sufficient
-participants required for an adequately powered group study.  Details of
-the design can be found in the \nameref{analyses} section.
+proof-of-principle study with \todo{long-term training and ideographic
+was novel, therefore suitable starting place was a case series}. Details
+of the design can be found in the \nameref{analyses} section.
 
 \subsection{Participants}
 
@@ -262,14 +280,14 @@ medication.
 Screening criteria were a PHQ-8 \parencite{kroenke_phq8_2009} score
 {\textless} 11, to exclude people with mild depression or above,
 \todo{PHQ-8 >= 10 vs. PHQ-9 < 11 \parencite{wahl_standardization_2014}}
-and, to include high trait ruminatiors or trait worriers,
+and, to include high trait ruminators or trait worriers,
  a Ruminative Responses Scale (RRS)
-\parencite{treynor_rumination_2003} score ${\geq}$ 53 or a Penn
-State Worry Questionnaire (PSWQ) \parencite{meyer_development_1990}
-score ${\geq}$ 55. The RRS and PSWQ cut points were calculated to place
-participants in the top 33\% of these measures, based on a sample of 210
-University of Exeter undergraduate students measured on RRS (${M}$ = 46.9,
-${SD}$ = 12.7) and PSWQ (${M}$ = 48.2, ${SD}$ = 14.9)\todo{cite?}.
+\parencite{treynor_rumination_2003} score ${\geq}$ 53 or a Penn State
+Worry Questionnaire (PSWQ) \parencite{meyer_development_1990} score
+${\geq}$ 55. The RRS and PSWQ cut points were calculated to place
+participants in the top 33\% of these measures, based on a sample of
+210 University of Exeter undergraduate students measured on RRS (${M}$
+= 46.9, ${SD}$ = 12.7) and PSWQ (${M}$ = 48.2, ${SD}$ = 14.9)\todo{cite?}.
 
 Figure \ref{flowchart} summarises the recruitment procedure.  Of the
 15 people (12 female), who met the screening criteria and offered to
@@ -288,25 +306,72 @@ partner of an undergraduate student.  The mean age of participants was
 \todo{recruitment flowchart, how many: responsed to advert, met screening criteria}
 \todo{Calculate M and SD for screening measures.}
 
-\subsection{Pre/Post Measures}
+\subsubsection{Dot-probe task}
+
+The dot-probe task was based on \textcite{yang_attention_2014}, and
+consisted of 96 trials (see Figure 1).
+
+\begin{center}
+\begin{minipage}{20.99cm}
+  [Warning: Image ignored] % Unhandled or unsupported graphics:
+%\includegraphics[width=16.459cm,height=7.103cm]{proposal-img001.svm}
+ 
+Figure \stepcounter{Figure}{\theFigure}: Example dot-probe sequence where
+the negative word appears at the upper location (Trials 1 \& 2) and the
+probe appears at the neutral location (Trial 1) and negative location
+(Trial 2).
+\end{minipage}
+
+\end{center}
+
+\todo{RAT: 1250ms exposure}
+\todo{update method}
+
+Each trial began with an 8mm x 8mm white fixation cross centred on a black
+screen. After 500ms, this was replaced by a word pair from a subset of
+5 word pairs, 4 from the P set and 1 from the G set.  One word from the
+pair appeared above the fixation cross location and one below. Word pairs
+were 50mm high with 30mm separating the words. Negative words occurred
+with equal frequency at the upper or lower positions. After 1250 ms, the
+word pair will disappear and one 3mm diameter dot or two 3mm diameter
+dots with a 2mm centre-to-centre distance will appear at one of the
+previous word locations. Dot-probes appeared with equal frequency at
+negative and neutral locations. Participants responded to the single
+dot by pressing the left mouse button and the two dots by pressing the
+right mouse button. After responding, a random inter-trial interval (ITI)
+between 100-500 ms with a blank screen will precede the next trial.
+Participants will be asked to respond as quickly and accurately as
+possible. Each dot-probe block took approximately 5 minutes.
+
+\subsubsection{ABM task}
+
+The ABM task was identical to the dot-probe task, except there were
+192 trials using only N-word pairs, and probes always appeared at the
+neutral word location.  Thus, responses required repeated orientation
+of attention away from the negative word in the pair. Each ABM block
+took approximately 15 minutes.
+
+\subsection{Pre--Post Measures}
+
+\subsubsection{RRS}
+
+The Ruminative Responses Scale (RRS) is a 22 item measure of
+trait rumination, with item scores ranging from 1--4. The RRS is
+reliable and valid, having an expected Cronbach's $\alpha$ of .85
+\parencite{treynor_rumination_2003}.
+
+\subsubsection{GAD-7}
+
+The GAD-7 is a 7 item, trait measure of Generalised Anxiety
+Disorder, with item scores ranging from 0--3.  The GAD-7 is an
+efficient, valid (Cronbach's $\alpha$ > .85) tool for assessing GAD
+severity in clinical research, with good test-retest reliability
+\parencite{spitzerrl_brief_2006}.
 
 Questions on the RRS and GAD-7 were asked in relation to the previous
 4 weeks of participants' lives, to correspond approximately with the
 month before the study (pre) and time within the study (post).\todo{see
 appendix}
-
-\subsubsection{Ruminative Responses Scale}
-
-Trait rumination was measured using the Ruminative Responses Scale (RRS),
-which is reliable and valid, having an expected Cronbach's $\alpha$
-of .85 \parencite{treynor_rumination_2003}.
-
-\subsubsection{Generalised Anxiety Disorder}
-
-Trait anxiety was measured using the 7 item Generalised Anxiety Disorder
-(GAD-7) scale, an efficient, valid (Cronbach's $\alpha$ > .85) tool
-for assessing GAD severity in clinical research, with good test-retest
-reliability \parencite{spitzerrl_brief_2006}.
 
 \subsubsection{Patient Health Questionnaire}
 
@@ -329,8 +394,18 @@ in relation to the last 24 hours.
 
 \subsubsection{Attentional bias}
 
-Attentional bias was measured using a computer-based dot-probe task with
-word-pair stimuli \parencite{macleod_attentional_1986}.
+Attentional bias was measured using the computer-based dot-probe task
+with word-pair stimuli \parencite{macleod_attentional_1986}. Inaccurate
+trials or those with response times exceeding 3 standard deviations
+beyond the mean were excluded from analyses. Attentional bias scores
+were calculated from the remaining response times using the equation
+\begin{displaymath}score = [(NuPl + NlPu) = (NuPu + NlPl)]/2 \ \ \ \
+(1) \end{displaymath} where ${N}$ = Negative word, ${P}$ = Probe, ${u}$ =
+upper, ${t}$ = lower \parencite{bradley_attentional_1997}. More positive
+scores reflect an attentional bias towards (i.e., vigilance for) negative
+words relative to neutral words, whereas more negative scores indicate
+avoidance \parencite{bradley_attentional_1997}.
+
 
 \subsubsection{Goal Rumination Scale}
 
@@ -356,7 +431,7 @@ committed to anxiety or worry by this point!} as they were expected to
 correlate positively with NA. \todo{need a reference to show lack of
 items at low end of PA and that low PA/high NA == depression.}
 
-\subsection{Materials}
+\subsection{Materials and Measures}
 
 Two sets of visual word stimuli were used; Negative-Neutral (N-word)
 pairs, and Ideographic-Neutral (I-word) pairs.
@@ -431,66 +506,6 @@ Appendix 2.
 \todo{Where an I{}-word is already an N{}-word, was its pair be selected using same procedure as for other I{}-words or should the N{}-word pair be used?}
 \todo{Descriptive statistics for each participant's I-word pairs are shown in Appendix n}
 
-\subsection{Attentional Bias Modification (ABM)}
-
-\subsubsection{Dot-probe task}
-
-The dot-probe task was based on \textcite{yang_attention_2014}, and
-consisted of 96 trials (see Figure 1).
-
-\begin{center}
-\begin{minipage}{20.99cm}
-  [Warning: Image ignored] % Unhandled or unsupported graphics:
-%\includegraphics[width=16.459cm,height=7.103cm]{proposal-img001.svm}
- 
-Figure \stepcounter{Figure}{\theFigure}: Example dot-probe sequence where
-the negative word appears at the upper location (Trials 1 \& 2) and the
-probe appears at the neutral location (Trial 1) and negative location
-(Trial 2).
-\end{minipage}
-
-\end{center}
-
-\todo{RAT: 1250ms exposure}
-\todo{update method}
-
-Each trial began with an 8mm x 8mm white fixation cross centred on a black
-screen. After 500ms, this was replaced by a word pair from a subset of
-5 word pairs, 4 from the P set and 1 from the G set.  One word from the
-pair appeared above the fixation cross location and one below. Word pairs
-were 50mm high with 30mm separating the words. Negative words occurred
-with equal frequency at the upper or lower positions. After 1250 ms, the
-word pair will disappear and one 3mm diameter dot or two 3mm diameter
-dots with a 2mm centre-to-centre distance will appear at one of the
-previous word locations. Dot-probes appeared with equal frequency at
-negative and neutral locations. Participants responded to the single
-dot by pressing the left mouse button and the two dots by pressing the
-right mouse button. After responding, a random inter-trial interval (ITI)
-between 100-500 ms with a blank screen will precede the next trial.
-Participants will be asked to respond as quickly and accurately as
-possible. Each dot-probe block took approximately 5 minutes.
-
-\subsubsection{ABM task}
-
-The ABM task was identical to the dot-probe task, except there were
-192 trials using only N-word pairs, and probes always appeared at the
-neutral word location.  Thus, responses required repeated orientation
-of attention away from the negative word in the pair. Each ABM block
-took approximately 15 minutes.
-
-\subsubsection{Attentional Bias Assessment}
-
-Inaccurate trials or those with response times exceeding 3 standard
-deviations beyond the mean were excluded from analyses. Attentional
-bias scores were calculated from the remaining response times using
-the equation \begin{displaymath}score = [(NuPl + NlPu) = (NuPu + NlPl)]/2 \ \ \ \
-(1) \end{displaymath} where ${N}$ = Negative word, ${P}$ = Probe, ${u}$ = upper, ${t}$ = lower
-\parencite{bradley_attentional_1997}.
-
-More positive scores reflect an attentional bias towards (i.e., vigilance
-for) negative words relative to neutral words, whereas more negative
-scores indicate avoidance \parencite{bradley_attentional_1997}.
-
 \subsection{Procedure}
 
 Participants provided baseline measures of trait rumination, trait worry,
@@ -501,12 +516,12 @@ within 12 hours of completing the final session.
 People meeting the screening criteria where invited to participate, and those who agreed
 met the researcher at the University of Exeter to complete the initial session.
 
-Psychology department  and take about 45
-minutes to complete.  During this session you will be asked to generate
-some words associated with an unresolved problem or concern that you
-currently have. You will then complete some questionnaires about your
-thoughts and mood, and a computer task which involves reading pairs of
-words and then detecting the location of dots on the screen.
+Psychology department and take about 45 minutes to complete.  During this
+session you will be asked to generate some words associated with an
+unresolved problem or concern that you currently have. You will then
+complete some questionnaires about your thoughts and mood, and a computer
+task which involves reading pairs of words and then detecting the location
+of dots on the screen.
 
 An introductory session took place at the University of Exeter
 after the participant gave informed, written consent to take
@@ -591,8 +606,7 @@ current feelings towards their personal goal and overall experience of
 the training before being thanked for their participation, remunerated
 and debriefed.
 
-
-\subsubsection[Stimulus allocation]{Stimulus allocation}
+\subsubsection{Stimulus allocation}
 
 The total of N word pairs allowed for 1 practice and 36 experimental
 dot-probe test sessions even when the 18 G set words fully overlap
