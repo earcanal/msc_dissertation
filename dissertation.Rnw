@@ -306,6 +306,8 @@ partner of an undergraduate student.  The mean age of participants was
 \todo{recruitment flowchart, how many: responsed to advert, met screening criteria}
 \todo{Calculate M and SD for screening measures.}
 
+\subsection{Materials and Measures}
+
 \subsubsection{Dot-probe task}
 
 The dot-probe task was based on \textcite{yang_attention_2014}, and
@@ -357,44 +359,38 @@ took approximately 15 minutes.
 
 The Ruminative Responses Scale (RRS) is a 22 item measure of
 trait rumination, with item scores ranging from 1--4. The RRS is
-reliable and valid, having an expected Cronbach's $\alpha$ of .85
-\parencite{treynor_rumination_2003}.
-
-\subsubsection{GAD-7}
-
-The GAD-7 is a 7 item, trait measure of Generalised Anxiety
-Disorder, with item scores ranging from 0--3.  The GAD-7 is an
-efficient, valid (Cronbach's $\alpha$ > .85) tool for assessing GAD
-severity in clinical research, with good test-retest reliability
-\parencite{spitzerrl_brief_2006}.
-
-Questions on the RRS and GAD-7 were asked in relation to the previous
-4 weeks of participants' lives, to correspond approximately with the
+valid and reliable, having an expected Cronbach's $\alpha$ of .85
+\parencite{treynor_rumination_2003}. Questions on the RRS were asked in
+relation to the previous 4 weeks, to correspond approximately with the
 month before the study (pre) and time within the study (post).\todo{see
 appendix}
 
-\subsubsection{Patient Health Questionnaire}
+\subsubsection{GAD-7}
 
-Depression was measured using the PHQ-9, a brief, reliable
-(Cronbach's $\alpha$ > .85) and valid measure of depression severity
-\parencite{kroenke_phq9_2001}.
+The GAD-7 is a 7 item measure of Generalised Anxiety Disorder (GAD),
+with items relating to the previous 2 weeks, and scores ranging from
+0--3. The GAD-7 is an efficient, internally reliable (Cronbach's $\alpha$
+> .85) tool for assessing GAD severity in clinical research, with good
+test-retest reliability \parencite{spitzerrl_brief_2006}.
+
+\subsubsection{PHQ-9}
+
+The 9 item Patient Health Questionnaire Depression (PHQ-9) is a brief,
+reliable (Cronbach's $\alpha$ > .85) and valid measure of depression
+severity \parencite{kroenke_phq9_2001}. Item scores range from 0--3,
+and questions relate to the previous 2 weeks.
 
 \subsubsection{Penn State Worry Questionnaire}
 
-Trait worry was measured using the Penn State Worry Questionnaire (PSWQ),
-an an internally consistent measure with good test-retest reliability
-\parencite{meyer_development_1990}.
-
+The 16 item Penn State Worry Questionnaire (PSWQ) is an internally
+consistent measure trait worry with good test-retest reliability
+\parencite{meyer_development_1990}.  Item scores range from 1--5.
 
 \subsection{Daily Measures}
 
-Participants were measured approximately every 24 hours (except where
-sessions were postponed). Questions on the GRS and PANAS-SF were asked
-in relation to the last 24 hours.
-
 \subsubsection{Attentional bias}
 
-Attentional bias was measured using the computer-based dot-probe task
+Attentional bias was measured using a computer-based dot-probe task
 with word-pair stimuli \parencite{macleod_attentional_1986}. Inaccurate
 trials or those with response times exceeding 3 standard deviations
 beyond the mean were excluded from analyses. Attentional bias scores
@@ -406,37 +402,34 @@ scores reflect an attentional bias towards (i.e., vigilance for) negative
 words relative to neutral words, whereas more negative scores indicate
 avoidance \parencite{bradley_attentional_1997}.
 
+\subsubsection{GRS}
 
-\subsubsection{Goal Rumination Scale}
+The Goal Rumination Scale (GRS) is a 7 item measure of state rumination
+towards a specific problem \parencite{schultheiss_role_2008}.  Item scores
+range from 1--7, with items 5--7 reversed. Reliability of the GRS is
+good (Cronbach's $\alpha$ = .87), based on a single sample of $N$ =
+101. Questions on the GRS -SF were asked in relation to the last 24 hours.
 
-State rumination was measured using
-the Goal Rumination Scale (GRS) \parencite{schultheiss_role_2008}, the
-best scale we were aware of that would measure state rumination towards
-a current concern, in line with our hypotheses\todo{H1?}. Reliability of
-the GRS is good (Cronbach's $\alpha$ = .87), based on a single sample
-of $N$ = 101.
+\subsubsection{PANAS-SF}
 
-\subsubsection{Positive and Negative Affect Schedule}
+The 10 item, short form Positive and Negative Affect Schedule (PANAS-SF)
+\parencite{mackinnon_short_1999} measures positive affect (Cronbach's
+$\alpha$=.78) and negative affect (Cronbach's $\alpha$=.87). Item scores
+range from 1-5.  Because we were specifically interested in changes in
+depression and anxiety, we added 4 items to the PANAS-SF.  Items `sad' and
+`depressed' were chosen as a state measure of depression, the rationale
+being that they would correlate negatively with PA and positively with NA.
+Items `anxious' and `worried' were added as a state measure of worry
+\todo{I need to have committed to anxiety or worry by this point!} as they
+were expected to correlate positively with NA. \todo{need a reference
+to show lack of items at low end of PA and that low PA/high NA ==
+depression.} Questions on the PANAS-SF were asked in relation to the last
+ 24 hours.
 
-Positive and negative affect were measured using the
-10 item, short form Positive and Negative Affect Schedule (PANAS-SF)
-\parencite{mackinnon_short_1999}, which has Cronbach's $\alpha$ of .78
-for positive affect (PA) and .87 for negative affect (NA).  Because we
-were specifically interested in changes in depression and anxiety, we
-added 4 items to the PANAS-SF.  Items 'sad' and 'depressed' were chosen
-as a state measure of depression, the rationale being that they would
-correlate negatively with PA and positively with NA.  Items 'anxious'
-and 'worried' were added as a state measure of worry \todo{I need to have
-committed to anxiety or worry by this point!} as they were expected to
-correlate positively with NA. \todo{need a reference to show lack of
-items at low end of PA and that low PA/high NA == depression.}
-
-\subsection{Materials and Measures}
+\subsubsection{N-word pairs}
 
 Two sets of visual word stimuli were used; Negative-Neutral (N-word)
 pairs, and Ideographic-Neutral (I-word) pairs.
-
-\subsubsection{N-word pairs}
 
 \todo{SAWL - How are affective word ratings related to lexicosemantic properties? (Citron, Weekes, \& Ferstl, 2014)}
 
@@ -507,6 +500,9 @@ Appendix 2.
 \todo{Descriptive statistics for each participant's I-word pairs are shown in Appendix n}
 
 \subsection{Procedure}
+
+Participants were measured approximately every 24 hours (except where
+sessions were postponed).
 
 Participants provided baseline measures of trait rumination, trait worry,
 trait anxiety and depression at their initial meeting with the researcher
