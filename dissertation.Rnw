@@ -214,7 +214,7 @@ attentional, interpretive and memory biases associated with
 negative emotional states \parencite{hertel_cognitive_2011}.  Randomised
 controlled trials indicate that CBM may be an effective treatment
 for anxiety \parencite{hakamata_attention_2010} and depression
-\parencite{yang_attention_2014}.  Attentional bias modification (ABM)
+\parencite{yang_attention_2015}.  Attentional bias modification (ABM)
 is a common form of CBM training in which participants use a computer
 task to repeatedly attend towards or away from a particular stimulus such
 as negatively valenced words or pictures \parencite[see][for a recent
@@ -222,13 +222,13 @@ review]{macleod_attentional_2015}.  This type of training resembles the
 counterconditioning mechanism which \textcite{watkins_habitgoal_2014}
  suggest may reduce RNT.  A recent randomised controlled trial
 of ABM on individuals with depressive symptoms
-\parencite{yang_attention_2014} met the independent, but
+\parencite{yang_attention_2015} met the independent, but
 essential criteria of a successful ABM intervention stressed by
 \textcite{macleod_attentional_2015}.  First, a post-training
 change in attentional bias was demonstrated.  Second,
 and notable in the context of the habit-goal framework, this
 effect on reducing depressive symptoms was mediated by rumination
-\parencite{yang_attention_2014}. \textcite{yang_attention_2014} used
+\parencite{yang_attention_2015}. \textcite{yang_attention_2015} used
 laboratory-based ABM training using sad word stimuli.  The proposed
 study aims to extend these findings by testing whether ABM reduces
 RNT and elevates mood in non-depressed, high ruminators exposed to
@@ -289,11 +289,11 @@ participants in the top 33\% of these measures, based on a sample of
 210 University of Exeter undergraduate students measured on RRS (${M}$
 = 46.9, ${SD}$ = 12.7) and PSWQ (${M}$ = 48.2, ${SD}$ = 14.9)\todo{cite?}.
 
-Figure \ref{flowchart} summarises the recruitment procedure.  Of the
+Figure \ref{flowchart} summarises the recruitment procedure. Of the
 15 people (12 female), who met the screening criteria and offered to
 participate, 6 were members of staff, 5 were postgraduate students,
 2 were undergraduate students, 1 was a recent graduate, and 1 was the
-partner of an undergraduate student.  The mean age of participants was
+partner of an undergraduate student. The mean age of participants was
 31.38 years (${SD}$ = 9.99 years).
 
 \begin{figure}[h]
@@ -307,10 +307,11 @@ partner of an undergraduate student.  The mean age of participants was
 \todo{Calculate M and SD for screening measures.}
 
 \subsection{Measures and Materials}
+\todo{See McKay (2005) for examples of what each measure measures i.e. a bit more narrative}
 
 \subsubsection{Dot-probe task}
 
-The dot-probe task was based on \textcite{yang_attention_2014}, and
+The dot-probe task was based on \textcite{yang_attention_2015}, and
 consisted of 96 trials (see Figure 1).
 
 \begin{center}
@@ -428,8 +429,8 @@ depression.} Questions on the PANAS-SF were asked in relation to the last
 
 \subsubsection{N-word pairs}
 
-Two sets of visual word stimuli were used; Negative-Neutral (N-word)
-pairs, and Ideographic-Neutral (I-word) pairs.
+Two sets of visual word stimuli were used for the dot-probe and ABM tasks;
+Negative-Neutral (N-word) pairs, and Ideographic-Neutral (I-word) pairs.
 
 \todo{SAWL - How are affective word ratings related to lexicosemantic properties? (Citron, Weekes, \& Ferstl, 2014)}
 
@@ -501,6 +502,8 @@ Appendix 2.
 
 \subsection{Procedure}
 
+Same paradigm but dot-probe is designed to measure attentional bias and ABM to modify it.
+
 Participants were measured approximately every 24 hours (except where
 sessions were postponed).
 
@@ -521,7 +524,7 @@ of dots on the screen.
 
 An introductory session took place at the University of Exeter
 after the participant gave informed, written consent to take
-part in the study. A self-relevant, unresolved goal will be
+part in the study. A self-relevant, unresolved goal was
 chosen by asking participants to think of \enquote{an ongoing and
 unresolved concern that [has] repeatedly come into their mind and
 caused them to feel negative or stressed during the previous week}
@@ -761,14 +764,12 @@ identifiable from their electronic or written data. The former were
 stored on a secure digital filing system and the latter in a locked
 filing cabinet.
 
-\section{\label{analyses}Planned Analyses}
+\section{Planned Analyses}
+\label{analyses}
 
-\todo{past tense}
-
- More specifically, this was
-an AB phase nonconcurrent multiple baseline replication design
-across participants\todo{sure?!!} \parencite{bulte_when_2012}
-\parencite{onghena_customization_2005}
+More specifically, this was an AB phase nonconcurrent multiple
+baseline replication design across participants\todo{sure?!!}
+\parencite{bulte_when_2012} \parencite{onghena_customization_2005}.
 
 Comparisons were made between each participant's baseline (phase A)
 scores and their post-training (phase B) scores and a meta-analysis
@@ -789,12 +790,51 @@ who completed all sessions \parencite{onghena_customization_2005}.
 All questions on the daily outcome measures were mandatory on the online
 survey, so there was no missing data for any completed survey.
 
+<<power, echo=FALSE, error=TRUE>>=
+library(pwr)
+library(stringr)
+format_power <- function(x) {
+  x <- sprintf("%0.2f",x)
+  str_replace(as.character(x), "^0\\.", ".")
+}
+
+# RRS d=.49 (Yang et al., 2015)
+rrs_pwr <- pwr.t.test(d=.49,n=12,sig.level=0.05,type="paired",alternative="two.sided")
+rrs_pwr <- format_power(rrs_pwr$power)
+
+# BDI-II d=1.50 (Yang et al., 2015)
+bdi_pwr <- pwr.t.test(d=1.5,n=12,sig.level=0.05,type="paired",alternative="two.sided")
+bdi_pwr <- format_power(bdi_pwr$power)
+
+# STAI-T d=.88 (Yang et al., 2015)
+stai_pwr <- pwr.t.test(d=.88,n=12,sig.level=0.05,type="paired",alternative="two.sided")
+stai_pwr <- format_power(stai_pwr$power)
+
+# PSWQ d=1.49 (Amir & Taylor, 2012)
+pswq_pwr <- pwr.t.test(d=1.49,n=12,sig.level=0.05,type="paired",alternative="two.sided")
+pswq_pwr <- format_power(pswq_pwr$power)
+@
+
 Paired samples t-tests were used to compare pre and post ABM training
-measures of trait rumination (RRS), trait anxiety (PSWQ) and depression
-(PHQ-9).  However, these analyses were mostly descriptive as trait
-measures the RRS and PSWQ are relatively coarse, and all comparisons
-were under-powered due to the small sample size \todo{"reverse power
-analysis"}.
+measures of rumination (RRS), depression (PHQ-9), anxiety (GAD-7)
+and worry (PSWQ). \textcite{yang_attention_2015} found significant
+post ABM training reductions in rumination (RRS ${d}$=.49), depression
+(BDI-II \parencite{beck_manual_1996} ${d}$=1.50) and anxiety (STAI-T
+\parencite{spielberger_manual_1983} ${d}$=.88). Given these effect sizes,
+12 participants and $\alpha$ set at .05, two-tailed power calculations
+give (1-$\beta$) of \Sexpr{rrs_pwr} for RRS, \Sexpr{bdi_pwr} for BDI-II
+and \Sexpr{stai_pwr} for STAI-T. In practice, these are likely to be lower
+as participants in \textcite{yang_attention_2015} were undergraduates
+with mild to severe depression in contrast with the current study where
+participants with mild depression or above were excluded. Estimates could
+also vary due to the different instruments used to measure depression
+(PHQ-9) and anxiety (GAD-7) in the current study.
+
+Using \textcite{amir_combining_2012} with .7 correlation which
+is conservative given test-retest reliability of PSWQ > .9
+\parencite{meyer_development_1990} PSWQ power (1-$\beta$) of
+\Sexpr{pswq_pwr}.  But ... not dot-probe and combined with CBT
+
 
 The main analyses are the daily measures ...Visual analyses of each
 outcome measure was planned using graphs generated by the R package
