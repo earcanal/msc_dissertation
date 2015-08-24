@@ -306,7 +306,7 @@ partner of an undergraduate student.  The mean age of participants was
 \todo{recruitment flowchart, how many: responsed to advert, met screening criteria}
 \todo{Calculate M and SD for screening measures.}
 
-\subsection{Materials and Measures}
+\subsection{Measures and Materials}
 
 \subsubsection{Dot-probe task}
 
@@ -353,9 +353,9 @@ neutral word location.  Thus, responses required repeated orientation
 of attention away from the negative word in the pair. Each ABM block
 took approximately 15 minutes.
 
-\subsection{Pre--Post Measures}
+\subsubsection{Pre--Post Measures}
 
-\subsubsection{RRS}
+\paragraph{RRS}
 
 The Ruminative Responses Scale (RRS) is a 22 item measure of
 trait rumination, with item scores ranging from 1--4. The RRS is
@@ -365,7 +365,7 @@ relation to the previous 4 weeks, to correspond approximately with the
 month before the study (pre) and time within the study (post).\todo{see
 appendix}
 
-\subsubsection{GAD-7}
+\paragraph{GAD-7}
 
 The GAD-7 is a 7 item measure of Generalised Anxiety Disorder (GAD),
 with items relating to the previous 2 weeks, and scores ranging from
@@ -373,22 +373,22 @@ with items relating to the previous 2 weeks, and scores ranging from
 > .85) tool for assessing GAD severity in clinical research, with good
 test-retest reliability \parencite{spitzerrl_brief_2006}.
 
-\subsubsection{PHQ-9}
+\paragraph{PHQ-9}
 
 The 9 item Patient Health Questionnaire Depression (PHQ-9) is a brief,
 reliable (Cronbach's $\alpha$ > .85) and valid measure of depression
 severity \parencite{kroenke_phq9_2001}. Item scores range from 0--3,
 and questions relate to the previous 2 weeks.
 
-\subsubsection{Penn State Worry Questionnaire}
+\paragraph{Penn State Worry Questionnaire}
 
 The 16 item Penn State Worry Questionnaire (PSWQ) is an internally
-consistent measure trait worry with good test-retest reliability
+consistent measure of trait worry with good test-retest reliability
 \parencite{meyer_development_1990}.  Item scores range from 1--5.
 
-\subsection{Daily Measures}
+\subsubsection{Daily Measures}
 
-\subsubsection{Attentional bias}
+\paragraph{Attentional bias}
 
 Attentional bias was measured using a computer-based dot-probe task
 with word-pair stimuli \parencite{macleod_attentional_1986}. Inaccurate
@@ -402,7 +402,7 @@ scores reflect an attentional bias towards (i.e., vigilance for) negative
 words relative to neutral words, whereas more negative scores indicate
 avoidance \parencite{bradley_attentional_1997}.
 
-\subsubsection{GRS}
+\paragraph{GRS}
 
 The Goal Rumination Scale (GRS) is a 7 item measure of state rumination
 towards a specific problem \parencite{schultheiss_role_2008}.  Item scores
@@ -410,7 +410,7 @@ range from 1--7, with items 5--7 reversed. Reliability of the GRS is
 good (Cronbach's $\alpha$ = .87), based on a single sample of $N$ =
 101. Questions on the GRS -SF were asked in relation to the last 24 hours.
 
-\subsubsection{PANAS-SF}
+\paragraph{PANAS-SF}
 
 The 10 item, short form Positive and Negative Affect Schedule (PANAS-SF)
 \parencite{mackinnon_short_1999} measures positive affect (Cronbach's
