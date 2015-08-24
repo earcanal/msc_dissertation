@@ -660,8 +660,60 @@ identifiable from their electronic or written data. The former were
 stored on a secure digital filing system and the latter in a locked
 filing cabinet.
 
-\section{Planned Analyses}
+\section{Analyses}
 \label{analyses}
+
+\subsubsection{Pre--Post Measures}
+
+<<power, echo=FALSE, error=TRUE>>=
+library(pwr)
+library(stringr)
+format_power <- function(x) {
+  x <- sprintf("%0.2f",x)
+  str_replace(as.character(x), "^0\\.", ".")
+}
+
+# RRS d=.49 (Yang et al., 2015)
+rrs_pwr <- pwr.t.test(d=.49,n=12,sig.level=0.05,type="paired",alternative="two.sided")
+rrs_pwr <- format_power(rrs_pwr$power)
+
+# BDI-II d=1.50 (Yang et al., 2015)
+bdi_pwr <- pwr.t.test(d=1.5,n=12,sig.level=0.05,type="paired",alternative="two.sided")
+bdi_pwr <- format_power(bdi_pwr$power)
+
+# STAI-T d=.88 (Yang et al., 2015)
+stai_pwr <- pwr.t.test(d=.88,n=12,sig.level=0.05,type="paired",alternative="two.sided")
+stai_pwr <- format_power(stai_pwr$power)
+
+# PSWQ d=.51 (Enock & Hofmann, 2014)
+pswq_pwr <- pwr.t.test(d=.51,n=12,sig.level=0.05,type="paired",alternative="two.sided")
+pswq_pwr <- format_power(pswq_pwr$power)
+@
+
+Paired samples t-tests were used to compare participants' pre and
+post ABM training measures of rumination (RRS), depression (PHQ-9),
+anxiety (GAD-7) and worry (PSWQ). Using a similar ABM procedure,
+\textcite{yang_attention_2015} found significant post training reductions
+in rumination, using RRS (${d}$=.49), depression, using BDI-II
+\parencite{beck_manual_1996} (${d}$=1.50) and anxiety, using STAI-T
+\parencite{spielberger_manual_1983} (${d}$=.88). Given these effect
+sizes, 12 participants and $\alpha$ set at .05, two-tailed calculations
+of power (1-$\beta$) gave \Sexpr{rrs_pwr} for RRS, \Sexpr{bdi_pwr}
+for BDI-II and \Sexpr{stai_pwr} for STAI-T. In practice, these are
+likely to be lower as participants in \textcite{yang_attention_2015}
+were undergraduates with mild to severe depression in contrast with the
+current study where participants with mild depression or above were
+excluded. Estimates could also vary due to the different instruments
+used to measure depression (PHQ-9) and anxiety (GAD-7) in the current
+study. \textcite{enock_attention_2014} found a significant post ABM
+training reduction in PSWQ (${d}$=.51) using a dot-probe task with neutral
+and disgust face stimuli. A two-tailed calculation with 12 participants
+and $\alpha$ set at .05, gave power (1-$\beta$) of \Sexpr{pswq_pwr}. In
+summary, the current study is likely to be sufficiently powered to
+detect changes in depression (PHQ-9) and possibly anxiety (GAD-7),
+but underpowered to detect changes in rumination (RRS) and worry (PSWQ).
+
+\subsubsection{Daily Measures}
 
 More specifically, this was an AB phase nonconcurrent multiple
 baseline replication design across participants\todo{sure?!!}
@@ -686,53 +738,7 @@ who completed all sessions \parencite{onghena_customization_2005}.
 All questions on the daily outcome measures were mandatory on the online
 survey, so there was no missing data for any completed survey.
 
-<<power, echo=FALSE, error=TRUE>>=
-library(pwr)
-library(stringr)
-format_power <- function(x) {
-  x <- sprintf("%0.2f",x)
-  str_replace(as.character(x), "^0\\.", ".")
-}
-
-# RRS d=.49 (Yang et al., 2015)
-rrs_pwr <- pwr.t.test(d=.49,n=12,sig.level=0.05,type="paired",alternative="two.sided")
-rrs_pwr <- format_power(rrs_pwr$power)
-
-# BDI-II d=1.50 (Yang et al., 2015)
-bdi_pwr <- pwr.t.test(d=1.5,n=12,sig.level=0.05,type="paired",alternative="two.sided")
-bdi_pwr <- format_power(bdi_pwr$power)
-
-# STAI-T d=.88 (Yang et al., 2015)
-stai_pwr <- pwr.t.test(d=.88,n=12,sig.level=0.05,type="paired",alternative="two.sided")
-stai_pwr <- format_power(stai_pwr$power)
-
-# PSWQ d=1.49 (Amir & Taylor, 2012)
-pswq_pwr <- pwr.t.test(d=1.49,n=12,sig.level=0.05,type="paired",alternative="two.sided")
-pswq_pwr <- format_power(pswq_pwr$power)
-@
-
-Paired samples t-tests were used to compare pre and post ABM training
-measures of rumination (RRS), depression (PHQ-9), anxiety (GAD-7)
-and worry (PSWQ). \textcite{yang_attention_2015} found significant
-post ABM training reductions in rumination (RRS ${d}$=.49), depression
-(BDI-II \parencite{beck_manual_1996} ${d}$=1.50) and anxiety (STAI-T
-\parencite{spielberger_manual_1983} ${d}$=.88). Given these effect sizes,
-12 participants and $\alpha$ set at .05, two-tailed power calculations
-give (1-$\beta$) of \Sexpr{rrs_pwr} for RRS, \Sexpr{bdi_pwr} for BDI-II
-and \Sexpr{stai_pwr} for STAI-T. In practice, these are likely to be lower
-as participants in \textcite{yang_attention_2015} were undergraduates
-with mild to severe depression in contrast with the current study where
-participants with mild depression or above were excluded. Estimates could
-also vary due to the different instruments used to measure depression
-(PHQ-9) and anxiety (GAD-7) in the current study.
-
-Using \textcite{amir_combining_2012} with .7 correlation which
-is conservative given test-retest reliability of PSWQ > .9
-\parencite{meyer_development_1990} PSWQ power (1-$\beta$) of
-\Sexpr{pswq_pwr}.  But ... not dot-probe and combined with CBT
-
-
-The main analyses are the daily measures ...Visual analyses of each
+The main analyses were the daily measures ...Visual analyses of each
 outcome measure was planned using graphs generated by the R package
 'SCVA' \parencite{bulte_when_2012}.  Inferential statistics and effect
 sizes (PND) comparing A and B phases for measures of attentional bias
