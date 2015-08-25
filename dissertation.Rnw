@@ -321,10 +321,10 @@ partner of an undergraduate student. The mean age of participants was
 31.38 years (${SD}$ = 9.99 years).
 
 \begin{figure}[h]
+  \label{flowchart}
   \centering
   \includegraphics[width=90mm,height=90mm]{/home/paul/Documents/psychology/msc/M210/apprenticeship/dissertation/figure/recruitment.png}
   \caption{Recruitment flowchart}
-  \label{flowchart}
 \end{figure}
 
 \todo{recruitment flowchart, how many: responsed to advert, met screening criteria}
@@ -335,48 +335,61 @@ partner of an undergraduate student. The mean age of participants was
 
 \subsubsection{Dot-probe task}
 
-The dot-probe task was based on \textcite{yang_attention_2015}, and
-consisted of 96 trials (see Figure 1).
+The dot-probe task is commonly used to measure attentional bias, based
+on differences in response times to pairs of stimuli with differing
+affective valence \parencite{macleod_attentional_1986}. Our study
+used word-pair stimuli (see \cref{fig:dotprobe}) and was based on
+\textcite{yang_attention_2015}.
 
-\begin{center}
-\begin{minipage}{20.99cm}
-  [Warning: Image ignored] % Unhandled or unsupported graphics:
-%\includegraphics[width=16.459cm,height=7.103cm]{proposal-img001.svm}
- 
-Figure \stepcounter{Figure}{\theFigure}: Example dot-probe sequence where
-the negative word appears at the upper location (Trials 1 \& 2) and the
-probe appears at the neutral location (Trial 1) and negative location
-(Trial 2).
-\end{minipage}
+Two sets of visual word stimuli were used for the dot-probe and ABM tasks;
+Negative-Neutral (N-word) pairs, and Ideographic-Neutral (I-word) pairs.
 
-\end{center}
+\begin{figure}[!ht]
+  \label{fig:dotprobe}
+  \centering
+  \includegraphics[width=200mm,height=150mm]{/home/paul/Documents/psychology/msc/M210/apprenticeship/dissertation/dot_probe_kb.pdf}
+  \caption{Example dot-probe trial for a right-handed participant,
+  in which the negative word (\textsf{USELESS}) appears at the upper
+  location, and the neutral word (\textsf{WHISPER}) appears at the
+  lower location.  Correct responses are shown for a subsequent probe
+  appearing at either the upper or lower location.}
+\end{figure}
 
 \todo{RAT: 1250ms exposure}
 \todo{update method}
 
-Each trial began with an 8mm x 8mm white fixation cross centred on a black
-screen. After 500ms, this was replaced by a word pair from a subset of
-5 word pairs, 4 from the P set and 1 from the G set.  One word from the
-pair appeared above the fixation cross location and one below. Word pairs
-were 50mm high with 30mm separating the words. Negative words occurred
-with equal frequency at the upper or lower positions. After 1250 ms, the
-word pair will disappear and one 3mm diameter dot or two 3mm diameter
-dots with a 2mm centre-to-centre distance will appear at one of the
-previous word locations. Dot-probes appeared with equal frequency at
-negative and neutral locations. Participants responded to the single
-dot by pressing the left mouse button and the two dots by pressing the
-right mouse button. After responding, a random inter-trial interval (ITI)
-between 100-500 ms with a blank screen will precede the next trial.
-Participants will be asked to respond as quickly and accurately as
-possible. Each dot-probe block took approximately 5 minutes.
+Each trial began with an 25 x 25 pixel (7 pixel thick) white fixation
+cross centred on a black screen. After 500ms, this was replaced by a word
+pair from the current stimulus set.  One word from the pair appeared
+above the fixation cross location and one below. Word pairs were 125
+pixels high with a vertical space between the upper and lower words such
+that the stimuli subtended a visual angle of approximately 2$^{\circ}$
+\footnote{This angle was calculated using a height measurement of
+the visible area of each participant's computer display, and assumes
+that participants followed the instruction to sit approximately 60cm
+from the screen.}. Neutral words occurred with equal frequency at the
+upper or lower positions. After 1250 ms, the word pair was replaced by
+either a greater than (>) symbol or less than (<) symbol at a random
+letter location within one of the previous word locations. Probes
+appeared with equal frequency at upper and lower locations. The only
+valid keyboard responses were greather than (>) or less than (<). The
+probe remained on the screen until the participant pressed a valid
+key. A correct response was recorded if the keypress matched the probe
+symbol. There was no feedback for incorrect responses. A blank screen
+with a random inter-trial interval (ITI) between 100-500ms followed
+each trial. Participants were instructed to respond as quickly and
+accurately as possible.  Each dot-probe block consisted of 96 trials
+and took approximately 5 minutes to complete.
 
-\subsubsection{ABM task}
+\subsubsection{Attentional Bias Modification task}
 
-The ABM task was identical to the dot-probe task, except there were
-192 trials using only N-word pairs, and probes always appeared at the
-neutral word location.  Thus, responses required repeated orientation
-of attention away from the negative word in the pair. Each ABM block
-took approximately 15 minutes.
+The Attentional Bias Modification (ABM) task was based on the dot-probe
+task, but differed in three respects. First, there were double the
+number (192) trials in each block. Second, only N-word pairs were used
+as stimuli. Finally probes in ABM trials always appeared at the neutral
+word location. Thus, responses required repeated orientation of attention
+away from the negative word in the pair. Each ABM block took approximately
+15 minutes.
 
 \subsubsection{Pre--Post Measures}
 
@@ -416,7 +429,7 @@ consistent measure of trait worry with good test-retest reliability
 \paragraph{Attentional bias}
 
 Attentional bias was measured using a computer-based dot-probe task
-with word-pair stimuli \parencite{macleod_attentional_1986}. Inaccurate
+Inaccurate
 trials or those with response times exceeding 3 standard deviations
 beyond the mean were excluded from analyses. Attentional bias scores
 were calculated from the remaining response times using the equation
@@ -452,9 +465,6 @@ depression.} Questions on the PANAS-SF were asked in relation to the last
  24 hours.
 
 \subsubsection{N-word pairs}
-
-Two sets of visual word stimuli were used for the dot-probe and ABM tasks;
-Negative-Neutral (N-word) pairs, and Ideographic-Neutral (I-word) pairs.
 
 \todo{SAWL - How are affective word ratings related to lexicosemantic properties? (Citron, Weekes, \& Ferstl, 2014)}
 
