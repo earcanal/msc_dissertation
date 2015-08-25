@@ -388,12 +388,15 @@ and took approximately 5 minutes to complete.
 The Attentional Bias Modification (ABM) task was based on the dot-probe
 task, but differed in three respects. First, there were double the
 number (192) trials in each block. Second, only N-word pairs were used
-as stimuli. Finally probes in ABM trials always appeared at the neutral
+as stimuli. Finally, probes in ABM trials always appeared at the neutral
 word location. Thus, responses required repeated orientation of attention
 away from the negative word in the pair. Each ABM block took approximately
 15 minutes.
 
 \subsubsection{Pre--Post Measures}
+
+The following measures were taken before and after the dot-probe/ABM
+training intervention.
 
 \paragraph{RRS}
 
@@ -428,19 +431,27 @@ consistent measure of trait worry with good test-retest reliability
 
 \subsubsection{Daily Measures}
 
+The following measures were taken approximately every 24 hours, except
+where sessions were postponed.
+
 \paragraph{Attentional bias}
 
-Attentional bias was measured using a computer-based dot-probe task
-Inaccurate
-trials or those with response times exceeding 3 standard deviations
-beyond the mean were excluded from analyses. Attentional bias scores
-were calculated from the remaining response times using the equation
-\begin{displaymath}score = [(NuPl + NlPu) = (NuPu + NlPl)]/2 \ \ \ \
-(1) \end{displaymath} where ${N}$ = Negative word, ${P}$ = Probe, ${u}$ =
-upper, ${t}$ = lower \parencite{bradley_attentional_1997}. More positive
-scores reflect an attentional bias towards (i.e., vigilance for) negative
-words relative to neutral words, whereas more negative scores indicate
-avoidance \parencite{bradley_attentional_1997}.
+Attentional bias was measured using using the dot-probe task. After
+removing inaccurate trials or those with response times (RTs)
+exceeding 3 standard deviations beyond the mean, attentional bias
+scores were calculated from the remaining RTs using the equation
+\begin{equation}
+  Attentional\ bias\ score = [(NuPl + NlPu) - (NuPu + NlPl)]/2\label{eq:1}
+\end{equation}
+where ${N}$ = Negative word, ${P}$ = Probe, ${u}$ =
+upper, ${t}$ = lower \parencite{bradley_attentional_1997}.
+A bias towards negative words is reflected in longer latencies for
+probes at the opposite location (left-hand side of equation \eqref{eq:1})
+and shorter latencies for probes at the same location (right-hand side
+of equation \eqref{eq:1}). Therefore, more positive scores reflect an
+attentional bias towards (i.e. vigilance for) negative words relative
+to neutral words, whereas more negative scores indicate avoidance
+\parencite{bradley_attentional_1997}.
 
 \paragraph{GRS}
 
@@ -539,9 +550,6 @@ Appendix 2.
 \subsection{Procedure}
 
 Same paradigm but dot-probe is designed to measure attentional bias and ABM to modify it.
-
-Participants were measured approximately every 24 hours (except where
-sessions were postponed).
 
 Participants provided baseline measures of trait rumination, trait worry,
 trait anxiety and depression at their initial meeting with the researcher
@@ -851,7 +859,9 @@ This study was under-powered ... *surprise!* n/s because of small sample.  Also,
 \subsection{Inferential Statistics}
 
 ... and inferentially ...
+
 \todo{Should I calculate M(SD) across participants for attentional bias so it's clear which direction it's going in?}
+
 <<inferentials, results='asis', echo=FALSE, error=TRUE>>=
 @
 
