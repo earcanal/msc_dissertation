@@ -335,17 +335,18 @@ partner of an undergraduate student. The mean age of participants was
 
 \subsubsection{Dot-probe task}
 
-The dot-probe task is commonly used to measure attentional bias, based
-on differences in response times to pairs of stimuli with differing
-affective valence \parencite{macleod_attentional_1986}. Our study
-used word-pair stimuli (see \cref{fig:dotprobe}) and was based on
-\textcite{yang_attention_2015}.
-
-Two sets of visual word stimuli were used for the dot-probe and ABM tasks;
-Negative-Neutral (N-word) pairs, and Ideographic-Neutral (I-word) pairs.
+The dot-probe task is commonly used to measure attentional bias,
+based on differences in response times to pairs of stimuli
+with differing affective valence, such as negative and neutral
+word pairs \parencite{macleod_attentional_1986}. Our study used
+word-pair stimuli (see figure \ref{fig:dotprobe}) and was based
+on \textcite{yang_attention_2015}. We used two sets of visual word
+stimuli in the dot-probe task. A set of Negative-Neutral (N-word)
+pairs based on affective norms \parencite{citron_how_2014}, and a set
+of Ideographic-Neutral (I-word) pairs associated with a current concern
+chosen by each participant.
 
 \begin{figure}[!ht]
-  \label{fig:dotprobe}
   \centering
   \includegraphics[width=200mm,height=150mm]{/home/paul/Documents/psychology/msc/M210/apprenticeship/dissertation/dot_probe_kb.pdf}
   \caption{Example dot-probe trial for a right-handed participant,
@@ -353,6 +354,7 @@ Negative-Neutral (N-word) pairs, and Ideographic-Neutral (I-word) pairs.
   location, and the neutral word (\textsf{WHISPER}) appears at the
   lower location.  Correct responses are shown for a subsequent probe
   appearing at either the upper or lower location.}
+  \label{fig:dotprobe}
 \end{figure}
 
 \todo{RAT: 1250ms exposure}
