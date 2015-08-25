@@ -333,6 +333,10 @@ partner of an undergraduate student. The mean age of participants was
 \todo{Calculate M and SD for screening measures.}
 
 \subsection{Measures and Materials}
+
+All survey instruments were created using Lime Survey
+\parencite{limesurvey} and completed using a web browser.
+
 \todo{See McKay (2005) for examples of what each measure measures i.e. a bit more narrative}
 
 \subsubsection{Dot-probe task}
@@ -384,6 +388,14 @@ with a random inter-trial interval (ITI) between 100-500ms followed
 each trial. Participants were instructed to respond as quickly and
 accurately as possible.  Each dot-probe block consisted of 96 trials
 and took approximately 5 minutes to complete.
+
+The task was developed using OpenSesame, an open-source experiment builder
+for the social sciences \parencite{mathot_opensesame_2011}. OpenSesame
+was chosen as a package which was relatively easy to install on Windows,
+Macintosh (OSX > ${\geq}$ 10.9) and Linux operating systems, thereby
+eliminating any dependencies on a webserver for software development or
+data collection. Installation instructions for were created using screen
+capture software and uploaded to YouTube.
 
 \subsubsection{Attentional Bias Modification task}
 
@@ -506,23 +518,21 @@ thereby creating 10 blocks with a mixture of valence differences. The
 complete N-word list can be seen in \cref{sec:nwordlist}
 
 \subsubsection{I-word pairs}
+\label{sec:iwordpairs}
 
 We refer to ideographic words (I-words) as the set of 6 words chosen
 by each participant for their likelihood to induce rumination
 about the participant's chosen current concern.
 
-Due to the
-unpredictability of these words, and the limited number of words in
-the SAWL \parencite{citron_how_2014}, a larger data set was required
-to matched pairs to I-words. A database of neutrally valenced words was
-created including frequency, imageability, familiarity, word length and
-number of syllables attributes from the MRC psycholinguistic database
-\parencite{wilson_mrc_1988}\todo{do I need more details on where the
-MRC attributes come from?}. A separate table was added to the database
-containing 1030 word valence means from the Affective Norms for English
-Words (ANEW) dataset \parencite{bradley_affective_1999}.
-
-
+Due to the unpredictability of these words, and the limited number of
+words in the SAWL \parencite{citron_how_2014}, a larger data set was
+required to matched pairs to I-words. A database of neutrally valenced
+words was created including frequency, imageability, familiarity, word
+length and number of syllables attributes from the MRC psycholinguistic
+database \parencite{wilson_mrc_1988}\todo{do I need more details on
+where the MRC attributes come from?}. A separate table was added to the
+database containing 1030 word valence means from the Affective Norms
+for English Words (ANEW) dataset \parencite{bradley_affective_1999}.
 
 Two different matching approaches were used, depending on whether
 each I-word word was present in, or absent from, the MRC database.
@@ -531,80 +541,103 @@ a frequency {\textpm}15\% that of the I-word, an ANEW valence mean
 (range 1-9) between 4.00 and 6.00 and an equal number of characters.
 After selecting a pool of matched words on the preceding criteria, a
 best match was found by inspection of candidate words based on number
-of syllables, imageability and familiarity.  Some I-words, such as long
-words or high frequency words, could not be matched using these criteria
-due to lack of available data.
+of syllables, imageability and familiarity.  Some I-words, such as
+long words or high frequency words, could not be matched using these
+criteria due to lack of available data. In these cases, a word with the
+most neutral valence was chosen that also minimised differences in length
+and frequency between the word pair. I-words absent from the MRC database
+(including proper nouns) were paired with words selected from a pool of
+56 words having a frequency of 1 (on the assumption that words missing
+from the database would most likely be of low frequency), and for which
+an ANEW valence rating was available.  A word was selected from this pool
+having an ANEW valence mean between 4.00 and 6.00 and an equal number
+of characters to the I-word. If an I-word or its pair was a member of
+the N-word set, that N-word pair was substituted with the next available
+pair from the spare N-words block with the largest difference in valence.
 
-In these cases, a word with the most neutral valence was chosen that
-also minimised differences in length and frequency between the word
-pair. I-words absent from the MRC database were paired with words selected
-from a pool of 56 words having a frequency of 1 (on the assumption that
-words missing from the database would most likely be of low frequency),
-and for which an ANEW valence rating was available.  A word was selected
-from this pool having an ANEW valence mean between 4.00 and 6.00 and
-an equal number of characters to the I-word. If an I-word or its pair
-were present in the N-words, the N-word pair was substituted with the
-pair from the spare N-words block with the largest valence difference.
-Descriptive statistics for each participant's I-word pairs are shown in
-Appendix 2.
-
-\todo{Where an I{}-word is already an N{}-word, was its pair be selected using same procedure as for other I{}-words or should the N{}-word pair be used?}
-
-\todo{Descriptive statistics for each participant's I-word pairs are shown in Appendix n}
+Each participant's I-word pairs etc. are shown in \cref{sec:iwordlist}
 
 \subsection{Procedure}
 
-People meeting the screening criteria where invited to participate,
-and those who agreed met the researcher at the University of Exeter to
-complete the initial session. After giving informed, written consent,
-the participant used a Lime Survey website \parencite{limesurvey} to
-complete baseline RRS, PHQ-9, GAD-7 and PSWQ measures.
+People meeting the screening criteria who also accepted the invitation to
+participate, met the researcher at the University of Exeter to complete
+the initial 1 hour session. After giving informed, written consent,
+the participant complete baseline measures for RRS, PHQ-9, GAD-7 and
+PSWQ using a web browser and Lime Survey \parencite{limesurvey}.
 
-Using a procedure based on \textcite{roberts_cueing_2013}, the
-participant was instructed to select an unresolved current concern
-(see \cref{sec:iwordinstructions}).
+Using a procedure based on \textcite{roberts_cueing_2013},
+the participant was instructed to select an unresolved current
+concern (see \cref{sec:iwordinstructions}). Participants rated
+their concern on a 5 item scale, with each item in the range 1--9
+\parencite{roberts_cueing_2013}. The concern was accepted if ratings for
+the questions \enquote{How much you have been thinking about it over the
+last week?} and \enquote{How much does it bother you now?} were > 5, and
+the concern was unlikely to resolve within the following 5 weeks. All
+participants' initial concern met these criteria. Participants wrote
+a short statement summarising their concern and recorded the length of
+time that it had been bothering them.
 
+Next, participants generated their ideographic words (I-words). They
+were instructed to generate up to 10 English words, excluding phrases,
+associated with their concern. When choosing these words, they
+were asked to consider \enquote{causes, meanings and implications}
+\parencite[][p.55]{watkins_concreteness_2009} relating to their concern,
+thereby encouraging abstract construal, which has been associated with
+rumination \parencite{watkins_concreteness_2009}. From their list,
+they then chose the 6 words most likely to cause them to ruminate about
+their concern.
 
-Examples of appropriate problems
-were provided.  Participants will then be asked to generate a list of
-at least 18 words describing the personal \enquote{causes, meanings and
-implications} \parencite[][p.55]{watkins_concreteness_2009}
- of their unresolved goal. This wording has been shown to encourage
- abstract construal, which has been associated with
-rumination \parencite{watkins_concreteness_2009}.  the experimenter
-guided the participant to create the 'G set' by ranking the top 18 words
-in decreasing order of negative affect which they evoke in relation to
-their goal.
-\todo{Does the complex word exclusion procedure belong here or in the Procedure?}
+To familiarise themselves with the dot-probe task, participants then
+completed a practice block consisting of N-word block 7 and a set of
+I-word pairs generated by the experimenter. Whilst this was underway, the
+experimenter validated the participant's I-words, noting any which known
+to be difficult to match with a pair from the neutral word database. These
+including plurals, acronyms, hyphenated words, words with stems related
+to an N-word or words longer than 10 characters. After completing the
+practice block, participants were instructed to replace any invalid
+words with synonyms or wth alternatives from their list, where these
+were available. Care was taken to ensure that the semantics of any
+adjusted words were chosen by the participant without influence from
+the experimenter (see \cref{sec:iwordinstructions}). All participants
+successfully generated 6 I-words. They rated the valence of each word in
+relation to their concern on a 7-point scale, using instructions based
+on \textcite{citron_how_2014}.
 
+Participants were given an information sheet to help them install and
+complete the computer task (see \cref{app:taskinstructions}). As a
+motivational aid, they were also given a printed calendar on which to
+plan their daily sessions and cross them off when completed. To further
+encourage completion, they were instructed to write an implementation
+intention on the calendar indicating an approximate time when they would
+complete each session. If reqested, the experimenter installed OpenSesame
+\parencite{mathot_opensesame_2011} on the participant's laptop. The
+initial session ended with the experimenter and participant agreeing
+a time on the same or the following day when the participant would
+complete the software installation on their own computer and complete
+the first session.
 
+Amazingly this worked first time for all Ps. Full details of the protocol are in \cref{app:initialsession}
 
-, before being introduced to the experimental
-task. They were instructed to sit about 60 cm from the computer
+The experimenter then created the files required for the
+participant to run the computer task.  These included the
+experiment itself and a number of data files. The data files
+consisted of the I-word pairs (\cref{sec:iwordpairs}) which were
+validated by the experimenter's supervisor, the N-word pairs, the
+participant's randomization schedule (generated using the command
+\texttt{selectdesign(design=AB,MT=35,limit=8)} from the \texttt{SCRT}
+package \parencite{bulte_r_2008}), a stimulus configuration file and a
+configuration file to position stimuli based on the participant's screen
+height. These files were combined in a zip file which was emailed to
+the participant, along with a link to the installation video on YouTube.
+
+\subsubsection{Daily Sessions}
+
+Participants were instructed to complete all experimental sessions on a computer at their home.
+
+The total study length for each participant will be 36 days.
 screen and to allocate sufficient time in this, and future sessions,
 to complete the session without interruption (a maximum of about 20
-minutes for training blocks and self-report measures). Participants were
-encouraged to carry out the task at time of day which will be consistently
-convenient throughout the study. A training dot-probe test session will
-be delivered to record the initial attentional bias measurement. This
-practice session included 5 P set words and no G set words. On completion,
-the experimenter answered any questions regarding the task, explained
-the schedule for subsequent days and ... After the participant left,
-the experimenter will match words to create the G set. Participants
-carried out all experimental sessions on a computer at their home.
-The total study length for each participant will be 36 days.
-
-
-Participants provided post-intervention RRS, PHQ-9, GAD-7 and PSWQ measures using the Lime Survey website 
-within 12 hours of completing the final session.
-
-
-Psychology department and take about 45 minutes to complete.  During this
-session you will be asked to generate some words associated with an
-unresolved problem or concern that you currently have. You will then
-complete some questionnaires about your thoughts and mood, and a computer
-task which involves reading pairs of words and then detecting the location
-of dots on the screen.
+minutes for training blocks and self-report measures).
 
 \subsubsection{Day 1}
 
@@ -629,7 +662,10 @@ day after any missed session. \ In the final week, the experimenter
 and participant will agree a time for the debriefing session on the day
 following the last experimental session.
 
-\subsubsection{Day 37}
+\subsubsection{Final session}
+
+Participants provided post-intervention RRS, PHQ-9, GAD-7 and PSWQ measures using the Lime Survey website 
+within 12 hours of completing the final session.
 
 The final session will take place at the University of Exeter. \
 Participants will complete trait (RRS) rumination, trait anxiety (STAI)
@@ -675,6 +711,7 @@ needed to do this.
 \todo{stimulus allocation table}
 
 \section{Ethical Considerations}
+no risk trigger
 
 Because screening measures were be submitted remotely, depression was
 measured using the PHQ-8 which omits one item measuring suicidal ideation.
@@ -953,7 +990,11 @@ get if all participants started at the same time
 <<nwords, results='asis', echo=FALSE, error=TRUE>>=
 @
 
+\section{N-word stimulus pairs}
+\label{app:taskinstructions}
+
 \section{I-word stimulus pairs}
+\label{sec:iwordlist}
 
 \todo{don't include P concerns}
 \todo{redact people's names <Male|Female Name>}
@@ -1045,6 +1086,10 @@ doesn't make much sense here so descriptives alone are fine.}
 \section{Unresolved goal and I-word generation instructions}
 \label{sec:iwordinstructions}
 \input{procedure/iwords.tex}
+
+\section{Initial Session Protocol}
+\label{app:initialsession}
+
 \section{Ethical Approval}
 \todo{Ethics appendix (email without identifying details)}
 \end{appendix}
