@@ -78,6 +78,8 @@ which a degree has previously been conferred upon me.}
 \usepackage{rotating}
 \usepackage{mathtools}
 \usepackage{csvsimple}
+\usepackage[toc,page,title,titletoc,header]{appendix}
+
 \begin{document}
 
 \todo{ABSTRACT body: 8000 words max excluding footnotes, tables, figures, references}
@@ -385,13 +387,14 @@ and took approximately 5 minutes to complete.
 
 \subsubsection{Attentional Bias Modification task}
 
-The Attentional Bias Modification (ABM) task was based on the dot-probe
-task, but differed in three respects. First, there were double the
-number (192) trials in each block. Second, only N-word pairs were used
-as stimuli. Finally, probes in ABM trials always appeared at the neutral
-word location. Thus, responses required repeated orientation of attention
-away from the negative word in the pair. Each ABM block took approximately
-15 minutes.
+The Attentional Bias Modification (ABM) task used the same paradigm as the
+dot-probe task but was designed modify, rather than measure attentional
+bias. As such, it differed in three respects. First, there were double
+the number (192) trials in each block. Second, only N-word pairs were
+used as stimuli. Finally, probes in ABM trials always appeared at the
+neutral word location. Thus, responses required repeated orientation of
+attention away from the negative word in the pair. Each ABM block took
+approximately 15 minutes.
 
 \subsubsection{Pre--Post Measures}
 
@@ -492,7 +495,7 @@ the SAWL.  Independent samples t-tests showed significant differences
 for mean ratings of valence and arousal (${P}$s {\textless} .001).
 Pairs were matched for frequency, imageability, familiarity, number of
 characters and number of syllables (all ${P}$s {\textgreater} .16) (see
-\cref{sec:nwordttests}).  In addition, the mean valence between members
+\cref{sec:nwordttests}). In addition, the mean valence between members
 of any pair was at least 1.44 (Mean: 2.15, ${SD}$ = 0.37). To form the
 stimulus blocks, pairs were ranked by descending mean valence difference.
 The 6 pairs with the lowest difference were assigned to the ``spare''
@@ -504,21 +507,22 @@ complete N-word list can be seen in \cref{sec:nwordlist}
 
 \subsubsection{I-word pairs}
 
-\todo{Does the complex word exclusion procedure belong here or in the Procedure?}
+We refer to ideographic words (I-words) as the set of 6 words chosen
+by each participant for their likelihood to induce rumination
+about the participant's chosen current concern.
 
-We refer to ideographic words as the set of 6 words chosen by each
-participant for their likelihood to induce rumination about the
-participant's chosen current concern. Due to the unpredictability
-of these words, and the limited number of words in the SAWL
-\parencite{citron_how_2014}, a larger data set was required to create
-matched I-word pairs. A database of neutrally valenced words was
+Due to the
+unpredictability of these words, and the limited number of words in
+the SAWL \parencite{citron_how_2014}, a larger data set was required
+to matched pairs to I-words. A database of neutrally valenced words was
 created including frequency, imageability, familiarity, word length and
 number of syllables attributes from the MRC psycholinguistic database
-\parencite{wilson_mrc_1988}.  An separate table was added to the database
+\parencite{wilson_mrc_1988}\todo{do I need more details on where the
+MRC attributes come from?}. A separate table was added to the database
 containing 1030 word valence means from the Affective Norms for English
 Words (ANEW) dataset \parencite{bradley_affective_1999}.
 
-\todo{do I need more details on where the MRC attributes come from?}
+
 
 Two different matching approaches were used, depending on whether
 each I-word word was present in, or absent from, the MRC database.
@@ -545,34 +549,23 @@ Descriptive statistics for each participant's I-word pairs are shown in
 Appendix 2.
 
 \todo{Where an I{}-word is already an N{}-word, was its pair be selected using same procedure as for other I{}-words or should the N{}-word pair be used?}
+
 \todo{Descriptive statistics for each participant's I-word pairs are shown in Appendix n}
 
 \subsection{Procedure}
 
-Same paradigm but dot-probe is designed to measure attentional bias and ABM to modify it.
+People meeting the screening criteria where invited to participate,
+and those who agreed met the researcher at the University of Exeter to
+complete the initial session. After giving informed, written consent,
+the participant used a Lime Survey website \parencite{limesurvey} to
+complete baseline RRS, PHQ-9, GAD-7 and PSWQ measures.
 
-Participants provided baseline measures of trait rumination, trait worry,
-trait anxiety and depression at their initial meeting with the researcher
-(i.e. before they had completed ther first dot-probe session), and again
-within 12 hours of completing the final session.
+Using a procedure based on \textcite{roberts_cueing_2013}, the
+participant was instructed to select an unresolved current concern
+(see \cref{sec:iwordinstructions}).
 
-People meeting the screening criteria where invited to participate, and those who agreed
-met the researcher at the University of Exeter to complete the initial session.
 
-Psychology department and take about 45 minutes to complete.  During this
-session you will be asked to generate some words associated with an
-unresolved problem or concern that you currently have. You will then
-complete some questionnaires about your thoughts and mood, and a computer
-task which involves reading pairs of words and then detecting the location
-of dots on the screen.
-
-An introductory session took place at the University of Exeter
-after the participant gave informed, written consent to take
-part in the study. A self-relevant, unresolved goal was
-chosen by asking participants to think of \enquote{an ongoing and
-unresolved concern that [has] repeatedly come into their mind and
-caused them to feel negative or stressed during the previous week}
-\parencite{roberts_cueing_2013}. Examples of appropriate problems
+Examples of appropriate problems
 were provided.  Participants will then be asked to generate a list of
 at least 18 words describing the personal \enquote{causes, meanings and
 implications} \parencite[][p.55]{watkins_concreteness_2009}
@@ -582,10 +575,11 @@ rumination \parencite{watkins_concreteness_2009}.  the experimenter
 guided the participant to create the 'G set' by ranking the top 18 words
 in decreasing order of negative affect which they evoke in relation to
 their goal.
+\todo{Does the complex word exclusion procedure belong here or in the Procedure?}
 
-Participants will completed measures of trait rumination (RRS),
-trait anxiety (STAI) and depression (PHQ-9) using Lime Survey
-\parencite{limesurvey}, before being introduced to the experimental
+
+
+, before being introduced to the experimental
 task. They were instructed to sit about 60 cm from the computer
 screen and to allocate sufficient time in this, and future sessions,
 to complete the session without interruption (a maximum of about 20
@@ -600,22 +594,17 @@ the experimenter will match words to create the G set. Participants
 carried out all experimental sessions on a computer at their home.
 The total study length for each participant will be 36 days.
 
-\subsection{measurement times}
 
-of attentional (dot-probe) \parencite{macleod_attentional_1986}, state
-rumination (Goal Rumination Scale; GRS) \parencite{schultheiss_role_2008}
-were taken approximately every 24 hours, except where sessions were
-posponed or skipped.  A secondary measure of mood (10 item I-PANAS-SF)
-\parencite{mackinnon_short_1999} supplemented with 2 PA (negatively end of
-scale) items 'Sad', 'Depressed' and 2 NA items 'Anxious', 'Worried' was
-also taken with each session.  Questions in the GRS and I-PANAS-SF were
-asked in relation to the last 24 hours. \todo{Nick:OK, I think anxious
-and worried would map quite cleanly (+ve) onto NA whereas sad, depressed,
-would map (-ve) on both PA and (+ve) on NA because they have an aversive
-component (rather like depression is supposed to be both low PA and high
-NA). Doing this reminds me that we added those 2 + 2 adjectives because
-they more closely map on to depression (low PA, high NA) and anxiety
-(high NA).} Age and gender demographics were also recorded.
+Participants provided post-intervention RRS, PHQ-9, GAD-7 and PSWQ measures using the Lime Survey website 
+within 12 hours of completing the final session.
+
+
+Psychology department and take about 45 minutes to complete.  During this
+session you will be asked to generate some words associated with an
+unresolved problem or concern that you currently have. You will then
+complete some questionnaires about your thoughts and mood, and a computer
+task which involves reading pairs of words and then detecting the location
+of dots on the screen.
 
 \subsubsection{Day 1}
 
@@ -785,6 +774,14 @@ results when there actually are treatment effects." \parencite{edgington_additiv
 
 \todo{Multiple comparison corrections}
 
+\todo{Nick:OK, I think anxious
+and worried would map quite cleanly (+ve) onto NA whereas sad, depressed,
+would map (-ve) on both PA and (+ve) on NA because they have an aversive
+component (rather like depression is supposed to be both low PA and high
+NA). Doing this reminds me that we added those 2 + 2 adjectives because
+they more closely map on to depression (low PA, high NA) and anxiety
+(high NA).}
+
 \section{Results}
 
 \subsection{paragraph on included Ps}
@@ -930,12 +927,11 @@ get if all participants started at the same time
 \todo{longevity of effects treatment?}
 
 \printbibliography
-\appendix
+%% CAVEAT: \appendices environment breaks \cleveref
+\begin{appendix}
 \label{appendix}
 
 \todo{appendices: 4000 words max (~250 words/page i.e. 16 pages)}
-% http://tex.stackexchange.com/questions/172496/adding-appendix-chapters-without-sections-in-table-of-contents
-%\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
 \section{N-word stimulus pairs}
 \label{sec:nwordlist}
@@ -958,6 +954,7 @@ get if all participants started at the same time
 @
 
 \section{I-word stimulus pairs}
+
 \todo{don't include P concerns}
 \todo{redact people's names <Male|Female Name>}
 \todo{Include P valence ratings}
@@ -1045,5 +1042,10 @@ doesn't make much sense here so descriptives alone are fine.}
 \end{flushleft}
 \footnotetext{Ideographic (I) words generated by participant for their unresolved problem are italicised.}
 
-\end{document}
+\section{Unresolved goal and I-word generation instructions}
+\label{sec:iwordinstructions}
+\input{procedure/iwords.tex}
+\section{Ethical Approval}
 \todo{Ethics appendix (email without identifying details)}
+\end{appendix}
+\end{document}
