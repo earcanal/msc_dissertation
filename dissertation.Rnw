@@ -530,8 +530,7 @@ words in the SAWL \parencite{citron_how_2014}, a larger data set was
 required to matched pairs to I-words. A database of neutrally valenced
 words was created including frequency, imageability, familiarity, word
 length and number of syllables attributes from the MRC psycholinguistic
-database \parencite{wilson_mrc_1988}\todo{do I need more details on
-where the MRC attributes come from?}. A separate table was added to the
+database \parencite{wilson_mrc_1988}. A separate table was added to the
 database containing 1030 word valence means from the Affective Norms
 for English Words (ANEW) dataset \parencite{bradley_affective_1999}.
 
@@ -612,24 +611,22 @@ encourage completion, they were instructed to write an implementation
 intention on the calendar indicating an approximate time when they would
 complete each session. If reqested, the experimenter installed OpenSesame
 \parencite{mathot_opensesame_2011} on the participant's laptop. The
-initial session ended with the experimenter and participant agreeing
-a time on the same or the following day when the participant would
-complete the software installation on their own computer and complete
-the first session.
+initial session ended with the experimenter and participant agreeing a
+time on the same or the following day when the participant would complete
+the software installation on their own computer and complete the first
+session. All participants successfully completed the preparatory session
+(see \cref{app:initialsession} for full details of the session protocol).
 
-Amazingly this worked first time for all Ps. Full details of the protocol are in \cref{app:initialsession}
-
-The experimenter then created the files required for the
-participant to run the computer task.  These included the
-experiment itself and a number of data files. The data files
-consisted of the I-word pairs (\cref{sec:iwordpairs}) which were
-validated by the experimenter's supervisor, the N-word pairs, the
-participant's randomization schedule (generated using the command
+The experimenter then prepared the experiment and associated data
+files required for the participant to run the computer task. The data
+files consisted of the I-word pairs (\cref{sec:iwordpairs}) which
+were validated by the experimenter's supervisor, the N-word pairs,
+the participant's randomization schedule (generated using the command
 \texttt{selectdesign(design=AB,MT=35,limit=8)} from the \texttt{SCRT}
 package \parencite{bulte_r_2008}), a stimulus configuration file and a
 configuration file to position stimuli based on the participant's screen
-height. These files were combined in a zip file which was emailed to
-the participant, along with a link to the installation video on YouTube.
+height. These files were emailed to the participant, along with a link
+to the installation video on YouTube.
 
 \subsubsection{Daily Sessions}
 
@@ -640,7 +637,7 @@ screen and to allocate sufficient time in this, and future sessions,
 to complete the session without interruption (a maximum of about 20
 minutes for training blocks and self-report measures).
 
-\subsubsection{Day 1}
+\subsubsection{Session 1}
 
 The experimenter will telephone participants on the first day of the
 experiment to help them install any software required to run the dot-probe
@@ -713,8 +710,6 @@ needed to do this.
 
 \section{Ethical Considerations}
 
-This study was approved by the ... (see \cref{app:ethics})
-
 no risk trigger
 
 Because screening measures were be submitted remotely, depression was
@@ -733,6 +728,9 @@ were raised with the researcher's supervisor. Participants were not
 identifiable from their electronic or written data. The former were
 stored on a secure digital filing system and the latter in a locked
 filing cabinet.
+
+This study was approved by the University of Exeter, School of Psychology
+Ethics Committee (see \cref{app:ethics}).
 
 \section{Analyses}
 \label{analyses}
@@ -976,6 +974,7 @@ get if all participants started at the same time
 
 \section{Survey Measures}
 \label{app:surveys}
+\todo{Are these needed?}
 
 \section{N-word stimulus pairs}
 \label{sec:nwordlist}
@@ -999,12 +998,10 @@ get if all participants started at the same time
 
 \section{N-word stimulus pairs}
 \label{app:taskinstructions}
+\input{procedure/task_instructions.tex}
 
 \section{I-word stimulus pairs}
 \label{sec:iwordlist}
-
-\section{Current Concern Rating Scale}
-\label{app:concernrating}
 
 \todo{don't include P concerns}
 \todo{redact people's names <Male|Female Name>}
@@ -1016,6 +1013,7 @@ means and SDs for the group of I words ${AND}$ the group of paired words
 separately for each participant. You could use some kind of subscript to
 indicate which database the relevant statistic was taken from. T-test
 doesn't make much sense here so descriptives alone are fine.}
+\todo{this is the place to describe how field in the MRC db were populated, e.g. kffreq}
 
 \begin{flushleft}
 \tablefirsthead{}
@@ -1093,12 +1091,17 @@ doesn't make much sense here so descriptives alone are fine.}
 \end{flushleft}
 \footnotetext{Ideographic (I) words generated by participant for their unresolved problem are italicised.}
 
+\section{Current Concern Rating Scale}
+\label{app:concernrating}
+\todo{Is this needed?}
+
 \section{Unresolved goal and I-word generation instructions}
 \label{sec:iwordinstructions}
 \input{procedure/iwords.tex}
 
 \section{Initial Session Protocol}
 \label{app:initialsession}
+\todo{Is this needed?}
 
 \section{Ethical Approval}
 \label{app:ethics}
