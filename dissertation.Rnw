@@ -612,10 +612,11 @@ intention on the calendar indicating an approximate time when they would
 complete each session. If reqested, the experimenter installed OpenSesame
 \parencite{mathot_opensesame_2011} on the participant's laptop. The
 initial session ended with the experimenter and participant agreeing a
-time on the same or the following day when the participant would complete
-the software installation on their own computer and complete the first
-session. All participants successfully completed the preparatory session
-(see \cref{app:initialsession} for full details of the session protocol).
+time on the same or the following day when the experimenter could be
+available to support the participant whilst installing the computer
+task on their own computer and completing their first session. All
+participants successfully completed the preparatory session (see
+\cref{app:initialsession} for full details of the session protocol).
 
 The experimenter then prepared the experiment and associated data
 files required for the participant to run the computer task. The data
@@ -625,52 +626,30 @@ the participant's randomization schedule (generated using the command
 \texttt{selectdesign(design=AB,MT=35,limit=8)} from the \texttt{SCRT}
 package \parencite{bulte_r_2008}), a stimulus configuration file and a
 configuration file to position stimuli based on the participant's screen
-height. These files were emailed to the participant, along with a link
-to the installation video on YouTube.
+height. These files were emailed to the participant for them to install.
 
 \subsubsection{Daily Sessions}
 
-Participants were instructed to complete all experimental sessions on a computer at their home.
-
-The total study length for each participant will be 36 days.
-screen and to allocate sufficient time in this, and future sessions,
-to complete the session without interruption (a maximum of about 20
-minutes for training blocks and self-report measures).
-
-\subsubsection{Session 1}
-
-The experimenter will telephone participants on the first day of the
-experiment to help them install any software required to run the dot-probe
-and ABM tasks. \ Participants will follow emailed instructions guiding
-them to complete state rumination (GRS), state anxiety (STAI-T) and mood
-(I-PANAS-SF) measurements followed by the first phase A dot-probe test
-block. \ The experimenter will call the participant after this first
-session to answer any questions regarding the task.
-
-\subsubsection{Days 2 to 36}
-
-Participants will be emailed daily, instructing them to first complete
-the measurement instruments followed by instructions on how to run
-the computer task which matches the next phase in their randomisation
-schedule. \ This will be a test block for phases A and B, followed by an
-ABM training block in phase B only (see Figure 1). \ The experimenter
-will telephone participants twice in week 1 to ensure their well-being
-and motivation. \ Thereafter they will be telephoned weekly and the
-day after any missed session. \ In the final week, the experimenter
-and participant will agree a time for the debriefing session on the day
-following the last experimental session.
-
-\subsubsection{Final session}
-
-Participants provided post-intervention RRS, PHQ-9, GAD-7 and PSWQ measures using the Lime Survey website 
-within 12 hours of completing the final session.
-
-The final session will take place at the University of Exeter. \
-Participants will complete trait (RRS) rumination, trait anxiety (STAI)
-and depression (PHQ-9) measures and will be invited to write down their
-current feelings towards their personal goal and overall experience of
-the training before being thanked for their participation, remunerated
-and debriefed.
+Participants were instructed to complete all experimental sessions on a
+computer at their home. Each day, the experimenter sent participants a
+templated email containing instructions on how to complete the session
+(see \cref{app:reminder}). For the first session, additional instructions
+included a link to the installation video on YouTube. Each session
+required the participant to complete the dot-probe task (phase A)
+or the ABM training, followed by the dot-probe (phase B) and online
+PANAS-SF and GRS measures using Lime Survey. On a daily basis, the
+experimenter recorded whether each participant had completed a session
+and, if so, their accuracy on the task. The experimenter periodically
+sent additional emails to motivate participants by notifying them of
+their progress, to ensure their well-being if 3 consecutive sessions
+were skipped, and to prepare them for the slightly longer task when
+transitioning to phase B. From session 25 onwards, sessions ended with
+a message informing the participant of the amount they had earnt so
+far. Participants provided post-intervention RRS, PHQ-9, GAD-7 and PSWQ
+measures using the Lime Survey website within 12 hours of completing
+the final session. On exiting the study, all participants were emailed
+debrief information \cref{app:debrief} and information about sources of
+support \cref{app:support} and were paid for their participation.
 
 \subsubsection{Stimulus allocation}
 
@@ -823,13 +802,13 @@ they more closely map on to depression (low PA, high NA) and anxiety
 
 \section{Results}
 
-\subsection{paragraph on included Ps}
+paragraph on included Ps
 
 The combined screening scores of the 15 participants who of PHQ-8 ${M}$= ${SD}$=, RRS${M}$= ${SD}$=, PSWQ${M}$= ${SD}$=
 
-\todo{Calculate M and SD for screening measures.}
+ No participants fell below the accuracy threshold for checking/exclusion.
 
-\subsection{next paragraph}
+\todo{Calculate M and SD for screening measures.}
 
 \todo{dropout and its predictability in relation to screening measures}
 \todo{(calculate) M/SD accuracy}
@@ -842,6 +821,8 @@ from these participants they were typical/atypical.
 
 P16 didn't complete GRS and PANAS for session 8 but told me scores were
 the same as for session 7.
+
+How many did each P complete and why did they stop.
 
 \subsection{Pre/Post Measures}
 
@@ -1102,6 +1083,18 @@ doesn't make much sense here so descriptives alone are fine.}
 \section{Initial Session Protocol}
 \label{app:initialsession}
 \todo{Is this needed?}
+
+\section{Example session reminder email}
+\label{app:reminder}
+\input{procedure/reminder.tex}
+
+\section{Debrief sheet}
+\label{app:debrief}
+\input{procedure/debrief.tex}
+
+\section{Sources of support information sheet}
+\label{app:support}
+%\input{procedure/support.tex}
 
 \section{Ethical Approval}
 \label{app:ethics}
