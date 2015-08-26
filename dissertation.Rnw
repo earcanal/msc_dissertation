@@ -335,7 +335,8 @@ partner of an undergraduate student. The mean age of participants was
 \subsection{Measures and Materials}
 
 All survey instruments were created using Lime Survey
-\parencite{limesurvey} and completed using a web browser.
+\parencite{limesurvey} and completed using a web browser (see
+\cref{app:surveys}). \todo{is this needed?}
 
 \todo{See McKay (2005) for examples of what each measure measures i.e. a bit more narrative}
 
@@ -363,8 +364,9 @@ chosen by each participant.
   \label{fig:dotprobe}
 \end{figure}
 
-\todo{RAT: 1250ms exposure}
-\todo{update method}
+\todo{RAT: 1250ms exposure. Nick \enquote{On the basis of Mogg/Bradley's papers, I think 1000 ms is justified, and you could
+perhaps stretch it to 1250 ms just to be extra-sure that you are capturing the maintenance of attention.} see email and
+\textcite{mogg_attentional_2005} }
 
 Each trial began with an 25 x 25 pixel (7 pixel thick) white fixation
 cross centred on a black screen. After 500ms, this was replaced by a word
@@ -372,27 +374,27 @@ pair from the current stimulus set.  One word from the pair appeared
 above the fixation cross location and one below. Word pairs were 125
 pixels high with a vertical space between the upper and lower words such
 that the stimuli subtended a visual angle of approximately 2$^{\circ}$
-\footnote{This angle was calculated using a height measurement of
-the visible area of each participant's computer display, and assumes
-that participants followed the instruction to sit approximately 60cm
-from the screen.}. Neutral words occurred with equal frequency at the
-upper or lower positions. After 1250 ms, the word pair was replaced by
-either a greater than (>) symbol or less than (<) symbol at a random
-letter location within one of the previous word locations. Probes
+\footnote{This angle was calculated using a height measurement of the
+visible area of each participant's computer display, and the assumption
+that participants followed the instruction to sit approximately 60cm from
+the screen.}. Neutral words occurred with equal frequency at the upper
+or lower positions. After 1250 ms, the word pair was replaced by either
+a greater than (\texttt{>}) symbol or less than (\texttt{<}) symbol at a
+random letter location within one of the previous word locations. Probes
 appeared with equal frequency at upper and lower locations. The only
-valid keyboard responses were greather than (>) or less than (<). The
-probe remained on the screen until the participant pressed a valid
-key. A correct response was recorded if the keypress matched the probe
-symbol. There was no feedback for incorrect responses. A blank screen
-with a random inter-trial interval (ITI) between 100-500ms followed
-each trial. Participants were instructed to respond as quickly and
-accurately as possible.  Each dot-probe block consisted of 96 trials
+valid keyboard responses were greater than (\texttt{>}) and less than
+(\texttt{<}). The probe remained on the screen until the participant
+pressed a valid key. A correct response was recorded if the keypress
+matched the probe symbol. There was no feedback for incorrect responses. A
+blank screen with a random inter-trial interval (ITI) between 100-500ms
+followed each trial. Participants were instructed to respond as quickly
+and accurately as possible.  Each dot-probe block consisted of 96 trials
 and took approximately 5 minutes to complete.
 
 The task was developed using OpenSesame, an open-source experiment builder
 for the social sciences \parencite{mathot_opensesame_2011}. OpenSesame
 was chosen as a package which was relatively easy to install on Windows,
-Macintosh (OSX > ${\geq}$ 10.9) and Linux operating systems, thereby
+Macintosh (OSX ${\geq}$ 10.9) and Linux operating systems, thereby
 eliminating any dependencies on a webserver for software development or
 data collection. Installation instructions for were created using screen
 capture software and uploaded to YouTube.
@@ -420,8 +422,7 @@ trait rumination, with item scores ranging from 1--4. The RRS is
 valid and reliable, having an expected Cronbach's $\alpha$ of .85
 \parencite{treynor_rumination_2003}. Questions on the RRS were asked in
 relation to the previous 4 weeks, to correspond approximately with the
-month before the study (pre) and time within the study (post).\todo{see
-appendix}
+month before the study (pre) and time within the study (post) (see \cref{app:surveys}). \todo{is this needed?}
 
 \paragraph{GAD-7}
 
@@ -438,7 +439,7 @@ reliable (Cronbach's $\alpha$ > .85) and valid measure of depression
 severity \parencite{kroenke_phq9_2001}. Item scores range from 0--3,
 and questions relate to the previous 2 weeks.
 
-\paragraph{Penn State Worry Questionnaire}
+\paragraph{PSWQ}
 
 The 16 item Penn State Worry Questionnaire (PSWQ) is an internally
 consistent measure of trait worry with good test-retest reliability
@@ -559,17 +560,17 @@ Each participant's I-word pairs etc. are shown in \cref{sec:iwordlist}
 
 \subsection{Procedure}
 
-People meeting the screening criteria who also accepted the invitation to
+People who met the screening criteria and accepted the invitation to
 participate, met the researcher at the University of Exeter to complete
-the initial 1 hour session. After giving informed, written consent,
-the participant complete baseline measures for RRS, PHQ-9, GAD-7 and
-PSWQ using a web browser and Lime Survey \parencite{limesurvey}.
+the initial 1 hour preparatory session. After giving informed, written
+consent, the participant complete baseline measures for RRS, PHQ-9,
+GAD-7 and PSWQ using a web browser and Lime Survey \parencite{limesurvey}.
 
 Using a procedure based on \textcite{roberts_cueing_2013},
 the participant was instructed to select an unresolved current
-concern (see \cref{sec:iwordinstructions}). Participants rated
+concern (see \cref{sec:iwordinstructions}), and rated
 their concern on a 5 item scale, with each item in the range 1--9
-\parencite{roberts_cueing_2013}. The concern was accepted if ratings for
+\cref{app:concernrating}. The concern was accepted if ratings for
 the questions \enquote{How much you have been thinking about it over the
 last week?} and \enquote{How much does it bother you now?} were > 5, and
 the concern was unlikely to resolve within the following 5 weeks. All
@@ -711,6 +712,9 @@ needed to do this.
 \todo{stimulus allocation table}
 
 \section{Ethical Considerations}
+
+This study was approved by the ... (see \cref{app:ethics})
+
 no risk trigger
 
 Because screening measures were be submitted remotely, depression was
@@ -970,6 +974,9 @@ get if all participants started at the same time
 
 \todo{appendices: 4000 words max (~250 words/page i.e. 16 pages)}
 
+\section{Survey Measures}
+\label{app:surveys}
+
 \section{N-word stimulus pairs}
 \label{sec:nwordlist}
 
@@ -995,6 +1002,9 @@ get if all participants started at the same time
 
 \section{I-word stimulus pairs}
 \label{sec:iwordlist}
+
+\section{Current Concern Rating Scale}
+\label{app:concernrating}
 
 \todo{don't include P concerns}
 \todo{redact people's names <Male|Female Name>}
@@ -1091,6 +1101,12 @@ doesn't make much sense here so descriptives alone are fine.}
 \label{app:initialsession}
 
 \section{Ethical Approval}
-\todo{Ethics appendix (email without identifying details)}
+\label{app:ethics}
+
+\begin{figure}[hp]
+\includegraphics[width=160mm]{figure/ethics_approval.png}
+\caption{Notification of ethical approval}
+\end{figure}
+
 \end{appendix}
 \end{document}
