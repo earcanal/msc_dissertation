@@ -1094,7 +1094,7 @@ doesn't make much sense here so descriptives alone are fine.}
 
 \section{Sources of support information sheet}
 \label{app:support}
-%\input{procedure/support.tex}
+\input{procedure/support.tex}
 
 \section{Ethical Approval}
 \label{app:ethics}
