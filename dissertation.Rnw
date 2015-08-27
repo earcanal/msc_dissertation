@@ -494,8 +494,6 @@ depression.} Questions on the PANAS-SF were asked in relation to the last
 
 \subsubsection{N-word pairs}
 
-\todo{SAWL - How are affective word ratings related to lexicosemantic properties? (Citron, Weekes, \& Ferstl, 2014)}
-
 The Sussex Affective Word List (SAWL) \parencite{citron_how_2014} was
 used to create 66 N-word stimulus pairs. Starting with 66 words rated
 most negative and most neutral, pairs were created by matching words
@@ -600,7 +598,8 @@ adjusted words were chosen by the participant without influence from
 the experimenter (see \cref{sec:iwordinstructions}). All participants
 successfully generated 6 I-words. They rated the valence of each word in
 relation to their concern on a 7-point scale, using instructions based
-on \textcite{citron_how_2014}.
+on \textcite{citron_how_2014}. Participants then completed a distraction
+task for 5 minutes (see \cref{app:distraction}).
 
 Participants were given an information sheet to help them install and
 complete the computer task (see \cref{app:taskinstructions}). As a
@@ -740,28 +739,29 @@ pswq_pwr <- format_power(pswq_pwr$power)
 
 \subsubsection{Pre--Post Measures}
 
-Paired samples t-tests were used to compare participants' pre and
-post ABM training measures of rumination (RRS), depression (PHQ-9),
-anxiety (GAD-7) and worry (PSWQ). Using a similar ABM procedure,
-\textcite{yang_attention_2015} found significant post training reductions
-in rumination, using RRS (${d}$=.49), depression, using BDI-II
-\parencite{beck_manual_1996} (${d}$=1.50) and anxiety, using STAI-T
-\parencite{spielberger_manual_1983} (${d}$=.88). Given these effect
+Paired samples t-tests were used to compare participants' pre
+and post ABM training measures of rumination (RRS), depression
+(PHQ-9), anxiety (GAD-7) and worry (PSWQ). Using a similar ABM
+procedure, \textcite{yang_attention_2015} found significant post
+training reductions in rumination, using RRS (${d}$=.49), depression,
+using BDI-II \parencite{beck_manual_1996} (${d}$=1.50) and anxiety, using
+STAI-T \parencite{spielberger_manual_1983} (${d}$=.88). Given these effect
 sizes, 12 participants and $\alpha$ set at .05, two-tailed calculations
 of power (1-$\beta$) gave \Sexpr{rrs_pwr} for RRS, \Sexpr{bdi_pwr}
 for BDI-II and \Sexpr{stai_pwr} for STAI-T. In practice, these are
 likely to be lower as participants in \textcite{yang_attention_2015}
-were undergraduates with mild to severe depression in contrast with the
-current study where participants with mild depression or above were
-excluded. Estimates could also vary due to the different instruments
-used to measure depression (PHQ-9) and anxiety (GAD-7) in the current
-study. \textcite{enock_attention_2014} found a significant post ABM
-training reduction in PSWQ (${d}$=.51) using a dot-probe task with neutral
-and disgust face stimuli. A two-tailed calculation with 12 participants
-and $\alpha$ set at .05, gave power (1-$\beta$) of \Sexpr{pswq_pwr}. In
-summary, the current study is likely to be sufficiently powered to
-detect changes in depression (PHQ-9) and possibly anxiety (GAD-7),
-but underpowered to detect changes in rumination (RRS) and worry (PSWQ).
+were undergraduates with mild to severe depression in contrast with
+the current study where participants with mild depression or above were
+excluded. Estimates could also vary due to the different instruments used
+to measure depression (PHQ-9) and anxiety (GAD-7) in the current study. In
+an ABM training study using smartphones, \textcite{enock_attention_2014}
+found a significant post ABM training reduction in PSWQ (${d}$=.51) using
+a dot-probe task with neutral and disgust face stimuli. A two-tailed
+calculation with 12 participants and $\alpha$ set at .05, gave power
+(1-$\beta$) of \Sexpr{pswq_pwr}. In summary, the current study is likely
+to be sufficiently powered to detect changes in depression (PHQ-9) and
+possibly anxiety (GAD-7), but underpowered to detect changes in rumination
+(RRS) and worry (PSWQ).
 
 \subsubsection{Daily Measures}
 Comparisons were made between each participant's baseline (phase A)
@@ -1137,23 +1137,22 @@ get if all participants started at the same time
 <<nwords, results='asis', echo=FALSE, error=TRUE>>=
 @
 
-\section{N-word stimulus pairs}
+\section{Distraction task}
+\label{app:distraction}
+\input{procedure/distraction.tex}
+
+\section{Task instructions}
 \label{app:taskinstructions}
 \input{procedure/task_instructions.tex}
 
 \section{I-word stimulus pairs}
 \label{sec:iwordlist}
 
-\todo{don't include P concerns}
-\todo{redact people's names <Male|Female Name>}
-\todo{Include P valence ratings}
-
 \todo{Nick: As you are going to the trouble of presenting this info
 and you have few participants, it probably makes sense to present the
 means and SDs for the group of I words ${AND}$ the group of paired words
 separately for each participant. You could use some kind of subscript to
-indicate which database the relevant statistic was taken from. T-test
-doesn't make much sense here so descriptives alone are fine.}
+indicate which database the relevant statistic was taken from.}
 \todo{this is the place to describe how field in the MRC db were populated, e.g. kffreq}
 
 \begin{flushleft}
