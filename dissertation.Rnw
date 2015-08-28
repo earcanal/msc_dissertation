@@ -558,26 +558,27 @@ Each participant's I-word pairs etc. are shown in \cref{sec:iwordlist}
 
 People who met the screening criteria and accepted the invitation to
 participate, met the researcher at the University of Exeter to complete
-the initial 1 hour preparatory session. After giving informed, written
-consent, the participant complete baseline measures for RRS, PHQ-9,
-GAD-7 and PSWQ using a web browser and Lime Survey \parencite{limesurvey}.
+the initial 1 hour preparatory session. Participants gave informed,
+written consent, in line with the guidelines set by the University
+of Exeter School of Psychology Ethics Committee.  Following this they
+completed baseline measures for RRS, PHQ-9, GAD-7 and PSWQ using a web
+browser and Lime Survey \parencite{limesurvey}.
 
-Using a procedure based on \textcite{roberts_cueing_2013},
-the participant was instructed to select an unresolved current
-concern (see \cref{sec:iwordinstructions}), and rated
-their concern on a 5 item scale, with each item in the range 1--9
-\cref{app:concernrating}. The concern was accepted if ratings for
-the questions \enquote{How much you have been thinking about it over the
-last week?} and \enquote{How much does it bother you now?} were > 5, and
-the concern was unlikely to resolve within the following 5 weeks. All
-participants' initial concern met these criteria. Participants wrote
-a short statement summarising their concern and recorded the length of
-time that it had been bothering them.
+Next, using a procedure based on \textcite{roberts_cueing_2013}, the
+participant was instructed to select an unresolved current concern (see
+\cref{sec:iwordinstructions}), and rated their concern on a 5 item scale,
+with each item in the range 1--9 \cref{app:concernrating}. The concern
+was accepted if ratings for the questions \enquote{How much you have
+been thinking about it over the last week?} and \enquote{How much does
+it bother you now?} were > 5, and the concern was unlikely to resolve
+within the following 5 weeks. All participants' initial concern met
+these criteria. Participants wrote a short statement summarising their
+concern and recorded the length of time that it had been bothering them.
 
-Next, participants generated their ideographic words (I-words). They
-were instructed to generate up to 10 English words, excluding phrases,
-associated with their concern. When choosing these words, they
-were asked to consider \enquote{causes, meanings and implications}
+The participant then generated their ideographic words (I-words). They
+were instructed to generate up to 10 English words, excluding
+phrases, associated with their concern. When choosing these words,
+they were asked to consider \enquote{causes, meanings and implications}
 \parencite[][p.55]{watkins_concreteness_2009} relating to their concern,
 thereby encouraging abstract construal, which has been associated with
 rumination \parencite{watkins_concreteness_2009}. From their list,
