@@ -335,7 +335,7 @@ partner of an undergraduate student. The mean age of participants was
 
 All survey instruments were created using Lime Survey
 \parencite{limesurvey} and completed using a web browser (see
-\cref{app:surveys}). \todo{is this needed?}
+\cref{app:surveys}).
 
 \todo{See McKay (2005) for examples of what each measure measures i.e. a bit more narrative}
 
@@ -825,8 +825,6 @@ How many did each P complete and why did they stop.
 
 \subsection{Pre/Post Measures}
 
-\todo{calculate $\alpha$ for all measures: pre and post and daily (range)}
-
 <<external, cache=FALSE, echo=FALSE>>=
 knitr::read_chunk('../opensesame/dotprobe/prepost.R')
 knitr::read_chunk('../opensesame/dotprobe/analyse.R')
@@ -836,7 +834,6 @@ knitr::read_chunk('../opensesame/dotprobe/iwords.R')
 
 <<prepost, results='asis', echo=FALSE, error=TRUE>>=
 @
-\todo{add age and gender to table}
 \todo{How to indicate the CIs are pre-post difference e.g. "The only scale on which Ps showed a significant difference was ...  All others were NS"}
 \todo{Description of table pointing out sig. and NS differences}
 \todo{Check understanding of CIs}
@@ -1116,7 +1113,36 @@ get if all participants started at the same time
 
 \section{Survey Measures}
 \label{app:surveys}
-\todo{Are these needed?}
+
+\begin{sidewaysfigure}[hp]
+\includegraphics[width=270mm]{figure/rrs.png}
+\caption{Ruminative Responses Scale (RRS) administered using Lime Survey}
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure}[hp]
+\includegraphics[width=250mm]{figure/gad7.png}
+\caption{GAD-7 administered using Lime Survey}
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure}[hp]
+\includegraphics[width=250mm]{figure/phq9.png}
+\caption{PHQ-9 administered using Lime Survey}
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure}[hp]
+\includegraphics[width=250mm]{figure/pswq.png}
+\caption{Penn State Worry Questionnaire (PSWQ) administered using Lime Survey}
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure}[hp]
+\includegraphics[width=250mm]{figure/panas.png}
+\caption{Positive and Negative Affect Schedule (PANAS-SF) administered using Lime Survey}
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure}[hp]
+\includegraphics[width=250mm]{figure/grs.png}
+\caption{Goal Rumination Scale (GRS) administered using Lime Survey}
+\end{sidewaysfigure}
 
 \section{N-word stimulus pairs}
 \label{sec:nwordlist}
