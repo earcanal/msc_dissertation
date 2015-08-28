@@ -688,27 +688,32 @@ needed to do this.
 
 \section{Ethical Considerations}
 
-no risk trigger
-
-Because screening measures were be submitted remotely, depression was
+Because screening measures were submitted remotely, depression was
 measured using the PHQ-8 which omits one item measuring suicidal ideation.
 Anyone scoring ${\geq}$ 10 on the PHQ-8 \parencite{kroenke_phq8_2009}
- was signposted towards resources helpful for people who may be
-suffering from depression. The researcher completed risk training at the
-Mood Disorders Centre in January 2015 and the process for implementing
-the approved protocol will be rehearsed with the researcher's supervisor
-in advance.  The protocol was triggered by participants scoring ${\geq}$
-10 on their initial PHQ-9 and final PHQ-9. The potential risk of harm
-arising from increasing rumination in high trait ruminators, along with
-the burden of a long testing period, was continuously monitored in the
-regular contact that the researcher had with participants.  Any concerns
-were raised with the researcher's supervisor. Participants were not
-identifiable from their electronic or written data. The former were
-stored on a secure digital filing system and the latter in a locked
-filing cabinet.
+received practical, supportive information about resources available
+to people who may be suffering from depression. The researcher
+completed training in implementing the latest risk protocol employed
+by the University of Exeter, Mood Disorders Centre. Risk cover by a
+clinically trained member of staff was arranged in advance of each PHQ-9
+(which includes a suicidal ideation question) that was administered to
+participants. No participants triggered the risk protocol.
 
-This study was approved by the University of Exeter, School of Psychology
-Ethics Committee (see \cref{app:ethics}).
+A potential risk of harm was identified arising from increasing
+rumination in high trait ruminators, along with the burden of a long
+testing period. The experimenter mitigatated this risk by keeping in
+regular contact with participants, notably when more than two testing
+sessions were skipped. Any concerns were raised with the researcher's
+supervisor. On leaving the study, all participants were emailed a copy
+of the support information for people who may suffer from depression.
+
+Participants were not identifiable from their electronic data. Online
+measures were stored on a secure digital filing system and all other
+data on a memory stick. Any sensitive written information was stored in
+a locked filing cabinet.
+
+A detailed ethical submission was approved by the University of Exeter,
+School of Psychology Ethics Committee (see \cref{app:ethics}).
 
 \section{Analyses}
 \label{analyses}
