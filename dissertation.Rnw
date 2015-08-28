@@ -1149,13 +1149,6 @@ get if all participants started at the same time
 \section{I-word stimulus pairs}
 \label{sec:iwordlist}
 
-\todo{Nick: As you are going to the trouble of presenting this info
-and you have few participants, it probably makes sense to present the
-means and SDs for the group of I words ${AND}$ the group of paired words
-separately for each participant. You could use some kind of subscript to
-indicate which database the relevant statistic was taken from.}
-\todo{this is the place to describe how field in the MRC db were populated, e.g. kffreq}
-
 <<iwords, results='asis', echo=FALSE, error=TRUE>>=
 @
 
