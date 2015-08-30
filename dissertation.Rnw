@@ -31,6 +31,8 @@
 \usepackage{hhline}
 \usepackage{caption}
 \usepackage{graphicx}
+\usepackage[page,header]{appendix}
+\usepackage{titletoc}
 \usepackage[]{hyperref}
 \hypersetup{
     bookmarksnumbered=true,     
@@ -78,42 +80,42 @@ which a degree has previously been conferred upon me.}
 \usepackage{rotating}
 \usepackage{mathtools}
 \usepackage{csvsimple}
-\usepackage[toc,page,title,titletoc,header]{appendix}
 
 \begin{document}
-
-\todo{BODY: 8000 words max excluding toc, footnotes, tables, figures, references}
-\todo{ABSTRACT use keywords}
-\todo{ABSTRACT suggestion < 13 key words}
-\todo{check draft against Monsell and Pinker}
-\todo{Include word count of main text on front page (see latexcount.pl)}
-
 \setlength{\marginparwidth}{1.5cm}
 \todototoc
 \listoftodos[Todo list]
 \maketitle
 \pdfbookmark{\contentsname}{toc}
-\tableofcontents
-\clearpage\setcounter{page}{1}
+%\tableofcontents
+\startcontents[sections]
+\printcontents[sections]{l}{1}{\setcounter{tocdepth}{2}}
+\newpage
+%\clearpage\setcounter{page}{1}
+
+\todo{BODY: 8000 words max excluding toc, footnotes, tables, figures, references}
+\todo{ABSTRACT use keywords (suggestion < 13)}
+\todo{check draft against Monsell and Pinker}
+\todo{Word count of main text on front page (latexcount.pl)}
 
 \section{Introduction}
 
 \subsection{Current state of anxiety and depression and treatments}
 
-Mixed anxiety and depression is the most common mood disorder in Britain
-\parencite{haliwell_fundamental_2007}. Its predicted growth (World
-Health Organisation, 2001) makes the associated negative individual and
-socio-economic consequences a global concern.  In depression, relapse
-is common and its likelihood increases steeply with each depressive
-episode \parencite{haliwell_fundamental_2007}.  Anti-depressant
-medication (ADM) and psychological therapies for depression such as
-CBT and MBCT can be effective, but patients often dislike the side
-effects of ADM and there are high costs associated with delivering
-psychological therapies.  Consequently, waiting times in Britain
-currently average six to nine months, and can be as long as two years
-\parencite{haliwell_fundamental_2007}.  There is a need for cheap but
-effective interventions which target the cognitive mechanisms \todo{need
-to introduce things before referring to them} underlying depression
+Mixed anxiety and depression is the most common mood disorder in
+Britain \parencite{haliwell_fundamental_2007}. Its predicted growth
+(World Health Organisation, 2001) makes the associated negative
+individual and socio-economic consequences a global concern.
+In depression, relapse is common and its likelihood increases steeply
+with each depressive episode \parencite{haliwell_fundamental_2007}.
+Anti-depressant medication (ADM) and psychological therapies for
+depression such as CBT and MBCT can be effective, but patients often
+dislike the side effects of ADM and there are high costs associated
+with delivering psychological therapies.  Consequently, waiting times
+in Britain currently average six to nine months, and can be as long as
+two years \parencite{haliwell_fundamental_2007}.  There is a need for
+cheap but effective interventions which target the cognitive mechanisms
+\todo{introduce things before referring to them} underlying depression
 and anxiety.
 
 \subsection{What rumination is}
@@ -302,17 +304,19 @@ Windows, Macintosh (OS X 10.9 or later), or Linux operating systems,
 and not concurrently undergoing psychotherapy or taking psychotropic
 medication.
 
-Screening criteria were a PHQ-8 \parencite{kroenke_phq8_2009} score
-{\textless} 11, to exclude people with mild depression or above,
-\todo{PHQ-8 >= 10 vs. PHQ-9 < 11 \parencite{wahl_standardization_2014}}
-and, to include high trait ruminators or trait worriers,
- a Ruminative Responses Scale (RRS)
-\parencite{treynor_rumination_2003} score ${\geq}$ 53 or a Penn State
-Worry Questionnaire (PSWQ) \parencite{meyer_development_1990} score
-${\geq}$ 55. The RRS and PSWQ cut points were calculated to place
-participants in the top 33\% of these measures, based on a sample of
-210 University of Exeter undergraduate students measured on RRS (${M}$
-= 46.9, ${SD}$ = 12.7) and PSWQ (${M}$ = 48.2, ${SD}$ = 14.9)\todo{cite?}.
+Screening instruments were created using Lime Survey
+\parencite{limesurvey} and completed using a web browser. Inclusion
+criteria were a PHQ-8 \parencite{kroenke_phq8_2009} score {\textless}
+11, to exclude people with mild depression or above, \todo{PHQ-8 >= 10
+vs. PHQ-9 < 11 \parencite{wahl_standardization_2014}} and, to include
+high trait ruminators or trait worriers, a Ruminative Responses Scale
+(RRS) \parencite{treynor_rumination_2003} score ${\geq}$ 53 or a Penn
+State Worry Questionnaire (PSWQ) \parencite{meyer_development_1990}
+score ${\geq}$ 55. The RRS and PSWQ cut points were calculated to place
+participants in the top 33\% of these measures, based on a sample
+of 210 University of Exeter undergraduate students measured on RRS
+(${M}$ = 46.9, ${SD}$ = 12.7) and PSWQ (${M}$ = 48.2, ${SD}$ = 14.9)
+\parencite{moberly_controlled_2015}.
 
 Figure \ref{flowchart} summarises the recruitment procedure. Of the
 15 people (12 female), who met the screening criteria and offered to
@@ -321,15 +325,12 @@ participate, 6 were members of staff, 5 were postgraduate students,
 partner of an undergraduate student. The mean age of participants was
 31.38 years (${SD}$ = 9.99 years).
 
-\begin{figure}[h]
-  \label{flowchart}
+\begin{figure}[!h]
   \centering
-  \includegraphics[width=90mm,height=90mm]{/home/paul/Documents/psychology/msc/M210/apprenticeship/dissertation/figure/recruitment.png}
+  \includegraphics[width=140mm]{/home/paul/Documents/psychology/msc/M210/apprenticeship/dissertation/figure/recruitment.png}
   \caption{Recruitment flowchart}
+  \label{flowchart}
 \end{figure}
-
-\todo{recruitment flowchart, how many: responsed to advert, met screening criteria}
-\todo{Calculate M and SD for screening measures.}
 
 \subsection{Measures and Materials}
 
@@ -505,7 +506,7 @@ the SAWL.  Independent samples t-tests showed significant differences
 for mean ratings of valence and arousal (${P}$s {\textless} .001).
 Pairs were matched for frequency, imageability, familiarity, number of
 characters and number of syllables (all ${P}$s {\textgreater} .16) (see
-\cref{sec:nwordttests}). In addition, the mean valence between members
+\cref{app:nwordttests}). In addition, the mean valence between members
 of any pair was at least 1.44 (Mean: 2.15, ${SD}$ = 0.37). To form the
 stimulus blocks, pairs were ranked by descending mean valence difference.
 The 6 pairs with the lowest difference were assigned to the ``spare''
@@ -513,7 +514,7 @@ block.  The remaining 60 pairs were divided at every 10 word boundary,
 forming 6 groups. Each experimental block of 6 words was created by
 taking the top pair from each group, until all groups were exhausted,
 thereby creating 10 blocks with a mixture of valence differences. The
-complete N-word list can be seen in \cref{sec:nwordlist}
+complete N-word list can be seen in \cref{app:nwordlist}
 
 \subsubsection{I-word pairs}
 \label{sec:iwordpairs}
@@ -718,6 +719,8 @@ School of Psychology Ethics Committee (see \cref{app:ethics}).
 \section{Analyses}
 \label{analyses}
 
+Done using R (list packages).
+
 <<power, echo=FALSE, error=TRUE>>=
 library(pwr)
 library(stringr)
@@ -809,6 +812,8 @@ results when there actually are treatment effects." \parencite{edgington_additiv
 
 \section{Results}
 
+no problems resolved (mention that they recorded this in Procedure)
+
 paragraph on included Ps
 
 The combined screening scores of the 15 participants who of PHQ-8 ${M}$= ${SD}$=, RRS${M}$= ${SD}$=, PSWQ${M}$= ${SD}$=
@@ -816,9 +821,8 @@ The combined screening scores of the 15 participants who of PHQ-8 ${M}$= ${SD}$=
  No participants fell below the accuracy threshold for checking/exclusion.
 
 \todo{Calculate M and SD for screening measures.}
-
 \todo{dropout and its predictability in relation to screening measures}
-\todo{(calculate) M/SD accuracy}
+\todo{(calculate) M/SD dot-probe accuracy}
 \todo{visual representation of completion, sessions skipped, accuracy}
 \todo{Outliers > 3SD on all measures @ screening and pre}
 
@@ -1001,7 +1005,7 @@ Description of these graphs.
 \includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/8/p8_d.jpg}
 \includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/9/p9_d.jpg}
 \includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/10/p10_d.jpg}
-\caption{'sad'+'depressed' scores (participants 5--10)}
+\caption{Depression ('sad'+'depressed') scores (participants 5--10)}
 \end{figure}
 
 Description of these graphs.
@@ -1014,7 +1018,7 @@ Description of these graphs.
 \includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/16/p16_d.jpg}
 \includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/18/p18_d.jpg}
 \includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/19/p19_d.jpg}
-\caption{'sad'+'depressed' scores (participants 11, 12, 15, 16, 18 and 19)}
+\caption{Depression ('sad'+'depressed') scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
 Description of these graphs.
@@ -1114,10 +1118,15 @@ get if all participants started at the same time
 
 \printbibliography
 %% CAVEAT: \appendices environment breaks \cleveref
-\begin{appendix}
-\label{appendix}
+\newpage
+\appendix
+\appendixpage
 
-\todo{appendices: 4000 words max (~250 words/page i.e. 16 pages)}
+\setcounter{tocdepth}{2}
+\startcontents[sections]
+\printcontents[sections]{l}{1}
+%\addappheadtotoc
+%\todo{appendices: 4000 words max (~250 words/page i.e. 16 pages)}
 
 \section{Survey Measures}
 \label{app:surveys}
@@ -1153,21 +1162,23 @@ get if all participants started at the same time
 \end{sidewaysfigure}
 
 \section{N-word stimulus pairs}
-\label{sec:nwordlist}
+\label{app:nwordlist}
 
-\begin{sidewaystable}[!htbp]
+\begin{table}[!htbp]
 {\tiny
   \begin{tabular}{cllllll}\hline%
-    \textbf{Block} & \textbf{Pair 1} & \textbf{Pair 2} & \textbf {Pair 3} & \textbf{Pair 4} & \textbf {Pair 5} & \textbf {Pair 6}\\\hline 
+    Block & Pair 1 & Pair 2 & Pair 3 & Pair 4 & Pair 5 & Pair 6\\\hline 
     \csvreader[late after line=\\]{../experiment/66_nwords.csv}{Block=\block}%
-      {\block & \csvcolii-\csvcoliii & \csvcoliv-\csvcolv & \csvcolvi-\csvcolvii & \csvcolviii-\csvcolix & \csvcolx-\csvcolxi & \csvcolxii-\csvcolxiii}%
+      {\block & \textsf{\csvcolii}-\textsf{\csvcoliii} & \textsf{\csvcoliv}-\textsf{\csvcolv} &
+      \textsf{\csvcolvi}-\textsf{\csvcolvii} & \textsf{\csvcolviii}-\textsf{\csvcolix} &
+      \textsf{\csvcolx}-\textsf{\csvcolxi} & \textsf{\csvcolxii}-\textsf{\csvcolxiii}}%
     \hline
   \end{tabular}
 }
-\end{sidewaystable}
+\end{table}
 
 \section{N-word t-tests}
-\label{sec:nwordttests}
+\label{app:nwordttests}
 
 <<nwords, results='asis', echo=FALSE, error=TRUE>>=
 @
@@ -1188,7 +1199,6 @@ get if all participants started at the same time
 
 \section{Current Concern Rating Scale}
 \label{app:concernrating}
-\todo{Is this needed?}
 
 \section{Unresolved goal and I-word generation instructions}
 \label{sec:iwordinstructions}
@@ -1196,7 +1206,6 @@ get if all participants started at the same time
 
 \section{Initial Session Protocol}
 \label{app:initialsession}
-\todo{Is this needed?}
 
 \section{Example session reminder email}
 \label{app:reminder}
@@ -1229,5 +1238,4 @@ get if all participants started at the same time
 \caption{Correlations between NA scale on PANAS-SF and items `anxious' and `worried'}
 \end{figure}
 
-\end{appendix}
 \end{document}
