@@ -323,7 +323,12 @@ Figure \ref{flowchart} summarises the recruitment procedure. Of the
 participate, 6 were members of staff, 5 were postgraduate students,
 2 were undergraduate students, 1 was a recent graduate, and 1 was the
 partner of an undergraduate student. The mean age of participants was
-31.38 years (${SD}$ = 9.99 years).
+31.38 years (${SD}$ = 9.99 years). Three participants withdrew from
+the study. One person withdrew before completing any sessions due to
+concerns that the study would worsen their social anxiety. One person
+was unable to commit enough time to the study after 5 sessions. The third
+had completed 24 sessions when a holiday meant that they would be unable
+to complete sufficient phase B sessions.
 
 \begin{figure}[!h]
   \centering
