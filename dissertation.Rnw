@@ -323,12 +323,7 @@ Figure \ref{flowchart} summarises the recruitment procedure. Of the
 participate, 6 were members of staff, 5 were postgraduate students,
 2 were undergraduate students, 1 was a recent graduate, and 1 was the
 partner of an undergraduate student. The mean age of participants was
-31.38 years (${SD}$ = 9.99 years). Three participants withdrew from
-the study. One person withdrew before completing any sessions due to
-concerns that the study would worsen their social anxiety. One person
-was unable to commit enough time to the study after 5 sessions. The third
-had completed 24 sessions when a holiday meant that they would be unable
-to complete sufficient phase B sessions.
+31.38 years (${SD}$ = 9.99 years).
 
 \begin{figure}[!h]
   \centering
@@ -639,22 +634,24 @@ Participants were instructed to complete all experimental sessions on a
 computer at their home. Each day, the experimenter sent participants a
 templated email containing instructions on how to complete the session
 (see \cref{app:reminder}). For the first session, additional instructions
-included a link to the installation video on YouTube. Each session
-required the participant to complete the dot-probe task (phase A)
-or the ABM training, followed by the dot-probe (phase B) and online
-PANAS-SF and GRS measures using Lime Survey. On a daily basis, the
-experimenter recorded whether each participant had completed a session
-and, if so, their accuracy on the task. The experimenter periodically
-sent additional emails to motivate participants by notifying them of
-their progress, to ensure their well-being if 3 consecutive sessions
-were skipped, and to prepare them for the slightly longer task when
-transitioning to phase B. From session 25 onwards, sessions ended with
-a message informing the participant of the amount they had earnt so
-far. Participants provided post-intervention RRS, PHQ-9, GAD-7 and PSWQ
-measures using the Lime Survey website within 12 hours of completing
-the final session. On exiting the study, all participants were emailed
-debrief information \cref{app:debrief} and information about sources of
-support \cref{app:support} and were paid for their participation.
+included a link to the installation video on YouTube. Participants
+began each session by completing the dot-probe task (phase A) or the ABM
+training, followed by the dot-probe (phase B). Using a web browser, they
+then used Lime Survey to upload their task data, record whether their
+conern was still unresolved and complete PANAS-SF and GRS measures. On
+a daily basis, the experimenter recorded whether each participant
+had completed a session and, if so, their accuracy on the task. The
+experimenter periodically sent additional emails to motivate participants
+by notifying them of their progress, to ensure their well-being if 3
+consecutive sessions were skipped, and to prepare them for the slightly
+longer task when transitioning to phase B. From session 25 onwards,
+sessions ended with a message informing the participant of the amount
+they had earnt so far. Participants provided post-intervention RRS,
+PHQ-9, GAD-7 and PSWQ measures using the Lime Survey website within
+12 hours of completing the final session. On exiting the study, all
+participants were emailed debrief information \cref{app:debrief} and
+information about sources of support \cref{app:support} and were paid
+for their participation.
 
 \subsubsection{Stimulus allocation}
 
@@ -817,28 +814,35 @@ results when there actually are treatment effects." \parencite{edgington_additiv
 
 \section{Results}
 
-no problems resolved (mention that they recorded this in Procedure)
+<<screening, echo=FALSE, error=TRUE>>=
+screening<-read.csv('/media/paul/2E95-1293/study/screening.csv',header=TRUE)
+@
 
-paragraph on included Ps
+At screening, the 15 participants who began the study had a mean PHQ-8 score of \Sexpr{sprintf("%0.2f",mean(screening$phq8total))}
+(${SD}$=\Sexpr{sprintf("%0.2f",sd(screening$phq8total))}), a mean RRS score of \Sexpr{sprintf("%0.2f",mean(screening$rrstotal))}
+(${SD}$=\Sexpr{sprintf("%0.2f",sd(screening$rrstotal))}), and a mean PSWQ score of \Sexpr{sprintf("%0.2f",mean(screening$pswqtotal))}
+(${SD}$=\Sexpr{sprintf("%0.2f",sd(screening$pswqtotal))}). There were no outliers (> 3SD) on these measures.
 
-The combined screening scores of the 15 participants who of PHQ-8 ${M}$= ${SD}$=, RRS${M}$= ${SD}$=, PSWQ${M}$= ${SD}$=
-
- No participants fell below the accuracy threshold for checking/exclusion.
-
-\todo{Calculate M and SD for screening measures.}
-\todo{dropout and its predictability in relation to screening measures}
 \todo{(calculate) M/SD dot-probe accuracy}
-\todo{visual representation of completion, sessions skipped, accuracy}
-\todo{Outliers > 3SD on all measures @ screening and pre}
+No participants fell below the accuracy threshold for checking/exclusion.
 
-One participant thought it was going to make them feel worse.  Another
-found they were too busy to complete the study.  Looking at the scores
-from these participants they were typical/atypical.
+\todo{visual representation of completion, sessions skipped, accuracy}
+
+Three participants withdrew from
+the study. One person withdrew before completing any sessions due to
+concerns that the study would worsen their social anxiety. One person
+was unable to commit enough time to the study after 5 sessions. The third
+had completed 24 sessions when a holiday meant that they would be unable
+to complete sufficient phase B sessions.
+
+\todo{Predictability in relation to screening measures
+"Looking at the scores from these participants they were typical/atypical."
+}
 
 P16 didn't complete GRS and PANAS for session 8 but told me scores were
 the same as for session 7.
 
-How many did each P complete and why did they stop.
+no problems resolved
 
 \subsection{Pre/Post Measures}
 
@@ -851,6 +855,7 @@ knitr::read_chunk('../opensesame/dotprobe/iwords.R')
 
 <<prepost, results='asis', echo=FALSE, error=TRUE>>=
 @
+\todo{Outliers > 3SD on pre (and post?)}
 \todo{How to indicate the CIs are pre-post difference e.g. "The only scale on which Ps showed a significant difference was ...  All others were NS"}
 \todo{Description of table pointing out sig. and NS differences}
 \todo{Check understanding of CIs}
@@ -1052,8 +1057,6 @@ Description of these graphs.
 
 \subsection{Inferential Statistics}
 
-\todo{Should I calculate M(SD) across participants for attentional bias so it's clear which direction it's going in?}
-
 <<inferentials, results='asis', echo=FALSE, error=TRUE>>=
 @
 
@@ -1099,15 +1102,20 @@ t(91) = 1.80, p = .07. As shown in Table 5, the interaction was due to a
 damping effect of implicit motivation on goal rumination in low-commitment
 participants.} \parencite{schultheiss_role_2008}
 
-
-\todo{Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.}
-\todo{Would ABA revert?}
-\todo{What happens when problem resolves?}
-\todo{Could individual's current concern(s) indicate the type of bias modification which might be beneficial?}
-ABM training other than the dot-probe Sigurjonsdottir et. al 2015
-What is an effective dose?
+\begin{itemize}
+\item Could individual's current concern(s) indicate the type of bias modification which might be beneficial?
+\item ABM training other than the dot-probe Sigurjonsdottir et. al 2015
+\item What is an effective dose?
+\end{itemize}
 
 \subsubsection{Limitations}
+
+\begin{itemize}
+\item self-report measures
+\item Longevity of effects treatment? Would ABA revert?
+\item What happens when problem resolves?
+\item Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.
+\end{itemize}
 
 \paragraph{multiple baselines}
 
@@ -1117,9 +1125,6 @@ baseline replication design across participants\todo{sure?!!}
 Didn't control for historical factors which you would
 get if all participants started at the same time
 \parencite{watson_nonconcurrent_1981}.
-
-\todo{self-report measures}
-\todo{longevity of effects treatment?}
 
 \printbibliography
 %% CAVEAT: \appendices environment breaks \cleveref
