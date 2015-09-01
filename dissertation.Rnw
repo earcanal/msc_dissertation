@@ -30,15 +30,6 @@
 \usepackage[page,header]{appendix}
 \usepackage{titletoc}
 
-% rotated table text
-\usepackage{booktabs}
-\usepackage{pifont}
-\usepackage[table]{xcolor}
-\newcommand*\rot{\rotatebox{90}}
-
-% probably want to remove this dependency (from generated source)
-\usepackage{supertabular}
-
 \usepackage[]{hyperref}
 \hypersetup{
     bookmarksnumbered=true,     
@@ -50,6 +41,7 @@
     pdfpagemode=UseOutlines,    % this is the option you were lookin for
     pdfpagelayout=TwoPageRight
 }
+\usepackage[table]{xcolor}
 \usepackage{cleveref}
 \usepackage[textwidth=2cm,color=green,textsize=tiny]{todonotes}
 \reversemarginpar
@@ -83,6 +75,11 @@ which a degree has previously been conferred upon me.}
 \usepackage{csvsimple}
 
 \usepackage{rotating}
+
+% rotated table text
+\usepackage{pifont}
+\usepackage{booktabs}
+\newcommand*\rot{\rotatebox{90}}
 
 \begin{document}
 \setlength{\marginparwidth}{1.5cm}
@@ -423,9 +420,10 @@ training intervention.
 The Ruminative Responses Scale (RRS) is a 22 item measure of
 trait rumination, with item scores ranging from 1--4. The RRS is
 valid and reliable, having an expected Cronbach's $\alpha$ of .85
-\parencite{treynor_rumination_2003}. Questions on the RRS were asked in
-relation to the previous 4 weeks, to correspond approximately with the
-month before the study (pre) and time within the study (post) (see \cref{app:surveys}). \todo{is this needed?}
+\parencite{treynor_rumination_2003}. Questions on the RRS were asked
+in relation to the previous 4 weeks, to correspond approximately with
+the month before the study (pre) and time within the study (post)
+(see \cref{app:surveys}).
 
 \paragraph{GAD-7}
 
@@ -1218,7 +1216,8 @@ get if all participants started at the same time
 
 \section{Unresolved goal and I-word generation instructions}
 \label{sec:iwordinstructions}
-\input{procedure/iwords.tex}
+% FIXME: remove supertablular nonsense
+%\input{procedure/iwords.tex}
 
 \section{Initial Session Protocol}
 \label{app:initialsession}
