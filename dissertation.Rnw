@@ -1,5 +1,3 @@
-% This file was converted to LaTeX by Writer2LaTeX ver. 1.4
-% see http://writer2latex.sourceforge.net for more info
 \documentclass[man,floatsintext,a4paper,biblatex]{apa6}
 \usepackage[english, british]{babel}
 \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
@@ -27,12 +25,20 @@
 \usepackage{amsmath}
 \usepackage{amssymb,amsfonts,textcomp}
 \usepackage{array}
-\usepackage{supertabular}
 \usepackage{hhline}
-\usepackage{caption}
 \usepackage{graphicx}
 \usepackage[page,header]{appendix}
 \usepackage{titletoc}
+
+% rotated table text
+\usepackage{booktabs}
+\usepackage{pifont}
+\usepackage[table]{xcolor}
+\newcommand*\rot{\rotatebox{90}}
+
+% probably want to remove this dependency (from generated source)
+\usepackage{supertabular}
+
 \usepackage[]{hyperref}
 \hypersetup{
     bookmarksnumbered=true,     
@@ -47,11 +53,7 @@
 \usepackage{cleveref}
 \usepackage[textwidth=2cm,color=green,textsize=tiny]{todonotes}
 \reversemarginpar
-\usepackage{graphicx}
 \usepackage{afterpage}
-%\usepackage[marginparwidth=1cm]{geometry}
-%\usepackage{setspace}
-%\doublespace
 \makeatletter
 \newcommand\arraybslash{\let\\\@arraycr}
 \makeatother
@@ -77,9 +79,10 @@ which a degree has previously been conferred upon me.}
 \newcommand{\IE}[1][1]{% indent entry
   \hspace{#1em}\ignorespaces
 }
-\usepackage{rotating}
 \usepackage{mathtools}
 \usepackage{csvsimple}
+
+\usepackage{rotating}
 
 \begin{document}
 \setlength{\marginparwidth}{1.5cm}
@@ -841,8 +844,11 @@ to complete sufficient phase B sessions.
 
 P16 didn't complete GRS and PANAS for session 8 but told me scores were
 the same as for session 7.
+Bad dot-probe data for p7 session 32 so session omitted from analysis.
 
 no problems resolved
+
+\input{results/completed.tex}
 
 \subsection{Pre/Post Measures}
 
