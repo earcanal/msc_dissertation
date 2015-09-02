@@ -7,6 +7,9 @@ dissertation: completed
 table:
 	pdflatex table.tex
 
+accuracy:
+	../opensesame/dotprobe/accuracy.R > ../opensesame/dotprobe/accuracy.tt
+
 completed:
 	../opensesame/dotprobe/completed.pl > results/completed.tex
 

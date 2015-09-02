@@ -64,8 +64,13 @@ is not my own work} has been identified with appropriate acknowledgement
 and referencing and I also certify that no material is included for
 which a degree has previously been conferred upon me.}
 
-\newcommand{\grswidth}{width=90mm}
-\newcommand{\grsheight}{height=65mm}
+% http://tex.stackexchange.com/questions/35532/using-newcommand-in-includegraphics-option-to-substitute-graphic-sizes
+\makeatletter
+\define@key{Gin}{plotwh}[true]{%
+    \edef\@tempa{{Gin}{width=90mm,height=70mm}}%
+    \expandafter\setkeys\@tempa
+}
+\makeatother
 
 \usepackage{amsmath,siunitx,caption}
 \newcommand{\IE}[1][1]{% indent entry
@@ -824,10 +829,7 @@ At screening, the 15 participants who began the study had a mean PHQ-8 score of 
 (${SD}$=\Sexpr{sprintf("%0.2f",sd(screening$rrstotal))}), and a mean PSWQ score of \Sexpr{sprintf("%0.2f",mean(screening$pswqtotal))}
 (${SD}$=\Sexpr{sprintf("%0.2f",sd(screening$pswqtotal))}). There were no outliers (> 3SD) on these measures.
 
-\todo{(calculate) M/SD dot-probe accuracy}
 No participants fell below the accuracy threshold for checking/exclusion.
-
-\todo{visual representation of completion, sessions skipped, accuracy}
 
 Three participants withdrew from
 the study. One person withdrew before completing any sessions due to
@@ -847,6 +849,7 @@ Bad dot-probe data for p7 session 32 so session omitted from analysis.
 no problems resolved
 
 \input{results/completed.tex}
+\todo{key to table}
 
 \subsection{Pre/Post Measures}
 
@@ -859,7 +862,7 @@ knitr::read_chunk('../opensesame/dotprobe/iwords.R')
 
 <<prepost, results='asis', echo=FALSE, error=TRUE>>=
 @
-\todo{Outliers > 3SD on pre (and post?)}
+\todo{Outliers > 3SD on post?}
 \todo{How to indicate the CIs are pre-post difference e.g. "The only scale on which Ps showed a significant difference was ...  All others were NS"}
 \todo{Description of table pointing out sig. and NS differences}
 \todo{Check understanding of CIs}
@@ -878,12 +881,12 @@ knitr::read_chunk('../opensesame/dotprobe/iwords.R')
 \subsubsection{Attentional bias N-words}
 
 \begin{figure}[!ht]
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/5/p5_n.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/6/p6_n.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_n.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/8/p8_n.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/9/p9_n.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/10/p10_n.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_n.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_n.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_n.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_n.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_n.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_n.jpg}
 \caption{Attentional bias scores for N-words (participants 5--10)}
 \end{figure}
 
@@ -891,12 +894,12 @@ Description of these graphs.
 
 \clearpage
 \begin{figure}[!h]
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/11/p11_n.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/12/p12_n.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/15/p15_n.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/16/p16_n.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/18/p18_n.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/19/p19_n.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_n.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_n.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_n.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_n.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_n.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_n.jpg}
 \caption{Attentional bias scores for N-words (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
@@ -905,12 +908,12 @@ Description of these graphs.
 \subsubsection{Attentional bias I-words}
 
 \begin{figure}[!ht]
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/5/p5_i.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/6/p6_i.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_i.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/8/p8_i.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/9/p9_i.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/10/p10_i.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_i.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_i.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_i.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_i.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_i.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_i.jpg}
 \caption{Attentional bias scores for I-words (participants 5--10)}
 \end{figure}
 
@@ -918,12 +921,12 @@ Description of these graphs.
 
 \clearpage
 \begin{figure}[!h]
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/11/p11_i.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/12/p12_i.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/15/p15_i.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/16/p16_i.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/18/p18_i.jpg}
-\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/19/p19_i.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_i.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_i.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_i.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_i.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_i.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_i.jpg}
 \caption{Attentional bias scores for I-words (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
@@ -932,12 +935,12 @@ Description of these graphs.
 \subsubsection{GRS}
 
 \begin{figure}[!ht]
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/5/p5_grs.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/6/p6_grs.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/7/p7_grs.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/9/p9_grs.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/10/p10_grs.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_grs.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_grs.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_grs.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_grs.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_grs.jpg}
 \caption{GRS scores (participants 5--10)}
 \end{figure}
 
@@ -945,12 +948,12 @@ Description of these graphs.
 
 \clearpage
 \begin{figure}[!h]
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/11/p11_grs.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/12/p12_grs.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/15/p15_grs.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/16/p16_grs.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/18/p18_grs.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/19/p19_grs.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_grs.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_grs.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_grs.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_grs.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_grs.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_grs.jpg}
 \caption{GRS scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
@@ -959,12 +962,12 @@ Description of these graphs.
 \subsubsection{PA}
 
 \begin{figure}[!ht]
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/5/p5_pa.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/6/p6_pa.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/7/p7_pa.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/8/p8_pa.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/9/p9_pa.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/10/p10_pa.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_pa.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_pa.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_pa.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_pa.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_pa.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_pa.jpg}
 \caption{PA scores (participants 5--10)}
 \end{figure}
 
@@ -972,12 +975,12 @@ Description of these graphs.
 
 \clearpage
 \begin{figure}[!h]
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/11/p11_pa.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/12/p12_pa.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/15/p15_pa.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/16/p16_pa.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/18/p18_pa.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/19/p19_pa.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_pa.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_pa.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_pa.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_pa.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_pa.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_pa.jpg}
 \caption{PA scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
@@ -986,12 +989,12 @@ Description of these graphs.
 \subsubsection{NA}
 
 \begin{figure}[!ht]
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/5/p5_na.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/6/p6_na.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/7/p7_na.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/8/p8_na.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/9/p9_na.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/10/p10_na.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_na.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_na.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_na.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_na.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_na.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_na.jpg}
 \caption{NA scores (participants 5--10)}
 \end{figure}
 
@@ -999,12 +1002,12 @@ Description of these graphs.
 
 \clearpage
 \begin{figure}[!h]
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/11/p11_na.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/12/p12_na.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/15/p15_na.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/16/p16_na.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/18/p18_na.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/19/p19_na.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_na.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_na.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_na.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_na.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_na.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_na.jpg}
 \caption{NA scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
@@ -1013,12 +1016,12 @@ Description of these graphs.
 \subsubsection{'Depression'}
 
 \begin{figure}[!ht]
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/5/p5_d.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/6/p6_d.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/7/p7_d.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/8/p8_d.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/9/p9_d.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/10/p10_d.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_d.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_d.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_d.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_d.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_d.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_d.jpg}
 \caption{Depression ('sad'+'depressed') scores (participants 5--10)}
 \end{figure}
 
@@ -1026,12 +1029,12 @@ Description of these graphs.
 
 \clearpage
 \begin{figure}[!h]
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/11/p11_d.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/12/p12_d.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/15/p15_d.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/16/p16_d.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/18/p18_d.jpg}
-\includegraphics[width=90mm,height=70mm]{/media/paul/2E95-1293/study/participants/19/p19_d.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_d.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_d.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_d.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_d.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_d.jpg}
+\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_d.jpg}
 \caption{Depression ('sad'+'depressed') scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
@@ -1040,16 +1043,16 @@ Description of these graphs.
 %\subsubsection{GRS}
 %\begin{figure}[!ht]
 %\includegraphics[]{grs.jpg}
-%\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_i.jpg}
-%\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_n.jpg}
-%\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_grs.jpg}
-%\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_panas.jpg}
-%\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/1/p1_grs.jpg}
-%\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
-%\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/7/p7_grs.jpg}
-%\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
+%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_i.jpg}
+%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_n.jpg}
+%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_grs.jpg}
+%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_panas.jpg}
+%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/1/p1_grs.jpg}
+%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
+%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_grs.jpg}
+%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
 %\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_0.jpg}
-%\includegraphics[width=90mm,height=50mm]{/media/paul/2E95-1293/study/participants/1/p1_grs.jpg}
+%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/1/p1_grs.jpg}
 %\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_1.jpg}
 %\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_2.jpg}
 %\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_3.jpg}
