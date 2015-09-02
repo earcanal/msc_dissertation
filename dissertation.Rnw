@@ -724,7 +724,15 @@ School of Psychology Ethics Committee (see \cref{app:ethics}).
 \section{Analyses}
 \label{analyses}
 
-Done using R (list packages).
+Data were analysed using using R version 3.1.0
+\parencite{rcoreteam_r_2014} and additional packages
+\texttt{corrplot} \parencite{wei_corrplot_2013},
+\texttt{lsr} \parencite{navarro_learning_2015},
+\texttt{pwr} \parencite{champely_pwr_2015}, \texttt{psy}
+\parencite{falissard_psy_2012}, \texttt{SCMA} \parencite{bulte_scma_2015},
+\texttt{SCRT} \parencite{bulte_scrt_2015} and \texttt{SCVA}
+\parencite{bulte_scva_2015}.
+
 
 <<power, echo=FALSE, error=TRUE>>=
 library(pwr)
