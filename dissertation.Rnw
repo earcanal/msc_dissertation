@@ -271,27 +271,24 @@ ideographic current concern, and required a small number of participants
 to undertake long-term training. To balance the exploratary nature
 of the research with the ability to make statistical inferences
 from the results we chose a randomized, single-case series design
-\parencite{bulte_r_2008}. This was an AB phase design in which
-baseline (A) measures were compared against intervention (B) measures
-\parencite{bulte_r_2008}.
-
-Randomization is a nonparametric approach which allowed us to make
-statistical inferences for each individual participant.  In an AB phase
-design, the sequence (baseline followed by intervention) is fixed,
-therefore it is the point at which phase A transitions to phase B
-which is randomized. Under the null hypothesis, a test statistic
-for a particular set of observations would not differ regardless of
-where the transition from A to B occurs. Randomisation tests hold the
-observations constant and calculate the test statistic for all possible
-transition permutations. Once sorted, the ${p}$ value is the proportion
-of test statistics greater than or equal to the observed test statistic
-\parencite{onghena_customization_2005}.
-
-Based on previous research \parencite{yang_attention_2015}, 8 ABM
-sessions (phase B) were considered necessary in order to detect
-training effects. With a minimum of 8 measurement times (MTs) in phases
-A and B, and a total of 35 MTs there were 20 possible transition
-points between phases A and B. This allowed significance testing
+\parencite{bulte_r_2008}. In this type of design, a series of baseline
+(phase A) measures are compared against those after the (ABM training)
+intervention (phase B) \parencite{bulte_r_2008}. The overall design can
+be considered a nonconcurrent, multiple baseline replication across
+participants \parencite{watson_nonconcurrent_1981}. That is to say,
+there were muliple participants (case-series), which started at different
+times, and the time point of transition to phase B in each was chosen
+randomly in advance. Whilst the design lacks a control condition, it
+does provide controls against alternative explanations of effects, such
+as regression to the mean (replication across participatns), effects of
+baseline assessment (range of phase A durations) and extraneous events
+correlated with phase transition (radomised transition to phase B)
+\parencite{watson_nonconcurrent_1981,watkins_ruminationfocused_2007}.
+Based on previous research \parencite{yang_attention_2015},
+8 ABM sessions (phase B) were considered necessary in order to
+detect training effects. A total of 35 measurement times (MTs)
+were chosen, as (with a minimum of 8 MTs in phases A and B) the
+resulting 20 possible transition points allowed significance testing
 at the ${p}$=.05 level for each participant completing all sessions
 \parencite{onghena_customization_2005,bulte_r_2008}.
 
@@ -785,6 +782,18 @@ possibly anxiety (GAD-7), but underpowered to detect changes in rumination
 Comparisons were made between each participant's baseline (phase A)
 scores and their post-training (phase B) scores
 
+Randomization is a nonparametric approach which allowed us to make
+statistical inferences for each individual participant. In an AB phase
+design, the sequence (baseline followed by intervention) is fixed,
+therefore it is the point at which phase A transitions to phase B
+which is randomized. Under the null hypothesis, a test statistic
+for a particular set of observations would not differ regardless of
+where the transition from A to B occurs. Randomisation tests hold the
+observations constant and calculate the test statistic for all possible
+transition permutations. Once sorted, the ${p}$ value is the proportion
+of test statistics greater than or equal to the observed test statistic
+\parencite{onghena_customization_2005}.
+
 All questions on the daily outcome measures were mandatory on the online
 survey, so there was no missing data for any completed survey.
 and, using meta-analysis, across all participants
@@ -873,11 +882,13 @@ knitr::read_chunk('../opensesame/dotprobe/iwords.R')
 
 \subsection{Visual Analysis}
 
-... but now we can look at things individually, visually
+Introductory paragraph on visual analysis
+Will present each participant's day by day data.
+This allows you to analyse things visually.  
 
-\todo{Will present each participant's day by day data.  This allows you to analyse things visually.  Explain what people look for (cite): variability within each phase, change from A to B, trend in baseline that complicates interpretation ...  This is what to look out for ...}
+\todo{Explain what people look for (cite): variability within each phase, change from A to B, trend in baseline that complicates interpretation ...  This is what to look out for ...}
 
-\todo{Do it for each outcome.  Probably not much more than a couple of sentences for each.  Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.}
+\todo{Foreach DV: a couple of sentences for each.  Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.}
 
 \subsubsection{Attentional bias N-words}
 
@@ -1130,13 +1141,7 @@ participants.} \parencite{schultheiss_role_2008}
 \end{itemize}
 
 \paragraph{multiple baselines}
-
-More specifically, this was an AB phase nonconcurrent multiple
-baseline replication design across participants\todo{sure?!!}
-\parencite{bulte_when_2012} \parencite{onghena_customization_2005}.
-Didn't control for historical factors which you would
-get if all participants started at the same time
-\parencite{watson_nonconcurrent_1981}.
+Didn't do this analysis due to differing numbers of sessions.
 
 \printbibliography
 %% CAVEAT: \appendices environment breaks \cleveref
