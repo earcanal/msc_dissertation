@@ -900,7 +900,9 @@ This allows you to analyse things visually.
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_n.jpg}
-\caption{Attentional bias scores for N-words (participants 5--10)}
+\caption{Attentional bias scores for N-words (participants 5--10). A =
+Phase A (dot-probe baseline), B = Phase B (ABM training followed by
+dot-probe). Dotted lines show mean attentional bias score.}
 \end{figure}
 
 Description of these graphs.
@@ -927,7 +929,9 @@ Description of these graphs.
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_i.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_i.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_i.jpg}
-\caption{Attentional bias scores for I-words (participants 5--10)}
+\caption{Attentional bias scores for I-words (participants 5--10). A =
+Phase A (dot-probe baseline), B = Phase B (ABM training followed by
+dot-probe). Dotted lines show mean attentional bias score.}
 \end{figure}
 
 Description of these graphs.
@@ -954,7 +958,9 @@ Description of these graphs.
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_grs.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_grs.jpg}
-\caption{GRS scores (participants 5--10)}
+\caption{GRS scores (participants 5--10). A = Phase A (dot-probe
+baseline), B = Phase B (ABM training followed by dot-probe). Dotted
+lines show mean GRS score.}
 \end{figure}
 
 Description of these graphs.
@@ -981,7 +987,9 @@ Description of these graphs.
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_pa.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_pa.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_pa.jpg}
-\caption{PA scores (participants 5--10)}
+\caption{PA scores (participants 5--10). A = Phase A (dot-probe
+baseline), B = Phase B (ABM training followed by dot-probe). Dotted
+lines show mean PA score.}
 \end{figure}
 
 Description of these graphs.
@@ -1008,7 +1016,9 @@ Description of these graphs.
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_na.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_na.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_na.jpg}
-\caption{NA scores (participants 5--10)}
+\caption{NA scores (participants 5--10). A = Phase A (dot-probe
+baseline), B = Phase B (ABM training followed by dot-probe). Dotted
+lines show mean NA score.}
 \end{figure}
 
 Description of these graphs.
@@ -1026,7 +1036,7 @@ Description of these graphs.
 
 Description of these graphs.
 
-\subsubsection{'Depression'}
+\subsubsection{Depression}
 
 \begin{figure}[!ht]
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_d.jpg}
@@ -1035,7 +1045,9 @@ Description of these graphs.
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_d.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_d.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_d.jpg}
-\caption{Depression ('sad'+'depressed') scores (participants 5--10)}
+\caption{Depression ('sad'+'depressed') scores (participants 5--10). A
+= Phase A (dot-probe baseline), B = Phase B (ABM training followed by
+dot-probe). Dotted lines show mean depression score.}
 \end{figure}
 
 Description of these graphs.
@@ -1052,28 +1064,6 @@ Description of these graphs.
 \end{figure}
 
 Description of these graphs.
-
-%\subsubsection{GRS}
-%\begin{figure}[!ht]
-%\includegraphics[]{grs.jpg}
-%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_i.jpg}
-%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_n.jpg}
-%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_grs.jpg}
-%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_panas.jpg}
-%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/1/p1_grs.jpg}
-%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
-%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_grs.jpg}
-%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
-%\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_0.jpg}
-%\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/1/p1_grs.jpg}
-%\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_1.jpg}
-%\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_2.jpg}
-%\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_3.jpg}
-%\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_4.jpg}
-%\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_5.jpg}
-%\includegraphics[width=90mm,height=65mm]{../opensesame/dotprobe/mbd_grs_6.jpg}
-%\caption{GRS scores for all participants\label{overflow}}
-%\end{figure}
 
 \subsection{Inferential Statistics}
 
