@@ -98,6 +98,7 @@ which a degree has previously been conferred upon me.}
 \newpage
 %\clearpage\setcounter{page}{1}
 
+\todo{aspell}
 \todo{BODY: 8000 words max excluding toc, footnotes, tables, figures, references}
 \todo{ABSTRACT use keywords (suggestion < 13)}
 \todo{check draft against Monsell and Pinker}
@@ -618,20 +619,22 @@ relation to their concern on a 7-point scale, using instructions based
 on \textcite{citron_how_2014}. Participants then completed a distraction
 task for 5 minutes (see \cref{app:distraction}).
 
-Participants were given an information sheet to help them install and
-complete the computer task (see \cref{app:taskinstructions}). As a
-motivational aid, they were also given a printed calendar on which to
-plan their daily sessions and cross them off when completed. To further
-encourage completion, they were instructed to write an implementation
-intention on the calendar indicating an approximate time when they would
-complete each session. If reqested, the experimenter installed OpenSesame
-\parencite{mathot_opensesame_2011} on the participant's laptop. The
-initial session ended with the experimenter and participant agreeing a
-time on the same or the following day when the experimenter could be
-available to support the participant whilst installing the computer
-task on their own computer and completing their first session. All
-participants successfully completed the preparatory session (see
-\cref{app:initialsession} for full details of the session protocol).
+Participants were given an information sheet to help them install
+and complete the computer task (see \cref{app:taskinstructions}). As a
+motivational aid, they were also given a printed calendar on which to plan
+their daily sessions and cross them off when completed. Implementation
+intentions have been shown to improve the realization of resolutions
+\parencite{gollwitzer_implementation_1999}, so participants were
+instructed to write on the calendar sheet a statement indicating an
+approximate time when they would complete each session. If requested, the
+experimenter installed OpenSesame \parencite{mathot_opensesame_2011} on
+the participant's laptop. The initial session ended with the experimenter
+and participant agreeing a time on the same or the following day when
+the experimenter could be available to support the participant whilst
+installing the computer task on their own computer and completing their
+first session. All participants successfully completed the preparatory
+session (see \cref{app:initialsession} for full details of the session
+protocol).
 
 The experimenter then prepared the files required for the
 participant to run the computer task. These consisted of the
