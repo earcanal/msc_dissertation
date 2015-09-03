@@ -660,37 +660,25 @@ for their participation.
 
 \subsubsection{Stimulus allocation}
 
-The total of N word pairs allowed for 1 practice and 36 experimental
-dot-probe test sessions even when the 18 G set words fully overlap
-with P set words.  Dot-probe and ABM tasks will be developed using
-OpenSesame \parencite{mathot_opensesame_2011} and measurement instruments
-administered online using Lime Survey \parencite{limesurvey}.
-
-\textcite{see_reduction_2009} point out that the strongest claims come
-from detecting a ${general}$ change in attentional bias in relation
-to emotional valence, rather than to a change in bias to specific
-stimuli. To maximise both the measurement and modification of attention
-to emotional tone in general, each assessment block will only contain
-stimulus materials not previously exposed in any preceding training
-block \textcite{see_reduction_2009}. Table 1 provides an example of
-how subsets of the P and G sets will be introduced as the experiment
-progresses. Dot-probe blocks will always consist of 5 word pairs;
-the next 4 pairs from the P set and 1 pair from the G set. The G pair
-will change to the next highest rated pair every 2 blocks.  To maximise
-stimulus variety during ABM, these blocks will include word pairs from all
-preceding dot-probe blocks. Thus, the number of stimulus word pairs will
-increase with each ABM block. To emphasise ideographic stimuli, G pairs
-will appear twice as frequently as P pairs. Each word in the pair will
-appear with equal frequency at upper and lower screen locations. Where
-necessary, stimuli will be randomly excluded from a stimulus subset
-until the total exposures for the block is exactly divisible by the
-stimulus subset.
-
-To keep people completing sessions when they unexpectedly lose access
-to their initial computer (go on holiday, etc.) I allowed them
-to install the task on multiple machines and carry out the task in
-different locations.  I'll mention this for the participants I know
-needed to do this.
+In phase A, dot-probe blocks consisted of 12 word pairs; the 6 I-word
+pairs and 6 N-word pairs. Session 1 used pairs 1--6 from the 66 N-word
+set, session 2 used pairs 7--12, and so on. Thus, bias associated with
+the participant's ideographic words was measured at every session, whereas
+the more general negative valence associated with N-words was distributed
+across measurment times.  In phase B, dot-probe measurement was preceeded
+by ABM blocks containing only N-words. To detect ${generalised}$
+changes in attentional bias in relation to emotional valence, rather
+than changes in bias to specific stimuli \parencite{see_reduction_2009},
+phase B dot-probe blocks only contained N-words not previously exposed in
+any preceding ABM block.  To guarantee enough stimuli when randomization
+resulted in a long phase B, the same 6 N-words were used for 3 consecutive
+ABM training sessions. N-words from previous ABM blocks were included
+in subsequent ABM blocks. For example, the first 3 ABM blocks used N-words
+1--6 and the subsequent dot-probe used N-words 7--12. The fourth ABM
+block used N-words 1--12 and the subsequent dot-prbe used N-words 13--18,
+and so on. A random draw was used to select the 192 stimuli for each ABM
+session. As with phase A, the 6 I-words were present in every dot-probe
+block. \cref{tab:allocation} shows an example stimulus allocation.
 
 \todo{stimulus allocation table}
 
@@ -862,8 +850,11 @@ the preparatory session remained unresolved througout the study. Session
 32 for participant 7 was omitted from the analyses as the dot-probe data
 file for this session was truncated. Session 8 GRS and PANAS scores for
 participant 16 were brought forward from session 7, as the participant
-completed the dot-probe but not the measures during session 8, but
-advised within 12 hours that the scores would have been identical.
+completed the dot-probe but not the measures during session 8, but advised
+within 12 hours that the scores would have been identical. To remain in
+the study, participant 5 switched from a Windows to Macintosh computer
+from session 21 onwards, and participant 19 completed later sessions in
+a different country from the one in which they began the study.
 
 \todo{Predictability in relation to screening measures
 "Looking at the scores from these participants they were typical/atypical."
