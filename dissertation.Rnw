@@ -366,10 +366,6 @@ chosen by each participant.
   \label{fig:dotprobe}
 \end{figure}
 
-\todo{RAT: 1250ms exposure. Nick \enquote{On the basis of Mogg/Bradley's papers, I think 1000 ms is justified, and you could
-perhaps stretch it to 1250 ms just to be extra-sure that you are capturing the maintenance of attention.} see email and
-\textcite{mogg_attentional_2005} }
-
 Each trial began with an 25 x 25 pixel (7 pixel thick) white fixation
 cross centred on a black screen. After 500ms, this was replaced by a word
 pair from the current stimulus set.  One word from the pair appeared
@@ -378,19 +374,24 @@ pixels high with a vertical space between the upper and lower words such
 that the stimuli subtended a visual angle of approximately 2$^{\circ}$
 \footnote{This angle was calculated using a height measurement of the
 visible area of each participant's computer display, and the assumption
-that participants followed the instruction to sit approximately 60cm from
-the screen.}. Neutral words occurred with equal frequency at the upper
-or lower positions. After 1250 ms, the word pair was replaced by either
-a greater than (\texttt{>}) symbol or less than (\texttt{<}) symbol at a
-random letter location within one of the previous word locations. Probes
-appeared with equal frequency at upper and lower locations. The only
-valid keyboard responses were greater than (\texttt{>}) and less than
-(\texttt{<}). The probe remained on the screen until the participant
-pressed a valid key. A correct response was recorded if the keypress
-matched the probe symbol. There was no feedback for incorrect responses. A
-blank screen with a random inter-trial interval (ITI) between 100-500ms
-followed each trial. Participants were instructed to respond as quickly
-and accurately as possible.  Each dot-probe block consisted of 96 trials
+that participants followed the instruction to sit approximately 60cm
+from the screen.}. Neutral words occurred with equal frequency at the
+upper or lower positions. After 1250 ms, the word pair was replaced by
+either a greater than (\texttt{>}) symbol or less than (\texttt{<})
+symbol at a random letter location within one of the previous word
+locations. As our aim was to guarantee attentional engagement with
+word stimuli, this exposure duration was chosen as being slightly
+higher than the 1000 ms in which vigilance for negative words has been
+shown to be positively correlated with measures of depressed mood and
+vulnerability \parencite{bradley_attentional_1997}. Probes appeared with
+equal frequency at upper and lower locations. The only valid keyboard
+responses were greater than (\texttt{>}) and less than (\texttt{<}). The
+probe remained on the screen until the participant pressed a valid
+key. A correct response was recorded if the keypress matched the probe
+symbol. There was no feedback for incorrect responses. A blank screen
+with a random inter-trial interval (ITI) between 100-500ms followed
+each trial. Participants were instructed to respond as quickly and
+accurately as possible.  Each dot-probe block consisted of 96 trials
 and took approximately 5 minutes to complete.
 
 The task was developed using OpenSesame, an open-source experiment builder
@@ -414,8 +415,8 @@ approximately 15 minutes.
 
 \subsubsection{Pre--Post Measures}
 
-The following measures were taken before and after the dot-probe/ABM
-training intervention.
+The following measures were taken before the first and after the last
+dot-probe/ABM sessions.
 
 \paragraph{RRS}
 
@@ -544,19 +545,20 @@ After selecting a pool of matched words on the preceding criteria, a
 best match was found by inspection of candidate words based on number
 of syllables, imageability and familiarity.  Some I-words, such as
 long words or high frequency words, could not be matched using these
-criteria due to lack of available data. In these cases, a word with the
-most neutral valence was chosen that also minimised differences in length
-and frequency between the word pair. I-words absent from the MRC database
-(including proper nouns) were paired with words selected from a pool of
-56 words having a frequency of 1 (on the assumption that words missing
-from the database would most likely be of low frequency), and for which
-an ANEW valence rating was available.  A word was selected from this pool
-having an ANEW valence mean between 4.00 and 6.00 and an equal number
-of characters to the I-word. If an I-word or its pair was a member of
-the N-word set, that N-word pair was substituted with the next available
-pair from the spare N-words block with the largest difference in valence.
-
-Each participant's I-word pairs etc. are shown in \cref{sec:iwordlist}
+criteria due to lack of available data. In these cases, a word with
+the most neutral valence was chosen that also minimised differences
+in length and frequency between the word pair. I-words absent from the
+MRC database (including proper nouns) were paired with words selected
+from a pool of 56 words having a frequency of 1 (on the assumption that
+words missing from the database would most likely be of low frequency),
+and for which an ANEW valence rating was available.  A word was selected
+from this pool having an ANEW valence mean between 4.00 and 6.00 and
+an equal number of characters to the I-word. If an I-word or its pair
+was a member of the N-word set, that N-word pair was substituted with
+the next available pair from the spare N-words block with the largest
+difference in valence.  Resulting I-word pairs were validated by the
+experimenter's supervisor. Final sets of I-word pairs for each are shown
+in \cref{sec:iwordlist}.
 
 \subsection{Procedure}
 
@@ -568,7 +570,7 @@ of Exeter School of Psychology Ethics Committee.  Following this they
 completed baseline measures for RRS, PHQ-9, GAD-7 and PSWQ using a web
 browser and Lime Survey \parencite{limesurvey}.
 
-Next, using a procedure based on \textcite{roberts_cueing_2013}, the
+Using a procedure based on \textcite{roberts_cueing_2013}, the
 participant was instructed to select an unresolved current concern (see
 \cref{sec:iwordinstructions}), and rated their concern on a 5 item scale,
 with each item in the range 1--9 \cref{app:concernrating}. The concern
@@ -621,15 +623,15 @@ task on their own computer and completing their first session. All
 participants successfully completed the preparatory session (see
 \cref{app:initialsession} for full details of the session protocol).
 
-The experimenter then prepared the experiment and associated data
-files required for the participant to run the computer task. The data
-files consisted of the I-word pairs (\cref{sec:iwordpairs}) which
-were validated by the experimenter's supervisor, the N-word pairs,
-the participant's randomization schedule (generated using the command
-\texttt{selectdesign(design=AB,MT=35,limit=8)} from the \texttt{SCRT}
-package \parencite{bulte_r_2008}), a stimulus configuration file and a
-configuration file to position stimuli based on the participant's screen
-height. These files were emailed to the participant for them to install.
+The experimenter then prepared the files required for the
+participant to run the computer task. These consisted of the
+dot-probe/ABM program, I-word pairs, N-word pairs, the participant's
+randomization schedule\footnote{Randomization schedules were
+generated using the \texttt{SCRT} \parencite{bulte_r_2008} function
+\texttt{selectdesign(design=AB,MT=35,limit=8)}.}, a stimulus
+configuration file and a configuration file to position stimuli based
+on the participant's screen height. These files were emailed to the
+participant for installallation.
 
 \subsubsection{Daily Sessions}
 
