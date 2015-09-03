@@ -623,7 +623,7 @@ Participants were given an information sheet to help them install
 and complete the computer task (see \cref{app:taskinstructions}). As a
 motivational aid, they were also given a printed calendar on which to plan
 their daily sessions and cross them off when completed. Implementation
-intentions have been shown to improve the realization of resolutions
+intentions have been shown to improve the goal-directed behaviour
 \parencite{gollwitzer_implementation_1999}, so participants were
 instructed to write on the calendar sheet a statement indicating an
 approximate time when they would complete each session. If requested, the
