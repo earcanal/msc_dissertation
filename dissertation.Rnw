@@ -349,11 +349,76 @@ no outliers (> 3SD) on these measures. The mean age of participants was
 
 \subsection{Measures and Materials}
 
-All survey instruments were created using Lime Survey
+All self-report measures were created using Lime Survey
 \parencite{limesurvey} and completed using a web browser (see
 \cref{app:surveys}).
 
+\subsubsection{Pre--Post self-report measures}
+
+The following measures were taken before the first and after the last
+dot-probe/ABM sessions.
+
 \todo{See McKay (2005) for examples of what each measure measures i.e. a bit more narrative}
+
+\paragraph{RRS}
+
+The Ruminative Responses Scale (RRS) is a 22 item measure of
+trait rumination, with item scores ranging from 1--4. The RRS is
+valid and reliable, having an expected Cronbach's $\alpha$ of .85
+\parencite{treynor_rumination_2003}. Questions on the RRS were asked
+in relation to the previous 4 weeks, to correspond approximately with
+the month before the study (pre) and time within the study (post)
+(see \cref{app:surveys}).
+
+\paragraph{GAD-7}
+
+The GAD-7 is a 7 item measure of Generalised Anxiety Disorder (GAD),
+with items relating to the previous 2 weeks, and scores ranging from
+0--3. The GAD-7 is an efficient, internally reliable (Cronbach's $\alpha$
+> .85) tool for assessing GAD severity in clinical research, with good
+test-retest reliability \parencite{spitzerrl_brief_2006}.
+
+\paragraph{PHQ-9}
+
+The 9 item Patient Health Questionnaire Depression (PHQ-9) is a brief,
+reliable (Cronbach's $\alpha$ > .85) and valid measure of depression
+severity \parencite{kroenke_phq9_2001}. Item scores range from 0--3,
+and questions relate to the previous 2 weeks.
+
+\paragraph{PSWQ}
+
+The 16 item Penn State Worry Questionnaire (PSWQ) is an internally
+consistent measure of trait worry with good test-retest reliability
+\parencite{meyer_development_1990}.  Item scores range from 1--5.
+
+\subsubsection{Daily self-report measures}
+
+The following measures were taken approximately every 24 hours, except
+where sessions were postponed.
+
+\paragraph{GRS}
+
+The Goal Rumination Scale (GRS) is a 7 item measure of state rumination
+towards a specific problem \parencite{schultheiss_role_2008}.  Item scores
+range from 1--7, with items 5--7 reversed. Reliability of the GRS is
+good (Cronbach's $\alpha$ = .87), based on a single sample of $N$ =
+101. Questions on the GRS -SF were asked in relation to the last 24 hours.
+
+\paragraph{PANAS-SF}
+
+The 10 item, short form Positive and Negative Affect Schedule (PANAS-SF)
+\parencite{mackinnon_short_1999} measures positive affect (Cronbach's
+$\alpha$=.78) and negative affect (Cronbach's $\alpha$=.87). Item scores
+range from 1-5.  Because we were specifically interested in changes in
+depression and anxiety, we added 4 items to the PANAS-SF.  Items `sad' and
+`depressed' were chosen as a state measure of depression, the rationale
+being that they would correlate negatively with PA and positively with NA.
+Items `anxious' and `worried' were added as a state measure of worry
+\todo{I need to have committed to anxiety or worry by this point!} as they
+were expected to correlate positively with NA. \todo{need a reference
+to show lack of items at low end of PA and that low PA/high NA ==
+depression.} Questions on the PANAS-SF were asked in relation to the last
+ 24 hours.
 
 \subsubsection{Dot-probe task}
 
@@ -415,6 +480,20 @@ eliminating any dependencies on a webserver for software development or
 data collection. Installation instructions for were created using screen
 capture software and uploaded to YouTube.
 
+After removing inaccurate trials or those with response times (RTs)
+exceeding 3 standard deviations beyond the mean, attentional bias scores
+were calculated from the remaining RTs using the equation \begin{equation}
+  Attentional\ bias\ score = [(NuPl + NlPu) - (NuPu + NlPl)]/2\label{eq:1}
+\end{equation} where ${N}$ = Negative word, ${P}$ = Probe, ${u}$ =
+upper, ${t}$ = lower \parencite{bradley_attentional_1997}.  A bias
+towards negative words is reflected in longer latencies for probes
+at the opposite location (left-hand side of equation \eqref{eq:1})
+and shorter latencies for probes at the same location (right-hand side
+of equation \eqref{eq:1}). Therefore, more positive scores reflect an
+attentional bias towards (i.e. vigilance for) negative words relative
+to neutral words, whereas more negative scores indicate avoidance
+\parencite{bradley_attentional_1997}.
+
 \subsubsection{Attentional Bias Modification task}
 
 The Attentional Bias Modification (ABM) task used the same paradigm as the
@@ -426,90 +505,6 @@ neutral word location. Thus, responses required repeated orientation of
 attention away from the negative word in the pair. Each ABM block took
 approximately 15 minutes.
 
-\subsubsection{Pre--Post Measures}
-
-The following measures were taken before the first and after the last
-dot-probe/ABM sessions.
-
-\paragraph{RRS}
-
-The Ruminative Responses Scale (RRS) is a 22 item measure of
-trait rumination, with item scores ranging from 1--4. The RRS is
-valid and reliable, having an expected Cronbach's $\alpha$ of .85
-\parencite{treynor_rumination_2003}. Questions on the RRS were asked
-in relation to the previous 4 weeks, to correspond approximately with
-the month before the study (pre) and time within the study (post)
-(see \cref{app:surveys}).
-
-\paragraph{GAD-7}
-
-The GAD-7 is a 7 item measure of Generalised Anxiety Disorder (GAD),
-with items relating to the previous 2 weeks, and scores ranging from
-0--3. The GAD-7 is an efficient, internally reliable (Cronbach's $\alpha$
-> .85) tool for assessing GAD severity in clinical research, with good
-test-retest reliability \parencite{spitzerrl_brief_2006}.
-
-\paragraph{PHQ-9}
-
-The 9 item Patient Health Questionnaire Depression (PHQ-9) is a brief,
-reliable (Cronbach's $\alpha$ > .85) and valid measure of depression
-severity \parencite{kroenke_phq9_2001}. Item scores range from 0--3,
-and questions relate to the previous 2 weeks.
-
-\paragraph{PSWQ}
-
-The 16 item Penn State Worry Questionnaire (PSWQ) is an internally
-consistent measure of trait worry with good test-retest reliability
-\parencite{meyer_development_1990}.  Item scores range from 1--5.
-
-\subsubsection{Daily Measures}
-
-The following measures were taken approximately every 24 hours, except
-where sessions were postponed.
-
-\paragraph{Attentional bias}
-
-Attentional bias was measured using using the dot-probe task. After
-removing inaccurate trials or those with response times (RTs)
-exceeding 3 standard deviations beyond the mean, attentional bias
-scores were calculated from the remaining RTs using the equation
-\begin{equation}
-  Attentional\ bias\ score = [(NuPl + NlPu) - (NuPu + NlPl)]/2\label{eq:1}
-\end{equation}
-where ${N}$ = Negative word, ${P}$ = Probe, ${u}$ =
-upper, ${t}$ = lower \parencite{bradley_attentional_1997}.
-A bias towards negative words is reflected in longer latencies for
-probes at the opposite location (left-hand side of equation \eqref{eq:1})
-and shorter latencies for probes at the same location (right-hand side
-of equation \eqref{eq:1}). Therefore, more positive scores reflect an
-attentional bias towards (i.e. vigilance for) negative words relative
-to neutral words, whereas more negative scores indicate avoidance
-\parencite{bradley_attentional_1997}.
-
-\paragraph{GRS}
-
-The Goal Rumination Scale (GRS) is a 7 item measure of state rumination
-towards a specific problem \parencite{schultheiss_role_2008}.  Item scores
-range from 1--7, with items 5--7 reversed. Reliability of the GRS is
-good (Cronbach's $\alpha$ = .87), based on a single sample of $N$ =
-101. Questions on the GRS -SF were asked in relation to the last 24 hours.
-
-\paragraph{PANAS-SF}
-
-The 10 item, short form Positive and Negative Affect Schedule (PANAS-SF)
-\parencite{mackinnon_short_1999} measures positive affect (Cronbach's
-$\alpha$=.78) and negative affect (Cronbach's $\alpha$=.87). Item scores
-range from 1-5.  Because we were specifically interested in changes in
-depression and anxiety, we added 4 items to the PANAS-SF.  Items `sad' and
-`depressed' were chosen as a state measure of depression, the rationale
-being that they would correlate negatively with PA and positively with NA.
-Items `anxious' and `worried' were added as a state measure of worry
-\todo{I need to have committed to anxiety or worry by this point!} as they
-were expected to correlate positively with NA. \todo{need a reference
-to show lack of items at low end of PA and that low PA/high NA ==
-depression.} Questions on the PANAS-SF were asked in relation to the last
- 24 hours.
-
 \subsubsection{N-word pairs}
 
 The Sussex Affective Word List (SAWL) \parencite{citron_how_2014} was
@@ -520,58 +515,59 @@ as necessary to ensure that all pairs were matched on length. A small
 number of pairs which appeared to be semantically related were adjusted
 by replacing the neutral word in the pair with an alternative from
 the SAWL.  Independent samples t-tests showed significant differences
-for mean ratings of valence and arousal (${P}$s {\textless} .001).
-Pairs were matched for frequency, imageability, familiarity, number of
-characters and number of syllables (all ${P}$s {\textgreater} .16) (see
-\cref{app:nwordttests}). In addition, the mean valence between members
-of any pair was at least 1.44 (Mean: 2.15, ${SD}$ = 0.37). To form the
-stimulus blocks, pairs were ranked by descending mean valence difference.
-The 6 pairs with the lowest difference were assigned to the ``spare''
-block.  The remaining 60 pairs were divided at every 10 word boundary,
-forming 6 groups. Each experimental block of 6 words was created by
-taking the top pair from each group, until all groups were exhausted,
-thereby creating 10 blocks with a mixture of valence differences. The
-complete N-word list can be seen in \cref{app:nwordlist}
+(${P}$s {\textless} .001) for mean ratings of valence and arousal (see
+\cref{app:nwordttests}). Pairs were matched for frequency, imageability,
+familiarity, number of characters and number of syllables (all ${P}$s
+{\textgreater} .16) (see \cref{app:nwordttests}). In addition, the mean
+valence between members of any pair was at least 1.44 (Mean: 2.15, ${SD}$
+= 0.37). To form the stimulus blocks, pairs were ranked by descending
+mean valence difference.  The 6 pairs with the lowest difference were
+assigned to the ``spare'' block, used where I-words were present in the
+N-word set (see below). The remaining 60 pairs were divided at every
+10 word boundary, forming 6 groups. Each experimental block of 6 words
+was created by taking the top pair from each group, until all groups
+were exhausted, thereby creating 10 blocks with a mixture of valence
+differences. The complete N-word list can be seen in \cref{app:nwordlist}
 
 \subsubsection{I-word pairs}
 \label{sec:iwordpairs}
 
 We refer to ideographic words (I-words) as the set of 6 words chosen
 by each participant for their likelihood to induce rumination
-about the participant's chosen current concern.
-
-Due to the unpredictability of these words, and the limited number of
-words in the SAWL \parencite{citron_how_2014}, a larger data set was
-required to matched pairs to I-words. A database of neutrally valenced
-words was created including frequency, imageability, familiarity, word
-length and number of syllables attributes from the MRC psycholinguistic
-database \parencite{wilson_mrc_1988}. A separate table was added to the
-database containing 1030 word valence means from the Affective Norms
-for English Words (ANEW) dataset \parencite{bradley_affective_1999}.
+about the participant's chosen current concern. Due to the
+unpredictability of these words, and the limited number of words in
+the SAWL \parencite{citron_how_2014}, a larger data set was required
+to matched pairs to I-words. A database of neutrally valenced words was
+created including frequency, imageability, familiarity, word length and
+number of syllables attributes from the MRC psycholinguistic database
+\parencite{wilson_mrc_1988}. A separate table was added to the database
+containing 1030 word valence means from the Affective Norms for English
+Words (ANEW) dataset \parencite{bradley_affective_1999}.
 
 Two different matching approaches were used, depending on whether
 each I-word word was present in, or absent from, the MRC database.
 If present, a neutral pair was selected from a pool of words having
 a frequency {\textpm}15\% that of the I-word, an ANEW valence mean
 (range 1-9) between 4.00 and 6.00 and an equal number of characters.
-After selecting a pool of matched words on the preceding criteria, a
-best match was found by inspection of candidate words based on number
-of syllables, imageability and familiarity.  Some I-words, such as
-long words or high frequency words, could not be matched using these
-criteria due to lack of available data. In these cases, a word with
-the most neutral valence was chosen that also minimised differences
-in length and frequency between the word pair. I-words absent from the
-MRC database (including proper nouns) were paired with words selected
-from a pool of 56 words having a frequency of 1 (on the assumption that
-words missing from the database would most likely be of low frequency),
-and for which an ANEW valence rating was available.  A word was selected
-from this pool having an ANEW valence mean between 4.00 and 6.00 and
-an equal number of characters to the I-word. If an I-word or its pair
-was a member of the N-word set, that N-word pair was substituted with
-the next available pair from the spare N-words block with the largest
-difference in valence.  Resulting I-word pairs were validated by the
-experimenter's supervisor. Final sets of I-word pairs for each are shown
-in \cref{sec:iwordlist}.
+After selecting a pool of matched words on the preceding criteria,
+a best match was found by inspection of candidate words based on
+number of syllables, imageability and familiarity.  Some I-words,
+such as long words or high frequency words, could not be matched
+using these criteria due to lack of available data. In these cases,
+a word with the most neutral valence was chosen that also minimised
+differences in length and frequency between the word pair. I-words
+absent from the MRC database (including proper nouns) were paired with
+words selected from a pool of 56 words having a frequency of 1 (on the
+assumption that words missing from the database would most likely be
+of low frequency), and for which an ANEW valence rating was available.
+A word was selected from this pool having an ANEW valence mean between
+4.00 and 6.00 and an equal number of characters to the I-word. If an
+I-word or its pair was a member of the N-word set, that N-word pair was
+substituted with the next available pair from the spare N-words block
+with the largest difference in valence. Resulting I-word pairs were
+validated by the experimenter's supervisor. The final sets of I-word
+pairs for each participant (\cref{tab:iwords}) and their characteristics
+(\cref{tab:iwordcharacteristics}) are show in in \cref{app:iwordlist}.
 
 \subsection{Procedure}
 
@@ -838,23 +834,24 @@ results when there actually are treatment effects." \parencite{edgington_additiv
 \todo{Comment on why there are no multiple comparisons corrections}
 
 \section{Results}
-Three participants withdrew from
-the study. One person withdrew before completing any sessions due to
-concerns that the study would worsen their social anxiety, another
-found the time commit too great after 5 sessions, and one withdrew
-after 24 sessions when a holiday meant that they would be unable to
-complete sufficient phase B sessions.  For the remaining participants,
-dot-probe/ABM accuracy was above the a priori inclusion threshold of 75\%
-(see \cref{tab:completed}) and the concern chosen by each participant at
-the preparatory session remained unresolved througout the study. Session
-32 for participant 7 was omitted from the analyses as the dot-probe data
-file for this session was truncated. Session 8 GRS and PANAS scores for
-participant 16 were brought forward from session 7, as the participant
-completed the dot-probe but not the measures during session 8, but advised
-within 12 hours that the scores would have been identical. To remain in
-the study, participant 5 switched from a Windows to Macintosh computer
-from session 21 onwards, and participant 19 completed later sessions in
-a different country from the one in which they began the study.
+
+Three participants withdrew from the study. One person withdrew before
+completing any sessions due to concerns that the study would worsen their
+social anxiety, another found the time commit too great after 5 sessions,
+and one withdrew after 24 sessions when a holiday meant that they would
+be unable to complete sufficient phase B sessions.  For the remaining
+participants, dot-probe/ABM accuracy was above the a priori inclusion
+threshold of 75\% (see \cref{tab:completed}) and the concern chosen by
+each participant at the preparatory session remained unresolved througout
+the study. Session 32 for participant 7 was omitted from the analyses
+as the dot-probe data file for this session was truncated. Session 8 GRS
+and PANAS scores for participant 16 were brought forward from session 7,
+as the participant completed the dot-probe but not the measures during
+session 8, but advised within 12 hours that the scores would have
+been identical. To remain in the study, participant 5 switched from a
+Windows to Macintosh computer from session 21 onwards, and participant
+19 completed later sessions in a different country from the one in which
+they began the study.
 
 \todo{Predictability in relation to screening measures
 "Looking at the scores from these participants they were typical/atypical."
@@ -1221,7 +1218,7 @@ Didn't do this analysis due to differing numbers of sessions.
 \input{procedure/task_instructions.tex}
 
 \section{I-word stimulus pairs}
-\label{sec:iwordlist}
+\label{app:iwordlist}
 
 <<iwords, results='asis', echo=FALSE, error=TRUE>>=
 @
