@@ -106,86 +106,137 @@ which a degree has previously been conferred upon me.}
 
 \section{Introduction}
 
-\subsection{Current state of anxiety and depression and treatments}
+\paragraph{Depression and anxiety would benefit from more effecitve, cheaper interventions grounded in evidence of the underlying cognitive mechanisms associated with these disorders.}
 
-Mixed anxiety and depression is the most common mood disorder in
-Britain \parencite{haliwell_fundamental_2007}. Its predicted growth
-(World Health Organisation, 2001) makes the associated negative
-individual and socio-economic consequences a global concern.
-In depression, relapse is common and its likelihood increases steeply
-with each depressive episode \parencite{haliwell_fundamental_2007}.
+Mixed depression and anxiety is a major public health challenge,
+reported as being present in 9.0\% of English adults in the most
+household survey \parencite{mcmanus_adult_2009}. Whilst this reflects
+a level of stability in prevalence over the preceding 7 years,
+\textcite{mathers_projections_2006} project that in 2030, unipolar
+depression will be the 2nd most common cause of disability-adjusted life
+years (DALY). Based 2007 prevalance rates, \textcite{mccrone_paying_2008}
+estimate that the combined cost of depression and anxiety services in
+England in 2026 will be \pounds5 billion, with lost employment bringing
+the total cost to \pounds26.4 billion.
+
+"recommendations include ... the expansion of evidence-based interventions in primary care settings for people
+with depression and anxiety disorders" \parencite{mccrone_paying_2008}
+
+"Primary care trusts should commission more evidence-based interventions in primary
+care settings for people with depression and anxiety disorders, and providers should
+aim to treat more people who have these disorders but currently do not receive
+treatment. The reduction in lost employment costs should outweigh the cost of
+increased service provision. Psychological therapies are evidence-based and popular,
+and access to such services should be extended. However, depending on their success
+rate and the growth in real earnings among people who return to work as a result, they
+may be a costly option. As such, more focus should be placed on the most cost-
+effective ways of delivering such care (for example, through computer-delivered
+cognitive behavioural therapy)." \parencite{mccrone_paying_2008}
+
+Treatment efficacy
+
+" a review of meta-analyses identified CBT response rates of 50\% or less
+for two of the three DSM-IV anxiety disorders for which meta-analyses
+have been conducted (Hofmann, Asnaani, Vonk, Sawyer, \& Fang, 2012). Thus,
+even within this gold standard, first-line treatment, there is substantial
+room for improvement." \parencite{schneider_state_2015}
+
+"pharmacological and psychological treatments together can reduce
+the disease burden of depression by only about 33\%" \textcite{cuijpers_psychotherapies_2015}
+ citing \textcite{andrews_utilising_2004}
+
+What to do?!
+
+"I-CBT is a viable treatment option for adults with
+depression and some anxiety disorders who request this treatment
+modality. Important questions remain before broad implementation can be
+supported." \parencite{arnberg_internetdelivered_2014}
+
+"Innovative applications such as mobile apps [71] and real-time monitoring
+of mood and behavior (ecological momentary assessment) [72] may have the
+promise to realize that, but future research will show whether this will
+succeed or not." \textcite{cuijpers_psychotherapies_2015}
+
+Understanding underlying cognitive mechanisms
+
 Anti-depressant medication (ADM) and psychological therapies for
 depression such as CBT and MBCT can be effective, but patients often
 dislike the side effects of ADM and there are high costs associated
-with delivering psychological therapies.  Consequently, waiting times
+with delivering psychological therapies. Consequently, waiting times
 in Britain currently average six to nine months, and can be as long as
-two years \parencite{haliwell_fundamental_2007}.  There is a need for
-cheap but effective interventions which target the cognitive mechanisms
-\todo{introduce things before referring to them} underlying depression
-and anxiety.
+two years \parencite{haliwell_fundamental_2007}.
 
-\subsection{What rumination is}
+There is evidence that the efficacy of CBT for treating depression is
+falling \parencite{johnsen_effects_2015}
 
-Rumination is a thought process consistently linked to both the onset and
-maintenance of depression \parencite{watkins_habitgoal_2014}.  In their
-review of the rumination literature, \textcite{smith_roadmap_2009}
-note that rumination as a construct is robust but that ``there
-is no unified definition [...] or standard way of measuring
-it'' \textcite[][p. 117]{smith_roadmap_2009}.  To some extent,
-worrying about the future has been associated with anxiety and is
-distinguishable from brooding over the past which is more associated
-with depression \parencite{papageorgiou_depressive_2004}.  However,
-other accounts \parencite{watkins_comparisons_2005} suggest
-that both types of rumination may share the key qualities of an
-inability to control intrusive, repetitive thoughts in situations
-where they are not constructive, but are nevertheless perceived to be
-\parencite{watkins_constructive_2008}.  Rumination predicts symptoms of
-both anxiety and depression \parencite{nolen-hoeksema_role_2000} and the
-conditions are frequently comorbid \parencite{krusche_mindfulness_2013}.
+"One important way to improve outcomes and reduce the disease burden is
+by focusing on treatments of chronic and treatment-resistant depression,
+and on preventing relapse." \parencite{cuijpers_psychotherapies_2015}
+
+In depression, relapse is common and its likelihood increases steeply
+with each depressive episode \parencite{haliwell_fundamental_2007}.
+
+But, but ... precision. For example, MBCT is specifically effective
+against depressive relapse when 3 or more previous episodes
+\parencite{segal_mindfulnessbased_2012}
+cite meta analysis and relationship to ADM
+
+"it does not seem very useful to develop new psychotherapies for
+depression. There are already many different kinds of psychotherapies,
+there is no evidence that one type is considerably more effective than
+others, and it is very difficult to show such differences in trials with
+sufficient statistical power." \parencite{cuijpers_psychotherapies_2015}
+
+\paragraph{Rumination}
+
+Define depression
+Define anxiety
+
+Definition
+
+Depression, anxiety and physical health difficulties result from
+unconstructive, repetitive thought \parencite{watkins_constructive_2008}
+
 Therefore, `repetitive negative thought' (RNT) may be a more useful
 label which captures these similarities whilst distinguishing RNT from
 the constructive role played by repetitive thought in problem solving
 \parencite{watkins_constructive_2008}.
 
-... the phenomenology of how adults \parencite{pearson_frequency_2008}
-and young people \parencite{oliver_all_2015} experience rumination.
+Reviewing the rumination literature, \textcite{smith_roadmap_2009}
+note that rumination as a construct is robust but that ``there
+is no unified definition [...] or standard way of measuring it''
+\textcite[][p. 117]{smith_roadmap_2009}.
 
-\subsubsection{worry}
+Two contrasting conceptualisations of rumination of rumination have been influential.
+Different models suggest different treatments which are more or less effective in different circumstances.
 
-Worry has been defined as \enquote{a chain of thoughts and
-images, negatively affect-laden and relatively uncontrollable}
-\parencite[][p. 10]{borkovec1983preliminary}.
+\begin{itemize}
+\item{Response Styles Theory}
 
+Response styles theory \parencite[RST; ][]{nolen-hoeksema_responses_1991}
+considers rumination to be particular response to depressed mood where
+a person tends to focus on ``causes, consequences and symptoms of one's
+negative affect'' \parencite[][p. 117]{smith_roadmap_2009} thereby
+prolonging low mood and depressive episodes. A significant output of
+RST is the gold standard trait measure of rumination, the Ruminative
+Responses Scale (RRS) \parencite{treynor_rumination_2003}.
 
-\subsection{Theories of rumination}
+"the use of positive distractions has not consistently been correlated
+with lower levels of depressive symptoms in correlational studies,
+although dozens of experimental studies show positive distractions
+relieve depressed mood." \parencite{nolen-hoeksema_rethinking_2008}
 
-\todo{Clarify that these are 2 different conceptualisations of rumination.}
+"lead dysphoric people to become significantly less depressed for a
+short time" \parencite{nolen-hoeksema_rethinking_2008}
 
-Two theories of rumination have been influential.
+\item{Control Theory}
 
-\subsubsection{Response Styles Theory}
-
-Response Styles Theory (RST) \parencite{nolen-hoeksema_responses_1991} defines
-rumination as a particular response to depressed mood where a person
-tends to focus on ``causes, consequences and symptoms of one's negative
-affect'' \parencite[][p. 117]{smith_roadmap_2009}
- thereby prolonging low mood and depressive episodes.
-
-\subsubsection{Control Theory}
- \parencite{martin_ruminative_1996} is broader than RST in that it explains
+\parencite{martin_ruminative_1996} is broader than RST in that it explains
 rumination as a thought process which arises when progress towards a
 goal is perceived to be unsatisfactory, a state within which low mood
 frequently co-occurs.
 
-\textcite{watkins_habitgoal_2014} have sought to
-unify these theories by proposing that RNT may be a habit, initiated
-by goal discrepancies and subsequently cued by contingent contexts
-such as mood or physical location.  They suggest that such automatic,
-habitual responses come to depend on context more than the content
-of particular unresolved goals, especially when contingent responses
-involve passive focus on abstractly construed, negative content.
-
-\subsection{Goals and current concerns}
+\item{Goals and current concerns}
 
 \textcite[][p.249]{klinger_motivation_2011} define a current concern as
 \enquote{the state of an organism between the time it becomes committed
@@ -194,27 +245,76 @@ the pursuit.}
 
 Explain how this relates to \textbf{motivation} and \textbf{cues}.
 \todo{cf. \textcite{martin_ruminative_1996}}
+\end{itemize}
 
-\subsection{Koster's disengaement hypothesis}
+\paragraph{Habits and goals}
+
+\textcite{watkins_habitgoal_2014} have sought to unify these theories
+by proposing that RNT may be a habit, initiated by goal discrepancies
+and subsequently cued by contingent contexts such as mood or physical
+location.  They suggest that such automatic, habitual responses come to
+depend on context more than the content of particular unresolved goals,
+especially when contingent responses involve passive focus on abstractly
+construed, negative content. \todo{I'm only really testing this in one
+(uncontrolled) context i.e. at home, and not controlling time of day, mood or degree of state rumination.}
+
+Worry is a thought process with similar characteristics to
+rumination. \textcite[][p. 10]{borkovec_preliminary_1983} define worry
+as \enquote{a chain of thoughts and images, negatively affect-laden
+and relatively uncontrollable}. To some extent, rumination and
+worry are temporally distinct in that rumination tends to focus on
+past events and is associated with depression, whereas worry tends
+to focus on events in the future and is associated with anxiety
+\parencite{papageorgiou_depressive_2004,watkins_comparisons_2005}.
+However, both forms of RNT regularly occur in the same individual, and
+their similarities, at least in non-clinical populations, suggest they may
+share common underlying processes \textcite{watkins_comparisons_2005}.
+
+Also may start past then go future? \parencite{mclaughlin_effects_2007} (see
+\textcite{smith_roadmap_2009})
+
+"Given that a broader conceptualization of rumination is proposed here,
+specificity to depression cannot be assumed, and it is suggested that
+multiple measures of outcome are appropriate." \parencite{smith_roadmap_2009}
+
+Furthermore, rumination is linked to levels of depression, and has been
+shown to predict the onset of depressive episodes, but also predicts
+symptoms of anxiety \parencite{nolen-hoeksema_role_2000}. The current
+study measures both worry and rumination because of this this lack of
+clear distinction and the common comorbidity of anxiety and depression
+\parencite{kessler_impairment_1999}.
+
+\paragraph{Attentional bias}
+
+"a causal relationship between rumination and positive attentional bias
+has been empirically established for the first time." \parencite{morrison_role_2008}
+
+
+\paragraph{Koster's disengaement hypothesis}
 
 \textcite{koster_understanding_2011} claim that cued repetitive
 thought per-se is a normal cognitive response to self-evaluation,
-but hypothesise that one driver of RNT, particularly brooding, is
-an impaired attentional ability to disengage from negative thoughts
-\textcite{koster_understanding_2011}.
-\todo{signpost lack of demonstrating attentional engagement}
+but hypothesise that one driver of RNT, particularly brooding (which
+is a subscale of the RRS \parencite{treynor_rumination_2003}), is an
+impaired attentional ability to disengage from negative thoughts
+\textcite{koster_understanding_2011}.  \todo{signpost lack of
+demonstrating attentional engagement}
 
-\subsection{Cognitive bias modification}
+A cognitive correlate of worry is a disruption in attention-focusing
+ability \parencite{borkovec_preliminary_1983}.
 
-\subsubsection{CBM-I}
+\paragraph{Cognitive bias modification}
 
-There is CBM-I ...
-
-\subsubsection{CBM-A}
+\begin{itemize}
+\item{CBM-A}
 
 ... but this is about CBM-A
+\item{CBM-I}
 
-\subsection{RAT}
+There is CBM-I ...
+\end{itemize}
+
+\paragraph{RAT}
 
 Although it is resistant to change \textcite{watkins_habitgoal_2014},
 it seems possible that habitual rumination could be altered using
@@ -231,39 +331,59 @@ task to repeatedly attend towards or away from a particular stimulus such
 as negatively valenced words or pictures \parencite[see][for a recent
 review]{macleod_attentional_2015}.  This type of training resembles the
 counterconditioning mechanism which \textcite{watkins_habitgoal_2014}
- suggest may reduce RNT.  A recent randomised controlled trial
-of ABM on individuals with depressive symptoms
-\parencite{yang_attention_2015} met the independent, but
-essential criteria of a successful ABM intervention stressed by
-\textcite{macleod_attentional_2015}.  First, a post-training
-change in attentional bias was demonstrated.  Second,
-and notable in the context of the habit-goal framework, this
-effect on reducing depressive symptoms was mediated by rumination
-\parencite{yang_attention_2015}. \textcite{yang_attention_2015} used
-laboratory-based ABM training using sad word stimuli.  The proposed
-study aims to extend these findings by testing whether ABM reduces
-RNT and elevates mood in non-depressed, high ruminators exposed to
-abstract, negative, ideographic cue words associated with an incomplete
-self-relevant goal.  This is a novel and more direct test of RNT within
-the habit-goal framework \textcite{watkins_habitgoal_2014}, as this
-arrangement should create a context likely to trigger RNT within which
-the counterconditioning effects of ABM training can be measured.
+ suggest may reduce RNT.
 
-\subsection{Hypotheses}
+
+"we stressed the critical need to distinguish the question of whether a
+putative ABM training procedure successfully induces the intended pattern
+of selective attentional responding to threat, from the quite different
+question of whether successful modification of selective attentional
+responding to threat significantly alters dispositional and dysfunctional
+anxiety." \textcite{macleod_attentional_2015}.
+
+A double-blind, randomised controlled trial of ABM in individuals having
+mild to severe depressive symptoms \textcite{yang_attention_2015} met both
+criteria, demonstrating a post-training change in attentional bias which
+mediated reductions in rumination and depressive symptoms. Furthermore,
+reductions in depressive symptoms was mediated by rumination
+\parencite{yang_attention_2015}.
+
+\textcite{yang_attention_2015} used laboratory-based ABM training using
+sad word stimuli. The proposed study aims to extend these findings by
+testing whether ABM reduces RNT and elevates mood in non-depressed,
+high ruminators exposed to abstract, negative, ideographic cue words
+associated with an incomplete self-relevant goal.
+
+"reduction in rumination is an effective treatment component of ABM
+training on depression" \parencite{yang_attention_2015}.
+
+This is a novel and more direct test of RNT within the habit-goal
+framework \textcite{watkins_habitgoal_2014}, as this arrangement
+should create a context likely to trigger RNT within which the
+counterconditioning effects of ABM training can be measured.  \todo{Surely
+this is more a test of Martin \& Tesser than the habit-goal hypothesis}
+
+\todo{GAP: effects of ABM on current concerns control theory hasn't been tested}
+
+A novel intervention to reduce rumination and treat anxiety and depression.
+
+\paragraph{RAT/WTD}
 
 Because the 
 Anxiety and depression were measured due to their close association, and
-uncertainty whether the procedure would affect brooding \todo{brooding
-as a subtype of past-focussed rumination} worry or both.
+uncertainty whether the procedure would affect rumination, worry or both.
 
-Reduced attentional bias, state rumination, state anxiety and depression
-scores are predicted after ABM training (phase B) in comparison with
-baseline (phase A) measures.  Initial measures of trait rumination, trait
-anxiety and depression are also predicted to reduce after ABM training.
-Positive findings would add weight to the impaired disengagement
-hypothesis \textcite{koster_understanding_2011} and the habit-goal
-framework \textcite{watkins_habitgoal_2014} and would be proof of
-principle for a potential clinical application of ABM to change RNT.
+Specific hypotheses were as follows:
+
+\begin{enumerate}
+\item Attentional bias towards negative words will reduce after ABM training.
+\item Attentional bias towards ideographic words associated with a
+current concern will differ after ABM training.
+\item Baseline state rumination, state anxiety and depression worry change after
+ABM training.
+\item Baseline trait rumination, trait anxiety, depression and worry
+will differ after ABM training.
+\end{enumerate}
 
 \section{Method}
 
@@ -460,15 +580,21 @@ from the screen.}. Neutral words occurred with equal frequency at the
 upper or lower positions. After 1250 ms, the word pair was replaced by
 either a greater than (\texttt{>}) symbol or less than (\texttt{<})
 symbol at a random letter location within one of the previous word
-locations. As our aim was to guarantee attentional engagement with
-word stimuli, this exposure duration was chosen as being slightly
-higher than the 1000 ms in which vigilance for negative words has been
-shown to be positively correlated with measures of depressed mood and
-vulnerability \parencite{bradley_attentional_1997}. Probes appeared with
-equal frequency at upper and lower locations. The only valid keyboard
-responses were greater than (\texttt{>}) and less than (\texttt{<}). The
-probe remained on the screen until the participant pressed a valid
-key. A correct response was recorded if the keypress matched the probe
+locations. As our aim was to guarantee attentional engagement with word
+stimuli, this exposure duration was chosen as being slightly higher than
+the 1000 ms in which vigilance for negative words has been shown to be
+positively correlated with measures of depressed mood and vulnerability
+\parencite{bradley_attentional_1997}. Furthermore, attentional biases
+are more frequently observed when self-relevant negative information is
+presented for longer durations \parencite{koster_understanding_2011},
+and attentional biases in depression are critically dependent on longer
+(1000 ms) exposure durations \parencite{donaldson_rumination_2007}.
+
+ Probes appeared with equal
+frequency at upper and lower locations. The only valid keyboard responses
+were greater than (\texttt{>}) and less than (\texttt{<}). The probe
+remained on the screen until the participant pressed a valid key. A
+correct response was recorded if the keypress matched the probe
 symbol. There was no feedback for incorrect responses. A blank screen
 with a random inter-trial interval (ITI) between 100-500ms followed
 each trial. Participants were instructed to respond as quickly and
@@ -603,22 +729,24 @@ rumination \parencite{watkins_concreteness_2009}. From their list,
 they then chose the 6 words most likely to cause them to ruminate about
 their concern.
 
-To familiarise themselves with the dot-probe task, participants then
-completed a practice block consisting of N-word block 7 and a set of
-I-word pairs generated by the experimenter. Whilst this was underway, the
-experimenter validated the participant's I-words, noting any which known
-to be difficult to match with a pair from the neutral word database. These
-including plurals, acronyms, hyphenated words, words with stems related
-to an N-word or words longer than 10 characters. After completing the
-practice block, participants were instructed to replace any invalid
-words with synonyms or wth alternatives from their list, where these
-were available. Care was taken to ensure that the semantics of any
-adjusted words were chosen by the participant without influence from
-the experimenter (see \cref{sec:iwordinstructions}). All participants
-successfully generated 6 I-words. They rated the valence of each word in
-relation to their concern on a 7-point scale, using instructions based
-on \textcite{citron_how_2014}. Participants then completed a distraction
-task for 5 minutes (see \cref{app:distraction}).
+To familiarise themselves with the dot-probe task, participants
+then completed a practice block consisting of N-word block 7 and
+a set of I-word pairs generated by the experimenter. Whilst this
+was underway, the experimenter validated the participant's I-words,
+noting any which known to be difficult to match with a pair from the
+neutral word database. These including plurals, acronyms, hyphenated
+words, words with stems related to an N-word or words longer than
+10 characters. After completing the practice block, participants were
+instructed to replace any invalid words with synonyms or wth alternatives
+from their list, where these were available. Care was taken to ensure that
+the semantics of any adjusted words were chosen by the participant without
+influence from the experimenter (see \cref{sec:iwordinstructions}). All
+participants successfully generated 6 I-words. They rated the valence
+of each word in relation to their concern on a 7-point scale, using
+instructions based on \textcite{citron_how_2014}. Participants then
+completed a distraction task to attenuate the effects of rumination
+\parencite{nolen-hoeksema_rethinking_2008} for 5 minutes (see
+\cref{app:distraction}).
 
 Participants were given an information sheet to help them install
 and complete the computer task (see \cref{app:taskinstructions}). As a
@@ -826,6 +954,9 @@ meta-analysis used an additive approach, which has a greater probability
 of yielding significant results when there are treatment effects
 \parencite{edgington_additive_1972}.
 
+Hmmm, perhaps N-word bias change should be directional but I-word and other measures non-directional, need to tie this back to hypotheses and fix analyse.R .  Change in scores and associated test statistic needs to be crystal clear in text and tables
+Randomization test statistic used was \(\lvert A-B\rvert\) i.e. non-directional/2-tailed ...  \parencite{bulte_r_2008}.
+
 Of the items added to the PANAS-SF, `sad' and `depressed' correlated
 strongly with each other and weakly with PA items on the scale, whereas
 `anxious' and `worried' were moderately associated with NA, but not
@@ -900,7 +1031,7 @@ This allows you to analyse things visually.
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_n.jpg}
-\caption{Attentional bias scores for N-words (participants 5--10). A =
+\caption{Scale range. Attentional bias scores for N-words (participants 5--10). A =
 Phase A (dot-probe baseline), B = Phase B (ABM training followed by
 dot-probe). Dotted lines show mean attentional bias score.}
 \end{figure}
@@ -936,7 +1067,6 @@ dot-probe). Dotted lines show mean attentional bias score.}
 
 Description of these graphs.
 
-\clearpage
 \begin{figure}[!h]
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_i.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_i.jpg}
@@ -958,7 +1088,7 @@ Description of these graphs.
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_grs.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_grs.jpg}
-\caption{GRS scores (participants 5--10). A = Phase A (dot-probe
+\caption{FIXME: Scale range. GRS scores (participants 5--10). A = Phase A (dot-probe
 baseline), B = Phase B (ABM training followed by dot-probe). Dotted
 lines show mean GRS score.}
 \end{figure}
@@ -987,7 +1117,7 @@ Description of these graphs.
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_pa.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_pa.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_pa.jpg}
-\caption{PA scores (participants 5--10). A = Phase A (dot-probe
+\caption{FIXME: Scale range. PA scores (participants 5--10). A = Phase A (dot-probe
 baseline), B = Phase B (ABM training followed by dot-probe). Dotted
 lines show mean PA score.}
 \end{figure}
@@ -1016,7 +1146,7 @@ Description of these graphs.
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_na.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_na.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_na.jpg}
-\caption{NA scores (participants 5--10). A = Phase A (dot-probe
+\caption{FIXME: Scale range. NA scores (participants 5--10). A = Phase A (dot-probe
 baseline), B = Phase B (ABM training followed by dot-probe). Dotted
 lines show mean NA score.}
 \end{figure}
@@ -1045,7 +1175,7 @@ Description of these graphs.
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_d.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_d.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_d.jpg}
-\caption{Depression ('sad'+'depressed') scores (participants 5--10). A
+\caption{FIXME: Scale range. Depression ('sad'+'depressed') scores (participants 5--10). A
 = Phase A (dot-probe baseline), B = Phase B (ABM training followed by
 dot-probe). Dotted lines show mean depression score.}
 \end{figure}
@@ -1125,6 +1255,7 @@ participants.} \parencite{schultheiss_role_2008}
 \subsubsection{Limitations}
 
 \begin{itemize}
+\item Why didn't I measure change in the RRS brooding subscale?
 \item self-report measures
 \item Longevity of effects treatment? Would ABA revert?
 \item What happens when problem resolves?
@@ -1132,9 +1263,35 @@ participants.} \parencite{schultheiss_role_2008}
 \item Not sure about correlations between PANAS-SF and depression
 \end{itemize}
 
+"the provision of explicit information and instructed practice in
+the desired pattern of attentional selectivity, while potentially
+enhancing patient acceptability with CBM-A, may eliminate its capacity
+to effectively alter anxiety vulnerability." \parencite{grafton_when_2014}
+
+\subsubsection{RFW}
+\begin{itemize}
+\item Inhibitory control \parencite{koster_understanding_2011}.
+\end{itemize}
+
 \paragraph{multiple baselines}
 
 Didn't do this analysis due to differing numbers of sessions.
+
+\section{Conclusion}
+
+Premature to ignore cognitive and neuroscientific evidence for potentially
+beneficial bottom-up treatments before research has fully tested the
+hypotheses that these approaches are generating.
+
+Don't throw the baby out with the bathwater. Internet delivery in itself
+could provide oppotunities for more precise measurement and personalised
+treatments using experience sampling/EMA. Especially with case-series
+approach and randomization tests.
+
+On the one hand this adds to the absence of evidence. On the other hand
+it provides methods which add to the body of evidence which distinguish
+what how biases can be modified, which biases can be modified and in
+which populations these have desired effects on psychopathology.
 
 \printbibliography
 %% CAVEAT: \appendices environment breaks \cleveref
