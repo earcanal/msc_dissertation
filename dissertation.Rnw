@@ -151,96 +151,66 @@ for depression and anxiety are likely to draw on evidence which explicates
 the role that cognitive mechanisms play in these common disorders,
 and computer tasks offer one cost-effective means of delivery.
 
-\paragraph{Rumination}
+Rumination is a thinking style closely associated with depression
+and anxiety. A more precise definition distinguishes constructive
+repetitive thought which support planning, problem solving,
+and healthy self-reflection, from extensive evidence linking
+unconstructive repetitive thought with psychological distress
+and physical health difficulties characteristic of depression
+and anxiety \parencite{watkins_constructive_2008}. Although
+rumination as a construct is robust, the ten models and five
+measures reviewed by \textcite{smith_roadmap_2009} demonstrate
+that ``there is no unified definition [...] or standard way of
+measuring it'' \textcite[][p. 117]{smith_roadmap_2009}. Response
+styles theory \parencite[RST; ][]{nolen-hoeksema_responses_1991}
+has been influential in terms of explaining, measuring and treating
+depressive rumination. RST considers rumination to be a particular
+response to depressed mood where a person tends to focus on
+``causes, consequences and symptoms of one's negative affect''
+\parencite[][p. 117]{smith_roadmap_2009} thereby prolonging low
+mood and depressive episodes. A significant output from RST is the
+Ruminative Responses Scale (RRS) \parencite{treynor_rumination_2003},
+considered to be the gold standard trait measure of rumination, with
+subscales which can distinguish maladaptive rumination in the form of
+'depressive brooding' from the more adaptive 'reflective pondering'. In
+support of RST, positive positive distractions have been shown to
+significantly reduce depression in dysphoric people over short time
+periods \parencite{nolen-hoeksema_rethinking_2008}. However, the temporary
+reduction in depressive symptoms provided by distraction suggests a more
+enduring underlying link between rumination and depression.
 
-Boom - cognitive mechanisms ...
+Goal progress theory \parencite{martin_ruminative_1996} is a
+more general model which proposes that rumination is initiated
+by unexpected progress (more or less) towards a goal\footnote{An
+extension of the model draws on parallel distributed processing
+model to explain discrepancies arising amongst concurrent goals
+\parencite{martin_extending_2006}.}. This account of rumination draws
+on ideas from control theory \parencite{carver_control_1982} such that
+feedback mechanisms orient cognitive resources towards maintaining
+a system within desirable constraints. The system in this case is an
+individual's hierarchy of goal representations, unexpected progress
+indicates unnmet constraints and the cognitive resources allocated to
+address the discrepancy include attention, memory and consciousness. A
+concept closely related to goal progress is the 'current concern', which
+\textcite[][p.249]{klinger_motivation_2011} define as \enquote{the state
+of an organism between the time it becomes committed to pursuing a goal
+and the time it either gains the goal or abandons the pursuit.} Rumination
+for \textcite[][p. 7]{martin_ruminative_1996} is "a class of conscious
+thoughts that revolve around a common instrumental theme and that recur
+in the absence of immediate environmental demands requiring the thoughts",
+and such thoughts are a consequence of goal discrepancies. Together, goal
+progress theory and current concerns provide a framework for understanding
+rumination in terms of motivation, cognition and emotion. Where progress
+towards resolving a current concern is slower than expected, priming will
+potentiate internal and external cues on related themes to draw attention
+to the discrepancy. Similarly, negative affect will draw attention to
+the unsatisfactory goal progress. This account explains why targetting
+underlying goal discrepancies may provide more long term relief than
+distraction interventions in relieving the negative affect associated
+with rumination.
 
-Important to stress that rumination is normal and can be non-pathalogical e.g. problem solving, reflective pondering 
-\parencite{watkins_constructive_2008}
-
-Definition
-
-Nevertheless, 
-Depression, anxiety and physical health difficulties result from
-unconstructive, repetitive thought \parencite{watkins_constructive_2008}
-
-and it's this type of rumination that we're talking about here.
-
-Therefore, `repetitive negative thought' (RNT) may be a more useful
-label which captures these similarities whilst distinguishing RNT from
-the constructive role played by repetitive thought in problem solving
-\parencite{watkins_constructive_2008}.
-
-Maybe list the different models to highlight the lack of agreement
-Reviewing the rumination literature, \textcite{smith_roadmap_2009}
-note that rumination as a construct is robust but that ``there
-is no unified definition [...] or standard way of measuring it''
-\textcite[][p. 117]{smith_roadmap_2009}.
-
-Two contrasting conceptualisations of rumination of rumination have been influential.
-Different models suggest different treatments which are more or less effective in different circumstances.
-
-\begin{itemize}
-\item{Response Styles Theory}
-
-Response styles theory \parencite[RST; ][]{nolen-hoeksema_responses_1991}
-considers rumination to be particular response to depressed mood where
-a person tends to focus on ``causes, consequences and symptoms of one's
-negative affect'' \parencite[][p. 117]{smith_roadmap_2009} thereby
-prolonging low mood and depressive episodes. A significant output of
-RST is the gold standard trait measure of rumination, the Ruminative
-Responses Scale (RRS) \parencite{treynor_rumination_2003}.
-
-"the use of positive distractions has not consistently been correlated
-with lower levels of depressive symptoms in correlational studies,
-although dozens of experimental studies show positive distractions
-relieve depressed mood." \parencite{nolen-hoeksema_rethinking_2008}
-
-"lead dysphoric people to become significantly less depressed for a
-short time" \parencite{nolen-hoeksema_rethinking_2008}
-
-\item{Goal Progress Theory}
-
-A different mechanism that is frequently the cause of repetitive thought.
-
-relationship to control theory
-
-\parencite{martin_ruminative_1996} is broader than RST in that it explains
-rumination as a thought process which arises when progress towards a
-goal is perceived to be unsatisfactory, a state within which low mood
-frequently co-occurs.
-
-\item{Goals and current concerns}
-
-implicit/explicit motivation? \parencite{schultheiss_role_2008}
-endogenous/exogenous goals \parencite{klinger_motivation_2011}
-
-\textcite[][p.249]{klinger_motivation_2011} define a current concern as
-\enquote{the state of an organism between the time it becomes committed
-to pursuing a goal and the time it either gains the goal or abandons
-the pursuit.}
-
-Explain how this relates to \textbf{motivation} and \textbf{cues}.
-cf. \textcite{martin_ruminative_1996}
-\end{itemize}
-
-POC:Regarding distraction "As long as the goal remains desired yet
-unattained, the mental conditions that promote rumination will persist"
-\parencite{martin_ruminative_1996}
-
-\paragraph{Habits and goals}
-
-\textcite{watkins_habitgoal_2014} have sought to unify these theories
-by proposing that RNT may be a habit, initiated by goal discrepancies
-and subsequently cued by contingent contexts such as mood or physical
-location.  They suggest that such automatic, habitual responses come to
-depend on context more than the content of particular unresolved goals,
-especially when contingent responses involve passive focus on abstractly
-construed, negative content. \todo{I'm only really testing this in one
-(uncontrolled) context i.e. at home, and not controlling time of day, mood or degree of state rumination.}
-
-Worry is a thought process with similar characteristics to
-rumination. \textcite[][p. 10]{borkovec_preliminary_1983} define worry
+\paragraph{Worry is a thought process with similar characteristics to
+rumination.} \textcite[][p. 10]{borkovec_preliminary_1983} define worry
 as \enquote{a chain of thoughts and images, negatively affect-laden
 and relatively uncontrollable}. To some extent, rumination and
 worry are temporally distinct in that rumination tends to focus on
@@ -268,13 +238,21 @@ clear distinction and the common comorbidity of anxiety and depression
 "the results provide direct support for the hypothesis that similar
 cognitive control impairments may play a role in worrying" \parencite{beckwe_worrying_2014}
 
-\paragraph{Attentional bias}
+
+\paragraph{Mechanisms}
+Boom - cognitive mechanisms ...
+
+\textcite{klinger_motivation_2011} 
+
+"It remains unclear if rumination is best characterized as an automatic
+or consciously controlled process" \textcite{smith_roadmap_2009}
+
+Causal?
 
 "a causal relationship between rumination and positive attentional bias
 has been empirically established for the first time." \parencite{morrison_role_2008}
 
-
-\paragraph{Mechanisms}
+Attentional bias
 
 Understanding the mechanisms is the way forward.
 
@@ -284,7 +262,6 @@ Inhibitory control \parencite{koster_understanding_2011}.
 " rumination was related to attentional switching impairments,
 specifically in the context of emotional information" \parencite{koster_rumination_2013}
 
-
 \textcite{koster_understanding_2011} claim that cued repetitive
 thought per-se is a normal cognitive response to self-evaluation,
 but hypothesise that one driver of RNT, particularly brooding (which
@@ -292,6 +269,15 @@ is a subscale of the RRS \parencite{treynor_rumination_2003}), is an
 impaired attentional ability to disengage from negative thoughts
 \textcite{koster_understanding_2011}.  \todo{signpost lack of
 demonstrating attentional engagement}
+
+\textcite{watkins_habitgoal_2014} have sought to unify these theories
+by proposing that RNT may be a habit, initiated by goal discrepancies
+and subsequently cued by contingent contexts such as mood or physical
+location.  They suggest that such automatic, habitual responses come to
+depend on context more than the content of particular unresolved goals,
+especially when contingent responses involve passive focus on abstractly
+construed, negative content. \todo{I'm only really testing this in one
+(uncontrolled) context i.e. at home, and not controlling time of day, mood or degree of state rumination.}
 
 A cognitive correlate of worry is a disruption in attention-focusing
 ability \parencite{borkovec_preliminary_1983}.
