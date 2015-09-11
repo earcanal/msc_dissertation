@@ -113,7 +113,7 @@ household survey \parencite{mcmanus_adult_2009}. Whilst this
 reflects a level of stability in prevalence over the preceding
 7 years, \textcite{mathers_projections_2006} project that in
 2030, unipolar depression will be the 2nd most common cause of
-disability-adjusted life years (DALY). Based 2007 prevalance rates,
+disability-adjusted life years (DALY). Based on 2007 prevalance rates,
 \textcite{mccrone_paying_2008} estimate that the combined cost of
 depression and anxiety services in England in 2026 will be \pounds5
 billion, with lost employment bringing the total cost to \pounds26.4
@@ -121,33 +121,35 @@ billion. To address these issues, \textcite{mccrone_paying_2008}
 recommend expanding provision of evidence-based interventions in
 primary care settings with a focus on the most cost-effective means
 of delivery, such as Internet delivered cognitive behavioural therapy
-(I-CBT). Despite their strong evidence-base, pharmacological and
-psychological treatments are only partially effective. Combinations
-of these treatments can only reduce the disease burden of depression
-by about 33\% \textcite{andrews_utilising_2004}, and CBT, the gold
-standard psychological treatments, has response reates of 50\% or less
-for treating anxiety disorders \parencite{schneider_state_2015}. There
-is also evidence that the efficacy of CBT for treating depression is
-falling \parencite{johnsen_effects_2015}, and the high costs associated
-with delivering psychological therapies mean that waiting times in
-Britain currently average six to nine months, and can be as long as
-two years \parencite{haliwell_fundamental_2007}. Technological advances
-are beginning to improve cost-effective treatment delivery. I-CBT is a
-viable treatment for adults with depression and some anxiety disorders
-\parencite{arnberg_internetdelivered_2014} and mobile apps including
-real-time monitoring of mood and behavior could make a major contribution
-\textcite{cuijpers_psychotherapies_2015}. More reasearch is required
-to ascertain whether this potential can be realised in practice. A
-second area of progress is an improved precision of treatments, based
-on an expanded understanding of the role played by cognitive mechanisms
-such as attention and memory in mood disorders. For example, Mindfulness
-Based Cognitive Therapy (MBCT) is a treatment which specifically targets
+(I-CBT).
+
+Despite their strong evidence-base, pharmacological and psychological
+treatments are only partially effective. Combinations of these
+treatments are effective at treating depression in about 33\%  of
+cases \parencite{andrews_utilising_2004}, and CBT, the gold standard
+psychological treatments, has response reates of 50\% or less for
+treating anxiety disorders \parencite{schneider_state_2015}. There
+is some evidence that the efficacy of CBT for treating depression
+is falling \parencite{johnsen_effects_2015}, and the high costs
+associated with delivering psychological therapies mean that
+waiting times in Britain currently average six to nine months
+\parencite{haliwell_fundamental_2007}. Technological advances
+may improve cost-effective treatment delivery. I-CBT is a viable
+treatment for adults with depression and some anxiety disorders
+\parencite{arnberg_internetdelivered_2014}, and mobile apps including
+real-time monitoring of mood and behavior could also contribute
+\parencite{cuijpers_psychotherapies_2015}. More reasearch is required
+to ascertain whether this potential can be realised in practice.
+An expanded understanding of the role played by cognitive mechanisms
+such as attention and memory in mood disorders is reflected in the
+greater precision of newer treatments. For example, Mindfulness Based
+Cognitive Therapy (MBCT) is a treatment which specifically targets
 depressive relapse \parencite{segal_mindfulnessbased_2012}, which is
 common and becomes increasingly likely with each depressive episode
 \parencite{haliwell_fundamental_2007}. The most effective new treatments
 for depression and anxiety are likely to draw on evidence which explicates
 the role that cognitive mechanisms play in these common disorders,
-and compter tasks offer cost-effective means of treatment delivery.
+and computer tasks offer one cost-effective means of delivery.
 
 \paragraph{Rumination}
 
