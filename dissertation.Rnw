@@ -86,8 +86,9 @@ which a degree has previously been conferred upon me.}
 \usepackage{booktabs}
 \newcommand*\rot{\rotatebox{90}}
 
+\usepackage{tabularx}
 \begin{document}
-\setlength{\marginparwidth}{1.5cm}
+\setlength{\marginparwidth}{1cm}
 \todototoc
 \listoftodos[Todo list]
 \maketitle
@@ -106,102 +107,69 @@ which a degree has previously been conferred upon me.}
 
 \section{Introduction}
 
-\paragraph{Depression and anxiety would benefit from more effecitve, cheaper interventions grounded in evidence of the underlying cognitive mechanisms associated with these disorders.}
-
 Mixed depression and anxiety is a major public health challenge,
 reported as being present in 9.0\% of English adults in the most
-household survey \parencite{mcmanus_adult_2009}. Whilst this reflects
-a level of stability in prevalence over the preceding 7 years,
-\textcite{mathers_projections_2006} project that in 2030, unipolar
-depression will be the 2nd most common cause of disability-adjusted life
-years (DALY). Based 2007 prevalance rates, \textcite{mccrone_paying_2008}
-estimate that the combined cost of depression and anxiety services in
-England in 2026 will be \pounds5 billion, with lost employment bringing
-the total cost to \pounds26.4 billion.
-
-"recommendations include ... the expansion of evidence-based interventions in primary care settings for people
-with depression and anxiety disorders" \parencite{mccrone_paying_2008}
-
-"Primary care trusts should commission more evidence-based interventions in primary
-care settings for people with depression and anxiety disorders, and providers should
-aim to treat more people who have these disorders but currently do not receive
-treatment. The reduction in lost employment costs should outweigh the cost of
-increased service provision. Psychological therapies are evidence-based and popular,
-and access to such services should be extended. However, depending on their success
-rate and the growth in real earnings among people who return to work as a result, they
-may be a costly option. As such, more focus should be placed on the most cost-
-effective ways of delivering such care (for example, through computer-delivered
-cognitive behavioural therapy)." \parencite{mccrone_paying_2008}
-
-Treatment efficacy
-
-" a review of meta-analyses identified CBT response rates of 50\% or less
-for two of the three DSM-IV anxiety disorders for which meta-analyses
-have been conducted (Hofmann, Asnaani, Vonk, Sawyer, \& Fang, 2012). Thus,
-even within this gold standard, first-line treatment, there is substantial
-room for improvement." \parencite{schneider_state_2015}
-
-"pharmacological and psychological treatments together can reduce
-the disease burden of depression by only about 33\%" \textcite{cuijpers_psychotherapies_2015}
- citing \textcite{andrews_utilising_2004}
-
-What to do?!
-
-"I-CBT is a viable treatment option for adults with
-depression and some anxiety disorders who request this treatment
-modality. Important questions remain before broad implementation can be
-supported." \parencite{arnberg_internetdelivered_2014}
-
-"Innovative applications such as mobile apps [71] and real-time monitoring
-of mood and behavior (ecological momentary assessment) [72] may have the
-promise to realize that, but future research will show whether this will
-succeed or not." \textcite{cuijpers_psychotherapies_2015}
-
-Understanding underlying cognitive mechanisms
-
-Anti-depressant medication (ADM) and psychological therapies for
-depression such as CBT and MBCT can be effective, but patients often
-dislike the side effects of ADM and there are high costs associated
-with delivering psychological therapies. Consequently, waiting times
-in Britain currently average six to nine months, and can be as long as
-two years \parencite{haliwell_fundamental_2007}.
-
-There is evidence that the efficacy of CBT for treating depression is
-falling \parencite{johnsen_effects_2015}
-
-"One important way to improve outcomes and reduce the disease burden is
-by focusing on treatments of chronic and treatment-resistant depression,
-and on preventing relapse." \parencite{cuijpers_psychotherapies_2015}
-
-In depression, relapse is common and its likelihood increases steeply
-with each depressive episode \parencite{haliwell_fundamental_2007}.
-
-But, but ... precision. For example, MBCT is specifically effective
-against depressive relapse when 3 or more previous episodes
-\parencite{segal_mindfulnessbased_2012}
-cite meta analysis and relationship to ADM
-
-"it does not seem very useful to develop new psychotherapies for
-depression. There are already many different kinds of psychotherapies,
-there is no evidence that one type is considerably more effective than
-others, and it is very difficult to show such differences in trials with
-sufficient statistical power." \parencite{cuijpers_psychotherapies_2015}
+household survey \parencite{mcmanus_adult_2009}. Whilst this
+reflects a level of stability in prevalence over the preceding
+7 years, \textcite{mathers_projections_2006} project that in
+2030, unipolar depression will be the 2nd most common cause of
+disability-adjusted life years (DALY). Based 2007 prevalance rates,
+\textcite{mccrone_paying_2008} estimate that the combined cost of
+depression and anxiety services in England in 2026 will be \pounds5
+billion, with lost employment bringing the total cost to \pounds26.4
+billion. To address these issues, \textcite{mccrone_paying_2008}
+recommend expanding provision of evidence-based interventions in
+primary care settings with a focus on the most cost-effective means
+of delivery, such as Internet delivered cognitive behavioural therapy
+(I-CBT). Despite their strong evidence-base, pharmacological and
+psychological treatments are only partially effective. Combinations
+of these treatments can only reduce the disease burden of depression
+by about 33\% \textcite{andrews_utilising_2004}, and CBT, the gold
+standard psychological treatments, has response reates of 50\% or less
+for treating anxiety disorders \parencite{schneider_state_2015}. There
+is also evidence that the efficacy of CBT for treating depression is
+falling \parencite{johnsen_effects_2015}, and the high costs associated
+with delivering psychological therapies mean that waiting times in
+Britain currently average six to nine months, and can be as long as
+two years \parencite{haliwell_fundamental_2007}. Technological advances
+are beginning to improve cost-effective treatment delivery. I-CBT is a
+viable treatment for adults with depression and some anxiety disorders
+\parencite{arnberg_internetdelivered_2014} and mobile apps including
+real-time monitoring of mood and behavior could make a major contribution
+\textcite{cuijpers_psychotherapies_2015}. More reasearch is required
+to ascertain whether this potential can be realised in practice. A
+second area of progress is an improved precision of treatments, based
+on an expanded understanding of the role played by cognitive mechanisms
+such as attention and memory in mood disorders. For example, Mindfulness
+Based Cognitive Therapy (MBCT) is a treatment which specifically targets
+depressive relapse \parencite{segal_mindfulnessbased_2012}, which is
+common and becomes increasingly likely with each depressive episode
+\parencite{haliwell_fundamental_2007}. The most effective new treatments
+for depression and anxiety are likely to draw on evidence which explicates
+the role that cognitive mechanisms play in these common disorders,
+and compter tasks offer cost-effective means of treatment delivery.
 
 \paragraph{Rumination}
 
-Define depression
-Define anxiety
+Boom - cognitive mechanisms ...
+
+Important to stress that rumination is normal and can be non-pathalogical e.g. problem solving, reflective pondering 
+\parencite{watkins_constructive_2008}
 
 Definition
 
+Nevertheless, 
 Depression, anxiety and physical health difficulties result from
 unconstructive, repetitive thought \parencite{watkins_constructive_2008}
+
+and it's this type of rumination that we're talking about here.
 
 Therefore, `repetitive negative thought' (RNT) may be a more useful
 label which captures these similarities whilst distinguishing RNT from
 the constructive role played by repetitive thought in problem solving
 \parencite{watkins_constructive_2008}.
 
+Maybe list the different models to highlight the lack of agreement
 Reviewing the rumination literature, \textcite{smith_roadmap_2009}
 note that rumination as a construct is robust but that ``there
 is no unified definition [...] or standard way of measuring it''
@@ -229,7 +197,11 @@ relieve depressed mood." \parencite{nolen-hoeksema_rethinking_2008}
 "lead dysphoric people to become significantly less depressed for a
 short time" \parencite{nolen-hoeksema_rethinking_2008}
 
-\item{Control Theory}
+\item{Goal Progress Theory}
+
+A different mechanism that is frequently the cause of repetitive thought.
+
+relationship to control theory
 
 \parencite{martin_ruminative_1996} is broader than RST in that it explains
 rumination as a thought process which arises when progress towards a
@@ -238,14 +210,21 @@ frequently co-occurs.
 
 \item{Goals and current concerns}
 
+implicit/explicit motivation? \parencite{schultheiss_role_2008}
+endogenous/exogenous goals \parencite{klinger_motivation_2011}
+
 \textcite[][p.249]{klinger_motivation_2011} define a current concern as
 \enquote{the state of an organism between the time it becomes committed
 to pursuing a goal and the time it either gains the goal or abandons
 the pursuit.}
 
 Explain how this relates to \textbf{motivation} and \textbf{cues}.
-\todo{cf. \textcite{martin_ruminative_1996}}
+cf. \textcite{martin_ruminative_1996}
 \end{itemize}
+
+POC:Regarding distraction "As long as the goal remains desired yet
+unattained, the mental conditions that promote rumination will persist"
+\parencite{martin_ruminative_1996}
 
 \paragraph{Habits and goals}
 
@@ -284,13 +263,25 @@ study measures both worry and rumination because of this this lack of
 clear distinction and the common comorbidity of anxiety and depression
 \parencite{kessler_impairment_1999}.
 
+"the results provide direct support for the hypothesis that similar
+cognitive control impairments may play a role in worrying" \parencite{beckwe_worrying_2014}
+
 \paragraph{Attentional bias}
 
 "a causal relationship between rumination and positive attentional bias
 has been empirically established for the first time." \parencite{morrison_role_2008}
 
 
-\paragraph{Koster's disengaement hypothesis}
+\paragraph{Mechanisms}
+
+Understanding the mechanisms is the way forward.
+
+Proposed mechanisms include
+Inhibitory control \parencite{koster_understanding_2011}.
+
+" rumination was related to attentional switching impairments,
+specifically in the context of emotional information" \parencite{koster_rumination_2013}
+
 
 \textcite{koster_understanding_2011} claim that cued repetitive
 thought per-se is a normal cognitive response to self-evaluation,
@@ -363,7 +354,7 @@ should create a context likely to trigger RNT within which the
 counterconditioning effects of ABM training can be measured.  \todo{Surely
 this is more a test of Martin \& Tesser than the habit-goal hypothesis}
 
-\todo{GAP: effects of ABM on current concerns control theory hasn't been tested}
+GAP: effects of ABM on current concerns/goal progress theory hasn't been tested
 
 A novel intervention to reduce rumination and treat anxiety and depression.
 
@@ -396,17 +387,21 @@ of the research with the ability to make statistical inferences
 from the results we chose a randomized, single-case series design
 \parencite{bulte_r_2008}. In this type of design, a series of baseline
 (phase A) measures are compared against those after the (ABM training)
-intervention (phase B) \parencite{bulte_r_2008}. The overall design can
-be considered a nonconcurrent, multiple baseline replication across
-participants \parencite{watson_nonconcurrent_1981}. That is to say,
-there were muliple participants (case-series), which started at different
-times, and the time point of transition to phase B in each was chosen
-randomly in advance. Whilst the design lacks a control condition, it
-does provide controls against alternative explanations of effects, such
-as regression to the mean (replication across participants), effects of
-baseline assessment (range of phase A durations) and extraneous events
-correlated with phase transition (randomised transition to phase B)
+intervention (phase B) \parencite{bulte_r_2008}. The overall design
+can be considered a nonconcurrent, multiple baseline replication
+across participants \parencite{watson_nonconcurrent_1981}. That is
+to say, there were muliple participants (case-series), which started
+at different times, and the time point of transition to phase B
+in each was chosen randomly in advance. Whilst the design lacks a
+control condition, it does provide some controls against alternative
+explanations of effects.  Replication across participants controls for
+individual regression to the mean, variable phase A durations controls
+for baseline assessment effects, and randomised transition to phase
+B controls for extraneous events correlated with phase transition
 \parencite{watson_nonconcurrent_1981,watkins_ruminationfocused_2007}.
+
+cite kazdin p. 663
+
 Furthermore, as this was an exploratory study, limiting Type
 I error rates was not a priority. Based on previous research
 \parencite{yang_attention_2015}, 8 ABM sessions (phase B) were considered
@@ -524,7 +519,7 @@ The Goal Rumination Scale (GRS) is a 7 item measure of state rumination
 towards a specific problem \parencite{schultheiss_role_2008}.  Item scores
 range from 1--7, with items 5--7 reversed. Reliability of the GRS is
 good (Cronbach's $\alpha$ = .87), based on a single sample of $N$ =
-101. Questions on the GRS -SF were asked in relation to the last 24 hours.
+101. Questions on the GRS were asked in relation to the last 24 hours.
 
 \paragraph{PANAS-SF}
 
@@ -795,7 +790,7 @@ longer task when transitioning to phase B. From session 25 onwards,
 sessions ended with a message informing the participant of the amount
 they had earnt so far. Participants provided post-intervention RRS,
 PHQ-9, GAD-7 and PSWQ measures using the Lime Survey website within
-12 hours of completing the final session. On exiting the study, all
+approximately 12 hours of completing the final session. On exiting the study, all
 participants were emailed debrief information \cref{app:debrief} and
 information about sources of support \cref{app:support} and were paid
 for their participation.
@@ -979,7 +974,7 @@ threshold of 75\% (see \cref{tab:completed}) and the concern chosen by
 each participant at the preparatory session remained unresolved througout
 the study. Session 32 for participant 7 was omitted from the analyses
 as the dot-probe data file for this session was truncated. Session 8 GRS
-and PANAS scores for participant 16 were brought forward from session 7,
+and PANAS-SF scores for participant 16 were brought forward from session 7,
 as the participant completed the dot-probe but not the measures during
 session 8, but advised within 12 hours that the scores would have
 been identical. To remain in the study, participant 5 switched from a
@@ -1009,18 +1004,18 @@ knitr::read_chunk('../opensesame/dotprobe/iwords.R')
 
 <<prepost, results='asis', echo=FALSE, error=TRUE>>=
 @
-\todo{Check understanding of CIs}
 \todo{Point out that these are trait measures.}
 
 \subsection{Visual Analysis}
 
-Introductory paragraph on visual analysis
-Will present each participant's day by day data.
-This allows you to analyse things visually.  
+Each participant's session data
 
-\todo{Explain what people look for (cite): variability within each phase, change from A to B, trend in baseline that complicates interpretation ...  This is what to look out for ...}
+Explain how visual analysis is normally done: variability within each phase, change from A to B 'level', trend in baseline that complicates interpretation 
 
-\todo{Foreach DV: a couple of sentences for each.  Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.}
+"The broadened median summarizes the data in a way which balances the twin
+goals of being highly sensitive to a reasonable proportion of the data,
+while being resistant to outliers." \parencite{morley_graphical_1991}
+
 
 \subsubsection{Attentional bias N-words}
 
@@ -1031,12 +1026,14 @@ This allows you to analyse things visually.
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_n.jpg}
-\caption{Scale range. Attentional bias scores for N-words (participants 5--10). A =
+
+\caption{Attentional bias scores for N-words (participants 5--10). A =
 Phase A (dot-probe baseline), B = Phase B (ABM training followed by
-dot-probe). Dotted lines show mean attentional bias score.}
+dot-probe). Solid horizonal lines show mean attentional bias score. Dashed
+lines show trend (least squares regression) within each phase.}
 \end{figure}
 
-Description of these graphs.
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \clearpage
 \begin{figure}[!h]
@@ -1049,7 +1046,7 @@ Description of these graphs.
 \caption{Attentional bias scores for N-words (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
-Description of these graphs.
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \subsubsection{Attentional bias I-words}
 
@@ -1065,7 +1062,7 @@ Phase A (dot-probe baseline), B = Phase B (ABM training followed by
 dot-probe). Dotted lines show mean attentional bias score.}
 \end{figure}
 
-Description of these graphs.
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \begin{figure}[!h]
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_i.jpg}
@@ -1077,7 +1074,7 @@ Description of these graphs.
 \caption{Attentional bias scores for I-words (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
-Description of these graphs.
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \subsubsection{GRS}
 
@@ -1093,7 +1090,7 @@ baseline), B = Phase B (ABM training followed by dot-probe). Dotted
 lines show mean GRS score.}
 \end{figure}
 
-Description of these graphs.
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \clearpage
 \begin{figure}[!h]
@@ -1106,7 +1103,7 @@ Description of these graphs.
 \caption{GRS scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
-Description of these graphs.
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \subsubsection{PA}
 
@@ -1122,7 +1119,7 @@ baseline), B = Phase B (ABM training followed by dot-probe). Dotted
 lines show mean PA score.}
 \end{figure}
 
-Description of these graphs.
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \clearpage
 \begin{figure}[!h]
@@ -1135,7 +1132,7 @@ Description of these graphs.
 \caption{PA scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
-Description of these graphs.
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \subsubsection{NA}
 
@@ -1151,7 +1148,7 @@ baseline), B = Phase B (ABM training followed by dot-probe). Dotted
 lines show mean NA score.}
 \end{figure}
 
-Description of these graphs.
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \clearpage
 \begin{figure}[!h]
@@ -1164,7 +1161,7 @@ Description of these graphs.
 \caption{NA scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
-Description of these graphs.
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \subsubsection{Depression}
 
@@ -1180,7 +1177,7 @@ Description of these graphs.
 dot-probe). Dotted lines show mean depression score.}
 \end{figure}
 
-Description of these graphs.
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \clearpage
 \begin{figure}[!h]
@@ -1193,7 +1190,7 @@ Description of these graphs.
 \caption{Depression ('sad'+'depressed') scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
-Description of these graphs.
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \subsection{Inferential Statistics}
 
@@ -1205,6 +1202,44 @@ Description of these graphs.
 Ecological validity vs. pre/post measures: daily measures took place in real environment.
 
 \section{Discussion}
+
+\paragraph{Interpretation}
+
+ROF:"In contrast with current theories, we found that 34\% of participants
+expressed AB towards threat stimuli, 20.8\% AB away from threat stimuli,
+and 34\% AB towards some categories of threat stimuli and away from
+others." \parencite{zvielli_dynamics_2014}
+
+Perhaps this is reflected in my results for worriers? Hmm, were they "threatened" by their concern?
+
+\subsection{Thoughts}
+
+*Causality* is still unclear and under researched so RFW.
+
+Were the goals chosen "higher order"? \parencite{martin_ruminative_1996}
+
+\textcite{martin_ruminative_1996} don't claim that goal discrepancies
+are the exclusive cause of rumination. So it could be a different cause in
+this sample. While they calim the rebound effect of thought suppression
+can be explained in terms of goal discrepancies they say it may also
+occur in the absence of them, notably in the case of worry.
+
+An extension of the goal theory and RST (how?!) suggests that rumination
+becomes habitual thinking style, cued by context and not related to
+any particular goal discrepancy. \textcite{watkins_habitgoal_2014} A
+more direct test of the disengagement hypothesis within this framework
+makes sense as it's explicitly proposed in the absence of any overt goal
+discrepancies .RFW. (looks like it hasn't been tested yet)
+
+Causes
+
+Martin, Shrira and Startup \parencite{papageorgiou_depressive_2004}
+suggest a list of causes even within the goal progress theory model,
+all of which would require different treatment approaches.
+
+RFW: Establish the likely cause(s) before testing potential
+antidotes! Also need to subsequently match the right treatment. Maybe
+this explains why treatments are ineffective? More, not less research.
 
 Underpowered to detect changes in rumination (RRS) and worry (PSWQ) and
 both of these measures showed moderate but non-significant effects. Might
@@ -1261,6 +1296,7 @@ participants.} \parencite{schultheiss_role_2008}
 \item What happens when problem resolves?
 \item Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.
 \item Not sure about correlations between PANAS-SF and depression
+\item Didn't MBD analysis due to differing numbers of sessions.
 \end{itemize}
 
 "the provision of explicit information and instructed practice in
@@ -1269,15 +1305,22 @@ enhancing patient acceptability with CBM-A, may eliminate its capacity
 to effectively alter anxiety vulnerability." \parencite{grafton_when_2014}
 
 \subsubsection{RFW}
-\begin{itemize}
-\item Inhibitory control \parencite{koster_understanding_2011}.
-\end{itemize}
 
-\paragraph{multiple baselines}
+Inhibitory control \parencite{koster_understanding_2011}.
 
-Didn't do this analysis due to differing numbers of sessions.
+"it does not seem very useful to develop new psychotherapies for
+depression. There are already many different kinds of psychotherapies,
+there is no evidence that one type is considerably more effective than
+others, and it is very difficult to show such differences in trials with
+sufficient statistical power." \parencite{cuijpers_psychotherapies_2015}
 
-\section{Conclusion}
+Case-series is a good, quick way of testing things out?
+
+\subsection{Conclusion}
+
+We know that rumination is associated with depression and anxiety, but
+we still don't know enough about it's causes. Greater precision will
+produce better treatments.
 
 Premature to ignore cognitive and neuroscientific evidence for potentially
 beneficial bottom-up treatments before research has fully tested the
