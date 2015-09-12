@@ -13,7 +13,7 @@ use HTML::TokeParser::Simple;
 my $outfile = 'rcos.csv';
 open(my $io, ">$outfile") or die "can't open $outfile: $!\n";
 #my $io = *STDOUT;
-my(@codes) = qw{ROF SPL CPL GAP POC POC/RPP RAT WTD RCL RTC WTDD RFW MOP WIL};
+my(@codes) = qw{ROF SPL CPL GAP POC RPP POC/RPP RAT WTD RCL RTC WTDD RFW MOP WIL};
 my @keep = ('Key','Publication Year','Author','Title');
 my %keep = map { $_ => 1 } (@keep,'Notes');
 
