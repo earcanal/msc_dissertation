@@ -179,35 +179,34 @@ periods \parencite{nolen-hoeksema_rethinking_2008}. However, the temporary
 reduction in depressive symptoms provided by distraction suggests a more
 enduring underlying link between rumination and depression.
 
-Goal progress theory \parencite{martin_ruminative_1996} is a
-more general model which proposes that rumination is initiated
-by unexpected progress (more or less) towards a goal\footnote{An
-extension of the model draws on parallel distributed processing
-model to explain discrepancies arising amongst concurrent goals
-\parencite{martin_extending_2006}.}. This account of rumination draws
-on ideas from control theory \parencite{carver_control_1982} such that
-feedback mechanisms orient cognitive resources towards maintaining
-a system within desirable constraints. The system in this case is an
-individual's hierarchy of goal representations, unexpected progress
-indicates unnmet constraints and the cognitive resources allocated to
-address the discrepancy include attention, memory and consciousness. A
-concept closely related to goal progress is the 'current concern', which
-\textcite[][p.249]{klinger_motivation_2011} define as \enquote{the state
-of an organism between the time it becomes committed to pursuing a goal
-and the time it either gains the goal or abandons the pursuit.} Rumination
-for \textcite[][p. 7]{martin_ruminative_1996} is "a class of conscious
-thoughts that revolve around a common instrumental theme and that recur
-in the absence of immediate environmental demands requiring the thoughts",
-and such thoughts are a consequence of goal discrepancies. Together, goal
-progress theory and current concerns provide a framework for understanding
-rumination in terms of motivation, cognition and emotion. Where progress
-towards resolving a current concern is slower than expected, priming will
-potentiate internal and external cues on related themes to draw attention
-to the discrepancy. Similarly, negative affect will draw attention to
-the unsatisfactory goal progress. This account explains why targetting
-underlying goal discrepancies may provide more long term relief than
-distraction interventions in relieving the negative affect associated
-with rumination.
+Goal progress theory \parencite{martin_ruminative_1996} is a more general
+model which proposes that rumination is initiated by unexpected progress
+(more or less) towards a goal\footnote{An extension of the model draws
+on parallel distributed processing model to explain discrepancies arising
+amongst concurrent goals \parencite{martin_extending_2006}.}. This account
+draws on ideas from control theory \parencite{carver_control_1982}
+in that goal discrepancies represent system states outside of
+desirable thresholds which cognitive process try to restore
+through feedback mechanisms. Rumination is made more likely as a
+result of this deployment of attention, memory and consciousness,
+and will remain so until goal progress becomes satisfactory,
+the goal is perceived as being met or it has been abandoned. For
+\textcite[][p. 7]{martin_ruminative_1996}, rumination is "a class of
+conscious thoughts that revolve around a common instrumental theme and
+that recur in the absence of immediate environmental demands requiring
+the thoughts". A closely related concept is the 'current concern',
+which \textcite[][p.249]{klinger_motivation_2011} define as \enquote{the
+state of an organism between the time it becomes committed to pursuing
+a goal and the time it either gains the goal or abandons the pursuit.}
+Together, goal progress theory and current concerns provide a framework
+for understanding rumination in terms of motivation, cognition and
+emotion. Where progress towards resolving a current concern is slower than
+expected, priming will potentiate internal and external cues on related
+themes to draw attention to the discrepancy. Similarly, negative affect
+will draw attention to the unsatisfactory goal progress. This account
+explains why targetting underlying goal discrepancies may provide more
+long term relief from the negative affect associated with rumination
+than distraction interventions.
 
 \paragraph{Worry is a thought process with similar characteristics to
 rumination.} \textcite[][p. 10]{borkovec_preliminary_1983} define worry
@@ -239,8 +238,12 @@ clear distinction and the common comorbidity of anxiety and depression
 cognitive control impairments may play a role in worrying" \parencite{beckwe_worrying_2014}
 
 
-\paragraph{Mechanisms}
-Boom - cognitive mechanisms ...
+\paragraph{Boom - cognitive mechanisms Mechanisms relatively unknown (list areas being studied)}
+
+Proposed mechanisms include Inhibitory control \parencite{koster_understanding_2011}.
+
+" rumination was related to attentional switching impairments,
+specifically in the context of emotional information" \parencite{koster_rumination_2013}
 
 \textcite{klinger_motivation_2011} 
 
@@ -252,15 +255,7 @@ Causal?
 "a causal relationship between rumination and positive attentional bias
 has been empirically established for the first time." \parencite{morrison_role_2008}
 
-Attentional bias
-
-Understanding the mechanisms is the way forward.
-
-Proposed mechanisms include
-Inhibitory control \parencite{koster_understanding_2011}.
-
-" rumination was related to attentional switching impairments,
-specifically in the context of emotional information" \parencite{koster_rumination_2013}
+Of the known ones, attentional bias
 
 \textcite{koster_understanding_2011} claim that cued repetitive
 thought per-se is a normal cognitive response to self-evaluation,
@@ -269,15 +264,6 @@ is a subscale of the RRS \parencite{treynor_rumination_2003}), is an
 impaired attentional ability to disengage from negative thoughts
 \textcite{koster_understanding_2011}.  \todo{signpost lack of
 demonstrating attentional engagement}
-
-\textcite{watkins_habitgoal_2014} have sought to unify these theories
-by proposing that RNT may be a habit, initiated by goal discrepancies
-and subsequently cued by contingent contexts such as mood or physical
-location.  They suggest that such automatic, habitual responses come to
-depend on context more than the content of particular unresolved goals,
-especially when contingent responses involve passive focus on abstractly
-construed, negative content. \todo{I'm only really testing this in one
-(uncontrolled) context i.e. at home, and not controlling time of day, mood or degree of state rumination.}
 
 A cognitive correlate of worry is a disruption in attention-focusing
 ability \parencite{borkovec_preliminary_1983}.
@@ -1218,6 +1204,15 @@ any particular goal discrepancy. \textcite{watkins_habitgoal_2014} A
 more direct test of the disengagement hypothesis within this framework
 makes sense as it's explicitly proposed in the absence of any overt goal
 discrepancies .RFW. (looks like it hasn't been tested yet)
+
+\textcite{watkins_habitgoal_2014} have sought to unify these theories
+by proposing that RNT may be a habit, initiated by goal discrepancies
+and subsequently cued by contingent contexts such as mood or physical
+location.  They suggest that such automatic, habitual responses come to
+depend on context more than the content of particular unresolved goals,
+especially when contingent responses involve passive focus on abstractly
+construed, negative content. \todo{I'm only really testing this in one
+(uncontrolled) context i.e. at home, and not controlling time of day, mood or degree of state rumination.}
 
 Causes
 
