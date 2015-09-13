@@ -53,8 +53,8 @@
 \renewcommand\arraystretch{1.3}
 \newcounter{Figure}
 \renewcommand\theFigure{\arabic{Figure}}
-\title{The effects of attentional bias modification on rumination about current concerns: a case-series}
-\shorttitle{The effects of ABM on rumination about current concerns}
+\title{The effects of attentional bias modification on rumination and worry about current concerns: a case-series}
+\shorttitle{Effects of ABM on rumination and worry about current concerns}
 \author{Paul Sharpe}
 \affiliation{University of Exeter}
 \leftheader{Attentional bias modification of rumination towards a self-relevant goal: A case-series}
@@ -182,8 +182,8 @@ enduring underlying link between rumination and depression.
 Goal progress theory \parencite{martin_ruminative_1996} is a more general
 model which proposes that rumination is initiated by unexpected progress
 (more or less) towards a goal\footnote{An extension of the model draws
-on parallel distributed processing model to explain discrepancies arising
-amongst concurrent goals \parencite{martin_extending_2006}.}. This account
+on parallel distributed processing to explain discrepancies arising
+amongst ${concurrent}$ goals \parencite{martin_extending_2006}.}. This account
 draws on ideas from control theory \parencite{carver_control_1982}
 in that goal discrepancies represent system states outside of
 desirable thresholds which cognitive process try to restore
@@ -208,86 +208,95 @@ explains why targetting underlying goal discrepancies may provide more
 long term relief from the negative affect associated with rumination
 than distraction interventions.
 
-\paragraph{Worry is a thought process with similar characteristics to
-rumination.} \textcite[][p. 10]{borkovec_preliminary_1983} define worry
-as \enquote{a chain of thoughts and images, negatively affect-laden
-and relatively uncontrollable}. To some extent, rumination and
-worry are temporally distinct in that rumination tends to focus on
-past events and is associated with depression, whereas worry tends
-to focus on events in the future and is associated with anxiety
+Worry is a thought process with both similarities and differences to
+rumination.  \textcite[][p. 10]{borkovec_preliminary_1983} define worry
+as \enquote{a chain of thoughts and images, negatively affect-laden and
+relatively uncontrollable}.  Whilst some studies associate depression
+with rumination and worry with anxiety, measures of rumination
+and worry are closely correlated \parencite{smith_roadmap_2009}.
+Temporal distinctions suggest that rumination primarily focuses on
+past events, whereas worry tends to focus on events in the future
 \parencite{papageorgiou_depressive_2004,watkins_comparisons_2005}.
-However, both forms of RNT regularly occur in the same individual, and
-their similarities, at least in non-clinical populations, suggest they may
-share common underlying processes \textcite{watkins_comparisons_2005}.
+However, although \textcite{mclaughlin_effects_2007} confirmed this
+genereral distinction, they also found that induced rumination began as
+past-focussed but then displayed a linear trend towards thoughts about the
+present and finally the future. Whilst rumination is linked depression
+levels and predicts the onset of depressive episodes, it also predicts
+symptoms of anxiety \parencite{nolen-hoeksema_role_2000}. Both forms
+of repetitive negative thought regularly occur in the same individual,
+which suggests that they may share common underlying processes (at least
+in non-clinical populations) \parencite{watkins_comparisons_2005}. This
+is consistent with the common comorbidity of anxiety and depression
+\parencite{kessler_impairment_1999}. Studies which have directly compared
+rumination and worry support a hypothesis that similar cognitive control
+impairments may play \parencite{beckwe_worrying_2014}. In summary,
+distinguishing worry from rumination remains problematic.
 
-Also may start past then go future? \parencite{mclaughlin_effects_2007} (see
-\textcite{smith_roadmap_2009})
+The underlying mechanisms of rumination are less
+well understood than their affective consequences
+\parencite{koster_understanding_2011}. For example, it remains unclear
+whether rumination is an automatic or consciously controlled process
+\textcite{smith_roadmap_2009}. Nevertheless, numerous studies indicate
+that a range of cognitive biases common across anxiety and depression
+may also play a role in rumination. These included biases of attention,
+memory, interpretation, inhibitory control, emotional associations and
+intrusive thoughts \parencite{mathews_cognitive_2005}.
 
-"Given that a broader conceptualization of rumination is proposed here,
-specificity to depression cannot be assumed, and it is suggested that
-multiple measures of outcome are appropriate." \parencite{smith_roadmap_2009}
+Attentional bias
 
-Furthermore, rumination is linked to levels of depression, and has been
-shown to predict the onset of depressive episodes, but also predicts
-symptoms of anxiety \parencite{nolen-hoeksema_role_2000}. The current
-study measures both worry and rumination because of this this lack of
-clear distinction and the common comorbidity of anxiety and depression
-\parencite{kessler_impairment_1999}.
+What attentional bias is.
+Dot-probe is the measure
 
-"the results provide direct support for the hypothesis that similar
-cognitive control impairments may play a role in worrying" \parencite{beckwe_worrying_2014}
+"rumination was related to attentional switching impairments,
+specifically in the context of emotional information"
+\parencite{koster_rumination_2013}
 
 
-\paragraph{Boom - cognitive mechanisms Mechanisms relatively unknown (list areas being studied)}
-
-Proposed mechanisms include Inhibitory control \parencite{koster_understanding_2011}.
-
-" rumination was related to attentional switching impairments,
-specifically in the context of emotional information" \parencite{koster_rumination_2013}
-
-\textcite{klinger_motivation_2011} 
-
-"It remains unclear if rumination is best characterized as an automatic
-or consciously controlled process" \textcite{smith_roadmap_2009}
-
-Causal?
-
-"a causal relationship between rumination and positive attentional bias
-has been empirically established for the first time." \parencite{morrison_role_2008}
-
-Of the known ones, attentional bias
 
 \textcite{koster_understanding_2011} claim that cued repetitive
 thought per-se is a normal cognitive response to self-evaluation,
-but hypothesise that one driver of RNT, particularly brooding (which
-is a subscale of the RRS \parencite{treynor_rumination_2003}), is an
+but hypothesise that one driver of RNT, particularly brooding is an
 impaired attentional ability to disengage from negative thoughts
-\textcite{koster_understanding_2011}.  \todo{signpost lack of
-demonstrating attentional engagement}
+\textcite{koster_understanding_2011}.
 
 A cognitive correlate of worry is a disruption in attention-focusing
 ability \parencite{borkovec_preliminary_1983}.
 
+
+Causality mixed findings
+
+"it could still be the case that rumination leads to impaired attentional
+control, instead of attentional impairments being causally involved in
+the emergence and maintenance of rumination."
+
+"a causal relationship between rumination and positive attentional bias
+has been empirically established for the first time." \parencite{morrison_role_2008}
+I was testing decreased negative bias which isn't the same and they didn't find!
+
 \paragraph{Cognitive bias modification}
 
-\begin{itemize}
-\item{CBM-A}
+There is CBM-I ...
 
 ... but this is about CBM-A
-\item{CBM-I}
-
-There is CBM-I ...
-\end{itemize}
 
 \paragraph{RAT}
 
+ \parencite{smith_roadmap_2009}
+"Given that a broader conceptualization of rumination is proposed here,
+specificity to depression cannot be assumed, and it is suggested that
+multiple measures of outcome are appropriate." supported by underlying similarity in worry and rumination.
+
 Although it is resistant to change \textcite{watkins_habitgoal_2014},
 it seems possible that habitual rumination could be altered using
-counterconditioning techniques.  Counterconditioning is one of
+counterconditioning techniques.
+
+Counterconditioning is one of
 the basic mechanisms which cognitive bias modification (CBM)
 employs in the form of repetitive computer tasks to attenuate
 attentional, interpretive and memory biases associated with
-negative emotional states \parencite{hertel_cognitive_2011}.  Randomised
+negative emotional states \parencite{hertel_cognitive_2011}.
+
+Randomised
 controlled trials indicate that CBM may be an effective treatment
 for anxiety \parencite{hakamata_attention_2010} and depression
 \parencite{yang_attention_2015}.  Attentional bias modification (ABM)
@@ -333,6 +342,9 @@ GAP: effects of ABM on current concerns/goal progress theory hasn't been tested
 A novel intervention to reduce rumination and treat anxiety and depression.
 
 \paragraph{RAT/WTD}
+
+
+The current study measures both worry and rumination because of what I said about worry!
 
 Because the 
 Anxiety and depression were measured due to their close association, and
@@ -971,7 +983,6 @@ differences (all ${P}$s {\textgreater} .05) on any of these outcomes
 
 <<external, cache=FALSE, echo=FALSE>>=
 knitr::read_chunk('../opensesame/dotprobe/prepost.R')
-knitr::read_chunk('../opensesame/dotprobe/analyse.R')
 knitr::read_chunk('../opensesame/dotprobe/nwords.R')
 knitr::read_chunk('../opensesame/dotprobe/iwords.R')
 @
@@ -989,7 +1000,6 @@ Explain how visual analysis is normally done: variability within each phase, cha
 "The broadened median summarizes the data in a way which balances the twin
 goals of being highly sensitive to a reasonable proportion of the data,
 while being resistant to outliers." \parencite{morley_graphical_1991}
-
 
 \subsubsection{Attentional bias N-words}
 
@@ -1167,9 +1177,19 @@ Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw atte
 Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \subsection{Inferential Statistics}
+\setlength\tabcolsep{1mm}
 
-<<inferentials, results='asis', echo=FALSE, error=TRUE>>=
-@
+\input{results/grs.tex}
+
+Description of GRS table.
+
+\input{results/panas.tex}
+
+Description of PANAS table.
+
+\input{results/rt.tex}
+
+Description of RT table.
 
 \todo{Describe any patterns in each table, see \parencite{watkins_ruminationfocused_2007} including MA}
 
