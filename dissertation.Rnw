@@ -951,35 +951,37 @@ data for any completed survey.
 \section{Results}
 
 Three participants withdrew from the study. One person withdrew before
-completing any sessions due to concerns that the study would worsen their
-social anxiety, another found the time commit too great after 5 sessions,
-and one withdrew after 24 sessions when a holiday meant that they would
-be unable to complete sufficient phase B sessions.  For the remaining
-participants, dot-probe/ABM accuracy was above the a priori inclusion
-threshold of 75\% (see \cref{tab:completed}) and the concern chosen by
-each participant at the preparatory session remained unresolved througout
-the study. Session 32 for participant 7 was omitted from the analyses
-as the dot-probe data file for this session was truncated. Session 8 GRS
-and PANAS-SF scores for participant 16 were brought forward from session 7,
-as the participant completed the dot-probe but not the measures during
-session 8, but advised within 12 hours that the scores would have
-been identical. To remain in the study, participant 5 switched from a
-Windows to Macintosh computer from session 21 onwards, and participant
-19 completed later sessions in a different country from the one in which
-they began the study.
-
-\todo{Predictability in relation to screening measures
-"Looking at the scores from these participants they were typical/atypical."
-}
+completing any sessions due to concerns that the study would worsen
+their social anxiety, another found the time commit too great after 5
+sessions, and one withdrew after 24 sessions when a holiday meant that
+they would be unable to complete sufficient phase B sessions. Dropout
+was not predictable for these participants as their screening scores were
+not atypical and there were participants scoring higher on both RRS and
+PSWQ who nevertheless completed the study. For the remaining participants,
+dot-probe/ABM accuracy was above the a priori inclusion threshold of 75\%
+(see \cref{tab:completed}) and the concern chosen by each participant at
+the preparatory session remained unresolved througout the study. Session
+32 for participant 7 was omitted from the analyses as the dot-probe data
+file for this session was truncated. Session 8 GRS and PANAS-SF scores
+for participant 16 were brought forward from session 7, as the participant
+completed the dot-probe but not the measures during session 8, but advised
+within 12 hours that the scores would have been identical. To remain in
+the study, participant 5 switched from a Windows to Macintosh computer
+from session 21 onwards, and participant 19 completed later sessions in
+a different country from the one in which they began the study.
 
 \input{results/completed.tex}
 
-\subsection{Pre/Post Measures}
+\subsection{Pre--Post Measures}
 
-There were no outliers (> 3SD) on GAD-7, PHQ-9, PSWQ or RRS scores before
-or after ABM training. There were no significant pre-post ABM training
-differences (all ${P}$s {\textgreater} .05) on any of these outcomes
-(see \cref{tab:prepost}). But RRS and PSWQ show moderate effect sizes ...
+Comparisons between outcome measures pre and post ABM training
+are summarised in \cref{tab:prepost}. There were no outliers
+(> 3SD) on GAD-7, PHQ-9, PSWQ or RRS scores before or after ABM
+training. Cronbach's $\alpha$ was acceptible for GAD-7 and PSWQ, good
+for PHQ-9 and and excellent for RRS. There were no significant pre-post
+ABM training differences (all ${P}$s {\textgreater} .05) on any of these
+outcomes. There was a small increase in trait anxiety (GAD-7, ${d}$ =
+.22) and a very small reduction in trait rumination (RRS, ${d}$ = .17).
 
 <<external, cache=FALSE, echo=FALSE>>=
 knitr::read_chunk('../opensesame/dotprobe/prepost.R')
@@ -987,9 +989,9 @@ knitr::read_chunk('../opensesame/dotprobe/nwords.R')
 knitr::read_chunk('../opensesame/dotprobe/iwords.R')
 @
 
+\setlength\tabcolsep{1mm}
 <<prepost, results='asis', echo=FALSE, error=TRUE>>=
 @
-\todo{Point out that these are trait measures.}
 
 \subsection{Visual Analysis}
 
@@ -1018,6 +1020,8 @@ lines show trend (least squares regression) within each phase.}
 \end{figure}
 
 Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
+
+Ps don't seem to show much of an initial bias i.e. all are reasonably close to 0 (see also \cref{tab:rt})?
 
 \clearpage
 \begin{figure}[!h]
@@ -1179,6 +1183,10 @@ Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw atte
 \subsection{Inferential Statistics}
 \setlength\tabcolsep{1mm}
 
+\input{results/rt.tex}
+
+Description of RT table.
+
 \input{results/grs.tex}
 
 Description of GRS table.
@@ -1187,17 +1195,18 @@ Description of GRS table.
 
 Description of PANAS table.
 
-\input{results/rt.tex}
-
-Description of RT table.
-
 \todo{Describe any patterns in each table, see \parencite{watkins_ruminationfocused_2007} including MA}
 
 Ecological validity vs. pre/post measures: daily measures took place in real environment.
 
 \section{Discussion}
 
-\paragraph{Interpretation}
+\subsection{Interpretation}
+
+Pre-post. Point out that these are trait measures so relatively coarse. Comment on (lack of) power.
+
+Were most Ps high worry but the dot-probe exposure configured for high rumination (1250ms)?
+Would emotional Stroop be better?
 
 ROF:"In contrast with current theories, we found that 34\% of participants
 expressed AB towards threat stimuli, 20.8\% AB away from threat stimuli,
