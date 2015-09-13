@@ -331,13 +331,11 @@ associated with an incomplete self-relevant goal.
 "reduction in rumination is an effective treatment component of ABM
 training on depression" \parencite{yang_attention_2015}.
 
-This is a novel and more direct test of RNT within the habit-goal
-framework \textcite{watkins_habitgoal_2014}, as this arrangement
-should create a context likely to trigger RNT within which the
-counterconditioning effects of ABM training can be measured.  \todo{Surely
-this is more a test of Martin \& Tesser than the habit-goal hypothesis}
+This is a novel and more direct test of RNT
 
 GAP: effects of ABM on current concerns/goal progress theory hasn't been tested
+
+well it has, but mostly with emotional Stroop (see Williams et al.)
 
 A novel intervention to reduce rumination and treat anxiety and depression.
 
@@ -604,16 +602,15 @@ attentional bias towards (i.e. vigilance for) negative words relative
 to neutral words, whereas more negative scores indicate avoidance
 \parencite{bradley_attentional_1997}.
 
-\subsubsection{Attentional Bias Modification task}
+\subsubsection{ABM task}
 
-The Attentional Bias Modification (ABM) task used the same paradigm as the
-dot-probe task but was designed modify, rather than measure attentional
-bias. As such, it differed in three respects. First, there were double
-the number (192) trials in each block. Second, only N-word pairs were
-used as stimuli. Finally, probes in ABM trials always appeared at the
-neutral word location. Thus, responses required repeated orientation of
-attention away from the negative word in the pair. Each ABM block took
-approximately 15 minutes.
+The ABM task used three minor adjustments to the dot-probe paradigm
+dot-probe to ${modify}$, rather than measure attentional bias. First,
+there were double the number (192) trials in each block. Second, only
+N-word pairs were used as stimuli. Finally, probes in ABM trials always
+appeared at the neutral word location. Thus, responses required repeated
+orientation of attention away from the negative word in the pair. Each
+ABM block took approximately 15 minutes.
 
 \subsubsection{N-word pairs}
 
@@ -1215,7 +1212,7 @@ others." \parencite{zvielli_dynamics_2014}
 
 Perhaps this is reflected in my results for worriers? Hmm, were they "threatened" by their concern?
 
-\subsection{Thoughts}
+\subsection{My ruminative thoughts!}
 
 *Causality* is still unclear and under researched so RFW.
 
