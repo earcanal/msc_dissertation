@@ -395,14 +395,11 @@ to say, there were muliple participants (case-series), which started
 at different times, and the time point of transition to phase B
 in each was chosen randomly in advance. Whilst the design lacks a
 control condition, it does provide some controls against alternative
-explanations of effects.  Replication across participants controls for
+explanations of effects. Replication across participants controls for
 individual regression to the mean, variable phase A durations controls
 for baseline assessment effects, and randomised transition to phase
 B controls for extraneous events correlated with phase transition
 \parencite{watson_nonconcurrent_1981,watkins_ruminationfocused_2007}.
-
-cite kazdin p. 663
-
 Furthermore, as this was an exploratory study, limiting Type
 I error rates was not a priority. Based on previous research
 \parencite{yang_attention_2015}, 8 ABM sessions (phase B) were considered
@@ -469,7 +466,8 @@ no outliers (> 3SD) on these measures. The mean age of participants was
 
 All self-report measures were created using Lime Survey
 \parencite{limesurvey} and completed using a web browser (see
-\cref{app:surveys}).
+\cref{app:surveys}). Ecological validity was good, with all except the
+pre self-report measurements taken outside of a laboratory environment.
 
 \subsubsection{Pre--Post self-report measures}
 
@@ -1014,18 +1012,19 @@ knitr::read_chunk('../opensesame/dotprobe/iwords.R')
 <<prepost, results='asis', echo=FALSE, error=TRUE>>=
 @
 
-\subsection{Visual Analysis}
+\subsection{Visual Analyses}
 \label{sec:va}
 
-The principal features of interest when visually analysing AB case-series
-data are central tendency and its within-phase trends, within-phase
-variability, and changes in level (adjacent data points of separate
-phases) \parencite{morley_graphical_1991}. In the following graphs, the
-broadened median (BMED) is used as a measure of central tendency as it is
-both sensitive to a reasonable proportion of the data, and resistant to
-outliers \parencite{morley_graphical_1991}. Two types of trend line are
-plotted to reduce bias (often due to outliers) when visually interpreting
-raw data points. A robust linear trend in central tendency is shown using
+The principal features of interest when visually analysing AB
+case-series data are central tendency and its within-phase trends,
+within-phase variability, and changes in level (adjacent data
+points of separate phases) \parencite{morley_graphical_1991}. In the
+following graphs, the broadened median (BMED) is used as a measure of
+central tendency as it is both sensitive to a reasonable proportion
+of the data, and resistant to outliers in relatively small samples
+\parencite{morley_graphical_1991}. Two types of trend line are plotted
+to reduce bias (often due to outliers) when visually interpreting raw
+data points. A robust linear trend in central tendency is shown using
 the split middle method \parencite{morley_graphical_1991}\footnote{This
 method results in two lines where there are an odd number of points
 in a phase. Poor alignment between these lines indicates a poor fit
@@ -1034,32 +1033,32 @@ using the trimmed (10--20\% of outliers from each phase), trended range
 which reduces the influence of outliers, and of trends in central tendency
 \parencite{morley_graphical_1991}.
 
-\subsubsection{Attentional bias N-words}
+\subsubsection{N-word attentional bias}
 
 see \cref{sec:introduction}
 
-Visual analysis indicated a post-ABM reduction in attentional bias towards
-N-words as hypothesised in some, but not all participants. Changes in
-attentional bias for N-word pairs are summarised in \cref{fig:va-n}. As
-mentioned previously, more positive bias scores reflect vigilance for
-negative words, whereas more negative scores indicate avoidance. All
-participants had an initial BMED score close to 0, indicating a
-lack of any large attentional bias in either direction. In phase B,
-7 participants (5, 6, 8, 10, 11, 16 and 19) showed a more negative
-bias, although participant 5 had 2 large, negative scores. In phase A,
-linear trends in score increased for 7 participants (5, 6, 8, 11, 15
-and notably 12), decreased for 4 participants (9, 16, 18 and 19) and
-remained flat for 2 participants (7 and 10). Of the trends in phase B
-which were a good fit, relative to phase A, participant 11 reversed in
-the hypothesised direction, 3 (participants 8, 12 and 15) continued in
-the same direction, and 2 (participants 9 and 19) reversed contrary to
-the hypothesised direction. Phase A variance was small in participant
-18 but similar in all other participants. It was also stable in most
-participants but increased in 2 (participants 9 and 15) and decreased
-in 3 (participants 11, 18 and 19). Variance increased in a number of
-participants on transition to phase B but by the end was similar to
-levels in phase A. Two outliers explain the large phase B change in
-variance for participant 5.
+Visual inspection indicated a post-ABM reduction in attentional
+bias towards N-words as hypothesised in some, but not all
+participants. Changes in attentional bias for N-word pairs are summarised
+in \crefrange{fig:va-n-a}{fig:va-n-b}. As mentioned previously, more
+positive bias scores reflect vigilance for negative words, whereas more
+negative scores indicate avoidance. All participants had an initial BMED
+score close to 0, indicating a lack of any large attentional bias in
+either direction. In phase B, 7 participants (5, 6, 8, 10, 11, 16 and 19)
+showed a more negative bias, although participant 5 had 2 large, negative
+scores. In phase A, linear trends in score increased for 7 participants
+(5, 6, 8, 11, 15 and notably 12), decreased for 4 participants (9, 16,
+18 and 19) and remained flat for 2 participants (7 and 10). Of the trends
+in phase B which were a good fit, relative to phase A, participant 11
+reversed in the hypothesised direction, 3 (participants 8, 12 and 15)
+continued in the same direction, and 2 (participants 9 and 19) reversed
+contrary to the hypothesised direction. Phase A variance was small
+in participant 18 but similar in all other participants. It was also
+stable in most participants but increased in 2 (participants 9 and 15)
+and decreased in 3 (participants 11, 18 and 19). Variance increased in
+a number of participants on transition to phase B but by the end was
+similar to levels in phase A. Two outliers explain the large phase B
+change in variance for participant 5.
 
 \begin{figure}[!htbp]
   \begin{subfigure}[!htbp]{\textwidth}
@@ -1070,6 +1069,7 @@ variance for participant 5.
     \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_n.jpg}
     \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_n.jpg}
     \caption{N-word attentional bias scores for participants 5--10.}
+    \label{fig:va-n-a}
     \end{subfigure}
 \end{figure}
 
@@ -1083,6 +1083,7 @@ variance for participant 5.
     \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_n.jpg}
     \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_n.jpg}
     \caption{N-word attentional bias scores for participants 11, 12, 15, 16, 18 and 19.}
+    \label{fig:va-n-b}
   \end{subfigure}
 \caption{Dashed line = phase transition. \protect\strokeA{} broadened
 median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
@@ -1093,23 +1094,23 @@ trimmed trended range (see \cref{analyses}).}
 
 \subsubsection{I-word attentional bias}
 
-Visual analysis indicated a reduction in attentional bias in the
+Visual inspection indicated a reduction in attentional bias in the
 majority of participants. Changes in attentional bias for I-word pairs
-are summarised in \cref{fig:va-i}. As with N-words, more positive bias
-scores reflect vigilance for negative words, more negative scores indicate
-avoidance, and there were no large initial attentional biases in either
-direction. In phase B, 10 participants showed a more negative attentional
-bias, and 2 (participants 11 and 12) a more positive bias. Of the linear
-trends in phase A which were a good fit, 6 (participants 7, 8, 10, 18
-and 19) increased and 5 (participants 5, 6, 9, 12 and 16) decreased. Of
-the trends in phase B which were a good fit, relative to phase A, 2
-(participants 18 and 19) became more negative and 2 (participants 8
-and 9) continued in the same direction. Phase A variance was small in
-participant 18 but similar in all other participants. It was also stable
-in most participants but increased in 2 (8 and 10) and decreased in 3 (7,
-15 and notably 18).  Relative to the end of phase A, variance in phase B
-increased in 6 participants (5, 6, 9, 12, 15 and 18), and decreased in 2
-(participants 7 and 19).
+are summarised in \crefrange{fig:va-i-a}{fig:va-i-b}. As with N-words,
+more positive bias scores reflect vigilance for negative words, more
+negative scores indicate avoidance, and there were no large initial
+attentional biases in either direction. In phase B, 10 participants showed
+a more negative attentional bias, and 2 (participants 11 and 12) a more
+positive bias. Of the linear trends in phase A which were a good fit, 6
+(participants 7, 8, 10, 18 and 19) increased and 5 (participants 5, 6,
+9, 12 and 16) decreased. Of the trends in phase B which were a good fit,
+relative to phase A, 2 (participants 18 and 19) became more negative and 2
+(participants 8 and 9) continued in the same direction. Phase A variance
+was small in participant 18 but similar in all other participants. It
+was also stable in most participants but increased in 2 (8 and 10) and
+decreased in 3 (7, 15 and notably 18).  Relative to the end of phase A,
+variance in phase B increased in 6 participants (5, 6, 9, 12, 15 and 18),
+and decreased in 2 (participants 7 and 19).
 
 \begin{figure}[!htbp]
   \begin{subfigure}[!htbp]{\textwidth}
@@ -1120,6 +1121,7 @@ increased in 6 participants (5, 6, 9, 12, 15 and 18), and decreased in 2
     \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_i.jpg}
     \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_i.jpg}
     \caption{I-word attentional bias scores for participants 5--10.}
+    \label{fig:va-i-a}
   \end{subfigure}
 \end{figure}
 
@@ -1133,6 +1135,7 @@ increased in 6 participants (5, 6, 9, 12, 15 and 18), and decreased in 2
     \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_i.jpg}
     \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_i.jpg}
     \caption{I-word attentional bias scores for participants 11, 12, 15, 16, 18 and 19.}
+    \label{fig:va-i-b}
   \end{subfigure}
 \caption{Dashed line = phase transition. \protect\strokeA{} broadened
 median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
@@ -1141,139 +1144,217 @@ trimmed trended range (see \cref{analyses}).}
 \end{figure}
 \clearpage
 
-\subsubsection{GRS}
+\subsubsection{State rumination (GRS)}
 
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
+Changes in GRS scores are summarised in
+\crefrange{fig:va-grs-a}{fig:va-grs-b}. Relative to phase A, BMED GRS
+scores reduced in 9 participants (5, 6, 8, 9, 10, 11, 15, 18 and 19)
+indicating a reduction in rumination towards their chosen concern. These
+reductions were largest in participants 10, 5 and 11, although initial
+GRS high in participant 11. Phase A GRS showed a downward trend for
+10 participants, being especially steep in participants 5, 10, 18 and
+19. Participant 12 showed a steep linear increase in phase A. The
+majority of linear trends in phase B were a poor fit. The phase A
+downwards trends reduced in phase B for participants 8, 11, 18 and
+19, becoming slightly positive for participant 15. Phase A variance
+was generally large and reduced in most participants (notably 5, 6,
+9 and 18), with moderate and large increases in participants 16 and 12
+respectively. Relative to phase A, phase B variance was mostly reduced,
+exceptions being participants 11, 16 and 19. Variance in phase B was
+stable or reducing in most participants (notably 7, 8, 12 and 18) with
+moderate and large increases in participants 19 and 16 respectively.
 
-\begin{figure}[!ht]
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_grs.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_grs.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_grs.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_grs.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_grs.jpg}
-\caption{GRS scores (participants 5--10).
-\protect\strokeA{} broadened median, \protect\strokeB{} split middle
-linear trend, \protect\strokeC{} trimmed trended range (see text). Dashed
-line = phase transition.}
+\begin{figure}[!htbp]
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_grs.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_grs.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_grs.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_grs.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_grs.jpg}
+    \caption{GRS scores (range 1--49) for participants 5--10.}
+    \label{fig:va-grs-a}
+  \end{subfigure}
+\end{figure}
+
+\begin{figure}
+\ContinuedFloat
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_grs.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_grs.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_grs.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_grs.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_grs.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_grs.jpg}
+    \caption{GRS scores (range 1--49) for participants 11, 12, 15, 16, 18 and 19.}
+    \label{fig:va-grs-b}
+  \end{subfigure}
+\caption{Dashed line = phase transition. \protect\strokeA{} broadened
+median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
+trimmed trended range (see \cref{analyses}).}
+\label{fig:grs}
+\end{figure}
+\clearpage
+
+\subsubsection{Positive Affect (PA)}
+
+Visual inspection indicated increased PA for most participants. Changes in
+PA scores are summarised in \crefrange{fig:va-pa-a}{fig:va-pa-b}. Relative
+to phase A, BMED phase B PA scores increased in 7 participants (5, 9,
+10, 11, 15, 18 and notably 6), decreased slighly in 3 participants (8,
+12 and 19), decreased more markedly in participant 16 and remained stable
+in participant 7. Where there was a linear fit, phase A PA showed an
+upward trend for 6 participants, being espcially steep for participant
+9, a downward trend for 2 participants, and was relatively stable for
+2 participants. Where there was a linear fit in both phases, trends
+continued in the same direction for participants 11 and 15, and became
+more negative for participant 19. PA variance between phases A and B
+increased in participants 6, 10, 15, 18 and notably 11, and decreased
+notably in participant 19.
+
+\begin{figure}[!htbp]
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_pa.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_pa.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_pa.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_pa.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_pa.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_pa.jpg}
+    \caption{PA scores (range 1--25) for participants 5--10.}
+    \label{fig:va-pa-a}
+  \end{subfigure}
+\end{figure}
+
+\begin{figure}
+\ContinuedFloat
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_pa.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_pa.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_pa.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_pa.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_pa.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_pa.jpg}
+    \caption{PA scores (range 1--25) for participants 11, 12, 15, 16, 18 and 19.}
+    \label{fig:va-pa-b}
+  \end{subfigure}
+\caption{Dashed line = phase transition. \protect\strokeA{} broadened
+median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
+trimmed trended range (see \cref{analyses}).}
+\label{fig:pa}
 \end{figure}
 
 \clearpage
-\begin{figure}[!h]
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_grs.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_grs.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_grs.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_grs.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_grs.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_grs.jpg}
-\caption{GRS scores (participants 11, 12, 15, 16, 18 and 19)}
+\subsubsection{Negative Affect (NA)}
+
+Visual inspection indicated decreased NA for most participants. Changes in
+NA scores are summarised in \crefrange{fig:va-na-a}{fig:va-na-b}. Relative
+to phase A, BMED phase B NA scores decreased in 8 participants (5, 6, 9,
+10, 11, 12, 15, 16 and 18), and increased in 3 participants (7, 8 and
+19). Where there was a linear fit, phase A NA showed an downward trend
+for 6 participants being espcially steep for participant 18, an upward
+trend for 1 participant and was relatively flat for 2 participants.
+Where there was a linear fit in both phases, trends continued downwards
+for participants 6, 11 and 12, and reversed sharply from positive
+to negative for participant 8.  NA variance between phases A and B
+decreased in participants 5, 10 and notably 8 and increased notably in
+participant 11.
+
+\begin{figure}[!htbp]
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_na.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_na.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_na.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_na.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_na.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_na.jpg}
+    \caption{NA scores (range 1--25) for participants 5--10.}
+    \label{fig:va-na-a}
+  \end{subfigure}
 \end{figure}
 
-\clearpage
-\subsubsection{PA}
-
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
-
-\begin{figure}[!ht]
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_pa.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_pa.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_pa.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_pa.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_pa.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_pa.jpg}
-\caption{PA scores (participants 5--10).
-\protect\strokeA{} broadened median, \protect\strokeB{} split middle
-linear trend, \protect\strokeC{} trimmed trended range (see text). Dashed
-line = phase transition.}
-\end{figure}
-
-\clearpage
-\begin{figure}[!h]
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_pa.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_pa.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_pa.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_pa.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_pa.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_pa.jpg}
-\caption{PA scores (participants 11, 12, 15, 16, 18 and 19)}
-\end{figure}
-
-\clearpage
-\subsubsection{NA}
-
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
-
-\begin{figure}[!ht]
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_na.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_na.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_na.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_na.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_na.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_na.jpg}
-\caption{NA scores (participants 5--10).
-\protect\strokeA{} broadened median, \protect\strokeB{} split middle
-linear trend, \protect\strokeC{} trimmed trended range (see text). Dashed
-line = phase transition.}
-\end{figure}
-
-\clearpage
-\begin{figure}[!h]
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_na.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_na.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_na.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_na.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_na.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_na.jpg}
-\caption{NA scores (participants 11, 12, 15, 16, 18 and 19)}
+\begin{figure}
+\ContinuedFloat
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_na.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_na.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_na.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_na.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_na.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_na.jpg}
+    \caption{NA scores (range 1--25) for participants 11, 12, 15, 16, 18 and 19.}
+    \label{fig:va-na-b}
+  \end{subfigure}
+\caption{Dashed line = phase transition. \protect\strokeA{} broadened
+median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
+trimmed trended range (see \cref{analyses}).}
+\label{fig:na}
 \end{figure}
 
 \clearpage
 \subsubsection{Depression}
 
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
+Visual inspection indicated decreased depression for most
+participants. Changes in depression scores are summarised in
+\crefrange{fig:va-d-a}{fig:va-d-b}. Initial depression scores were
+moderate to low for all participants. Relative to phase A, BMED phase
+B depression scores decreased in 7 participants (6, 8, 9, 11, 12, 15
+and 18 ), increased in 4 participants (5, 10, 16 and 19) and remained
+the same in participant 7. Where there was a linear fit, phase A NA
+showed an downward trend for 4 participants being espcially steep
+for participants 9 and 18, an upward trend for 1 participant and was
+relatively flat for 4 participants. Where there was a linear fit in
+both phases, trends continued in the same direction for participants 7,
+8 and 10, stabilised close to the bottom of the scale for participants
+9, 15 and 18, and increased sharply for participant 19.  Variance in
+depression between phases A and B decreased in participants 7, 9 and 18
+and increased in participants 10 and 16.
 
-\begin{figure}[!ht]
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_d.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_d.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_d.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_d.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_d.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_d.jpg}
-\caption{Depression ('sad'+'depressed') scores (participants 5--10).
-\protect\strokeA{} broadened median, \protect\strokeB{} split middle
-linear trend, \protect\strokeC{} trimmed trended range (see text). Dashed
-line = phase transition.}
+\begin{figure}[!htbp]
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_d.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_d.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_d.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_d.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_d.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_d.jpg}
+    \caption{Depression scores (range 1--10) for participants 5--10.}
+    \label{fig:va-d-a}
+  \end{subfigure}
 \end{figure}
 
-\clearpage
-\begin{figure}[!h]
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_d.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_d.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_d.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_d.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_d.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_d.jpg}
-\caption{Depression ('sad'+'depressed') scores (participants 11, 12, 15, 16, 18 and 19)}
+\begin{figure}
+\ContinuedFloat
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_d.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_d.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_d.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_d.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_d.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_d.jpg}
+    \caption{Depression scores (range 1--10) for participants 11, 12, 15, 16, 18 and 19.}
+    \label{fig:va-d-b}
+  \end{subfigure}
+\caption{Dashed line = phase transition. \protect\strokeA{} broadened
+median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
+trimmed trended range (see \cref{analyses}).}
+\label{fig:d}
 \end{figure}
 
 \subsection{Inferential Statistics}
+
+Description of RT table including MA
+
 \setlength\tabcolsep{1mm}
 
 \input{results/rt.tex}
 
-Description of RT table.
+Description of GRS table.
 
 \input{results/grs.tex}
 
-Description of GRS table.
-
-\input{results/panas.tex}
-
 Description of PANAS table.
 
-\todo{Describe any patterns in each table, see \parencite{watkins_ruminationfocused_2007} including MA}
-
-Ecological validity vs. pre/post measures: daily measures took place in real environment.
+\input{results/panas.tex}
 
 \section{Discussion}
 
