@@ -53,8 +53,17 @@
 \renewcommand\arraystretch{1.3}
 \newcounter{Figure}
 \renewcommand\theFigure{\arabic{Figure}}
+
+%\fancyhead{}
+%\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+%\fancyhead[RO,LE]{\footnotesize\thepage}
+\fancyhead[CO,CE]{\footnotesize EFFECTS OF ABM ON RUMINATION AND WORRY ABOUT CURRENT CONCERNS}
+%\fancyhead[RE]{\footnotesize\slshape\leftmark}
+%\pagestyle{fancy}
+
 \title{The effects of attentional bias modification on rumination and worry about current concerns: a case-series}
-\shorttitle{Effects of ABM on rumination and worry about current concerns}
+\shorttitle{}
 \author{Paul Sharpe}
 \affiliation{University of Exeter}
 \leftheader{Attentional bias modification of rumination towards a self-relevant goal: A case-series}
@@ -87,6 +96,10 @@ which a degree has previously been conferred upon me.}
 \newcommand*\rot{\rotatebox{90}}
 
 \usepackage{tabularx}
+\usepackage{tikz}
+\newcommand\strokeA{\tikz[baseline=-.5ex]{ \draw[black,align=center] (0,0) -- (2ex,0); }}
+\newcommand\strokeB{\tikz[baseline=-.5ex]{ \draw[red,dotted] (0,0) -- (2ex,0); }}
+\newcommand\strokeC{\tikz[baseline=-.5ex]{ \draw[black,dotted] (0,0) -- (2ex,0); }}
 \begin{document}
 \setlength{\marginparwidth}{1cm}
 \todototoc
@@ -351,13 +364,13 @@ uncertainty whether the procedure would affect rumination, worry or both.
 Specific hypotheses were as follows:
 
 \begin{enumerate}
+\item Baseline trait rumination, trait anxiety, depression and trait worry
+will differ after ABM training.
 \item Attentional bias towards negative words will reduce after ABM training.
 \item Attentional bias towards ideographic words associated with a
 current concern will differ after ABM training.
-\item Baseline state rumination, state anxiety and depression worry change after
-ABM training.
-\item Baseline trait rumination, trait anxiety, depression and worry
-will differ after ABM training.
+\item State measures of rumination, positive affect, negative affect
+and depression will change after ABM training.
 \end{enumerate}
 
 \section{Method}
@@ -867,47 +880,46 @@ pswq_pwr <- pwr.t.test(d=.51,n=12,sig.level=0.05,type="paired",alternative="two.
 pswq_pwr <- format_power(pswq_pwr$power)
 @
 
-\subsubsection{Pre--Post comparisons}
+\subsection{Pre--Post comparisons}
 
-Paired samples t-tests were used to compare participants' pre and
-post ABM training measures of rumination (RRS), depression (PHQ-9),
-anxiety (GAD-7) and worry (PSWQ). Given the current design, paired
-samples t-tests are likely to be underpowered, therefore the primary
-analyses were visual inspection of the case-series plots and associated
-inferential statistics from the randomization tests.  However, using a
-similar ABM procedure, \textcite{yang_attention_2015} found significant
-post training reductions in rumination, using RRS (${d}$=.49), depression,
-using BDI-II \parencite{beck_manual_1996} (${d}$=1.50) and anxiety, using
-STAI-T \parencite{spielberger_manual_1983} (${d}$=.88). Given these effect
-sizes, 12 participants and $\alpha$ set at .05, two-tailed calculations
-of power (1-$\beta$) gave \Sexpr{rrs_pwr} for RRS, \Sexpr{bdi_pwr}
-for BDI-II and \Sexpr{stai_pwr} for STAI-T. In practice, these are
-likely to be lower as participants in \textcite{yang_attention_2015}
-were undergraduates with mild to severe depression in contrast with
-the current study where participants with mild depression or above were
-excluded. Estimates could also vary due to the different instruments used
-to measure depression (PHQ-9) and anxiety (GAD-7) in the current study. In
-an ABM training study using smartphones, \textcite{enock_attention_2014}
-found a significant post ABM training reduction in PSWQ (${d}$=.51) using
-a dot-probe task with neutral and disgust face stimuli. A two-tailed
+Two-tailed, paired samples t-tests were used to compare participants'
+pre and post ABM training measures of rumination (RRS), depression
+(PHQ-9), anxiety (GAD-7) and worry (PSWQ). Although these tests
+were likely to be underpowered, using a similar ABM procedure,
+\textcite{yang_attention_2015} found significant post training reductions
+in rumination, using RRS (${d}$=.49), depression, using BDI-II
+\parencite{beck_manual_1996} (${d}$=1.50) and anxiety, using STAI-T
+\parencite{spielberger_manual_1983} (${d}$=.88). Given these effect sizes,
+12 participants and $\alpha$ set at .05, two-tailed calculations of power
+(1-$\beta$) gave \Sexpr{rrs_pwr} for RRS, \Sexpr{bdi_pwr} for BDI-II and
+\Sexpr{stai_pwr} for STAI-T. In practice, these are likely to be lower
+as participants in \textcite{yang_attention_2015} were undergraduates
+with mild to severe depression in contrast with the current study where
+participants with mild depression or above were excluded. Estimates could
+also vary due to the different instruments used to measure depression
+(PHQ-9) and anxiety (GAD-7) in the current study. In an ABM training
+study using smartphones, \textcite{enock_attention_2014} found a
+significant post ABM training reduction in PSWQ (${d}$=.51) using a
+dot-probe task with neutral and disgust face stimuli. A two-tailed
 calculation with 12 participants and $\alpha$ set at .05, gave power
 (1-$\beta$) of \Sexpr{pswq_pwr}. In summary, the current study is likely
 to be sufficiently powered to detect changes in depression (PHQ-9) and
 possibly anxiety (GAD-7), but underpowered to detect changes in rumination
 (RRS) and worry (PSWQ).
 
-\subsubsection{Case-series}
+\subsection{Case-series}
 
-Given the lack of power for some of the pre-post comparisons,
-the primary analyses were visual inspection \todo{cite} and
-randomization tests comparing A and B phases for measures of
-attentional bias (I-words and N-words), state rumination (GRS)
-and mood (PANAS-SF). A visual analysis was carried out across
-time-series graphs of these measures generated by the R package \texttt{SCVA}
-\parencite{bulte_when_2012}. Inferential statistics and effect sizes of
-percentage of nonoverlapping data \parencite[PND,][]{scruggs_pnd_2013}
-were calculated for each case using randomization tests provided by
-the R package \texttt{SCRT} \parencite{bulte_r_2008}.
+Given the lack of power for some pre-post comparisons, the primary
+analyses were visual inspection of graphs and randomization tests
+comparing A and B phases in each case-series for measures of attentional
+bias (I-words and N-words), state rumination (GRS) and mood (PANAS-SF).
+Visual analyses were carried out using time-series graphs generated
+by the R package \texttt{SCVA}\footnote{Minor modifications were
+made to the \texttt{SCVA} package to standardise y-axis ranges and to
+plot central tendency, trend and variance lines on the same graph.}
+\parencite{bulte_when_2012}. Inferential statistics were calculated for
+each participant using randomization tests provided by the R package
+\texttt{SCRT} \parencite{bulte_r_2008}.
 
 Randomization is a nonparametric approach which allows
 inferential statistics to be calulated single-case series designs
@@ -920,22 +932,30 @@ the transition from A to B occurs. Randomization tests hold the
 observation scores constant and calculate the test statistic for
 all possible transition permutations. Once sorted, the ${p}$ value
 is the proportion of test statistics greater than or equal to the
-observed test statistic \parencite{onghena_customization_2005}. In
-addition to the single-case randomization tests, a meta-analysis
-\parencite[][p.64]{onghena_customization_2005} for each outcome across
-all participants was carried out using the R package \texttt{SCMA}
-\parencite{bulte_singlecase_2013}. This allowed for significance
-testing across participants above the ${p}$=.05 level, even though
-the randomization tests could not detect significance at this level
-for individual participants completing less than 35 sessions. The
+observed test statistic \parencite{onghena_customization_2005}. A
+one-tailed randomisation test (test statistic = \texttt{A-B}) was
+performed for N-word attentional bias scores as these were predicted
+to be more negative after ABM training. All other randomisation tests
+were two-tailed (test statistic = \(\lvert \texttt{A-B}\rvert\)).
+In addition to the single-case randomization tests, a meta-analysis
+\parencite[][p.64]{onghena_customization_2005} was carried out
+across all participants for each outcome measure using the R package
+\texttt{SCMA} \parencite{bulte_singlecase_2013}. This allowed for
+significance testing across participants above the ${p}$=.05 level,
+even though the randomization tests could not detect significance at
+this level for participants who completed less than 35 sessions. The
 meta-analysis used an additive approach, which has a greater probability
 of yielding significant results when there are treatment effects
-\parencite{edgington_additive_1972}.
+\parencite{edgington_additive_1972}. The percentage of nonoverlapping
+data (PND) is an effect size measure frequently used in single-subject
+research, and is the percentage of treatment phase observations that do
+not overlap data in the baseline phase \parencite{scruggs_pnd_2013}. PND
+was calculated using the R package \texttt{SCMA}, using \texttt{PND-}
+for N-words, I-words, NA and depression as the treatment should case
+these measures to drop, and \texttt{PND+} for PA as the treatment should
+result in an increase in positive affect.
 
-Hmmm, perhaps N-word bias change should be directional but I-word and other measures non-directional, need to tie this back to hypotheses and fix analyse.R .  Change in scores and associated test statistic needs to be crystal clear in text and tables
-Randomization test statistic used was \(\lvert A-B\rvert\) i.e. non-directional/2-tailed ...  \parencite{bulte_r_2008}.
-
-Of the items added to the PANAS-SF, `sad' and `depressed' correlated
+Of the four items added to the PANAS-SF, `sad' and `depressed' correlated
 strongly with each other and weakly with PA items on the scale, whereas
 `anxious' and `worried' were moderately associated with NA, but not
 as highly as the NA scale itself (see \cref{app:mood}). Given these
@@ -947,26 +967,26 @@ data for any completed survey.
 
 \section{Results}
 
-Three participants withdrew from the study. One person withdrew before
-completing any sessions due to concerns that the study would worsen
-their social anxiety, another found the time commit too great after 5
-sessions, and one withdrew after 24 sessions when a holiday meant that
-they would be unable to complete sufficient phase B sessions. Dropout
-was not predictable for these participants as their screening scores were
-not atypical and there were participants scoring higher on both RRS and
-PSWQ who nevertheless completed the study. For the remaining participants,
-dot-probe/ABM accuracy was above the a priori inclusion threshold of 75\%
-(see \cref{tab:completed}) and the concern chosen by each participant at
-the preparatory session remained unresolved througout the study. Session
-32 for participant 7 was omitted from the analyses as the dot-probe data
-file for this session was truncated. Session 8 GRS and PANAS-SF scores
-for participant 16 were brought forward from session 7, as the participant
-completed the dot-probe but not the measures during session 8, but advised
-within 12 hours that the scores would have been identical. To remain in
-the study, participant 5 switched from a Windows to Macintosh computer
-from session 21 onwards, and participant 19 completed later sessions in
-a different country from the one in which they began the study.
-
+Three participants withdrew from the study; one before completing
+any sessions due to concerns that the study would worsen their social
+anxiety, another who found the time commitment too great after 5 sessions,
+and the third after 24 sessions when a holiday meant that they would
+be unable to complete sufficient phase B sessions. Dropout was not
+predictable for these participants as their screening scores were not
+atypical and there were participants scoring higher on both RRS and PSWQ
+who nevertheless completed the study. For the remaining participants,
+dot-probe/ABM accuracy was above our a priori inclusion threshold of
+75\% (see \cref{tab:completed}) and the current concern chosen by each
+participant at the preparatory session remained unresolved througout the
+study. Session 32 for participant 7 was omitted from the analyses as the
+dot-probe data file for this session was truncated. Session 8 GRS and
+PANAS-SF scores for participant 16 were brought forward from session 7,
+as the participant completed the dot-probe but not the measures during
+session 8, but advised within 12 hours that the scores would have
+been identical. To remain in the study, participant 5 switched from a
+Windows to Macintosh computer from session 21 onwards, and participant
+19 completed later sessions in a different country from the one in which
+they began the study.
 \input{results/completed.tex}
 
 \subsection{Pre--Post Measures}
@@ -992,17 +1012,29 @@ knitr::read_chunk('../opensesame/dotprobe/iwords.R')
 
 \subsection{Visual Analysis}
 
-Each participant's session data
-
-Explain how visual analysis is normally done: variability within each phase, change from A to B 'level', trend in baseline that complicates interpretation 
-
-"The broadened median summarizes the data in a way which balances the twin
-goals of being highly sensitive to a reasonable proportion of the data,
-while being resistant to outliers." \parencite{morley_graphical_1991}
+The principal features of interest when visually analysing AB case-series
+data are central tendency and its within-phase trends, within-phase
+variability, and changes in level (adjacent data points of separate
+phases) \parencite{morley_graphical_1991}. In the following graphs,
+the broadened median is used as a measure of central tendency as it is
+both sensitive to a reasonable proportion of the data, and resistant to
+outliers \parencite{morley_graphical_1991}. Two types of trend line are
+plotted to reduce bias (often due to outliers) when visually interpreting
+raw data points. A robust linear trend in central tendency is shown using
+the split middle method \parencite{morley_graphical_1991}\footnote{This
+method results in two lines where there are an odd number of points
+in a phase. Poor alignment between these lines indicates a poor fit
+\parencite{morley_graphical_1991}.}. Trends in variability are plotted
+using the trimmed (10--20\% of outliers from each phase), trended range
+which reduces the influence of outliers, and of trends in central tendency
+\parencite{morley_graphical_1991}.
 
 \subsubsection{Attentional bias N-words}
 
-\begin{figure}[!ht]
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
+Ps don't seem to show much of an initial bias i.e. all are reasonably close to 0 (see also \cref{tab:rt})?
+
+\begin{figure}[!htbp]
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_n.jpg}
@@ -1010,44 +1042,43 @@ while being resistant to outliers." \parencite{morley_graphical_1991}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_n.jpg}
 
-\caption{Attentional bias scores for N-words (participants 5--10). A =
-Phase A (dot-probe baseline), B = Phase B (ABM training followed by
-dot-probe). Solid horizonal lines show mean attentional bias score. Dashed
-lines show trend (least squares regression) within each phase.}
+\caption{Attentional bias scores for N-words (participants 5--10).
+\protect\strokeA{} broadened median, \protect\strokeB{} split middle
+linear trend, \protect\strokeC{} trimmed trended range (see text). Dashed
+line = phase transition.}
 \end{figure}
 
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
-
-Ps don't seem to show much of an initial bias i.e. all are reasonably close to 0 (see also \cref{tab:rt})?
-
 \clearpage
-\begin{figure}[!h]
+\begin{figure}[!htbp]
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_n.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_n.jpg}
-\caption{Attentional bias scores for N-words (participants 11, 12, 15, 16, 18 and 19)}
+\caption{Attentional bias scores for N-words (participants 11, 12, 15, 16, 18 and 19).}
 \end{figure}
+\clearpage
 
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
+\subsubsection{I-word attentional bias}
 
-\subsubsection{Attentional bias I-words}
+Changes in attentional bias for I-word pairs are summarised in \cref{fig:va-i1} and \cref{fig:va-i2}.
 
-\begin{figure}[!ht]
+Describe synthesis across Ps (patterns), but possibly draw attention to outliers.
+
+\begin{figure}[!htbp]
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_i.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_i.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_i.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_i.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_i.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_i.jpg}
-\caption{Attentional bias scores for I-words (participants 5--10). A =
-Phase A (dot-probe baseline), B = Phase B (ABM training followed by
-dot-probe). Dotted lines show mean attentional bias score.}
+\caption{Attentional bias scores for I-words (participants 5--10).
+\protect\strokeA{} broadened median, \protect\strokeB{} split middle
+linear trend, \protect\strokeC{} trimmed trended range (see text). Dashed
+line = phase transition.}
+\label{fig:va-i1}
 \end{figure}
-
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \begin{figure}[!h]
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_i.jpg}
@@ -1056,12 +1087,14 @@ Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw atte
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_i.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_i.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_i.jpg}
-\caption{Attentional bias scores for I-words (participants 11, 12, 15, 16, 18 and 19)}
+\caption{Attentional bias scores for I-words (participants 11, 12, 15, 16, 18 and 19).}
+\label{fig:va-i2}
 \end{figure}
 
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
-
+\clearpage
 \subsubsection{GRS}
+
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \begin{figure}[!ht]
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_grs.jpg}
@@ -1070,12 +1103,11 @@ Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw atte
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_grs.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_grs.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_grs.jpg}
-\caption{FIXME: Scale range. GRS scores (participants 5--10). A = Phase A (dot-probe
-baseline), B = Phase B (ABM training followed by dot-probe). Dotted
-lines show mean GRS score.}
+\caption{GRS scores (participants 5--10).
+\protect\strokeA{} broadened median, \protect\strokeB{} split middle
+linear trend, \protect\strokeC{} trimmed trended range (see text). Dashed
+line = phase transition.}
 \end{figure}
-
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \clearpage
 \begin{figure}[!h]
@@ -1088,9 +1120,10 @@ Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw atte
 \caption{GRS scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
-
+\clearpage
 \subsubsection{PA}
+
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \begin{figure}[!ht]
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_pa.jpg}
@@ -1099,12 +1132,11 @@ Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw atte
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_pa.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_pa.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_pa.jpg}
-\caption{FIXME: Scale range. PA scores (participants 5--10). A = Phase A (dot-probe
-baseline), B = Phase B (ABM training followed by dot-probe). Dotted
-lines show mean PA score.}
+\caption{PA scores (participants 5--10).
+\protect\strokeA{} broadened median, \protect\strokeB{} split middle
+linear trend, \protect\strokeC{} trimmed trended range (see text). Dashed
+line = phase transition.}
 \end{figure}
-
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \clearpage
 \begin{figure}[!h]
@@ -1117,9 +1149,10 @@ Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw atte
 \caption{PA scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
-
+\clearpage
 \subsubsection{NA}
+
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \begin{figure}[!ht]
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_na.jpg}
@@ -1128,12 +1161,11 @@ Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw atte
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_na.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_na.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_na.jpg}
-\caption{FIXME: Scale range. NA scores (participants 5--10). A = Phase A (dot-probe
-baseline), B = Phase B (ABM training followed by dot-probe). Dotted
-lines show mean NA score.}
+\caption{NA scores (participants 5--10).
+\protect\strokeA{} broadened median, \protect\strokeB{} split middle
+linear trend, \protect\strokeC{} trimmed trended range (see text). Dashed
+line = phase transition.}
 \end{figure}
-
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \clearpage
 \begin{figure}[!h]
@@ -1146,9 +1178,10 @@ Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw atte
 \caption{NA scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
 
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
-
+\clearpage
 \subsubsection{Depression}
+
+Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \begin{figure}[!ht]
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_d.jpg}
@@ -1157,12 +1190,11 @@ Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw atte
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_d.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_d.jpg}
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_d.jpg}
-\caption{FIXME: Scale range. Depression ('sad'+'depressed') scores (participants 5--10). A
-= Phase A (dot-probe baseline), B = Phase B (ABM training followed by
-dot-probe). Dotted lines show mean depression score.}
+\caption{Depression ('sad'+'depressed') scores (participants 5--10).
+\protect\strokeA{} broadened median, \protect\strokeB{} split middle
+linear trend, \protect\strokeC{} trimmed trended range (see text). Dashed
+line = phase transition.}
 \end{figure}
-
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \clearpage
 \begin{figure}[!h]
@@ -1174,8 +1206,6 @@ Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw atte
 \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_d.jpg}
 \caption{Depression ('sad'+'depressed') scores (participants 11, 12, 15, 16, 18 and 19)}
 \end{figure}
-
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
 
 \subsection{Inferential Statistics}
 \setlength\tabcolsep{1mm}
