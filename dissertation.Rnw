@@ -41,8 +41,8 @@
     pdfpagemode=UseOutlines,    % this is the option you were lookin for
     pdfpagelayout=TwoPageRight
 }
-\usepackage[table]{xcolor}
 \usepackage{cleveref}
+\usepackage[table]{xcolor}
 \usepackage[textwidth=2cm,color=green,textsize=tiny]{todonotes}
 \reversemarginpar
 \usepackage{afterpage}
@@ -97,10 +97,13 @@ which a degree has previously been conferred upon me.}
 
 \usepackage{tabularx}
 \usepackage{tikz}
-\newcommand\strokeA{\tikz[baseline=-.5ex]{ \draw[black,align=center] (0,0) -- (2ex,0); }}
-\newcommand\strokeB{\tikz[baseline=-.5ex]{ \draw[red,dotted] (0,0) -- (2ex,0); }}
-\newcommand\strokeC{\tikz[baseline=-.5ex]{ \draw[black,dotted] (0,0) -- (2ex,0); }}
-\begin{document}
+\newcommand\strokeA{\tikz[baseline=-.5ex]{ \draw[black,thick,align=center] (0,0) -- (2ex,0); }}
+\newcommand\strokeB{\tikz[baseline=-.5ex]{ \draw[red,thick,dotted] (0,0) -- (2ex,0); }}
+\newcommand\strokeC{\tikz[baseline=-.5ex]{ \draw[black,thick,dotted] (0,0) -- (2ex,0); }}
+
+\usepackage{subcaption}
+
+\begin{document}\thispagestyle{empty}
 \setlength{\marginparwidth}{1cm}
 \todototoc
 \listoftodos[Todo list]
@@ -119,6 +122,7 @@ which a degree has previously been conferred upon me.}
 \todo{Word count of main text on front page (latexcount.pl)}
 
 \section{Introduction}
+\label{sec:introduction}
 
 Mixed depression and anxiety is a major public health challenge,
 reported as being present in 9.0\% of English adults in the most
@@ -702,7 +706,7 @@ browser and Lime Survey \parencite{limesurvey}.
 Using a procedure based on \textcite{roberts_cueing_2013}, the
 participant was instructed to select an unresolved current concern (see
 \cref{sec:iwordinstructions}), and rated their concern on a 5 item scale,
-with each item in the range 1--9 \cref{app:concernrating}. The concern
+with each item in the range 1--9 (see \cref{app:concernrating}). The concern
 was accepted if ratings for the questions \enquote{How much you have
 been thinking about it over the last week?} and \enquote{How much does
 it bother you now?} were > 5, and the concern was unlikely to resolve
@@ -1011,12 +1015,13 @@ knitr::read_chunk('../opensesame/dotprobe/iwords.R')
 @
 
 \subsection{Visual Analysis}
+\label{sec:va}
 
 The principal features of interest when visually analysing AB case-series
 data are central tendency and its within-phase trends, within-phase
 variability, and changes in level (adjacent data points of separate
-phases) \parencite{morley_graphical_1991}. In the following graphs,
-the broadened median is used as a measure of central tendency as it is
+phases) \parencite{morley_graphical_1991}. In the following graphs, the
+broadened median (BMED) is used as a measure of central tendency as it is
 both sensitive to a reasonable proportion of the data, and resistant to
 outliers \parencite{morley_graphical_1991}. Two types of trend line are
 plotted to reduce bias (often due to outliers) when visually interpreting
@@ -1031,67 +1036,111 @@ which reduces the influence of outliers, and of trends in central tendency
 
 \subsubsection{Attentional bias N-words}
 
-Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
-Ps don't seem to show much of an initial bias i.e. all are reasonably close to 0 (see also \cref{tab:rt})?
+see \cref{sec:introduction}
+
+Visual analysis indicated a post-ABM reduction in attentional bias towards
+N-words as hypothesised in some, but not all participants. Changes in
+attentional bias for N-word pairs are summarised in \cref{fig:va-n}. As
+mentioned previously, more positive bias scores reflect vigilance for
+negative words, whereas more negative scores indicate avoidance. All
+participants had an initial BMED score close to 0, indicating a
+lack of any large attentional bias in either direction. In phase B,
+7 participants (5, 6, 8, 10, 11, 16 and 19) showed a more negative
+bias, although participant 5 had 2 large, negative scores. In phase A,
+linear trends in score increased for 7 participants (5, 6, 8, 11, 15
+and notably 12), decreased for 4 participants (9, 16, 18 and 19) and
+remained flat for 2 participants (7 and 10). Of the trends in phase B
+which were a good fit, relative to phase A, participant 11 reversed in
+the hypothesised direction, 3 (participants 8, 12 and 15) continued in
+the same direction, and 2 (participants 9 and 19) reversed contrary to
+the hypothesised direction. Phase A variance was small in participant
+18 but similar in all other participants. It was also stable in most
+participants but increased in 2 (participants 9 and 15) and decreased
+in 3 (participants 11, 18 and 19). Variance increased in a number of
+participants on transition to phase B but by the end was similar to
+levels in phase A. Two outliers explain the large phase B change in
+variance for participant 5.
 
 \begin{figure}[!htbp]
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_n.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_n.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_n.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_n.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_n.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_n.jpg}
-
-\caption{Attentional bias scores for N-words (participants 5--10).
-\protect\strokeA{} broadened median, \protect\strokeB{} split middle
-linear trend, \protect\strokeC{} trimmed trended range (see text). Dashed
-line = phase transition.}
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_n.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_n.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_n.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_n.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_n.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_n.jpg}
+    \caption{N-word attentional bias scores for participants 5--10.}
+    \end{subfigure}
 \end{figure}
 
-\clearpage
-\begin{figure}[!htbp]
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_n.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_n.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_n.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_n.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_n.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_n.jpg}
-\caption{Attentional bias scores for N-words (participants 11, 12, 15, 16, 18 and 19).}
+\begin{figure}
+\ContinuedFloat
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_n.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_n.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_n.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_n.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_n.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_n.jpg}
+    \caption{N-word attentional bias scores for participants 11, 12, 15, 16, 18 and 19.}
+  \end{subfigure}
+\caption{Dashed line = phase transition. \protect\strokeA{} broadened
+median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
+trimmed trended range (see \cref{analyses}).}
+\label{fig:va-n}
 \end{figure}
 \clearpage
 
 \subsubsection{I-word attentional bias}
 
-Changes in attentional bias for I-word pairs are summarised in \cref{fig:va-i1} and \cref{fig:va-i2}.
-
-Describe synthesis across Ps (patterns), but possibly draw attention to outliers.
+Visual analysis indicated a reduction in attentional bias in the
+majority of participants. Changes in attentional bias for I-word pairs
+are summarised in \cref{fig:va-i}. As with N-words, more positive bias
+scores reflect vigilance for negative words, more negative scores indicate
+avoidance, and there were no large initial attentional biases in either
+direction. In phase B, 10 participants showed a more negative attentional
+bias, and 2 (participants 11 and 12) a more positive bias. Of the linear
+trends in phase A which were a good fit, 6 (participants 7, 8, 10, 18
+and 19) increased and 5 (participants 5, 6, 9, 12 and 16) decreased. Of
+the trends in phase B which were a good fit, relative to phase A, 2
+(participants 18 and 19) became more negative and 2 (participants 8
+and 9) continued in the same direction. Phase A variance was small in
+participant 18 but similar in all other participants. It was also stable
+in most participants but increased in 2 (8 and 10) and decreased in 3 (7,
+15 and notably 18).  Relative to the end of phase A, variance in phase B
+increased in 6 participants (5, 6, 9, 12, 15 and 18), and decreased in 2
+(participants 7 and 19).
 
 \begin{figure}[!htbp]
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_i.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_i.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_i.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_i.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_i.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_i.jpg}
-\caption{Attentional bias scores for I-words (participants 5--10).
-\protect\strokeA{} broadened median, \protect\strokeB{} split middle
-linear trend, \protect\strokeC{} trimmed trended range (see text). Dashed
-line = phase transition.}
-\label{fig:va-i1}
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/5/p5_i.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/6/p6_i.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/7/p7_i.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/8/p8_i.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/9/p9_i.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/10/p10_i.jpg}
+    \caption{I-word attentional bias scores for participants 5--10.}
+  \end{subfigure}
 \end{figure}
 
-\begin{figure}[!h]
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_i.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_i.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_i.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_i.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_i.jpg}
-\includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_i.jpg}
-\caption{Attentional bias scores for I-words (participants 11, 12, 15, 16, 18 and 19).}
-\label{fig:va-i2}
+\begin{figure}
+\ContinuedFloat
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/11/p11_i.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/12/p12_i.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/15/p15_i.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/16/p16_i.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/18/p18_i.jpg}
+    \includegraphics[plotwh]{/media/paul/2E95-1293/study/participants/19/p19_i.jpg}
+    \caption{I-word attentional bias scores for participants 11, 12, 15, 16, 18 and 19.}
+  \end{subfigure}
+\caption{Dashed line = phase transition. \protect\strokeA{} broadened
+median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
+trimmed trended range (see \cref{analyses}).}
+\label{fig:va-i}
 \end{figure}
-
 \clearpage
+
 \subsubsection{GRS}
 
 Describe graphs. Mainly a synthesis across Ps (patterns), but possibly draw attention to outliers.
