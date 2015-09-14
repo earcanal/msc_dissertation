@@ -1,4 +1,4 @@
-dissertation: completed
+dissertation: completed analyse
 	R -e 'library(knitr); knit("dissertation.Rnw")'
 	pdflatex dissertation.tex
 	biber --output_safechars dissertation
@@ -6,6 +6,9 @@ dissertation: completed
 
 table:
 	pdflatex table.tex
+
+analyse:
+	../opensesame/dotprobe/analyse.R
 
 accuracy:
 	../opensesame/dotprobe/accuracy.R > ../opensesame/dotprobe/accuracy.tt

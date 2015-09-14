@@ -1,3 +1,4 @@
+\RequirePackage{rotating}
 \documentclass[man,floatsintext,a4paper,biblatex]{apa6}
 \usepackage[english, british]{babel}
 \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
@@ -29,6 +30,7 @@
 \usepackage{graphicx}
 \usepackage[page,header]{appendix}
 \usepackage{titletoc}
+\usepackage{lipsum}
 
 \usepackage[]{hyperref}
 \hypersetup{
@@ -88,9 +90,6 @@ which a degree has previously been conferred upon me.}
 \usepackage{mathtools}
 \usepackage{csvsimple}
 
-\usepackage{rotating}
-
-% rotated table text
 \usepackage{pifont}
 \usepackage{booktabs}
 \newcommand*\rot{\rotatebox{90}}
@@ -370,9 +369,9 @@ Specific hypotheses were as follows:
 \begin{enumerate}
 \item Baseline trait rumination, trait anxiety, depression and trait worry
 will differ after ABM training.
-\item Attentional bias towards negative words will reduce after ABM training.
 \item Attentional bias towards ideographic words associated with a
 current concern will differ after ABM training.
+\item Attentional bias towards negative words will reduce after ABM training.
 \item State measures of rumination, positive affect, negative affect
 and depression will change after ABM training.
 \end{enumerate}
@@ -473,8 +472,6 @@ pre self-report measurements taken outside of a laboratory environment.
 
 The following measures were taken before the first and after the last
 dot-probe/ABM sessions.
-
-\todo{See McKay (2005) for examples of what each measure measures i.e. a bit more narrative}
 
 \paragraph{RRS}
 
@@ -923,39 +920,41 @@ plot central tendency, trend and variance lines on the same graph.}
 each participant using randomization tests provided by the R package
 \texttt{SCRT} \parencite{bulte_r_2008}.
 
-Randomization is a nonparametric approach which allows
-inferential statistics to be calulated single-case series designs
-\parencite{bulte_r_2008}. In an AB design, the phase sequence
-(baseline followed by intervention) is fixed, therefore it
-is the point at which phase A transitions to phase B which is
-randomized. Under the null hypothesis, a test statistic for a
-particular set of observations would not differ regardless of where
-the transition from A to B occurs. Randomization tests hold the
-observation scores constant and calculate the test statistic for
-all possible transition permutations. Once sorted, the ${p}$ value
-is the proportion of test statistics greater than or equal to the
-observed test statistic \parencite{onghena_customization_2005}. A
-one-tailed randomisation test (test statistic = \texttt{A-B}) was
-performed for N-word attentional bias scores as these were predicted
-to be more negative after ABM training. All other randomisation tests
-were two-tailed (test statistic = \(\lvert \texttt{A-B}\rvert\)).
-In addition to the single-case randomization tests, a meta-analysis
-\parencite[][p.64]{onghena_customization_2005} was carried out
-across all participants for each outcome measure using the R package
-\texttt{SCMA} \parencite{bulte_singlecase_2013}. This allowed for
-significance testing across participants above the ${p}$=.05 level,
-even though the randomization tests could not detect significance at
-this level for participants who completed less than 35 sessions. The
-meta-analysis used an additive approach, which has a greater probability
-of yielding significant results when there are treatment effects
-\parencite{edgington_additive_1972}. The percentage of nonoverlapping
-data (PND) is an effect size measure frequently used in single-subject
-research, and is the percentage of treatment phase observations that do
-not overlap data in the baseline phase \parencite{scruggs_pnd_2013}. PND
-was calculated using the R package \texttt{SCMA}, using \texttt{PND-}
-for N-words, I-words, NA and depression as the treatment should case
-these measures to drop, and \texttt{PND+} for PA as the treatment should
-result in an increase in positive affect.
+Randomization is a nonparametric approach which allows inferential
+statistics to be calculated using data from a single-case series
+\parencite{bulte_r_2008}. In an AB design, the phase sequence (baseline
+followed by intervention) is fixed, therefore it is the point at
+which phase A transitions to phase B which is randomized. Under
+the null hypothesis, a test statistic for a particular set of
+observations would not differ regardless of where the transition
+from A to B occurs. Randomization tests hold the observation scores
+constant and calculate the test statistic for all possible transition
+permutations. Once sorted, the ${p}$ value is the proportion of
+test statistics greater than or equal to the observed test statistic
+\parencite{onghena_customization_2005}. A one-tailed randomisation test
+(test statistic = \texttt{A-B}) was performed for N-word attentional bias
+scores as these were predicted to be more negative after ABM training. All
+other randomisation tests were two-tailed (test statistic = \(\lvert
+\texttt{A-B}\rvert\)).  In addition to the single-case randomization
+tests, a meta-analysis \parencite[][p.64]{onghena_customization_2005}
+was carried out across all participants for each outcome measure using
+the R package \texttt{SCMA} \parencite{bulte_singlecase_2013}. This
+allowed for significance testing across participants above the
+${p}$=.05 level, even though the randomization tests could not detect
+significance at this level for participants who completed less than
+35 sessions. The meta-analysis used an additive approach, which has
+a greater probability of yielding significant results when there are
+treatment effects \parencite{edgington_additive_1972}. The percentage
+of nonoverlapping data (PND) is an effect size measure frequently
+used in single-subject research, and is the percentage of treatment
+phase observations that do not overlap data in the baseline phase
+\parencite{scruggs_pnd_2013}. \textcite{scruggs_early_1986} consider
+treatments with PND scores ${\geq}$ 90\% as highly effective, scores of 70\%--90\%
+as fair, scores of 50\%--70\% as questionable effects, and scores <~ 50\%
+as unreliable.  PND was calculated using the R package \texttt{SCMA},
+using \texttt{PND-} for N-words, I-words, NA and depression as the
+treatment should case these measures to drop, and \texttt{PND+} for PA
+as the treatment should result in an increase in positive affect.
 
 Of the four items added to the PANAS-SF, `sad' and `depressed' correlated
 strongly with each other and weakly with PA items on the scale, whereas
@@ -1340,22 +1339,53 @@ trimmed trended range (see \cref{analyses}).}
 \label{fig:d}
 \end{figure}
 
+\clearpage
 \subsection{Inferential Statistics}
 
-Description of RT table including MA
+N-word and I-word randomisation tests and meta-analysis results are
+summarised in \cref{tab:rt}. Although there was a reduction in attentional
+bias for I-words for 7 participants (6, 8, 9, 10, 16, 18 and 19), none of
+the differences were significant (all ${P}$s < .05). The meta-analysis
+across participants was also non-significant (${p}$ = .806). There was
+a reduction in attentional bias for N-words in 7 participants (5, 6, 8,
+10, 11, 16 and 19), although the difference was only significant (${p}$ =
+.05) for participant 11 with an unreliable effect (${PND}$ = 29.15\%). The
+meta-analysis across participants was significant (${p}$ = .046).
+
+State rumination (GRS) randomisation tests and meta-analysis results
+are summarised in \cref{tab:grs}. Although there was a reduction in
+GRS score 9 participants (5, 6, 8, 9, 10, 11, 15, 18 and 19), none of
+the differences were significant (all ${P}$s < .05). Increases in GRS
+for participants 6, 12 and 16 were also non-significant. The
+meta-analysis across participants was also non-significant (${p}$ = .563).
+
+Mood variable (PA, NA and depression) randomisation tests and
+meta-analysis are summarised in \cref{tab:panas}. There was an increase
+in PA for 9 participants (5, 6, 7, 9, 10, 11, 12, 15 and 18), although the
+difference was only significant (${p}$ = .05) for participant 8. Decreases
+in PA for participants 8, 16 and 19 were also non-significant, as
+was the meta-analysis across all participants for PA (${p}$ = .167).
+Although there was decrease in NA for 9 participants (5, 6, 9, 10,
+11, 12, 15, 16 and 18), none of the differences were significant (all
+${P}$s < .05). Increases in NA for participants 7, 8 and 19 were also
+non-significant, as was the meta-analysis across all participants for NA
+(${p}$ = .801). Depression scores decreased in 5 participants (6, 9, 11,
+15 and 18) and increased in 7 participants (5, 7, 8, 10, 12, 16 and 19),
+however all differences were non-significant (${P}$s < .05).
+
+\clearpage
 
 \setlength\tabcolsep{1mm}
 
 \input{results/rt.tex}
 
-Description of GRS table.
-
+\begin{center}
 \input{results/grs.tex}
-
-Description of PANAS table.
+\end{center}
 
 \input{results/panas.tex}
 
+\clearpage
 \section{Discussion}
 
 \subsection{Interpretation}
