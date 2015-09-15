@@ -293,47 +293,29 @@ change ${and}$ corresponding symptom change. It is important to note, that
 in demonstrating the mediating role of rumination in reducing depressive
 symptoms, \textcite{yang_attention_2015} met both of these final criteria.
 
-\paragraph{RAT}
-
-GAP
-
-Most studies which examine rumination towards current concerns,
-use the emotional Stroop task as a measure of attentional bias
-\parencite{williams_cognitive_1988}. By using the dot-probe task, the
-current study aims to measure attentional bias towards a current concern
-and then measure the effects of modifying the bias using ABM training
-in the form of a modified dot-probe. Given the broad conceptualization
-of rumination, \textcite{smith_roadmap_2009} recommend using multiple
-outcome measures. The difficulties in distinguising
- rumination from worry and the comorbidity of anxiety and depression also
- suggest multiple measures. As such, the current study measures trait and
- state rumination, trait worry, mood variables, anxiety and depression.
-
-
-\textcite{yang_attention_2015} used laboratory-based ABM training using
-sad word stimuli. The proposed study aims to extend these findings by
-testing whether ABM reduces RNT and elevates mood in non-depressed,
-high ruminators exposed to abstract, negative, ideographic cue words
-associated with an incomplete self-relevant goal.
-
-This is a novel and more direct test of RNT and a potential
-intervention to reduce rumination and treat anxiety and depression.
-
-I can argue (using Macleod's meta analysis critique) that I'm getting closer to causality?
-
-Counterconditioning is one of the basic mechanisms which cognitive bias
-modification (CBM) employs in the form of repetitive computer tasks to
-attenuate attentional, interpretive and memory biases associated with
-negative emotional states \parencite{hertel_cognitive_2011}.
-
-\paragraph{WTD}
-
-The current study measures both worry and rumination
-
-Specific hypotheses were as follows:
+Most studies which examine rumination towards current concerns have only
+been able to measure attentional bias using the emotional Stroop task
+\parencite{williams_cognitive_1988}. The current study aims to extend
+these findings by using the dot-probe task to measure such attentional
+biases, and to then test the effects of ABM training designed to reduce
+vigilence towards negative words, and words associated with the current
+concern. In other words, the study tests the attentional disengagement
+hypothesis \parencite{koster_understanding_2011} in relation to the goal
+progress theory of rumination \parencite{martin_ruminative_1996}. This is
+a novel test of the potential for ABM training to offer a personlised,
+cost-effective treatment for anxiety and depression. Given the various
+conceptualizations of rumination, \textcite{smith_roadmap_2009} recommend
+using multiple outcome measures. The difficulties in distinguising
+rumination from worry, and the common comorbidity of anxiety and
+depression also suggest multiple measures are appropriate. The current
+study measures the effects of ABM on trait and state rumination, trait
+worry, mood variables, anxiety and depression. Finally, the study aims to
+extend the findings of \textcite{yang_attention_2015} by testing whether
+the ABM can reduce rumination and depressive symptoms in a non-clinical
+sample. Specific hypotheses were as follows:
 
 \begin{enumerate}
-\item Baseline trait rumination, trait anxiety, depression and trait worry
+\item Baseline trait rumination, trait anxiety, trait worry and depression 
 will differ after ABM training.
 \item Attentional bias towards ideographic words associated with a
 current concern will differ after ABM training.
