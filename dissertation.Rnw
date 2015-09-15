@@ -253,44 +253,45 @@ interpretation, inhibitory control, emotional associations and
 intrusive thoughts \parencite{mathews_cognitive_2005}. Attentional
 bias is a disproportionate attentional sensitivity to internal
 or external stimuli \parencite{williams_cognitive_1988}. One
-unresolved hypothesis is whether depressive rumination, is caused,
+unresolved hypothesis is whether depressive rumination is caused,
 at least in part, by an impaired ability to disengage attention from
 negative thoughts \textcite{koster_understanding_2011}. Disruption
 in attention-focusing ability is also a cognitive correlate of worry
 \parencite{borkovec_preliminary_1983}. It also remains unclear to
 what extent attentional bias results in rumination or rumination
-leads to attentional bias \textcite{koster_understanding_2011}.
-Although \parencite{morrison_role_2008} found a causal relationship
+leads to attentional bias \parencite{koster_understanding_2011}.
+Whilst \textcite{morrison_role_2008} found a causal relationship
 between rumination and positive attentional bias, they did not find the
 relationship between rumination and decreased negative bias, which would
-be required to support the disengagement hypothesis. However, there is
-evidence in support of this hypothesis.  In a double-blind, randomised
+be required to support the disengagement hypothesis. Nevertheless, there
+is evidence in support of this hypothesis. In a double-blind, randomised
 controlled with individuals having mild to severe depressive symptoms,
 \textcite{yang_attention_2015} demonstrated that modifying attentional
-bias led to reductions in rumination and depressive symptoms and that
+bias led to reductions in rumination and depressive symptoms, and that
 the reductions in depressive symptoms was mediated by rumination
 
 Cognitive bias modification (CBM) techniques have been developed
 to change the cognitive biases associated with emotional disorders
 \parencite{hertel_cognitive_2011}. This is often achieved using computer
-tasks, with biases of attention, interpretation and memory most frequently
-targetted. The dot-probe task measures attentional bias using differences
-in response times to probes which appear at the location of one of a pair
-of visual stimuli having differing affective valence, such as negative
-and neutral word pairs \parencite{macleod_attentional_1986}. Attentional
-bias modification (ABM) manipulates the probe location, to train
-towards or away from particular stimuli. A large number of trials
-have indicated that ABM may be an effective treatment for anxiety
+tasks which biases of attention, interpretation or memory. The dot-probe
+task measures attentional bias using differences in response times to
+visual stimuli having differing affective valence, such as negative and
+neutral word pairs \parencite{macleod_attentional_1986}. Participants
+respond to a probe which appears at one or the other location of
+the previously displayed stimuli. Attentional bias modification
+(ABM) manipulates the probe location, to train attention
+towards or away from particular stimuli. Numerous studies have
+indicated that ABM may be an effective treatment for anxiety
 \parencite{hakamata_attention_2010} and more recently ABM has been
 shown to reduce depression \parencite{yang_attention_2015}. Critics of
 CBM argue that the effect sizes are too small to be clinically relevant
 \parencite{cristea_efficacy_2015}. However, advocates argue that this
-critique is based on meta-anlyses don't differentiate ABM from other
-forms of CBM, focus on a particular psychological disfunction (anxiety),
-and analyse studies which demonstrate both attentional bias change
-${and}$ corresponding symptom change. It is important to note, that in
-demonstrating the mediating role of rumination in reducing depressive
-symptoms, \textcite{yang_attention_2015} met both of this latter criteria.
+critique is based on meta-anlyses which don't differentiate ABM from
+other forms of CBM, which don't focus on a single psychological disfunction
+(anxiety), or analyse studies which demonstrate both attentional bias
+change ${and}$ corresponding symptom change. It is important to note, that
+in demonstrating the mediating role of rumination in reducing depressive
+symptoms, \textcite{yang_attention_2015} met both of these final criteria.
 
 \paragraph{RAT}
 
@@ -308,11 +309,6 @@ outcome measures. The difficulties in distinguising
  suggest multiple measures. As such, the current study measures trait and
  state rumination, trait worry, mood variables, anxiety and depression.
 
-Counterconditioning is one of
-the basic mechanisms which cognitive bias modification (CBM)
-employs in the form of repetitive computer tasks to attenuate
-attentional, interpretive and memory biases associated with
-negative emotional states \parencite{hertel_cognitive_2011}.
 
 \textcite{yang_attention_2015} used laboratory-based ABM training using
 sad word stimuli. The proposed study aims to extend these findings by
@@ -323,12 +319,16 @@ associated with an incomplete self-relevant goal.
 This is a novel and more direct test of RNT and a potential
 intervention to reduce rumination and treat anxiety and depression.
 
-can I argue (using Macleod's meta analysis critique) that I'm getting closer to causality?
+I can argue (using Macleod's meta analysis critique) that I'm getting closer to causality?
+
+Counterconditioning is one of the basic mechanisms which cognitive bias
+modification (CBM) employs in the form of repetitive computer tasks to
+attenuate attentional, interpretive and memory biases associated with
+negative emotional states \parencite{hertel_cognitive_2011}.
 
 \paragraph{WTD}
 
 The current study measures both worry and rumination
-
 
 Specific hypotheses were as follows:
 
