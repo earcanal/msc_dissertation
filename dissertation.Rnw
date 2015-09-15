@@ -271,46 +271,27 @@ controlled with individuals having mild to severe depressive symptoms,
 bias led to reductions in rumination and depressive symptoms and that
 the reductions in depressive symptoms was mediated by rumination
 
-\paragraph{Cognitive bias modification}
-
-There is CBM-I, CBM-X ...
-
-... but this is about CBM-A
-
-The dot-probe task measures
-attentional bias using differences in response times to pairs of visual
-stimuli with differing affective valence, such as negative and neutral
-word pairs \parencite{macleod_attentional_1986}.
-
-Randomised controlled trials indicate that CBM may be an effective treatment
-for anxiety \parencite{hakamata_attention_2010} and depression
-\parencite{yang_attention_2015}.
-
-Attentional bias modification (ABM)
-is a common form of CBM training in which participants use a computer
-task to repeatedly attend towards or away from a particular stimulus such
-as negatively valenced words or pictures \parencite[see][for a recent
-review]{macleod_attentional_2015}.  This type of training resembles the
-counterconditioning mechanism which \textcite{watkins_habitgoal_2014}
-suggest may reduce RNT.
-
-Meta-analysis critique of small effect sizes
-
-"we stressed the critical need to distinguish the question of whether a
-putative ABM training procedure successfully induces the intended pattern
-of selective attentional responding to threat, from the quite different
-question of whether successful modification of selective attentional
-responding to threat significantly alters dispositional and dysfunctional
-anxiety." \textcite{macleod_attentional_2015}.
-
-\textcite{yang_attention_2015} met both criteria
-
-"reduction in rumination is an effective treatment component of ABM
-training on depression" \parencite{yang_attention_2015}.
-
-Although it is resistant to change \textcite{watkins_habitgoal_2014},
-it seems possible that habitual rumination could be altered using
-counterconditioning techniques.
+Cognitive bias modification (CBM) techniques have been developed
+to change the cognitive biases associated with emotional disorders
+\parencite{hertel_cognitive_2011}. This is often achieved using computer
+tasks, with biases of attention, interpretation and memory most frequently
+targetted. The dot-probe task measures attentional bias using differences
+in response times to probes which appear at the location of one of a pair
+of visual stimuli having differing affective valence, such as negative
+and neutral word pairs \parencite{macleod_attentional_1986}. Attentional
+bias modification (ABM) manipulates the probe location, to train
+towards or away from particular stimuli. A large number of trials
+have indicated that ABM may be an effective treatment for anxiety
+\parencite{hakamata_attention_2010} and more recently ABM has been
+shown to reduce depression \parencite{yang_attention_2015}. Critics of
+CBM argue that the effect sizes are too small to be clinically relevant
+\parencite{cristea_efficacy_2015}. However, advocates argue that this
+critique is based on meta-anlyses don't differentiate ABM from other
+forms of CBM, focus on a particular psychological disfunction (anxiety),
+and analyse studies which demonstrate both attentional bias change
+${and}$ corresponding symptom change. It is important to note, that in
+demonstrating the mediating role of rumination in reducing depressive
+symptoms, \textcite{yang_attention_2015} met both of this latter criteria.
 
 \paragraph{RAT}
 
