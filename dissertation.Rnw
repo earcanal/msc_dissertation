@@ -795,10 +795,10 @@ for their participation.
 In phase A, dot-probe blocks consisted of 12 word pairs; the 6 I-word
 pairs and 6 N-word pairs. Session 1 used pairs 1--6 from the 66 N-word
 set, session 2 used pairs 7--12, and so on. Thus, bias associated with
-the participant's ideographic words was measured at every session, whereas
-the more general negative valence associated with N-words was distributed
-across measurment times. In phase B, dot-probe measurement was preceeded
-by ABM blocks containing only N-words. To detect ${generalised}$
+the participant's ideographic words was measured at every session,
+whereas the more general negative valence associated with N-words was
+distributed across measurment times. In phase B, dot-probe measurement was
+preceeded by ABM blocks containing only N-words. To detect ${generalised}$
 changes in attentional bias in relation to emotional valence, rather
 than changes in bias to specific stimuli \parencite{see_reduction_2009},
 phase B dot-probe blocks only contained N-words not previously exposed in
@@ -810,9 +810,10 @@ subsequent ABM blocks. For example, the first 3 ABM blocks used N-words
 block used N-words 1--12 and the subsequent dot-probe used N-words 13--18,
 and so on. A random draw was used to select the 192 stimuli for each ABM
 session. As with phase A, the 6 I-words were present in every dot-probe
-block. \cref{tab:allocation} shows an example stimulus allocation.
+block. An example stimulus allocation for a randomisation schedule is
+shown in \cref{tab:stim}.
 
-\todo{stimulus allocation table}
+\input{procedure/stim.tex}
 
 \section{Ethical Considerations}
 
@@ -988,6 +989,9 @@ been identical. To remain in the study, participant 5 switched from a
 Windows to Macintosh computer from session 21 onwards, and participant
 19 completed later sessions in a different country from the one in which
 they began the study.
+
+\belowrulesep=1pt
+%\aboverulesep=1pt
 \input{results/completed.tex}
 
 \subsection{Pre--Post Measures}
