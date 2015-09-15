@@ -69,7 +69,7 @@
 \author{Paul Sharpe}
 \affiliation{University of Exeter}
 \leftheader{Attentional bias modification of rumination towards a self-relevant goal: A case-series}
-\abstract{300 words max}
+\abstract{}
 \authornote{I certify that all material in this dissertation \textbf{which
 is not my own work} has been identified with appropriate acknowledgement
 and referencing and I also certify that no material is included for
@@ -104,8 +104,8 @@ which a degree has previously been conferred upon me.}
 
 \begin{document}\thispagestyle{empty}
 \setlength{\marginparwidth}{1cm}
-\todototoc
-\listoftodos[Todo list]
+%\todototoc
+%\listoftodos[Todo list]
 \maketitle
 \pdfbookmark{\contentsname}{toc}
 %\tableofcontents
@@ -113,12 +113,6 @@ which a degree has previously been conferred upon me.}
 \printcontents[sections]{l}{1}{\setcounter{tocdepth}{2}}
 \newpage
 %\clearpage\setcounter{page}{1}
-
-\todo{aspell}
-\todo{BODY: 8000 words max excluding toc, footnotes, tables, figures, references}
-\todo{ABSTRACT use keywords (suggestion < 13)}
-\todo{check draft against Monsell and Pinker}
-\todo{Word count of main text on front page (latexcount.pl)}
 
 \section{Introduction}
 \label{sec:introduction}
@@ -250,79 +244,57 @@ distinguishing worry from rumination remains problematic.
 
 The underlying mechanisms of rumination are less
 well understood than their affective consequences
-\parencite{koster_understanding_2011}. For example, it remains unclear
-whether rumination is an automatic or consciously controlled process
-\textcite{smith_roadmap_2009}. Nevertheless, numerous studies indicate
-that a range of cognitive biases common across anxiety and depression
-may also play a role in rumination. These included biases of attention,
-memory, interpretation, inhibitory control, emotional associations and
-intrusive thoughts \parencite{mathews_cognitive_2005}.
-
-Attentional bias
-
-What attentional bias is.
-Dot-probe is the measure
-
-"rumination was related to attentional switching impairments,
-specifically in the context of emotional information"
-\parencite{koster_rumination_2013}
-
-
-
-\textcite{koster_understanding_2011} claim that cued repetitive
-thought per-se is a normal cognitive response to self-evaluation,
-but hypothesise that one driver of RNT, particularly brooding is an
-impaired attentional ability to disengage from negative thoughts
-\textcite{koster_understanding_2011}.
-
-A cognitive correlate of worry is a disruption in attention-focusing
-ability \parencite{borkovec_preliminary_1983}.
-
-
-Causality mixed findings
-
-"it could still be the case that rumination leads to impaired attentional
-control, instead of attentional impairments being causally involved in
-the emergence and maintenance of rumination."
-
-"a causal relationship between rumination and positive attentional bias
-has been empirically established for the first time." \parencite{morrison_role_2008}
-I was testing decreased negative bias which isn't the same and they didn't find!
+\parencite{koster_understanding_2011}. For example, it remains
+unclear whether rumination is an automatic or consciously
+controlled process \textcite{smith_roadmap_2009}. Nevertheless,
+numerous studies indicate that a range of cognitive biases
+which are common across anxiety and depression may also play a
+role in rumination. These included biases of attention, memory,
+interpretation, inhibitory control, emotional associations and
+intrusive thoughts \parencite{mathews_cognitive_2005}. Attentional
+bias is a disproportionate attentional sensitivity to internal
+or external stimuli \parencite{williams_cognitive_1988}. One
+unresolved hypothesis is whether depressive rumination, is caused,
+at least in part, by an impaired ability to disengage attention from
+negative thoughts \textcite{koster_understanding_2011}. Disruption
+in attention-focusing ability is also a cognitive correlate of worry
+\parencite{borkovec_preliminary_1983}. It also remains unclear to
+what extent attentional bias results in rumination or rumination
+leads to attentional bias \textcite{koster_understanding_2011}.
+Although \parencite{morrison_role_2008} found a causal relationship
+between rumination and positive attentional bias, they did not find the
+relationship between rumination and decreased negative bias, which would
+be required to support the disengagement hypothesis. However, there is
+evidence in support of this hypothesis.  In a double-blind, randomised
+controlled with individuals having mild to severe depressive symptoms,
+\textcite{yang_attention_2015} demonstrated that modifying attentional
+bias led to reductions in rumination and depressive symptoms and that
+the reductions in depressive symptoms was mediated by rumination
 
 \paragraph{Cognitive bias modification}
 
-There is CBM-I ...
+There is CBM-I, CBM-X ...
 
 ... but this is about CBM-A
 
-\paragraph{RAT}
+The dot-probe task measures
+attentional bias using differences in response times to pairs of visual
+stimuli with differing affective valence, such as negative and neutral
+word pairs \parencite{macleod_attentional_1986}.
 
- \parencite{smith_roadmap_2009}
-"Given that a broader conceptualization of rumination is proposed here,
-specificity to depression cannot be assumed, and it is suggested that
-multiple measures of outcome are appropriate." supported by underlying similarity in worry and rumination.
-
-Although it is resistant to change \textcite{watkins_habitgoal_2014},
-it seems possible that habitual rumination could be altered using
-counterconditioning techniques.
-
-Counterconditioning is one of
-the basic mechanisms which cognitive bias modification (CBM)
-employs in the form of repetitive computer tasks to attenuate
-attentional, interpretive and memory biases associated with
-negative emotional states \parencite{hertel_cognitive_2011}.
-
-Randomised
-controlled trials indicate that CBM may be an effective treatment
+Randomised controlled trials indicate that CBM may be an effective treatment
 for anxiety \parencite{hakamata_attention_2010} and depression
-\parencite{yang_attention_2015}.  Attentional bias modification (ABM)
+\parencite{yang_attention_2015}.
+
+Attentional bias modification (ABM)
 is a common form of CBM training in which participants use a computer
 task to repeatedly attend towards or away from a particular stimulus such
 as negatively valenced words or pictures \parencite[see][for a recent
 review]{macleod_attentional_2015}.  This type of training resembles the
 counterconditioning mechanism which \textcite{watkins_habitgoal_2014}
- suggest may reduce RNT.
+suggest may reduce RNT.
 
+Meta-analysis critique of small effect sizes
 
 "we stressed the critical need to distinguish the question of whether a
 putative ABM training procedure successfully induces the intended pattern
@@ -331,12 +303,36 @@ question of whether successful modification of selective attentional
 responding to threat significantly alters dispositional and dysfunctional
 anxiety." \textcite{macleod_attentional_2015}.
 
-A double-blind, randomised controlled trial of ABM in individuals having
-mild to severe depressive symptoms \textcite{yang_attention_2015} met both
-criteria, demonstrating a post-training change in attentional bias which
-mediated reductions in rumination and depressive symptoms. Furthermore,
-reductions in depressive symptoms was mediated by rumination
-\parencite{yang_attention_2015}.
+\textcite{yang_attention_2015} met both criteria
+
+"reduction in rumination is an effective treatment component of ABM
+training on depression" \parencite{yang_attention_2015}.
+
+Although it is resistant to change \textcite{watkins_habitgoal_2014},
+it seems possible that habitual rumination could be altered using
+counterconditioning techniques.
+
+\paragraph{RAT}
+
+GAP
+
+Most studies which examine rumination towards current concerns,
+use the emotional Stroop task as a measure of attentional bias
+\parencite{williams_cognitive_1988}. By using the dot-probe task, the
+current study aims to measure attentional bias towards a current concern
+and then measure the effects of modifying the bias using ABM training
+in the form of a modified dot-probe. Given the broad conceptualization
+of rumination, \textcite{smith_roadmap_2009} recommend using multiple
+outcome measures. The difficulties in distinguising
+ rumination from worry and the comorbidity of anxiety and depression also
+ suggest multiple measures. As such, the current study measures trait and
+ state rumination, trait worry, mood variables, anxiety and depression.
+
+Counterconditioning is one of
+the basic mechanisms which cognitive bias modification (CBM)
+employs in the form of repetitive computer tasks to attenuate
+attentional, interpretive and memory biases associated with
+negative emotional states \parencite{hertel_cognitive_2011}.
 
 \textcite{yang_attention_2015} used laboratory-based ABM training using
 sad word stimuli. The proposed study aims to extend these findings by
@@ -344,25 +340,15 @@ testing whether ABM reduces RNT and elevates mood in non-depressed,
 high ruminators exposed to abstract, negative, ideographic cue words
 associated with an incomplete self-relevant goal.
 
-"reduction in rumination is an effective treatment component of ABM
-training on depression" \parencite{yang_attention_2015}.
+This is a novel and more direct test of RNT and a potential
+intervention to reduce rumination and treat anxiety and depression.
 
-This is a novel and more direct test of RNT
+can I argue (using Macleod's meta analysis critique) that I'm getting closer to causality?
 
-GAP: effects of ABM on current concerns/goal progress theory hasn't been tested
+\paragraph{WTD}
 
-well it has, but mostly with emotional Stroop (see Williams et al.)
+The current study measures both worry and rumination
 
-A novel intervention to reduce rumination and treat anxiety and depression.
-
-\paragraph{RAT/WTD}
-
-
-The current study measures both worry and rumination because of what I said about worry!
-
-Because the 
-Anxiety and depression were measured due to their close association, and
-uncertainty whether the procedure would affect rumination, worry or both.
 
 Specific hypotheses were as follows:
 
@@ -536,16 +522,12 @@ on the PANAS-SF were asked in relation to the last 24 hours.
 
 \subsubsection{Dot-probe task}
 
-The dot-probe task is commonly used to measure attentional bias,
-based on differences in response times to pairs of stimuli
-with differing affective valence, such as negative and neutral
-word pairs \parencite{macleod_attentional_1986}. Our study used
-word-pair stimuli (see figure \ref{fig:dotprobe}) and was based
-on \textcite{yang_attention_2015}. We used two sets of visual word
-stimuli in the dot-probe task. A set of Negative-Neutral (N-word)
-pairs based on affective norms \parencite{citron_how_2014}, and a set
-of Ideographic-Neutral (I-word) pairs associated with a current concern
-chosen by each participant.
+Our version of the dot-probe task used word-pair stimuli (see figure
+\ref{fig:dotprobe}) and was based on \textcite{yang_attention_2015}. We
+used two sets of visual word stimuli in the dot-probe task. A
+set of Negative-Neutral (N-word) pairs based on affective norms
+\parencite{citron_how_2014}, and a set of Ideographic-Neutral (I-word)
+pairs associated with a current concern chosen by each participant.
 
 \begin{figure}[!ht]
   \centering
@@ -1406,9 +1388,28 @@ others." \parencite{zvielli_dynamics_2014}
 
 Perhaps this is reflected in my results for worriers? Hmm, were they "threatened" by their concern?
 
-\subsection{My ruminative thoughts!}
+Underpowered to detect changes in rumination (RRS) and worry (PSWQ) and
+both of these measures showed moderate but non-significant effects. Might
+be significant with more power.
 
-*Causality* is still unclear and under researched so RFW.
+\subsubsection{Limitations}
+
+\begin{itemize}
+\item Why didn't I measure change in the RRS brooding subscale?
+\item self-report measures
+\item Longevity of effects treatment? Would ABA revert?
+\item What happens when problem resolves?
+\item Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.
+\item Not sure about correlations between PANAS-SF and depression
+\item Didn't MBD analysis due to differing numbers of sessions.
+\end{itemize}
+
+"the provision of explicit information and instructed practice in
+the desired pattern of attentional selectivity, while potentially
+enhancing patient acceptability with CBM-A, may eliminate its capacity
+to effectively alter anxiety vulnerability." \parencite{grafton_when_2014}
+
+\subsection{My ruminative thoughts!}
 
 Were the goals chosen "higher order"? \parencite{martin_ruminative_1996}
 
@@ -1431,22 +1432,26 @@ and subsequently cued by contingent contexts such as mood or physical
 location.  They suggest that such automatic, habitual responses come to
 depend on context more than the content of particular unresolved goals,
 especially when contingent responses involve passive focus on abstractly
-construed, negative content. \todo{I'm only really testing this in one
-(uncontrolled) context i.e. at home, and not controlling time of day, mood or degree of state rumination.}
+construed, negative content.
 
-Causes
+I only really tested this in one (uncontrolled) context i.e. at home,
+and not controlling time of day, mood or degree of state rumination.
+
+"rumination was related to attentional switching impairments,
+specifically in the context of emotional information"
+\parencite{koster_rumination_2013}
+
+\subsection{Causes}
+
+*Causality* is still unclear and under researched so RFW.
 
 Martin, Shrira and Startup \parencite{papageorgiou_depressive_2004}
 suggest a list of causes even within the goal progress theory model,
 all of which would require different treatment approaches.
 
 RFW: Establish the likely cause(s) before testing potential
-antidotes! Also need to subsequently match the right treatment. Maybe
+cures! Also need to subsequently match the right treatment. Maybe
 this explains why treatments are ineffective? More, not less research.
-
-Underpowered to detect changes in rumination (RRS) and worry (PSWQ) and
-both of these measures showed moderate but non-significant effects. Might
-be significant with more power.
 
 \subsection{Does CBM-A work?}
 
@@ -1490,24 +1495,7 @@ participants.} \parencite{schultheiss_role_2008}
 \item What is an effective dose?
 \end{itemize}
 
-\subsubsection{Limitations}
-
-\begin{itemize}
-\item Why didn't I measure change in the RRS brooding subscale?
-\item self-report measures
-\item Longevity of effects treatment? Would ABA revert?
-\item What happens when problem resolves?
-\item Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.
-\item Not sure about correlations between PANAS-SF and depression
-\item Didn't MBD analysis due to differing numbers of sessions.
-\end{itemize}
-
-"the provision of explicit information and instructed practice in
-the desired pattern of attentional selectivity, while potentially
-enhancing patient acceptability with CBM-A, may eliminate its capacity
-to effectively alter anxiety vulnerability." \parencite{grafton_when_2014}
-
-\subsubsection{RFW}
+\subsection{RFW}
 
 Inhibitory control \parencite{koster_understanding_2011}.
 
