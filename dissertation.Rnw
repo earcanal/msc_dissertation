@@ -69,7 +69,29 @@
 \author{Paul Sharpe}
 \affiliation{University of Exeter}
 \leftheader{Attentional bias modification of rumination towards a self-relevant goal: A case-series}
-\abstract{}
+\abstract{Rumination and worry are thinking styles closely associated
+with depression and anxiety. Attention is one of a number of cognitive
+process which, when biased, are associated with these emotional
+disorders. Goal progress theory suggests that rumination occurs when
+there are discrepancies in progress towards a goal. Depressive rumination
+has also been hypothesised as resulting from an impaired ability to
+disengage attention from negative thoughts. To test this theory and
+hypothesis, the current study measures the effects of attentional bias
+modification (ABM) towards negative words, and words associated with a
+current concern. Participants were 12 (10 female) university students
+of staff scoring low for depression but high for trait rumination
+and/or trait worry. This was a non-concurrent, multiple baseline
+case-series replication in which each participant completed between
+25--35 sessions, a minimum of 8 including ABM training. Participants
+ran dot-probe tasks on their own computers designed to first measure,
+then modify attentional bias towards a general set of negative words and
+words associated with a current concern of their choosing. There were
+no significant post-training effects on trait rumination, trait worry,
+depression and anxiety. Randomisation tests showed a significant reduction
+in attentional bias towards negative words, but no post ABM differences
+in attentional bias towards current concern words, rumination towards
+the concern itself, positive affect, negative affect or depression.}
+
 \authornote{I certify that all material in this dissertation \textbf{which
 is not my own work} has been identified with appropriate acknowledgement
 and referencing and I also certify that no material is included for
