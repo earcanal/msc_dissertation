@@ -123,7 +123,7 @@ household survey \parencite{mcmanus_adult_2009}. Whilst this
 reflects a level of stability in prevalence over the preceding
 7 years, \textcite{mathers_projections_2006} project that in
 2030, unipolar depression will be the 2nd most common cause of
-disability-adjusted life years (DALY). Based on 2007 prevalance rates,
+disability-adjusted life years (DALY). Based on 2007 prevalence rates,
 \textcite{mccrone_paying_2008} estimate that the combined cost of
 depression and anxiety services in England in 2026 will be \pounds5
 billion, with lost employment bringing the total cost to \pounds26.4
@@ -137,7 +137,7 @@ Despite their strong evidence-base, pharmacological and psychological
 treatments are only partially effective. Combinations of these
 treatments are effective at treating depression in about 33\%  of
 cases \parencite{andrews_utilising_2004}, and CBT, the gold standard
-psychological treatments, has response reates of 50\% or less for
+psychological treatments, has response rates of 50\% or less for
 treating anxiety disorders \parencite{schneider_state_2015}. There
 is some evidence that the efficacy of CBT for treating depression
 is falling \parencite{johnsen_effects_2015}, and the high costs
@@ -147,8 +147,8 @@ waiting times in Britain currently average six to nine months
 may improve cost-effective treatment delivery. I-CBT is a viable
 treatment for adults with depression and some anxiety disorders
 \parencite{arnberg_internetdelivered_2014}, and mobile apps including
-real-time monitoring of mood and behavior could also contribute
-\parencite{cuijpers_psychotherapies_2015}. More reasearch is required
+real-time monitoring of mood and behaviour could also contribute
+\parencite{cuijpers_psychotherapies_2015}. More research is required
 to ascertain whether this potential can be realised in practice.
 An expanded understanding of the role played by cognitive mechanisms
 such as attention and memory in mood disorders is reflected in the
@@ -181,7 +181,7 @@ response to depressed mood where a person tends to focus on
 mood and depressive episodes. A significant output from RST is the
 Ruminative Responses Scale (RRS) \parencite{treynor_rumination_2003},
 considered to be the gold standard trait measure of rumination, with
-subscales which can distinguish maladaptive rumination in the form of
+sub scales which can distinguish maladaptive rumination in the form of
 'depressive brooding' from the more adaptive 'reflective pondering'. In
 support of RST, positive positive distractions have been shown to
 significantly reduce depression in dysphoric people over short time
@@ -214,7 +214,7 @@ emotion. Where progress towards resolving a current concern is slower than
 expected, priming will potentiate internal and external cues on related
 themes to draw attention to the discrepancy. Similarly, negative affect
 will draw attention to the unsatisfactory goal progress. This account
-explains why targetting underlying goal discrepancies may provide more
+explains why targeting underlying goal discrepancies may provide more
 long term relief from the negative affect associated with rumination
 than distraction interventions.
 
@@ -228,15 +228,15 @@ Temporal distinctions suggest that rumination primarily focuses on
 past events, whereas worry tends to focus on events in the future
 \parencite{papageorgiou_depressive_2004,watkins_comparisons_2005}.
 However, although \textcite{mclaughlin_effects_2007} confirmed this
-genereral distinction, they also found that induced rumination began as
-past-focussed but then displayed a linear trend towards thoughts about the
+general distinction, they also found that induced rumination began as
+past-focused but then displayed a linear trend towards thoughts about the
 present and finally the future. Whilst rumination is linked depression
 levels and predicts the onset of depressive episodes, it also predicts
 symptoms of anxiety \parencite{nolen-hoeksema_role_2000}. Both forms
 of repetitive negative thought regularly occur in the same individual,
 which suggests that they may share common underlying processes (at least
 in non-clinical populations) \parencite{watkins_comparisons_2005}. This
-is consistent with the common comorbidity of anxiety and depression
+is consistent with the common co-morbidity of anxiety and depression
 \parencite{kessler_impairment_1999}. Studies which have directly compared
 rumination and worry support a hypothesis that similar cognitive control
 impairments may play \parencite{beckwe_worrying_2014}. In summary,
@@ -286,8 +286,8 @@ indicated that ABM may be an effective treatment for anxiety
 shown to reduce depression \parencite{yang_attention_2015}. Critics of
 CBM argue that the effect sizes are too small to be clinically relevant
 \parencite{cristea_efficacy_2015}. However, advocates argue that this
-critique is based on meta-anlyses which don't differentiate ABM from
-other forms of CBM, which don't focus on a single psychological disfunction
+critique is based on meta-analyses which don't differentiate ABM from
+other forms of CBM, which don't focus on a single psychological dysfunction
 (anxiety), or analyse studies which demonstrate both attentional bias
 change ${and}$ corresponding symptom change. It is important to note, that
 in demonstrating the mediating role of rumination in reducing depressive
@@ -298,15 +298,15 @@ been able to measure attentional bias using the emotional Stroop task
 \parencite{williams_cognitive_1988}. The current study aims to extend
 these findings by using the dot-probe task to measure such attentional
 biases, and to then test the effects of ABM training designed to reduce
-vigilence towards negative words, and words associated with the current
+vigilance towards negative words, and words associated with the current
 concern. In other words, the study tests the attentional disengagement
 hypothesis \parencite{koster_understanding_2011} in relation to the goal
 progress theory of rumination \parencite{martin_ruminative_1996}. This is
-a novel test of the potential for ABM training to offer a personlised,
+a novel test of the potential for ABM training to offer a personalised,
 cost-effective treatment for anxiety and depression. Given the various
-conceptualizations of rumination, \textcite{smith_roadmap_2009} recommend
-using multiple outcome measures. The difficulties in distinguising
-rumination from worry, and the common comorbidity of anxiety and
+conceptualisations of rumination, \textcite{smith_roadmap_2009} recommend
+using multiple outcome measures. The difficulties in distinguishing
+rumination from worry, and the common co-morbidity of anxiety and
 depression also suggest multiple measures are appropriate. The current
 study measures the effects of ABM on trait and state rumination, trait
 worry, mood variables, anxiety and depression. Finally, the study aims to
@@ -330,20 +330,20 @@ and depression will change after ABM training.
 
 The current study included a novel use of ABM training towards an
 ideographic current concern, and required a small number of participants
-to undertake long-term training. To balance the exploratary nature
+to undertake long-term training. To balance the exploratory nature
 of the research with the ability to make statistical inferences
-from the results we chose a randomized, single-case series design
+from the results we chose a randomised, single-case series design
 \parencite{bulte_r_2008}. In this type of design, a series of baseline
 (phase A) measures are compared against those after the (ABM training)
 intervention (phase B) \parencite{bulte_r_2008}. The overall design
-can be considered a nonconcurrent, multiple baseline replication
+can be considered a non-concurrent, multiple baseline replication
 across participants \parencite{watson_nonconcurrent_1981}. That is
-to say, there were muliple participants (case-series), which started
+to say, there were multiple participants (case-series), which started
 at different times, and the time point of transition to phase B
 in each was chosen randomly in advance. Whilst the design lacks a
 control condition, it does provide some controls against alternative
 explanations of effects. Replication across participants controls for
-individual regression to the mean, variable phase A durations controls
+individual regression to the mean, variable phase A duration controls
 for baseline assessment effects, and randomised transition to phase
 B controls for extraneous events correlated with phase transition
 \parencite{watson_nonconcurrent_1981,watkins_ruminationfocused_2007}.
@@ -529,7 +529,7 @@ and attentional biases in depression are critically dependent on longer
 frequency at upper and lower locations. The only valid keyboard responses
 were greater than (\texttt{>}) and less than (\texttt{<}). The probe
 remained on the screen until the participant pressed a valid key. A
-correct response was recorded if the keypress matched the probe
+correct response was recorded if the key-press matched the probe
 symbol. There was no feedback for incorrect responses. A blank screen
 with a random inter-trial interval (ITI) between 100-500ms followed
 each trial. Participants were instructed to respond as quickly and
@@ -540,7 +540,7 @@ The task was developed using OpenSesame, an open-source experiment builder
 for the social sciences \parencite{mathot_opensesame_2011}. OpenSesame
 was chosen as a package which was relatively easy to install on Windows,
 Macintosh (OSX ${\geq}$ 10.9) and Linux operating systems, thereby
-eliminating any dependencies on a webserver for software development or
+eliminating any dependencies on a web server for software development or
 data collection. Installation instructions for were created using screen
 capture software and uploaded to YouTube.
 
@@ -671,7 +671,7 @@ noting any which known to be difficult to match with a pair from the
 neutral word database. These including plurals, acronyms, hyphenated
 words, words with stems related to an N-word or words longer than
 10 characters. After completing the practice block, participants were
-instructed to replace any invalid words with synonyms or wth alternatives
+instructed to replace any invalid words with synonyms or with alternatives
 from their list, where these were available. Care was taken to ensure that
 the semantics of any adjusted words were chosen by the participant without
 influence from the experimenter (see \cref{sec:iwordinstructions}). All
@@ -702,12 +702,12 @@ protocol).
 The experimenter then prepared the files required for the
 participant to run the computer task. These consisted of the
 dot-probe/ABM program, I-word pairs, N-word pairs, the participant's
-randomization schedule\footnote{Randomization schedules were
+randomisation schedule\footnote{Randomisation schedules were
 generated using the \texttt{SCRT} \parencite{bulte_r_2008} function
 \texttt{selectdesign(design=AB,MT=35,limit=8)}.}, a stimulus
 configuration file and a configuration file to position stimuli based
 on the participant's screen height. These files were emailed to the
-participant for installallation.
+participant for installation.
 
 \subsubsection{Case-series}
 
@@ -719,15 +719,15 @@ included a link to the installation video on YouTube. Participants
 began each session by completing the dot-probe task (phase A) or the ABM
 training, followed by the dot-probe (phase B). Using a web browser, they
 then used Lime Survey to upload their task data, record whether their
-conern was still unresolved and complete PANAS-SF and GRS measures. On
+concern was still unresolved and complete PANAS-SF and GRS measures. On
 a daily basis, the experimenter recorded whether each participant
 had completed a session and, if so, their accuracy on the task. The
 experimenter periodically sent additional emails to motivate participants
 by notifying them of their progress, to ensure their well-being if 3
 consecutive sessions were skipped, and to prepare them for the slightly
-longer task when transitioning to phase B. From session 25 onwards,
+longer task when transitioning to phase B. From session 25 onward,
 sessions ended with a message informing the participant of the amount
-they had earnt so far. Participants provided post-intervention RRS,
+they had earned so far. Participants provided post-intervention RRS,
 PHQ-9, GAD-7 and PSWQ measures using the Lime Survey website within
 approximately 12 hours of completing the final session. On exiting the study, all
 participants were emailed debrief information \cref{app:debrief} and
@@ -741,12 +741,12 @@ pairs and 6 N-word pairs. Session 1 used pairs 1--6 from the 66 N-word
 set, session 2 used pairs 7--12, and so on. Thus, bias associated with
 the participant's ideographic words was measured at every session,
 whereas the more general negative valence associated with N-words was
-distributed across measurment times. In phase B, dot-probe measurement was
-preceeded by ABM blocks containing only N-words. To detect ${generalised}$
+distributed across measurement times. In phase B, dot-probe measurement was
+preceded by ABM blocks containing only N-words. To detect ${generalised}$
 changes in attentional bias in relation to emotional valence, rather
 than changes in bias to specific stimuli \parencite{see_reduction_2009},
 phase B dot-probe blocks only contained N-words not previously exposed in
-any preceding ABM block. To guarantee enough stimuli when randomization
+any preceding ABM block. To guarantee enough stimuli when randomisation
 resulted in a long phase B, the same 6 N-words were used for 3 consecutive
 ABM training sessions. N-words from previous ABM blocks were included in
 subsequent ABM blocks. For example, the first 3 ABM blocks used N-words
@@ -774,7 +774,7 @@ participants. No participants triggered the risk protocol.
 
 A potential risk of harm was identified arising from increasing
 rumination in high trait ruminators, along with the burden of a long
-testing period. The experimenter mitigatated this risk by keeping in
+testing period. The experimenter mitigated this risk by keeping in
 regular contact with participants, notably when more than two testing
 sessions were skipped. Any concerns were raised with the researcher's
 supervisor. On leaving the study, all participants were emailed a copy
@@ -854,7 +854,7 @@ possibly anxiety (GAD-7), but underpowered to detect changes in rumination
 \subsection{Case-series}
 
 Given the lack of power for some pre-post comparisons, the primary
-analyses were visual inspection of graphs and randomization tests
+analyses were visual inspection of graphs and randomisation tests
 comparing A and B phases in each case-series for measures of attentional
 bias (I-words and N-words), state rumination (GRS) and mood (PANAS-SF).
 Visual analyses were carried out using time-series graphs generated
@@ -862,17 +862,17 @@ by the R package \texttt{SCVA}\footnote{Minor modifications were
 made to the \texttt{SCVA} package to standardise y-axis ranges and to
 plot central tendency, trend and variance lines on the same graph.}
 \parencite{bulte_when_2012}. Inferential statistics were calculated for
-each participant using randomization tests provided by the R package
+each participant using randomisation tests provided by the R package
 \texttt{SCRT} \parencite{bulte_r_2008}.
 
-Randomization is a nonparametric approach which allows inferential
+Randomisation is a nonparametric approach which allows inferential
 statistics to be calculated using data from a single-case series
 \parencite{bulte_r_2008}. In an AB design, the phase sequence (baseline
 followed by intervention) is fixed, therefore it is the point at
-which phase A transitions to phase B which is randomized. Under
+which phase A transitions to phase B which is randomised. Under
 the null hypothesis, a test statistic for a particular set of
 observations would not differ regardless of where the transition
-from A to B occurs. Randomization tests hold the observation scores
+from A to B occurs. Randomisation tests hold the observation scores
 constant and calculate the test statistic for all possible transition
 permutations. Once sorted, the ${p}$ value is the proportion of
 test statistics greater than or equal to the observed test statistic
@@ -880,12 +880,12 @@ test statistics greater than or equal to the observed test statistic
 (test statistic = \texttt{A-B}) was performed for N-word attentional bias
 scores as these were predicted to be more negative after ABM training. All
 other randomisation tests were two-tailed (test statistic = \(\lvert
-\texttt{A-B}\rvert\)).  In addition to the single-case randomization
+\texttt{A-B}\rvert\)).  In addition to the single-case randomisation
 tests, a meta-analysis \parencite[][p.64]{onghena_customization_2005}
 was carried out across all participants for each outcome measure using
 the R package \texttt{SCMA} \parencite{bulte_singlecase_2013}. This
 allowed for significance testing across participants above the
-${p}$=.05 level, even though the randomization tests could not detect
+${p}$=.05 level, even though the randomisation tests could not detect
 significance at this level for participants who completed less than
 35 sessions. The meta-analysis used an additive approach, which has
 a greater probability of yielding significant results when there are
@@ -923,14 +923,14 @@ atypical and there were participants scoring higher on both RRS and PSWQ
 who nevertheless completed the study. For the remaining participants,
 dot-probe/ABM accuracy was above our a priori inclusion threshold of
 75\% (see \cref{tab:completed}) and the current concern chosen by each
-participant at the preparatory session remained unresolved througout the
+participant at the preparatory session remained unresolved throughout the
 study. Session 32 for participant 7 was omitted from the analyses as the
 dot-probe data file for this session was truncated. Session 8 GRS and
 PANAS-SF scores for participant 16 were brought forward from session 7,
 as the participant completed the dot-probe but not the measures during
 session 8, but advised within 12 hours that the scores would have
 been identical. To remain in the study, participant 5 switched from a
-Windows to Macintosh computer from session 21 onwards, and participant
+Windows to Macintosh computer from session 21 onward, and participant
 19 completed later sessions in a different country from the one in which
 they began the study.
 
@@ -943,7 +943,7 @@ they began the study.
 Comparisons between outcome measures pre and post ABM training
 are summarised in \cref{tab:prepost}. There were no outliers
 (> 3SD) on GAD-7, PHQ-9, PSWQ or RRS scores before or after ABM
-training. Cronbach's $\alpha$ was acceptible for GAD-7 and PSWQ, good
+training. Cronbach's $\alpha$ was acceptable for GAD-7 and PSWQ, good
 for PHQ-9 and and excellent for RRS. There were no significant pre-post
 ABM training differences (all ${P}$s {\textgreater} .05) on any of these
 outcomes. There was a small increase in trait anxiety (GAD-7, ${d}$ =
@@ -1148,10 +1148,10 @@ trimmed trended range (see \cref{analyses}).}
 Visual inspection indicated increased PA for most participants. Changes in
 PA scores are summarised in \crefrange{fig:va-pa-a}{fig:va-pa-b}. Relative
 to phase A, BMED phase B PA scores increased in 7 participants (5, 9,
-10, 11, 15, 18 and notably 6), decreased slighly in 3 participants (8,
+10, 11, 15, 18 and notably 6), decreased slightly in 3 participants (8,
 12 and 19), decreased more markedly in participant 16 and remained stable
 in participant 7. Where there was a linear fit, phase A PA showed an
-upward trend for 6 participants, being espcially steep for participant
+upward trend for 6 participants, being especially steep for participant
 9, a downward trend for 2 participants, and was relatively stable for
 2 participants. Where there was a linear fit in both phases, trends
 continued in the same direction for participants 11 and 15, and became
@@ -1198,7 +1198,7 @@ NA scores are summarised in \crefrange{fig:va-na-a}{fig:va-na-b}. Relative
 to phase A, BMED phase B NA scores decreased in 8 participants (5, 6, 9,
 10, 11, 12, 15, 16 and 18), and increased in 3 participants (7, 8 and
 19). Where there was a linear fit, phase A NA showed an downward trend
-for 6 participants being espcially steep for participant 18, an upward
+for 6 participants being especially steep for participant 18, an upward
 trend for 1 participant and was relatively flat for 2 participants.
 Where there was a linear fit in both phases, trends continued downwards
 for participants 6, 11 and 12, and reversed sharply from positive
@@ -1247,7 +1247,7 @@ moderate to low for all participants. Relative to phase A, BMED phase
 B depression scores decreased in 7 participants (6, 8, 9, 11, 12, 15
 and 18 ), increased in 4 participants (5, 10, 16 and 19) and remained
 the same in participant 7. Where there was a linear fit, phase A NA
-showed an downward trend for 4 participants being espcially steep
+showed an downward trend for 4 participants being especially steep
 for participants 9 and 18, an upward trend for 1 participant and was
 relatively flat for 4 participants. Where there was a linear fit in
 both phases, trends continued in the same direction for participants 7,
@@ -1377,7 +1377,7 @@ Were the goals chosen "higher order"? \parencite{martin_ruminative_1996}
 
 \textcite{martin_ruminative_1996} don't claim that goal discrepancies
 are the exclusive cause of rumination. So it could be a different cause in
-this sample. While they calim the rebound effect of thought suppression
+this sample. While they claim the rebound effect of thought suppression
 can be explained in terms of goal discrepancies they say it may also
 occur in the absence of them, notably in the case of worry.
 
@@ -1445,7 +1445,7 @@ at home} \parencite{linetzky_quantitative_2015}
 
 \enquote{Thus, people with high implicit motivation were less prone to ruminate
 about their goals and people with high goal commitment were more likely
-to ruminate. This effect was qual- ified by a marginally significant
+to ruminate. This effect was qualified- ified by a marginally significant
 goal commitment x implicit motivation effect, B = 0.319, SE = 0.177,
 t(91) = 1.80, p = .07. As shown in Table 5, the interaction was due to a
 damping effect of implicit motivation on goal rumination in low-commitment
@@ -1480,9 +1480,9 @@ beneficial bottom-up treatments before research has fully tested the
 hypotheses that these approaches are generating.
 
 Don't throw the baby out with the bathwater. Internet delivery in itself
-could provide oppotunities for more precise measurement and personalised
+could provide opportunities for more precise measurement and personalised
 treatments using experience sampling/EMA. Especially with case-series
-approach and randomization tests.
+approach and randomisation tests.
 
 On the one hand this adds to the absence of evidence. On the other hand
 it provides methods which add to the body of evidence which distinguish
