@@ -242,10 +242,9 @@ rumination and worry support a hypothesis that similar cognitive control
 impairments may play \parencite{beckwe_worrying_2014}. In summary,
 distinguishing worry from rumination remains problematic.
 
-The underlying mechanisms of rumination are less
-well understood than their affective consequences
-\parencite{koster_understanding_2011}. For example, it remains
-unclear whether rumination is an automatic or consciously
+The mechanisms underlying rumination are less well understood than their
+affective consequences \parencite{koster_understanding_2011}. For example,
+it remains unclear whether rumination is an automatic or consciously
 controlled process \textcite{smith_roadmap_2009}. Nevertheless,
 numerous studies indicate that a range of cognitive biases
 which are common across anxiety and depression may also play a

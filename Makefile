@@ -7,6 +7,9 @@ dissertation: completed analyse
 table:
 	pdflatex table.tex
 
+stim:
+	pdflatex procedure/stimtest.tex
+
 analyse:
 	../opensesame/dotprobe/analyse.R
 
