@@ -144,163 +144,174 @@ which a degree has previously been conferred upon me.}
 \section{Introduction}
 \label{sec:introduction}
 
-Mixed depression and anxiety is a major public health challenge,
-reported as being present in 9.0\% of English adults in the most
-household survey \parencite{mcmanus_adult_2009}. Whilst this
-reflects a level of stability in prevalence over the preceding
-7 years, \textcite{mathers_projections_2006} project that in
-2030, unipolar depression will be the 2nd most common cause of
-disability-adjusted life years (DALY). Based on 2007 prevalence rates,
-\textcite{mccrone_paying_2008} estimate that the combined cost of
-depression and anxiety services in England in 2026 will be \pounds5
-billion, with lost employment bringing the total cost to \pounds26.4
-billion. To address these issues, \textcite{mccrone_paying_2008}
-recommend expanding provision of evidence-based interventions in
-primary care settings with a focus on the most cost-effective means
-of delivery, such as Internet delivered cognitive behavioural therapy
-(I-CBT).
+Anxiety and depression are major challenges to public health and
+are commonly co-morbid \parencite{kessler_impairment_1999}. For
+example, mixed depression and anxiety were reported as being
+present in 9.0\% of English adults in the most recent household
+survey \parencite{mcmanus_adult_2009}. Whilst this reflects
+a level of stability in prevalence over the preceding 7 years,
+\textcite{mathers_projections_2006} project that in 2030, unipolar
+depression will be the second most common cause of disability-adjusted
+life years. Based on 2007 prevalence rates, \textcite{mccrone_paying_2008}
+estimate that the combined cost of depression and anxiety services
+in England in 2026 will be \pounds5 billion, with lost employment
+bringing the total cost to \pounds26.4 billion. To address these
+issues, \textcite{mccrone_paying_2008} recommend expanding provision of
+evidence-based interventions in primary care settings with a focus on
+the most cost-effective means of delivery, such as Internet delivered
+cognitive behavioural therapy (I-CBT).
 
 Despite their strong evidence-base, pharmacological and psychological
 treatments are only partially effective. Combinations of these
 treatments are effective at treating depression in about 33\%  of
 cases \parencite{andrews_utilising_2004}, and CBT, the gold standard
 psychological treatments, has response rates of 50\% or less for
-treating anxiety disorders \parencite{schneider_state_2015}. There
-is some evidence that the efficacy of CBT for treating depression
-is falling \parencite{johnsen_effects_2015}, and the high costs
-associated with delivering psychological therapies mean that
-waiting times in Britain currently average six to nine months
-\parencite{haliwell_fundamental_2007}. Technological advances
-may improve cost-effective treatment delivery. I-CBT is a viable
-treatment for adults with depression and some anxiety disorders
-\parencite{arnberg_internetdelivered_2014}, and mobile apps including
-real-time monitoring of mood and behaviour could also contribute
-\parencite{cuijpers_psychotherapies_2015}. More research is required
-to ascertain whether this potential can be realised in practice.
-An expanded understanding of the role played by cognitive mechanisms
-such as attention and memory in mood disorders is reflected in the
-greater precision of newer treatments. For example, Mindfulness Based
-Cognitive Therapy (MBCT) is a treatment which specifically targets
-depressive relapse \parencite{segal_mindfulnessbased_2012}, which is
-common and becomes increasingly likely with each depressive episode
-\parencite{haliwell_fundamental_2007}. The most effective new treatments
-for depression and anxiety are likely to draw on evidence which explicates
-the role that cognitive mechanisms play in these common disorders,
-and computer tasks offer one cost-effective means of delivery.
+treating anxiety disorders \parencite{schneider_state_2015}. In
+England in May 2015, 96.1\% people referred for a course of
+psychological therapy wait less than 18 weeks for treatment
+\parencite{hsiccommunityandmentalhealthteam_improving_2015}, which is an
+improvement on the British average waiting times of six to nine months
+in 2007 \parencite{haliwell_fundamental_2007}. However, there are
+high costs associated with delivering psychological therapies and some
+evidence that the efficacy of CBT for treating depression is falling
+\parencite{johnsen_effects_2015}.
 
-Rumination is a thinking style closely associated with depression
-and anxiety. A more precise definition distinguishes constructive
-repetitive thought which support planning, problem solving,
-and healthy self-reflection, from extensive evidence linking
-unconstructive repetitive thought with psychological distress
-and physical health difficulties characteristic of depression
-and anxiety \parencite{watkins_constructive_2008}. Although
-rumination as a construct is robust, the ten models and five
-measures reviewed by \textcite{smith_roadmap_2009} demonstrate
-that ``there is no unified definition [...] or standard way of
-measuring it'' \textcite[][p. 117]{smith_roadmap_2009}. Response
-styles theory \parencite[RST; ][]{nolen-hoeksema_responses_1991}
-has been influential in terms of explaining, measuring and treating
-depressive rumination. RST considers rumination to be a particular
-response to depressed mood where a person tends to focus on
-``causes, consequences and symptoms of one's negative affect''
-\parencite[][p. 117]{smith_roadmap_2009} thereby prolonging low
-mood and depressive episodes. A significant output from RST is the
-Ruminative Responses Scale (RRS) \parencite{treynor_rumination_2003},
-considered to be the gold standard trait measure of rumination, with
-sub scales which can distinguish maladaptive rumination in the form of
-'depressive brooding' from the more adaptive 'reflective pondering'. In
-support of RST, positive positive distractions have been shown to
-significantly reduce depression in dysphoric people over short time
-periods \parencite{nolen-hoeksema_rethinking_2008}. However, the temporary
-reduction in depressive symptoms provided by distraction suggests a more
-enduring underlying link between rumination and depression.
+% handle weird gaps that appeared between paragraphs near this page
+\raggedbottom
 
-Goal progress theory \parencite{martin_ruminative_1996} is a more general
-model which proposes that rumination is initiated by unexpected progress
-(more or less) towards a goal\footnote{An extension of the model draws
-on parallel distributed processing to explain discrepancies arising
-amongst ${concurrent}$ goals \parencite{martin_extending_2006}.}. This account
-draws on ideas from control theory \parencite{carver_control_1982}
-in that goal discrepancies represent system states outside of
-desirable thresholds which cognitive process try to restore
-through feedback mechanisms. Rumination is made more likely as a
-result of this deployment of attention, memory and consciousness,
-and will remain so until goal progress becomes satisfactory,
-the goal is perceived as being met or it has been abandoned. For
-\textcite[][p. 7]{martin_ruminative_1996}, rumination is "a class of
-conscious thoughts that revolve around a common instrumental theme and
-that recur in the absence of immediate environmental demands requiring
-the thoughts". A closely related concept is the 'current concern',
-which \textcite[][p.249]{klinger_motivation_2011} define as \enquote{the
-state of an organism between the time it becomes committed to pursuing
-a goal and the time it either gains the goal or abandons the pursuit.}
-Together, goal progress theory and current concerns provide a framework
-for understanding rumination in terms of motivation, cognition and
-emotion. Where progress towards resolving a current concern is slower than
-expected, priming will potentiate internal and external cues on related
-themes to draw attention to the discrepancy. Similarly, negative affect
-will draw attention to the unsatisfactory goal progress. This account
-explains why targeting underlying goal discrepancies may provide more
-long term relief from the negative affect associated with rumination
-than distraction interventions.
+Technological advances may improve cost-effective treatment
+delivery. I-CBT is a viable treatment for adults with depression and
+some anxiety disorders \parencite{arnberg_internetdelivered_2014},
+and mobile apps including real-time monitoring of mood and behaviour
+could also contribute \parencite{cuijpers_psychotherapies_2015}. More
+research is required to ascertain whether this potential can be realised
+in practice.  An expanded understanding of the role played by cognitive
+mechanisms such as attention and memory in mood disorders is reflected
+in the greater precision of newer treatments. For example, Mindfulness
+Based Cognitive Therapy (MBCT) is a treatment which specifically
+targets depressive relapse \parencite{segal_mindfulnessbased_2012},
+which is common and becomes increasingly likely with each depressive
+episode \parencite{haliwell_fundamental_2007}. The most effective new
+treatments for depression and anxiety are likely to draw on evidence
+which explicates the role that cognitive mechanisms play in these common
+disorders, and computer tasks offer one cost-effective means of delivery.
+
+Rumination is a repetitive thinking style closely linked to depression
+and anxiety, which in turn are associated with psychological distress and
+physical health difficulties. A more precise definition of rumination
+distinguishes unconstructive repetitive thoughts associated with
+depression and anxiety, from more constructive forms of repetitive thought
+which support planning, problem solving, and healthy self-reflection
+\parencite{watkins_constructive_2008}.  Whilst there is broad consensus
+regarding the role playted by rumination, the ten models and five
+measures reviewed by \textcite{smith_roadmap_2009} demonstrate that
+``there is no unified definition [...] or standard way of measuring
+it'' \textcite[][p. 117]{smith_roadmap_2009}. Response styles theory
+\parencite[RST; ][]{nolen-hoeksema_responses_1991} has been influential in
+terms of explaining, measuring and treating depressive rumination. RST
+considers rumination to be a particular response to depressed mood
+where a person tends to focus on ``causes, consequences and symptoms
+of one's negative affect'' \parencite[][p. 117]{smith_roadmap_2009}
+thereby prolonging low mood and depressive episodes. The Ruminative
+Responses Scale (RRS) \parencite{treynor_rumination_2003}, derived
+from RST, is considered the gold standard trait measure of rumination,
+containing sub scales which can distinguish maladaptive rumination in
+the form of 'depressive brooding' from the more adaptive 'reflective
+pondering'. In support of RST, dysphoric mood is significantly
+increased by a rumination induction and significantly decreased by a
+distraction induction, in dysphoric but not in nondysphoric participants
+\parencite{nolen-hoeksema_rethinking_2008}.  However, the positive effects
+of distraction are temporary \parencite{nolen-hoeksema_rethinking_2008},
+and alternative models of rumination may suggest more effective ways to
+reduce its occurance.
+
+The goal progress theory of rumination \parencite{martin_ruminative_1996}
+is one such model, which proposes that rumination is initiated
+by unexpected progress (more or less) towards a goal\footnote{An
+extension of the model draws on parallel distributed processing
+to explain discrepancies arising amongst ${concurrent}$ goals
+\parencite{martin_extending_2006}.}. This account draws on ideas from
+control theory \parencite{carver_control_1982} in that goal discrepancies
+represent system states outside of desirable thresholds which cognitive
+process try to restore through feedback mechanisms. Rumination
+is made more likely as a result of this deployment of attention,
+memory and consciousness, and will remain present until goal progress
+becomes satisfactory, the goal is perceived as being met or it has been
+abandoned. For \textcite[][p. 7]{martin_ruminative_1996}, rumination is
+"a class of conscious thoughts that revolve around a common instrumental
+theme and that recur in the absence of immediate environmental demands
+requiring the thoughts". A concept closely related to unresolved goals is
+the 'current concern', which \textcite[][p.14]{klinger_motivation_2011}
+define as \enquote{the state of an individual between the two time points
+of becoming committed to pursuing a particular goal and either attaining
+it or giving it up}. Current concerns link goal progress to rumination
+in that they increase an individual's sensitivity to \enquote{notice,
+recall, think about, dream about and act on cues associated with the
+goal pursuit} \parencite[][p.2]{klinger_motivation_2011}. Similarly,
+negative affect draws attention to the unsatisfactory goal progress
+\parencite{martin_ruminative_1996}.
 
 Worry is a thought process with both similarities and differences to
-rumination.  \textcite[][p. 10]{borkovec_preliminary_1983} define worry
+rumination. \textcite[][p. 10]{borkovec_preliminary_1983} define worry
 as \enquote{a chain of thoughts and images, negatively affect-laden and
-relatively uncontrollable}.  Whilst some studies associate depression
-with rumination and worry with anxiety, measures of rumination
-and worry are closely correlated \parencite{smith_roadmap_2009}.
-Temporal distinctions suggest that rumination primarily focuses on
-past events, whereas worry tends to focus on events in the future
+relatively uncontrollable}. Whilst some studies associate depression
+with rumination and worry with anxiety, measures of rumination and worry
+are highly correlated \parencite{smith_roadmap_2009}. One distinction
+is the prevalence of past events in ruminative thought content,
+and the contrasting dominance of future events in the case of worry
 \parencite{papageorgiou_depressive_2004,watkins_comparisons_2005}.
-However, although \textcite{mclaughlin_effects_2007} confirmed this
-general distinction, they also found that induced rumination began as
-past-focused but then displayed a linear trend towards thoughts about the
-present and finally the future. Whilst rumination is linked depression
+\textcite{mclaughlin_effects_2007} confirmed this general distinction,
+however they also found that induced rumination began as past-focused
+but then displayed a linear trend towards thoughts about the present
+and finally the future. Whilst rumination is linked to depression
 levels and predicts the onset of depressive episodes, it also predicts
 symptoms of anxiety \parencite{nolen-hoeksema_role_2000}. Both forms
 of repetitive negative thought regularly occur in the same individual,
 which suggests that they may share common underlying processes (at least
-in non-clinical populations) \parencite{watkins_comparisons_2005}. This
+in non-clinical populations) \parencite{watkins_comparisons_2005}, and
 is consistent with the common co-morbidity of anxiety and depression
 \parencite{kessler_impairment_1999}. Studies which have directly compared
-rumination and worry support a hypothesis that similar cognitive control
-impairments may play \parencite{beckwe_worrying_2014}. In summary,
-distinguishing worry from rumination remains problematic.
+rumination and worry point towards similar cognitive impairments, such as
+reduced cognitive control \parencite{beckwe_worrying_2014}. In summary,
+the content of worrisome and ruminative thoughts may differ, but may
+result from similar cognitive processes.
 
 The mechanisms underlying rumination are less well understood than their
 affective consequences \parencite{koster_understanding_2011}. For example,
 it remains unclear whether rumination is an automatic or consciously
 controlled process \textcite{smith_roadmap_2009}. Nevertheless,
-numerous studies indicate that a range of cognitive biases
-which are common across anxiety and depression may also play a
-role in rumination. These included biases of attention, memory,
-interpretation, inhibitory control, emotional associations and
-intrusive thoughts \parencite{mathews_cognitive_2005}. Attentional
-bias is a disproportionate attentional sensitivity to internal
-or external stimuli \parencite{williams_cognitive_1988}. One
+numerous studies indicate that a range of cognitive deficits
+associated with anxiety and depression may also play a
+role in rumination. These include biases of attention, memory,
+interpretation and emotional association, and inhibitory control deficits
+\parencite{mathews_cognitive_2005}. Attentional bias is a disproportionate
+attentional sensitivity to particular stimuli, be they internal
+thoughts or external cues \parencite{williams_cognitive_1988}. One
 unresolved hypothesis is whether depressive rumination is caused,
 at least in part, by an impaired ability to disengage attention from
 negative thoughts \textcite{koster_understanding_2011}. Disruption
-in attention-focusing ability is also a cognitive correlate of worry
-\parencite{borkovec_preliminary_1983}. It also remains unclear to
-what extent attentional bias results in rumination or rumination
-leads to attentional bias \parencite{koster_understanding_2011}.
-Whilst \textcite{morrison_role_2008} found a causal relationship
-between rumination and positive attentional bias, they did not find the
-relationship between rumination and decreased negative bias, which would
-be required to support the disengagement hypothesis. Nevertheless, there
-is evidence in support of this hypothesis. In a double-blind, randomised
+in attention-focusing ability is also a cognitive correlate
+of worry \parencite{borkovec_preliminary_1983}. It also
+remains unclear to what extent attentional bias results
+in rumination or rumination leads to attentional bias
+\parencite{koster_understanding_2011}. \textcite{morrison_role_2008}
+showed that negative mood combined with a rumination induction
+decreased bias towards positive word stimuli, whereas a distraction
+induction increased this bias. However, these inductions found no
+such causal relationship between rumination and decreased bias towards
+negative words, the realtionship required to support the disengagement
+hypothesis. Other studies do indicate this reciprocal causal link between
+negative attentional bias and rumination. In a double-blind, randomised
 controlled with individuals having mild to severe depressive symptoms,
-\textcite{yang_attention_2015} demonstrated that modifying attentional
-bias led to reductions in rumination and depressive symptoms, and that
-the reductions in depressive symptoms was mediated by rumination
+\textcite{yang_attention_2015} demonstrated that reducing attentional
+bias towards sad words led to reductions in rumination and depressive
+symptoms, and that the reductions in depressive symptoms was mediated
+by reduced rumination.
 
-Cognitive bias modification (CBM) techniques have been developed
-to change the cognitive biases associated with emotional disorders
-\parencite{hertel_cognitive_2011}. This is often achieved using computer
-tasks which biases of attention, interpretation or memory. The dot-probe
+If cognitive biases underly emotional disorders, then
+cognitive bias modification (CBM) offers potential treatments
+\parencite{hertel_cognitive_2011}. CBM often uses computer tasks to
+modify biases of attention, interpretation or memory. The dot-probe
 task \parencite{macleod_attentional_1986} is the gold-standard measure
 of attentional bias, using differences in response times to visual
 stimuli having differing affective valence, such as negative and neutral
@@ -309,13 +320,13 @@ the other location of the previously displayed stimuli. Attentional
 bias modification (ABM) manipulates the probe location, to train
 attention towards or away from particular stimuli. Numerous studies
 have indicated that ABM may be an effective treatment for anxiety
-\parencite{hakamata_attention_2010} and more recently ABM has been shown
-to reduce depression \parencite{yang_attention_2015}. Critics of CBM
-argue that the effect sizes are too small to be clinically relevant
-\parencite{cristea_efficacy_2015}. However, advocates argue that
-this critique is based on meta-analyses which don't differentiate ABM
-from other forms of CBM, which don't focus on a single psychological
-dysfunction (anxiety), or analyse studies which demonstrate both
+\parencite{hakamata_attention_2010} and more recently ABM has been
+shown to reduce depression \parencite{yang_attention_2015}. Critics
+of CBM argue that the effect sizes are too small to be clinically
+relevant \parencite{cristea_efficacy_2015}. However, advocates argue
+that this critique is based on meta-analyses which don't differentiate
+ABM from other forms of CBM, don't focus on a single psychological
+dysfunction (anxiety), or don't analyse studies which demonstrate both
 attentional bias change ${and}$ corresponding symptom change. It is
 important to note, that in demonstrating the mediating role of rumination
 in reducing depressive symptoms, \textcite{yang_attention_2015} met both
@@ -336,20 +347,26 @@ conceptualisations of rumination, \textcite{smith_roadmap_2009} recommend
 using multiple outcome measures. The difficulties in distinguishing
 rumination from worry, and the common co-morbidity of anxiety and
 depression also suggest multiple measures are appropriate. The current
-study measures the effects of ABM on trait and state rumination, trait
-worry, mood variables, anxiety and depression. Finally, the study aims to
-extend the findings of \textcite{yang_attention_2015} by testing whether
-the ABM can reduce rumination and depressive symptoms in a non-clinical
-sample. Specific hypotheses were as follows:
+study measures the effects of ABM on daily rumination and mood,
+and on measures of rumination, worry, anxiety and depression over
+longer periods. Finally, the study aims to extend the findings of
+\textcite{yang_attention_2015} by testing whether the ABM can reduce
+rumination and depressive symptoms in a non-clinical sample. Specific
+hypotheses were as follows:
 
 \begin{enumerate}
-\item Baseline trait rumination, trait anxiety, trait worry and depression 
-will differ after ABM training.
-\item Attentional bias towards ideographic words associated with a
-current concern will differ after ABM training.
+
+\item Trait worry, rumination over the previous month, and anxiety and
+depression over the previous 2 weeks will reduce after ABM training.
+
 \item Attentional bias towards negative words will reduce after ABM training.
-\item State measures of rumination, positive affect, negative affect
-and depression will change after ABM training.
+
+\item Attentional bias towards ideographic words associated with a
+current concern will reduce after ABM training.
+
+\item After ABM training, state rumination, negative affect and depression
+will reduce, and state positive affect will increase.
+
 \end{enumerate}
 
 \section{Method}
