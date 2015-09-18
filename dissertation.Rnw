@@ -69,17 +69,22 @@
 \author{Paul Sharpe}
 \affiliation{University of Exeter}
 \leftheader{Attentional bias modification of rumination towards a self-relevant goal: A case-series}
-\abstract{Rumination and worry are thinking styles closely associated
-with depression and anxiety. Attention is one of a number of cognitive
-process which, when biased, are associated with these emotional
-disorders. Goal progress theory suggests that rumination occurs when
-there are discrepancies in progress towards a goal. Depressive rumination
-has also been hypothesised as resulting from an impaired ability to
-disengage attention from negative thoughts. To test this theory and
-hypothesis, the current study measures the effects of attentional bias
-modification (ABM) towards negative words, and words associated with a
-current concern. Participants were 12 (10 female) university students
-of staff scoring low for depression but high for trait rumination
+
+\abstract{Rumination and worry are thinking styles closely associated with
+depression and anxiety. There is evidence suggesting that an attentional
+bias towards negative stimuli plays a role in these associations. A
+hypothesis arising from the attentional bias literature is that depressive
+rumination results from an impaired ability to disengage attention from
+negative thoughts, and that reducing this bias will reduce rumination
+and depressive symptoms. The goal progress theory of rumination proposes
+that rumination results when from discrepancies between perceived and
+expected progress towards a goal. Current concerns are mental states
+representative of such goal progress discrepancies. The current study
+tests the disengagement hypothesis by aiming to reduce attentional bias
+to towards negative words and words associated with an unresolved current
+concern, and measuring the effects on rumination, worry, mood and symptoms
+of anxiety and depression. Participants were 12 (10 female) university
+students or staff scoring low for depression but high for trait rumination
 and/or trait worry. This was a non-concurrent, multiple baseline
 case-series replication in which each participant completed between
 25--35 sessions, a minimum of 8 including ABM training. Participants
@@ -296,24 +301,25 @@ Cognitive bias modification (CBM) techniques have been developed
 to change the cognitive biases associated with emotional disorders
 \parencite{hertel_cognitive_2011}. This is often achieved using computer
 tasks which biases of attention, interpretation or memory. The dot-probe
-task measures attentional bias using differences in response times to
-visual stimuli having differing affective valence, such as negative and
-neutral word pairs \parencite{macleod_attentional_1986}. Participants
-respond to a probe which appears at one or the other location of
-the previously displayed stimuli. Attentional bias modification
-(ABM) manipulates the probe location, to train attention
-towards or away from particular stimuli. Numerous studies have
-indicated that ABM may be an effective treatment for anxiety
-\parencite{hakamata_attention_2010} and more recently ABM has been
-shown to reduce depression \parencite{yang_attention_2015}. Critics of
-CBM argue that the effect sizes are too small to be clinically relevant
-\parencite{cristea_efficacy_2015}. However, advocates argue that this
-critique is based on meta-analyses which don't differentiate ABM from
-other forms of CBM, which don't focus on a single psychological dysfunction
-(anxiety), or analyse studies which demonstrate both attentional bias
-change ${and}$ corresponding symptom change. It is important to note, that
-in demonstrating the mediating role of rumination in reducing depressive
-symptoms, \textcite{yang_attention_2015} met both of these final criteria.
+task \parencite{macleod_attentional_1986} is the gold-standard measure
+of attentional bias, using differences in response times to visual
+stimuli having differing affective valence, such as negative and neutral
+word pairs. Participants respond to a probe which appears at one or
+the other location of the previously displayed stimuli. Attentional
+bias modification (ABM) manipulates the probe location, to train
+attention towards or away from particular stimuli. Numerous studies
+have indicated that ABM may be an effective treatment for anxiety
+\parencite{hakamata_attention_2010} and more recently ABM has been shown
+to reduce depression \parencite{yang_attention_2015}. Critics of CBM
+argue that the effect sizes are too small to be clinically relevant
+\parencite{cristea_efficacy_2015}. However, advocates argue that
+this critique is based on meta-analyses which don't differentiate ABM
+from other forms of CBM, which don't focus on a single psychological
+dysfunction (anxiety), or analyse studies which demonstrate both
+attentional bias change ${and}$ corresponding symptom change. It is
+important to note, that in demonstrating the mediating role of rumination
+in reducing depressive symptoms, \textcite{yang_attention_2015} met both
+of these final criteria.
 
 Most studies which examine rumination towards current concerns have only
 been able to measure attentional bias using the emotional Stroop task
@@ -711,22 +717,20 @@ their daily sessions and cross them off when completed. Implementation
 intentions have been shown to improve the goal-directed behaviour
 \parencite{gollwitzer_implementation_1999}, so participants were
 instructed to write on the calendar sheet a statement indicating an
-approximate time when they would complete each session. If requested, the
-experimenter installed OpenSesame \parencite{mathot_opensesame_2011} on
-the participant's laptop. The initial session ended with the experimenter
-and participant agreeing a time on the same or the following day when
-the experimenter could be available to support the participant whilst
-installing the computer task on their own computer and completing their
-first session. All participants successfully completed the preparatory
-session (see \cref{app:initialsession} for full details of the session
-protocol).
-
-The experimenter then prepared the files required for the
-participant to run the computer task. These consisted of the
-dot-probe/ABM program, I-word pairs, N-word pairs, the participant's
-randomisation schedule\footnote{Randomisation schedules were
-generated using the \texttt{SCRT} \parencite{bulte_r_2008} function
-\texttt{selectdesign(design=AB,MT=35,limit=8)}.}, a stimulus
+approximate time when they would complete each session. If requested,
+the experimenter installed OpenSesame \parencite{mathot_opensesame_2011}
+on the participant's laptop. The initial session ended with the
+experimenter and participant agreeing a time on the same or the
+following day when the experimenter could be available to support the
+participant whilst installing the computer task on their own computer
+and completing their first session. All participants successfully
+completed the preparatory session (see \cref{app:initialsession} for
+full details of the session protocol). The experimenter then prepared
+the files required for the participant to run the computer task. These
+consisted of the dot-probe/ABM program, I-word pairs, N-word pairs, the
+participant's randomisation schedule\footnote{Randomisation schedules
+were generated using the \texttt{SCRT} \parencite{bulte_r_2008}
+function \texttt{selectdesign(design=AB,MT=35,limit=8)}.}, a stimulus
 configuration file and a configuration file to position stimuli based
 on the participant's screen height. These files were emailed to the
 participant for installation.
@@ -781,6 +785,8 @@ shown in \cref{tab:stim}.
 
 \input{procedure/stim.tex}
 
+% handle weird gaps that appeared between paragraphs near this page
+\raggedbottom
 \section{Ethical Considerations}
 
 Because screening measures were submitted remotely, depression was
@@ -1362,30 +1368,48 @@ however all differences were non-significant (${P}$s < .05).
 
 Pre-post. Point out that these are trait measures so relatively coarse. Comment on (lack of) power.
 
-Were most Ps high worry but the dot-probe exposure configured for high rumination (1250ms)?
-Would emotional Stroop be better?
-
-ROF:"In contrast with current theories, we found that 34\% of participants
-expressed AB towards threat stimuli, 20.8\% AB away from threat stimuli,
-and 34\% AB towards some categories of threat stimuli and away from
-others." \parencite{zvielli_dynamics_2014}
-
-Perhaps this is reflected in my results for worriers? Hmm, were they "threatened" by their concern?
-
 Underpowered to detect changes in rumination (RRS) and worry (PSWQ) and
 both of these measures showed moderate but non-significant effects. Might
 be significant with more power.
 
+Were most Ps high worry but the dot-probe exposure configured for high rumination (1250ms)?
+Would emotional Stroop be better?
+
+"In contrast with current theories, we found that 34\% of participants
+expressed AB towards threat stimuli, 20.8\% AB away from threat stimuli,
+and 34\% AB towards some categories of threat stimuli and away from
+others." \parencite{zvielli_dynamics_2014}. Perhaps this is reflected
+in my results for worriers? Were they "threatened" by their concern?
+
 \subsubsection{Limitations}
 
 \begin{itemize}
-\item Why didn't I measure change in the RRS brooding subscale?
-\item self-report measures
-\item Longevity of effects treatment? Would ABA revert?
+\item Duh! I could have easly matched the stimulus exposure to the RRS (1250ms)/PSWQ(<ms) score!
+
+\item I could calculate change in the RRS brooding subscale to
+specifically measure changes to R*N*T?
+
+\item dot-probe has poor internal consistency and test-retest reliability
+in non-clinical samples \textcite{schmukle_unreliability_2005}
+(only measuring chance error variance?). N2pc isn't much better than
+RT \parencite{kappenman_behavioral_2014}. This ties in with stimulus
+durations. In summary, need more tasks which are more accurate and precise
+measures of AB. Most of this focusses on anxiety, but the same is needed
+for AB in depression.
+
+\item could the uncontrolled environment have amplified this problem?
+
+\item I could calculate the internal consistency (split-half correlations
+and Cronbach's alpha) and test-retest reliability of the dot-probe
+using \textcite{schmukle_unreliability_2005}. Poor correlations with
+STAI could also explain null findings for GAD-7.
+
+\item self-report measures, there are more objective measures?
 \item What happens when problem resolves?
 \item Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.
 \item Not sure about correlations between PANAS-SF and depression
 \item Didn't MBD analysis due to differing numbers of sessions.
+\item Did I really demonstrate *disengagement*? Felicity said the dot-probe doesn't do this.
 \end{itemize}
 
 "the provision of explicit information and instructed practice in
@@ -1393,7 +1417,57 @@ the desired pattern of attentional selectivity, while potentially
 enhancing patient acceptability with CBM-A, may eliminate its capacity
 to effectively alter anxiety vulnerability." \parencite{grafton_when_2014}
 
-\subsection{My ruminative thoughts!}
+\subsection{Does CBM-A work?}
+
+As mentioned, some say effect sizes are too small to be clinically relevant \parencite{cristea_efficacy_2015}
+
+\enquote{When anxiety and depression were examined separately,
+CBM significantly modified anxiety but not depression. There was
+a nonsignificant trend toward a larger effect for studies including
+multiple training sessions.} \parencite{hallion_metaanalysis_2011}
+
+\enquote{The therapeutic benefit of ABM is rather small for anxiety, while the amount of data
+for other symptom categories is limited.} \parencite{mogoase_clinical_2014}
+\subsection{moderators}
+
+\enquote{The effects of ABM on attention bias were moderated by stimulus
+type (words vs pictures) and sample characteristics (healthy vs. high
+symptomatology).} \parencite{beard_efficacy_2012}
+
+\enquote{Moderation analysis of the between-groups effect revealed
+a significant effect for ABMT delivered in the clinic (d = 0.34, P =
+0.01, CI = 0.07–0.62), and a nonsignificant effect for ABMT delivered
+at home} \parencite{linetzky_quantitative_2015}
+
+\subsection{RFW}
+
+Inhibitory control \parencite{koster_understanding_2011}.
+
+"it does not seem very useful to develop new psychotherapies for
+depression. There are already many different kinds of psychotherapies,
+there is no evidence that one type is considerably more effective than
+others, and it is very difficult to show such differences in trials with
+sufficient statistical power." \parencite{cuijpers_psychotherapies_2015}
+
+Establish the likely cause(s) before testing potential
+cures! Also need to subsequently match the right treatment. Maybe
+this explains why treatments are ineffective? More, not less research.
+
+Case-series with randomisation tests is a good, quick way of testing hypothesis
+
+\subsubsection{Causality}
+
+Still unclear and under researched
+
+Martin, Shrira and Startup \parencite{papageorgiou_depressive_2004}
+suggest a list of causes even within the goal progress theory model,
+all of which would require different treatment approaches.
+
+More specific mechanistic hypotheses e.g. "rumination was related to attentional switching impairments,
+specifically in the context of emotional information"
+\parencite{koster_rumination_2013}
+
+\subsubsection{Goals}
 
 Were the goals chosen "higher order"? \parencite{martin_ruminative_1996}
 
@@ -1402,13 +1476,6 @@ are the exclusive cause of rumination. So it could be a different cause in
 this sample. While they claim the rebound effect of thought suppression
 can be explained in terms of goal discrepancies they say it may also
 occur in the absence of them, notably in the case of worry.
-
-An extension of the goal theory and RST (how?!) suggests that rumination
-becomes habitual thinking style, cued by context and not related to
-any particular goal discrepancy. \textcite{watkins_habitgoal_2014} A
-more direct test of the disengagement hypothesis within this framework
-makes sense as it's explicitly proposed in the absence of any overt goal
-discrepancies .RFW. (looks like it hasn't been tested yet)
 
 \textcite{watkins_habitgoal_2014} have sought to unify these theories
 by proposing that RNT may be a habit, initiated by goal discrepancies
@@ -1421,75 +1488,43 @@ construed, negative content.
 I only really tested this in one (uncontrolled) context i.e. at home,
 and not controlling time of day, mood or degree of state rumination.
 
-"rumination was related to attentional switching impairments,
-specifically in the context of emotional information"
-\parencite{koster_rumination_2013}
-
-\subsection{Causes}
-
-*Causality* is still unclear and under researched so RFW.
-
-Martin, Shrira and Startup \parencite{papageorgiou_depressive_2004}
-suggest a list of causes even within the goal progress theory model,
-all of which would require different treatment approaches.
-
-RFW: Establish the likely cause(s) before testing potential
-cures! Also need to subsequently match the right treatment. Maybe
-this explains why treatments are ineffective? More, not less research.
-
-\subsection{Does CBM-A work?}
-
-\enquote{When anxiety and depression were examined separately,
-CBM significantly modified anxiety but not depression. There was
-a nonsignificant trend toward a larger effect for studies including
-multiple training sessions.} \parencite{hallion_metaanalysis_2011}
-
-\enquote{The therapeutic benefit of ABM is rather small for anxiety, while the amount of data
-for other symptom categories is limited.} \parencite{mogoase_clinical_2014}
-
-\subsection{vs. CBM-I}
-
-\enquote{CBM had a medium effect on biases (g = 0.49) that was stronger
-for interpretation (g = 0.81) than for attention (g = 0.29) biases} \parencite{hallion_metaanalysis_2011}
-
-\subsection{moderators}
-
-\enquote{The effects of ABM on attention bias were moderated by stimulus
-type (words vs pictures) and sample characteristics (healthy vs. high
-symptomatology).} \parencite{beard_efficacy_2012}
-
-\enquote{Moderation analysis of the between-groups effect revealed
-a significant effect for ABMT delivered in the clinic (d = 0.34, P =
-0.01, CI = 0.07–0.62), and a nonsignificant effect for ABMT delivered
-at home} \parencite{linetzky_quantitative_2015}
-
-\subsection{rumination}
+An extension of the goal theory and RST (how?!) suggests that rumination
+becomes habitual thinking style, cued by context and not related to
+any particular goal discrepancy. \textcite{watkins_habitgoal_2014} A
+more direct test of the disengagement hypothesis within this framework
+makes sense as it's explicitly proposed in the absence of any overt goal
+discrepancies .RFW. (looks like it hasn't been tested yet)
 
 \enquote{Thus, people with high implicit motivation were less prone to ruminate
 about their goals and people with high goal commitment were more likely
-to ruminate. This effect was qualified- ified by a marginally significant
+to ruminate. This effect was qualified by a marginally significant
 goal commitment x implicit motivation effect, B = 0.319, SE = 0.177,
 t(91) = 1.80, p = .07. As shown in Table 5, the interaction was due to a
 damping effect of implicit motivation on goal rumination in low-commitment
 participants.} \parencite{schultheiss_role_2008}
 
+\subsubsection{rumination}
+
 \begin{itemize}
-\item Could individual's current concern(s) indicate the type of bias modification which might be beneficial?
-\item ABM training other than the dot-probe Sigurjonsdottir et. al 2015
-\item What is an effective dose?
+
+\item Could individual's current concern(s) indicate the type of bias
+modification which might be beneficial? i.e. some psychotherapy to
+determine best treatment
+
 \end{itemize}
 
-\subsection{RFW}
+\subsubsection{CBM}
 
-Inhibitory control \parencite{koster_understanding_2011}.
+\begin{itemize}
+\item \enquote{CBM had a medium effect on biases (g = 0.49) that was stronger
+for interpretation (g = 0.81) than for attention (g = 0.29) biases} \parencite{hallion_metaanalysis_2011}
 
-"it does not seem very useful to develop new psychotherapies for
-depression. There are already many different kinds of psychotherapies,
-there is no evidence that one type is considerably more effective than
-others, and it is very difficult to show such differences in trials with
-sufficient statistical power." \parencite{cuijpers_psychotherapies_2015}
+\item ABM training other than the dot-probe Sigurjonsdottir et. al 2015
 
-Case-series is a good, quick way of testing things out?
+\item What is an effective dose?
+
+\item Longevity of effects treatment? Would ABA revert? Problem as people unlikely to keep up training.
+\end{itemize}
 
 \subsection{Conclusion}
 
