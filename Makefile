@@ -22,3 +22,7 @@ completed:
 test_completed: completed
 	pdflatex results/completed.tex
 
+diary:
+	pdflatex diary.tex
+	biber --output_safechars diary
+	pdflatex diary.tex
