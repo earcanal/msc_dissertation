@@ -129,6 +129,9 @@ which a degree has previously been conferred upon me.}
 
 \usepackage{subcaption}
 
+% Dilemma, doing this gets cref working for sections but adds section numbers which breaks APA
+%\setcounter{secnumdepth}{3}
+
 \begin{document}\thispagestyle{empty}
 \setlength{\marginparwidth}{1cm}
 \todototoc
@@ -139,10 +142,9 @@ which a degree has previously been conferred upon me.}
 \startcontents[sections]
 \printcontents[sections]{l}{1}{\setcounter{tocdepth}{2}}
 \newpage
-%\clearpage\setcounter{page}{1}
 
 \section{Introduction}
-\label{sec:introduction}
+\label{introduction}
 
 Anxiety and depression are major challenges to public health and
 are commonly co-morbid \parencite{kessler_impairment_1999}. For
@@ -364,7 +366,7 @@ depression over the previous 2 weeks will reduce after ABM training.
 \item Attentional bias towards ideographic words associated with a
 current concern will reduce after ABM training.
 
-\item After ABM training, state rumination, negative affect and depression
+\item After ABM training, state rumination, negative affect and depression\todo{show I know this isn't really DEPRESSION, put 'depressive symptoms' everywhere?!!!}
 will reduce, and state positive affect will increase.
 
 \end{enumerate}
@@ -518,13 +520,13 @@ to the PANAS-SF. Items `anxious' and `worried' were added to assess
 our hypothesised changes in anxiety but excluded from analyses due to
 their positive correlation with NA\footnote{Of the four items added to
 the PANAS-SF, `sad' and `depressed' correlated strongly with each other
-and weakly with PA items on the scale, whereas `anxious' and `worried'
-were moderately associated with NA, but not as highly as the NA scale
-itself (see \cref{app:mood}). Given these findings and that PANAS is an
-established measure, we analysed three mood variables: positive affect
-(PA scale), negative affect (NA scale) and `depression' (`sad' and
-`depressed' items).}. Questions on the PANAS-SF were asked in relation
-to the last 24 hours.
+weakly with PA items and moderately with the NA scale. Items `anxious'
+and `worried' were moderately correlated with NA, but not as highly
+as the NA scale itself (see \cref{app:mood}). Given these findings and
+that PANAS is an established measure, we analysed three mood variables:
+positive affect (PA scale), negative affect (NA scale) and `depression'
+(`sad' and `depressed' items).}. Questions on the PANAS-SF were asked
+in relation to the last 24 hours.
 
 \subsection{Procedure}
 
@@ -679,7 +681,6 @@ orientation of attention away from the negative word in the pair.
 % handle weird gaps that appeared between paragraphs near this page
 \raggedbottom
 \section{Analyses}
-\label{analyses}
 
 Data were analysed using using R version 3.1.0
 \parencite{rcoreteam_r_2014} and additional packages
@@ -720,62 +721,50 @@ Randomisation is a nonparametric approach which allows inferential
 statistics to be calculated using data from a single-case series
 \parencite{bulte_r_2008}. In an AB design, the phase sequence (baseline
 followed by intervention) is fixed, therefore it is the point at
-which phase A transitions to phase B which is randomised. Under the
-null hypothesis, a test statistic for a particular set of observations
-would not differ systematically as a function of where the transition
-from A to B occurs. Randomisation tests hold the observation scores
-constant and calculate the test statistic for all possible transition
-permutations. Once sorted, the ${p}$ value is the proportion of
-test statistics greater than or equal to the observed test statistic
-\parencite{onghena_customization_2005}. A one-tailed randomisation test
-(test statistic = \texttt{A-B}) was performed for N-word attentional bias
-scores as these were predicted to be more negative after ABM training. All
-other randomisation tests were two-tailed (test statistic = \(\lvert
-\texttt{A-B}\rvert\)).  In addition to the single-case randomisation
+which phase A transitions to phase B which is randomised. Under
+the null hypothesis, a test statistic for a particular set of
+observations would not differ systematically as a function of where
+the transition from A to B occurs. Randomisation tests hold the
+observation scores constant and calculate the test statistic for
+all possible transition permutations. Once sorted, the ${p}$ value
+is the proportion of test statistics greater than or equal to the
+observed test statistic \parencite{onghena_customization_2005}. All
+randomisation tests were two-tailed (test statistic = \(\lvert
+\texttt{A-B}\rvert\)). In addition to the single-case randomisation
 tests, a meta-analysis \parencite[][p.64]{onghena_customization_2005}
 was carried out across all participants for each outcome measure using
-the R package \texttt{SCMA} \parencite{bulte_singlecase_2013}. This
-allowed for significance testing across participants above the
-${p}$=.05 level, even though the randomisation tests could not detect
-significance at this level for participants who completed less than
-35 sessions. The meta-analysis used an additive approach, which has
-a greater probability of yielding significant results when there are
-treatment effects \parencite{edgington_additive_1972}. The percentage
-of nonoverlapping data (PND) is an effect size measure frequently
-used in single-subject research, and is the percentage of treatment
-phase observations that do not overlap data in the baseline phase
-\parencite{scruggs_pnd_2013}. \textcite{scruggs_early_1986} consider
-treatments with PND scores ${\geq}$ 90\% as highly effective, scores
-of 70\%--90\% as fair, scores of 50\%--70\% as questionable effects,
-and scores <~ 50\% as unreliable.  PND was calculated using the R
-package \texttt{SCMA}, using \texttt{PND-} for N-words, I-words, NA
-and depression as the treatment should case these measures to drop,
+the R package \texttt{SCMA} \parencite{bulte_singlecase_2013}. With 12
+participants, this increases power to detect significance above ${p}$=.05
+\parencite[][p.64]{onghena_customization_2005}, even though sensitivity
+at the case level was below ${p}$=.05 for participants who completed
+less than 35 sessions. The meta-analysis used an additive approach,
+which has a greater probability of yielding significant results when
+there are treatment effects \parencite{edgington_additive_1972}. The
+percentage of nonoverlapping data (PND) is an effect size measure
+frequently used in single-subject research, and is the percentage of
+treatment phase observations that do not overlap data in the baseline
+phase \parencite{scruggs_pnd_2013}. \textcite{scruggs_early_1986}
+consider treatments with PND scores ${\geq}$ 90\% as highly effective,
+scores of 70\%--90\% as fair, scores of 50\%--70\% as questionable
+effects, and scores <~ 50\% as unreliable.  PND was calculated using
+the R package \texttt{SCMA}, using \texttt{PND-} for N-words, I-words,
+NA and depression as the treatment should cause these measures to drop,
 and \texttt{PND+} for PA as the treatment should result in an increase
 in positive affect. All questions on the daily online outcome measures
 were mandatory, so there was no missing data for any completed survey.
 
 \section{Results}
 
-Three participants withdrew from the study; one before completing
-any sessions due to concerns that the study would worsen their social
-anxiety, another who found the time commitment too great after 5 sessions,
-and the third after 24 sessions when a holiday meant that they would
-be unable to complete sufficient phase B sessions. Dropout was not
-predictable for these participants as their screening scores were not
-atypical and there were participants scoring higher on both RRS and PSWQ
-who nevertheless completed the study. For the remaining participants,
-dot-probe/ABM accuracy was above our a priori inclusion threshold of
-75\% (see \cref{tab:completed}) and the current concern chosen by each
-participant at the preparatory session remained unresolved throughout the
-study. Session 32 for participant 7 was omitted from the analyses as the
-dot-probe data file for this session was truncated. Session 8 GRS and
-PANAS-SF scores for participant 16 were brought forward from session 7,
-as the participant completed the dot-probe but not the measures during
-session 8, but advised within 12 hours that the scores would have
-been identical. To remain in the study, participant 5 switched from a
-Windows to Macintosh computer from session 21 onward, and participant
-19 completed later sessions in a different country from the one in which
-they began the study.
+Three participants withdrew from the study; one before completing any
+sessions due to concerns that the study would worsen their social anxiety,
+another who found the time commitment too great after 5 sessions, and the
+third after 24 sessions when a holiday meant that they would be unable
+to complete sufficient phase B sessions. Dropout was not predictable for
+these participants as their screening scores were not atypical. For the
+remaining participants, dot-probe/ABM accuracy was above our a priori
+inclusion threshold of 75\% (see \cref{tab:completed}) and the current
+concern chosen by each participant at the preparatory session remained
+unresolved throughout the study.
 
 \belowrulesep=1pt
 %\aboverulesep=1pt
@@ -789,8 +778,7 @@ are summarised in \cref{tab:prepost}. There were no outliers
 training. Cronbach's $\alpha$ was acceptable for GAD-7 and PSWQ, good
 for PHQ-9 and and excellent for RRS. There were no significant pre-post
 ABM training differences (all ${P}$s {\textgreater} .05) on any of these
-outcomes. There was a small increase in trait anxiety (GAD-7, ${d}$ =
-.22) and a very small reduction in trait rumination (RRS, ${d}$ = .17).
+outcomes.
 
 <<external, cache=FALSE, echo=FALSE>>=
 knitr::read_chunk('../opensesame/dotprobe/prepost.R')
@@ -805,50 +793,42 @@ knitr::read_chunk('../opensesame/dotprobe/iwords.R')
 \subsection{Visual Analyses}
 \label{sec:va}
 
-The principal features of interest when visually analysing AB
-case-series data are central tendency and its within-phase trends,
-within-phase variability, and changes in level (adjacent data
-points of separate phases) \parencite{morley_graphical_1991}. In the
-following graphs, the broadened median (BMED) is used as a measure of
-central tendency as it is both sensitive to a reasonable proportion
-of the data, and resistant to outliers in relatively small samples
-\parencite{morley_graphical_1991}. Two types of trend line are plotted
-to reduce bias (often due to outliers) when visually interpreting raw
-data points. A robust linear trend in central tendency is shown using
-the split middle method \parencite{morley_graphical_1991}\footnote{This
-method results in two lines where there are an odd number of points
-in a phase. Poor alignment between these lines indicates a poor fit
-\parencite{morley_graphical_1991}.}. Trends in variability are plotted
-using the trimmed (10--20\% of outliers from each phase), trended range
-which reduces the influence of outliers, and of trends in central tendency
-\parencite{morley_graphical_1991}.
+A common approach to visually analysing case-series is to examine
+post-treatment changes in central tendency and linear trends
+\parencite{morley_graphical_1991}. In the following graphs, the broadened
+median (BMED) is used as a measure of central tendency as it is both
+sensitive to a reasonable proportion of the data, and resistant to
+outliers in relatively small samples \parencite{morley_graphical_1991}. We
+expected to see visual differences in BMED in the hypothesised
+direction for each outcome\footnote{On the attentional bias graphs,
+the change in BMED between phases A and B is visually small relative
+to the variability due to outliers for some participants.}. Plotting
+linear trends in central tendency reduces visual bias when estimating
+trends from raw data points (due to outliers). The trend lines
+in following graphs were plotted using the split middle method
+\parencite{morley_graphical_1991}\footnote{This robust method
+results in two lines where there are an odd number of points in
+a phase. Poor alignment between these lines indicates a poor fit
+\parencite{morley_graphical_1991}.}. We expected to see changes in
+trend in the hypothesised direction for each outcome.
 
 \subsubsection{N-word attentional bias}
 
-see \cref{sec:introduction}
-
-Visual inspection indicated a post-ABM reduction in attentional
-bias towards N-words as hypothesised in some, but not all
-participants. Changes in attentional bias for N-word pairs are summarised
-in \crefrange{fig:va-n-a}{fig:va-n-b}. As mentioned previously, more
-positive bias scores reflect vigilance for negative words, whereas more
-negative scores indicate avoidance. All participants had an initial BMED
-score close to 0, indicating a lack of any large attentional bias in
-either direction. In phase B, 7 participants (5, 6, 8, 10, 11, 16 and 19)
-showed a more negative bias, although participant 5 had 2 large, negative
-scores. In phase A, linear trends in score increased for 7 participants
-(5, 6, 8, 11, 15 and notably 12), decreased for 4 participants (9, 16,
-18 and 19) and remained flat for 2 participants (7 and 10). Of the trends
-in phase B which were a good fit, relative to phase A, participant 11
-reversed in the hypothesised direction, 3 (participants 8, 12 and 15)
-continued in the same direction, and 2 (participants 9 and 19) reversed
-contrary to the hypothesised direction. Phase A variance was small
-in participant 18 but similar in all other participants. It was also
-stable in most participants but increased in 2 (participants 9 and 15)
-and decreased in 3 (participants 11, 18 and 19). Variance increased in
-a number of participants on transition to phase B but by the end was
-similar to levels in phase A. Two outliers explain the large phase B
-change in variance for participant 5.
+Changes in attentional bias for N-word pairs are summarised in
+\cref{fig:va-n-a} and \cref{fig:va-n-b}. Our hypothesis predicted
+more negative N-word scores in phase B (i.e. increased avoidance).
+All participants had an initial BMED score close to 0, indicating a
+lack of any large attentional bias in either direction. Relative to
+phase A, 7 participants (5, 6, 8, 10, 11, 16 and 19) had more negative
+BMED scores, although participant 5 had 2 large, negative scores. In
+phase A, linear trends in score increased for 7 participants (5, 6, 8,
+11, 15 and notably 12), decreased for 4 participants (9, 16, 18 and 19)
+and remained flat for 2 participants (7 and 10). Relative to phase A,
+of the phase B trends which were a good fit, participant 11 reversed in
+the hypothesised direction, 3 (participants 8, 12 and 15) continued in
+the same direction, and 2 (participants 9 and 19) reversed contrary to
+the hypothesised direction. In summary, there was no clear support for
+our hypothesised decrease in N-word bias score.
 
 \begin{figure}[!htbp]
   \begin{subfigure}[!htbp]{\textwidth}
@@ -875,32 +855,26 @@ change in variance for participant 5.
     \caption{N-word attentional bias scores for participants 11, 12, 15, 16, 18 and 19.}
     \label{fig:va-n-b}
   \end{subfigure}
-\caption{Dashed line = phase transition. \protect\strokeA{} broadened
-median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
-trimmed trended range (see \cref{analyses}).}
+\caption{N-word attentional bias scores. Dashed line = phase transition. \protect\strokeA{} broadened
+median, \protect\strokeB{} split middle linear trend (see \cref{sec:va}).}
 \label{fig:va-n}
 \end{figure}
 \clearpage
 
 \subsubsection{I-word attentional bias}
 
-Visual inspection indicated a reduction in attentional bias in the
-majority of participants. Changes in attentional bias for I-word pairs
-are summarised in \crefrange{fig:va-i-a}{fig:va-i-b}. As with N-words,
-more positive bias scores reflect vigilance for negative words, more
-negative scores indicate avoidance, and there were no large initial
-attentional biases in either direction. In phase B, 10 participants showed
-a more negative attentional bias, and 2 (participants 11 and 12) a more
-positive bias. Of the linear trends in phase A which were a good fit, 6
-(participants 7, 8, 10, 18 and 19) increased and 5 (participants 5, 6,
-9, 12 and 16) decreased. Of the trends in phase B which were a good fit,
-relative to phase A, 2 (participants 18 and 19) became more negative and 2
-(participants 8 and 9) continued in the same direction. Phase A variance
-was small in participant 18 but similar in all other participants. It
-was also stable in most participants but increased in 2 (8 and 10) and
-decreased in 3 (7, 15 and notably 18).  Relative to the end of phase A,
-variance in phase B increased in 6 participants (5, 6, 9, 12, 15 and 18),
-and decreased in 2 (participants 7 and 19).
+Changes in attentional bias for I-word pairs are summarised in
+\cref{fig:va-i-a} and \cref{fig:va-i-b}. As with N-words, our hypothesis
+predicted more negative scores in phase B (i.e. increased avoidance)
+and there were no large initial attentional biases in either direction.
+Relative to phase A, 9 participants (5, 6, 8, 9, 10, 15, 16, 18 and 19)
+had more negative BMED scores. Of the linear trends in phase A which
+were a good fit, 6 (participants 7, 8, 10, 18 and 19) increased and 5
+(participants 5, 6, 9, 12 and 16) decreased. Of the trends in phase B
+which were a good fit, relative to phase A, 2 (participants 18 and 19)
+became more negative and 2 (participants 8 and 9) continued in the same
+direction. In summary, there was evidence to support our hypothesised
+decrease in I-word bias score in BMED, but not the linear trends.
 
 \begin{figure}[!htbp]
   \begin{subfigure}[!htbp]{\textwidth}
@@ -927,32 +901,26 @@ and decreased in 2 (participants 7 and 19).
     \caption{I-word attentional bias scores for participants 11, 12, 15, 16, 18 and 19.}
     \label{fig:va-i-b}
   \end{subfigure}
-\caption{Dashed line = phase transition. \protect\strokeA{} broadened
-median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
-trimmed trended range (see \cref{analyses}).}
+\caption{I-word attentional bias scores. Dashed line = phase transition. \protect\strokeA{} broadened
+median, \protect\strokeB{} split middle linear trend (see \cref{sec:va}).}
 \label{fig:va-i}
 \end{figure}
 \clearpage
 
 \subsubsection{State rumination (GRS)}
 
-Changes in GRS scores are summarised in
-\crefrange{fig:va-grs-a}{fig:va-grs-b}. Relative to phase A, BMED GRS
-scores reduced in 9 participants (5, 6, 8, 9, 10, 11, 15, 18 and 19)
-indicating a reduction in rumination towards their chosen concern. These
-reductions were largest in participants 10, 5 and 11, although initial
-GRS high in participant 11. Phase A GRS showed a downward trend for
-10 participants, being especially steep in participants 5, 10, 18 and
-19. Participant 12 showed a steep linear increase in phase A. The
-majority of linear trends in phase B were a poor fit. The phase A
-downwards trends reduced in phase B for participants 8, 11, 18 and
-19, becoming slightly positive for participant 15. Phase A variance
-was generally large and reduced in most participants (notably 5, 6,
-9 and 18), with moderate and large increases in participants 16 and 12
-respectively. Relative to phase A, phase B variance was mostly reduced,
-exceptions being participants 11, 16 and 19. Variance in phase B was
-stable or reducing in most participants (notably 7, 8, 12 and 18) with
-moderate and large increases in participants 19 and 16 respectively.
+Changes in GRS scores are summarised in \cref{fig:va-grs-a} and
+\cref{fig:va-grs-b}. Relative to phase A, 9 participants (5, 6, 8, 9, 10,
+11, 15, 18 and 19) had lower phase B BMED GRS scores, indicating our hypothesised
+reduction in rumination towards their chosen concern. These reductions
+were largest in participants 10, 5 and 11, although initial GRS was
+high in participant 11. Phase A GRS showed a downward trend for 10
+participants, being especially steep in participants 5, 10, 18 and
+19. Participant 12 showed a steep linear increase in phase A. Of the
+linear trends in phase B, 7 were a poor fit. The phase A downwards trends
+reduced in phase B for participants 8, 11, 18 and 19, becoming slightly
+positive for participant 15. In summary, the BMED changes supported our
+hypothesised decrease in GRS scores.
 
 \begin{figure}[!htbp]
   \begin{subfigure}[!htbp]{\textwidth}
@@ -979,28 +947,26 @@ moderate and large increases in participants 19 and 16 respectively.
     \caption{GRS scores (range 1--49) for participants 11, 12, 15, 16, 18 and 19.}
     \label{fig:va-grs-b}
   \end{subfigure}
-\caption{Dashed line = phase transition. \protect\strokeA{} broadened
-median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
-trimmed trended range (see \cref{analyses}).}
+\caption{GRS scores. Dashed line = phase transition. \protect\strokeA{} broadened
+median, \protect\strokeB{} split middle linear trend (see \cref{sec:va}).}
 \label{fig:grs}
 \end{figure}
 \clearpage
 
 \subsubsection{Positive Affect (PA)}
 
-Visual inspection indicated increased PA for most participants. Changes in
-PA scores are summarised in \crefrange{fig:va-pa-a}{fig:va-pa-b}. Relative
-to phase A, BMED phase B PA scores increased in 7 participants (5, 9,
-10, 11, 15, 18 and notably 6), decreased slightly in 3 participants (8,
-12 and 19), decreased more markedly in participant 16 and remained stable
-in participant 7. Where there was a linear fit, phase A PA showed an
-upward trend for 6 participants, being especially steep for participant
-9, a downward trend for 2 participants, and was relatively stable for
-2 participants. Where there was a linear fit in both phases, trends
-continued in the same direction for participants 11 and 15, and became
-more negative for participant 19. PA variance between phases A and B
-increased in participants 6, 10, 15, 18 and notably 11, and decreased
-notably in participant 19.
+Changes in PA scores are summarised in \cref{fig:va-pa-a} and
+\cref{fig:va-pa-b}. We hypothesised that PA would increase in phase
+B. Relative to phase A, 7 (participants 5, 9, 10, 11, 15, 18 and notably
+6) phase B BMED PA scores increased, 3 participants (8, 12 and 19)
+decreased slightly, participant 16 decreased more markedly and participant
+7 remained stable. Where there was a linear fit, phase A PA showed an
+upward trend for 5 participants (5, 9, 10, 11 and 18) being especially
+steep for participant 9, a downward trend for 2 participants (6 and 15)
+and was relatively stable for 2 participants (7 and 19). Where there was
+a linear fit in both phases, trends continued in the same direction for
+participants 11 and 15, and became more negative for participant 19. In
+summary, there was no clear support for our hypothesised increase in PA.
 
 \begin{figure}[!htbp]
   \begin{subfigure}[!htbp]{\textwidth}
@@ -1027,27 +993,25 @@ notably in participant 19.
     \caption{PA scores (range 1--25) for participants 11, 12, 15, 16, 18 and 19.}
     \label{fig:va-pa-b}
   \end{subfigure}
-\caption{Dashed line = phase transition. \protect\strokeA{} broadened
-median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
-trimmed trended range (see \cref{analyses}).}
+\caption{PA scores. Dashed line = phase transition. \protect\strokeA{} broadened
+median, \protect\strokeB{} split middle linear trend (see \cref{sec:va}).}
 \label{fig:pa}
 \end{figure}
 
 \clearpage
 \subsubsection{Negative Affect (NA)}
 
-Visual inspection indicated decreased NA for most participants. Changes in
-NA scores are summarised in \crefrange{fig:va-na-a}{fig:va-na-b}. Relative
-to phase A, BMED phase B NA scores decreased in 8 participants (5, 6, 9,
-10, 11, 12, 15, 16 and 18), and increased in 3 participants (7, 8 and
-19). Where there was a linear fit, phase A NA showed an downward trend
-for 6 participants being especially steep for participant 18, an upward
-trend for 1 participant and was relatively flat for 2 participants.
-Where there was a linear fit in both phases, trends continued downwards
-for participants 6, 11 and 12, and reversed sharply from positive
-to negative for participant 8.  NA variance between phases A and B
-decreased in participants 5, 10 and notably 8 and increased notably in
-participant 11.
+Changes in NA scores are summarised in \cref{fig:va-na-a} and
+\cref{fig:va-na-b}. We hypothesised that NA would decrease in phase
+B. Relative to phase A, 9 (participants 5, 6, 9, 10, 11, 12, 15, 16 and
+18) BMED phase B NA scores decreased. Where there was a linear fit in
+phase A, 6 participants (5, 6, 9, 10, 11, 18 and 19) showed an downward
+trend (participant 18 being especially steep), participant 15 showed
+an upward trend and the tred was relatively flat for participants 12
+and 18.  Where there was a linear fit in both phases, trends slowed for
+participants 6, continued for participant 11, and reversed sharply from
+positive to negative for participant 8. In summary, the BMED changes
+supported our hypothesised decrease in NA scores.
 
 \begin{figure}[!htbp]
   \begin{subfigure}[!htbp]{\textwidth}
@@ -1074,30 +1038,28 @@ participant 11.
     \caption{NA scores (range 1--25) for participants 11, 12, 15, 16, 18 and 19.}
     \label{fig:va-na-b}
   \end{subfigure}
-\caption{Dashed line = phase transition. \protect\strokeA{} broadened
-median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
-trimmed trended range (see \cref{analyses}).}
+\caption{NA scores. Dashed line = phase transition. \protect\strokeA{} broadened
+median, \protect\strokeB{} split middle linear trend (see \cref{sec:va}).}
 \label{fig:na}
 \end{figure}
 
 \clearpage
 \subsubsection{Depression}
 
-Visual inspection indicated decreased depression for most
-participants. Changes in depression scores are summarised in
-\crefrange{fig:va-d-a}{fig:va-d-b}. Initial depression scores were
-moderate to low for all participants. Relative to phase A, BMED phase
-B depression scores decreased in 7 participants (6, 8, 9, 11, 12, 15
-and 18 ), increased in 4 participants (5, 10, 16 and 19) and remained
-the same in participant 7. Where there was a linear fit, phase A NA
-showed an downward trend for 4 participants being especially steep
-for participants 9 and 18, an upward trend for 1 participant and was
-relatively flat for 4 participants. Where there was a linear fit in
-both phases, trends continued in the same direction for participants 7,
-8 and 10, stabilised close to the bottom of the scale for participants
-9, 15 and 18, and increased sharply for participant 19.  Variance in
-depression between phases A and B decreased in participants 7, 9 and 18
-and increased in participants 10 and 16.
+Changes in depression scores are summarised in \cref{fig:va-d-a} and
+\cref{fig:va-d-b}. Initial depression scores were moderate to low for
+all participants. We hypothesised that depression would decrease in phase
+B. Relative to phase A, 7 (participants 6, 8, 9, 11, 12, 15 and 18 ) BMED
+phase B depression scores decreased, 4 (participants 5, 10, 16 and 19)
+increased, and 1 (participant 7) remained the same.  Where there was a
+linear fit, phase A NA showed an downward trend for 4 participants (6,
+9, 15, 18) being especially steep for participants 9 and 18, an upward
+trend for participant 12 and was relatively flat for 3 participants (5,
+7 and 19). Where there was a linear fit in both phases, trends continued
+in the same direction for participants 7 and 10, stabilised close to
+the bottom of the scale for participants 9, 15 and 18, and increased
+sharply for participant 19. In summary, there was no clear support for
+our hypothesised decrease in depression score.
 
 \begin{figure}[!htbp]
   \begin{subfigure}[!htbp]{\textwidth}
@@ -1124,14 +1086,15 @@ and increased in participants 10 and 16.
     \caption{Depression scores (range 1--10) for participants 11, 12, 15, 16, 18 and 19.}
     \label{fig:va-d-b}
   \end{subfigure}
-\caption{Dashed line = phase transition. \protect\strokeA{} broadened
-median, \protect\strokeB{} split middle linear trend, \protect\strokeC{}
-trimmed trended range (see \cref{analyses}).}
+\caption{Depression scores. Dashed line = phase transition. \protect\strokeA{} broadened
+median, \protect\strokeB{} split middle linear trend (see \cref{sec:va}).}
 \label{fig:d}
 \end{figure}
 
 \clearpage
 \subsection{Inferential Statistics}
+
+\subsubsection{N-word and I-word attentional bias}
 
 N-word and I-word randomisation tests and meta-analysis results are
 summarised in \cref{tab:rt}. Although there was a reduction in attentional
@@ -1140,8 +1103,10 @@ the differences were significant (all ${P}$s < .05). The meta-analysis
 across participants was also non-significant (${p}$ = .806). There was
 a reduction in attentional bias for N-words in 7 participants (5, 6, 8,
 10, 11, 16 and 19), although the difference was only significant (${p}$ =
-.05) for participant 11 with an unreliable effect (${PND}$ = 29.15\%). The
-meta-analysis across participants was significant (${p}$ = .046).
+.05) for participant 11 with an unreliable effect (${PND}$ = 29.17\%). The
+meta-analysis across participants was non-significant (${p}$ = .434).
+
+\subsubsection{Rumination (GRS)}
 
 State rumination (GRS) randomisation tests and meta-analysis results
 are summarised in \cref{tab:grs}. Although there was a reduction in
@@ -1149,6 +1114,8 @@ GRS score 9 participants (5, 6, 8, 9, 10, 11, 15, 18 and 19), none of
 the differences were significant (all ${P}$s < .05). Increases in GRS
 for participants 6, 12 and 16 were also non-significant. The
 meta-analysis across participants was also non-significant (${p}$ = .563).
+
+\subsubsection{Mood (PA, NA, depression)}
 
 Mood variable (PA, NA and depression) randomisation tests and
 meta-analysis are summarised in \cref{tab:panas}. There was an increase
@@ -1162,7 +1129,8 @@ ${P}$s < .05). Increases in NA for participants 7, 8 and 19 were also
 non-significant, as was the meta-analysis across all participants for NA
 (${p}$ = .801). Depression scores decreased in 5 participants (6, 9, 11,
 15 and 18) and increased in 7 participants (5, 7, 8, 10, 12, 16 and 19),
-however all differences were non-significant (${P}$s < .05).
+however all differences were non-significant (${P}$s < .05), as was the
+meta-analysis (${p}$ = .187).
 
 \clearpage
 
@@ -1170,10 +1138,13 @@ however all differences were non-significant (${P}$s < .05).
 
 \input{results/rt.tex}
 
+\todo{boldface correct change}
+\todo{get GRS table after RTs}
 \begin{center}
 \input{results/grs.tex}
 \end{center}
 
+\todo{boldface correct change}
 \input{results/panas.tex}
 
 \clearpage
@@ -1234,6 +1205,10 @@ possibly anxiety (GAD-7), but underpowered to detect changes in rumination
 
 \subsubsection{misc}
 
+Visual analysis vs. inferential.
+
+Did it work for some but not others? e.g. see trend reversal in NA for p8
+
 Were most Ps high worry but the dot-probe exposure configured for high rumination (1250ms)?
 Would emotional Stroop be better?
 
@@ -1283,7 +1258,7 @@ STAI could also explain null findings for GAD-7.
 \item Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.
 \item Not sure about correlations between PANAS-SF and depression
 \item Didn't MBD analysis due to differing numbers of sessions.
-\item Did I really demonstrate *disengagement*? Felicity said the dot-probe doesn't do this.
+\item Did I really demonstrate *disengagement*? Felicity said the dot-probe doesn't do this. does 'avoidance' == 'disengagement'?
 \end{itemize}
 
 "the provision of explicit information and instructed practice in
@@ -1421,14 +1396,15 @@ what how biases can be modified, which biases can be modified and in
 which populations these have desired effects on psychopathology.
 
 \printbibliography
+
 %% CAVEAT: \appendices environment breaks \cleveref
 \newpage
 \appendix
-\appendixpage
+%\appendixpage
 
-\setcounter{tocdepth}{2}
-\startcontents[sections]
-\printcontents[sections]{l}{1}
+%\setcounter{tocdepth}{2}
+%\startcontents[sections]
+%\printcontents[sections]{l}{1}
 %\addappheadtotoc
 %\todo{appendices: 4000 words max (~250 words/page i.e. 16 pages)}
 
@@ -1563,13 +1539,13 @@ their concern.
 Whilst participants completed the dot-probe practise block , the
 experimenter validated their I-words, noting any which known to be
 difficult to match with a pair from the neutral word database. These
-including plurals, acronyms, hyphenated words, words with stems related
-to an N-word or words longer than 10 characters. After completing the
-practice block, participants were instructed to replace any invalid
-words with synonyms or with alternatives from their list, where these
-were available. Care was taken to ensure that the semantics of any
-adjusted words were chosen by the participant without influence
-from the experimenter (see \cref{sec:iwordinstructions}). All
+including plurals, acronyms, hyphenated words, words with stems
+related to an N-word or words longer than 10 characters. After
+completing the practice block, participants were instructed to
+replace any invalid words with synonyms or with alternatives
+from their list, where these were available. Care was taken
+to ensure that the semantics of any adjusted words were chosen
+by the participant without influence from the experimenter. All
 participants successfully generated 6 I-words. They rated the valence
 of each word in relation to their concern on a 7-point scale, using
 instructions based on \textcite{citron_how_2014}. Participants then
@@ -1640,11 +1616,25 @@ in a locked filing cabinet.
 \label{app:mood}
 
 \begin{figure}[h]
+\caption{Correlations PANAS-SF and additional items `sad',`depressed',`anxious',`worried'.}
 \centering
-\includegraphics[width=110mm,height=110mm]{figure/PAnas.jpg}
-\caption{Correlations between PA scale on PANAS-SF and items `sad' and `depressed'}
-\includegraphics[width=110mm,height=110mm]{figure/paNAs.jpg}
-\caption{Correlations between NA scale on PANAS-SF and items `anxious' and `worried'}
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[width=110mm,height=110mm]{figure/PAvs_sad_depressed.jpg}
+    \caption{Correlations between PA items, `sad' and `depressed'}
+  \end{subfigure}
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[width=110mm,height=110mm]{figure/NAvs_sad_depressed.jpg}
+    \caption{Correlations between NA items, `sad' and `depressed'}
+  \end{subfigure}
+\end{figure}
+
+\begin{figure}
+\ContinuedFloat
+\centering
+  \begin{subfigure}[!htbp]{\textwidth}
+    \includegraphics[width=110mm,height=110mm]{figure/NAvs_anxious_worried.jpg}
+    \caption{Correlations between NA items, `anxious' and `worried'}
+  \end{subfigure}
 \end{figure}
 
 \end{document}

@@ -13,6 +13,9 @@ stim:
 analyse:
 	../opensesame/dotprobe/analyse.R
 
+panas:
+	../opensesame/dotprobe/panas.R
+
 accuracy:
 	../opensesame/dotprobe/accuracy.R > ../opensesame/dotprobe/accuracy.tt
 
