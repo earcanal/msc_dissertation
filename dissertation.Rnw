@@ -131,8 +131,8 @@ which a degree has previously been conferred upon me.}
 
 \begin{document}\thispagestyle{empty}
 \setlength{\marginparwidth}{1cm}
-%\todototoc
-%\listoftodos[Todo list]
+\todototoc
+\listoftodos[Todo list]
 \maketitle
 \pdfbookmark{\contentsname}{toc}
 %\tableofcontents
@@ -373,32 +373,25 @@ will reduce, and state positive affect will increase.
 
 \subsection{Design}
 
-The current study included a novel use of ABM training towards an
-ideographic current concern, and required a small number of participants
-to undertake long-term training. To balance the exploratory nature
-of the research with the ability to make statistical inferences
-from the results we chose a randomised, single-case series design
-\parencite{bulte_r_2008}. In this type of design, a series of baseline
-(phase A) measures are compared against those after the (ABM training)
-intervention (phase B) \parencite{bulte_r_2008}. The overall design
-can be considered a non-concurrent, multiple baseline replication
-across participants \parencite{watson_nonconcurrent_1981}. That is
-to say, there were multiple participants (case-series), which started
-at different times, and the time point of transition to phase B
-in each was chosen randomly in advance. Whilst the design lacks a
-control condition, it does provide some controls against alternative
-explanations of effects. Replication across participants controls for
-individual regression to the mean, variable phase A duration controls
-for baseline assessment effects, and randomised transition to phase
-B controls for extraneous events correlated with phase transition
-\parencite{watson_nonconcurrent_1981,watkins_ruminationfocused_2007}.
-Furthermore, as this was an exploratory study, limiting Type
-I error rates was not a priority. Based on previous research
+The small number of participants in this study reflects its exploratory
+nature, and the effort required to keep participants engaged in
+a relatively long-term training regime. A randomised, single-case
+series design \parencite{bulte_r_2008} was chosen to allow statistical
+inference in spite of this small ${N}$.  This type of design compares a
+series of baseline (phase A) measures against those after a treatment
+intervention\footnote{The treatment in the current study being ABM
+training.} (phase B) \parencite{bulte_r_2008}. The overall design can
+be considered a non-concurrent, multiple baseline replication across
+participants \parencite{watson_nonconcurrent_1981}. That is to say,
+there were multiple participants\footnote{A 'series' of 'cases'.}, who
+started the study at different times, and each participant's transition
+to phase B was chosen randomly in advance. Based on previous research
 \parencite{yang_attention_2015}, 8 ABM sessions (phase B) were considered
-necessary in order to detect training effects. A total of 35 measurement
-times (MTs) were chosen, as (with a minimum of 8 MTs in phases A and B)
-the resulting 20 possible transition points allowed significance testing
-at the ${p}$=.05 level for each participant completing all sessions
+necessary in order to detect training effects. A minimum of 8 measurement
+times (MTs) in phases A and B, and a total of 35 MTs results in 20
+possible transition points. This provides randomisation tests with
+sensitivity to detect significant differences at ${p}$=.05 for each
+participant\footnote{Assuming the participant completes all sessions.}
 \parencite{onghena_customization_2005,bulte_r_2008}.
 
 \subsection{Participants}
@@ -416,17 +409,16 @@ and not concurrently undergoing psychotherapy or taking psychotropic
 medication.
 
 Screening instruments were created using Lime Survey
-\parencite{limesurvey} and completed using a web browser. Inclusion
-criteria were a PHQ-8 \parencite{kroenke_phq8_2009} score {\textless}
-11, to exclude people with mild depression or above, and, to include
-high trait ruminators or trait worriers, a Ruminative Responses Scale
-(RRS) \parencite{treynor_rumination_2003} score ${\geq}$ 53 or a Penn
-State Worry Questionnaire (PSWQ) \parencite{meyer_development_1990}
-score ${\geq}$ 55. The RRS and PSWQ cut points were calculated to place
-participants in the top 33\% of these measures, based on a sample
-of 210 University of Exeter undergraduate students measured on RRS
-(${M}$ = 46.9, ${SD}$ = 12.7) and PSWQ (${M}$ = 48.2, ${SD}$ = 14.9)
-\parencite{moberly_controlled_2015}.
+\parencite{limesurvey} and completed online. People with mild depression
+or above (PHQ-8 \parencite{kroenke_phq8_2009} {\textless} 11) were
+excluded. Inclusion criteria were high trait rumination (Ruminative
+Responses Scale (RRS) \parencite{treynor_rumination_2003} ${\geq}$
+53), and/or high trait worry (Penn State Worry Questionnaire (PSWQ)
+\parencite{meyer_development_1990} ${\geq}$ 55). The RRS and PSWQ cut
+points were calculated to place participants in the top 33\% of these
+measures, based on a sample of 210 University of Exeter undergraduate
+students measured on RRS (${M}$ = 46.9, ${SD}$ = 12.7) and PSWQ (${M}$
+= 48.2, ${SD}$ = 14.9) \parencite{moberly_controlled_2015}.
 
 <<screening, echo=FALSE, error=TRUE>>=
 screening<-read.csv('/media/paul/2E95-1293/study/screening.csv',header=TRUE)
@@ -438,14 +430,16 @@ to participate, 6 were members of staff, 5 were postgraduate
 students, 2 were undergraduate students, 1 was a recent graduate,
 and 1 was the partner of an undergraduate student. At screening,
 the 15 participants who began the study had a mean PHQ-8
-score of \Sexpr{sprintf("%0.2f",mean(screening$phq8total))}
-(${SD}$=\Sexpr{sprintf("%0.2f",sd(screening$phq8total))}), a mean
-RRS score of \Sexpr{sprintf("%0.2f",mean(screening$rrstotal))}
-(${SD}$=\Sexpr{sprintf("%0.2f",sd(screening$rrstotal))}), and a mean
-PSWQ score of \Sexpr{sprintf("%0.2f",mean(screening$pswqtotal))}
-(${SD}$=\Sexpr{sprintf("%0.2f",sd(screening$pswqtotal))}). There were
-no outliers (> 3SD) on these measures. The mean age of participants was
-31.38 years (${SD}$ = 9.99 years).
+score of \Sexpr{sprintf("%0.1f",mean(screening$phq8total))}
+(${SD}$=\Sexpr{sprintf("%0.1f",sd(screening$phq8total))}), a mean
+RRS score of \Sexpr{sprintf("%0.1f",mean(screening$rrstotal))}
+(${SD}$=\Sexpr{sprintf("%0.1f",sd(screening$rrstotal))}), and a
+mean PSWQ score of \Sexpr{sprintf("%0.1f",mean(screening$pswqtotal))}
+(${SD}$=\Sexpr{sprintf("%0.1f",sd(screening$pswqtotal))}). There were no
+outliers (> 3SD) on these measures. The mean age of participants was 31.4
+years (${SD}$ = 10 years). A detailed ethical submission was approved
+by the University of Exeter, School of Psychology Ethics Committee,
+a summary of which can be seen in \cref{app:ethics}.
 
 \begin{figure}[!h]
   \centering
@@ -457,32 +451,30 @@ no outliers (> 3SD) on these measures. The mean age of participants was
 \subsection{Measures and Materials}
 
 All self-report measures were created using Lime Survey
-\parencite{limesurvey} and completed using a web browser (see
-\cref{app:surveys}). Ecological validity was good, with all except the
+\parencite{limesurvey} and completed using a web browser  Ecological validity was good, with all except the
 pre self-report measurements taken outside of a laboratory environment.
 
 \subsubsection{Pre--Post self-report measures}
 
 The following measures were taken before the first and after the last
-dot-probe/ABM sessions.
+dot-probe/ABM sessions (see \cref{app:surveys}).
 
 \paragraph{RRS}
 
-The Ruminative Responses Scale (RRS) is a 22 item measure of
-trait rumination, with item scores ranging from 1--4. The RRS is
-valid and reliable, having an expected Cronbach's $\alpha$ of .85
-\parencite{treynor_rumination_2003}. Questions on the RRS were asked
-in relation to the previous 4 weeks, to correspond approximately with
-the month before the study (pre) and time within the study (post)
-(see \cref{app:surveys}).
+The Ruminative Responses Scale (RRS) is a 22 item measure
+of trait rumination, with item scores ranging from 1--4. The
+RRS is valid and reliable, having Cronbach's $\alpha$ of .85
+\parencite{treynor_rumination_2003}. Questions on the RRS were asked in
+relation to the previous 4 weeks, to correspond approximately with the
+month before the study (pre) and time within the study (post).
 
 \paragraph{GAD-7}
 
-The GAD-7 is a 7 item measure of Generalised Anxiety Disorder (GAD),
-with items relating to the previous 2 weeks, and scores ranging from
-0--3. The GAD-7 is an efficient, internally reliable (Cronbach's $\alpha$
-> .85) tool for assessing GAD severity in clinical research, with good
-test-retest reliability \parencite{spitzerrl_brief_2006}.
+The GAD-7 is a 7 item measure of Generalised Anxiety Disorder (GAD)
+symptoms, with items relating to the previous 2 weeks, and scores ranging
+from 0--3. The GAD-7 is an efficient, internally reliable (Cronbach's
+$\alpha$ > .85) tool for assessing GAD severity in clinical research,
+with good test-retest reliability \parencite{spitzerrl_brief_2006}.
 
 \paragraph{PHQ-9}
 
@@ -497,7 +489,7 @@ The 16 item Penn State Worry Questionnaire (PSWQ) is an internally
 consistent measure of trait worry with good test-retest reliability
 \parencite{meyer_development_1990}.  Item scores range from 1--5.
 
-\subsubsection{Case-series self-report measures}
+\subsubsection{Daily measures}
 
 The following measures were taken approximately every 24 hours, except
 where sessions were postponed.
@@ -505,10 +497,11 @@ where sessions were postponed.
 \paragraph{GRS}
 
 The Goal Rumination Scale (GRS) is a 7 item measure of state rumination
-towards a specific problem \parencite{schultheiss_role_2008}.  Item scores
+towards a specific goal \parencite{schultheiss_role_2008}. Item scores
 range from 1--7, with items 5--7 reversed. Reliability of the GRS is
 good (Cronbach's $\alpha$ = .87), based on a single sample of $N$ =
-101. Questions on the GRS were asked in relation to the last 24 hours.
+101. Questions on the GRS were asked in relation a ``problem'' rather
+than a ``goal'' and in relation to the last 24 hours.
 
 \paragraph{PANAS-SF}
 
@@ -516,25 +509,136 @@ The 10 item, short form Positive and Negative Affect Schedule
 \parencite[PANAS-SF,][]{mackinnon_short_1999} measures positive affect
 (PA, Cronbach's $\alpha$=.78) and negative affect (NA, Cronbach's
 $\alpha$=.87). Item scores range from 1--5. Although the PANAS PA
-scale hows significant negative correlations with depression measures
+scale has significant negative correlations with depression measures
 \parencite{watson_development_1988}, the PANAS-SF PA items (`determined',
-`alert', `inspired', `enthusiastic', `excited') are underrepresented at
-the negative pole of positive affect. Therefore, to improve detection
-of our hypothesised change in depression, we added items `sad' and
-`depressed' to the PANAS-SF, our rationale being that they would
-correlate negatively with PA and positively with NA. To directly assess
-our hypothesised changes in anxiety we also added items `anxious' and
-`worried', which we expected to correlate positively with NA. Questions
-on the PANAS-SF were asked in relation to the last 24 hours.
+`alert', `inspired', `enthusiastic', `excited') do not represent the
+negative pole of positive affect. Therefore, to improve detection of our
+hypothesised change in depression, we added items `sad' and `depressed'
+to the PANAS-SF. Items `anxious' and `worried' were added to assess
+our hypothesised changes in anxiety but excluded from analyses due to
+their positive correlation with NA\footnote{Of the four items added to
+the PANAS-SF, `sad' and `depressed' correlated strongly with each other
+and weakly with PA items on the scale, whereas `anxious' and `worried'
+were moderately associated with NA, but not as highly as the NA scale
+itself (see \cref{app:mood}). Given these findings and that PANAS is an
+established measure, we analysed three mood variables: positive affect
+(PA scale), negative affect (NA scale) and `depression' (`sad' and
+`depressed' items).}. Questions on the PANAS-SF were asked in relation
+to the last 24 hours.
+
+\subsection{Procedure}
+
+\subsubsection{Preparatory session}
+
+People who met the online screening criteria and accepted the invitation
+to participate, met the researcher at the University of Exeter to complete
+the initial 1 hour preparatory session. Participants gave informed,
+written consent, in line with the guidelines set by the University
+of Exeter School of Psychology Ethics Committee. Following this they
+completed baseline measures for RRS, PHQ-9, GAD-7 and PSWQ online.
+
+Using a procedure based on \textcite{roberts_cueing_2013}, the participant
+was instructed to select an unresolved current concern which they rated
+on a 5 item scale, with each item in the range 1--9. The concern was
+accepted if ratings for the questions \enquote{How much you have been
+thinking about it over the last week?} and \enquote{How much does it
+bother you now?} were > 5, and the concern was considered unlikely
+to resolve within the following 5 weeks. For each participant, the
+first concern chosen met these criteria. Participants wrote a short
+statement summarising their concern and recorded the length of time
+that it had been bothering them. The participant then generated their
+I-words (see \cref{app:iwordgen}) and completed a dot-probe practice
+block\footnote{Dot-probe practice blocks used N-word block 7 and
+a set of I-word pairs generated by the experimenter.}. Participants
+were given help installing the computer task, a task information sheet
+(see \cref{app:taskinstructions}) and a printed calendar for managing
+their daily sessions, on which they wrote an implementation intention
+\parencite{gollwitzer_implementation_1999} to encourage session
+completion. The experimenter then prepared the files required for the
+computer task and emailed them to the participant.
+
+\subsubsection{Daily sessions}
+
+Participants were instructed to complete all experimental sessions on a
+computer at their home. Each day, the experimenter sent participants a
+templated email containing instructions on how to complete the session
+(see \cref{app:reminder}). Participants began each session by completing
+the dot-probe task (phase A) or the ABM training, followed by the
+dot-probe (phase B). Dot-probe blocks took approximately 5 minutes to
+complete, and ABM training blocks approximately 15 minutes.
+
+Using Lime Survey, participants uploaded their task data, recorded
+whether their concern was still unresolved and complete PANAS-SF and
+GRS measures. The experimenter periodically sent additional emails
+to motivate participants by notifying them of their progress, to
+ensure their well-being if 3 consecutive sessions were skipped, and to
+prepare them for the slightly longer task when transitioning to phase
+B. From session 25 onward, sessions ended with a message informing the
+participant of the amount they had earned so far. Participants provided
+post-intervention RRS, PHQ-9, GAD-7 and PSWQ measures using the Lime
+Survey website within approximately 12 hours of completing the final
+session. On exiting the study, all participants were emailed debrief
+information \cref{app:debrief} and information about sources of support
+\cref{app:support} and were paid for their participation.
+
+\subsubsection{Experimental stimuli}
+
+Negative-Neutral (N-word) pairs differed significantly on valence but were
+matched for frequency, imageability, familiarity, number of characters
+and number of syllables (see \cref{app:nwords}). Ideographic word sets
+(I-words) were the 6 words rated by participants as most likely to
+induce rumination about their chosen current concern, from a maximum
+of 10 self-generated words. The experimenter chose I-word pairs by
+selecting neutral words matched for frequency, imageability, familiarity,
+word length and number of syllables (see \cref{app:iwords}). In order
+to detect ${generalised}$ changes in attentional bias in relation to
+N-word emotional valence, rather than changes in bias to specific N-word
+stimuli \parencite{see_reduction_2009}, phase B dot-probe blocks only
+contained N-words not previously exposed in any preceding ABM block. An
+example randomisation schedule and associated stimulus allocation is
+shown in \cref{tab:stim}.
+
+\input{procedure/stim.tex}
 
 \subsubsection{Dot-probe task}
 
-Our version of the dot-probe task used word-pair stimuli (see figure
-\ref{fig:dotprobe}) and was based on \textcite{yang_attention_2015}. We
-used two sets of visual word stimuli in the dot-probe task. A
-set of Negative-Neutral (N-word) pairs based on affective norms
-\parencite{citron_how_2014}, and a set of Ideographic-Neutral (I-word)
-pairs associated with a current concern chosen by each participant.
+Our version of the dot-probe task\footnote{The dot-probe task was
+developed using OpenSesame, an open-source experiment builder for the
+social sciences \parencite{mathot_opensesame_2011}. OpenSesame was
+chosen as a package which was relatively easy to install on Windows,
+Macintosh (OSX ${\geq}$ 10.9) and Linux operating systems, thereby
+eliminating any dependencies on a web server for software development
+or data collection. Installation instructions for were created
+using screen capture software and uploaded to YouTube.} (see figure
+\ref{fig:dotprobe}) used two sets of visual word-pair stimuli and was
+based on \textcite{yang_attention_2015}. Dot-probe blocks consisted
+of 96 trials. Each trial began with an 25 x 25 pixel (7 pixel thick)
+white fixation cross centred on a black screen. After 500ms, this was
+replaced by a word pair from the current stimulus set. One word from the
+pair appeared above the fixation cross location and one below. Word pairs
+were 125 pixels high with a vertical space between the upper and lower
+words such that the stimuli subtended a visual angle of approximately
+2$^{\circ}$. Neutral words appeared with equal frequency at the upper
+or lower positions. After 1250 ms, the word pair was replaced by either
+a greater than (\texttt{>}) symbol or less than (\texttt{<}) symbol at
+a random letter location within one of the previous word locations. As
+our aim was to guarantee attentional engagement with word stimuli,
+this exposure duration was chosen as being slightly higher than the
+1000 ms in which vigilance for negative words has been shown to be
+positively correlated with measures of depressed mood and vulnerability
+\parencite{bradley_attentional_1997}. Furthermore, attentional biases
+are more frequently observed when self-relevant negative information is
+presented for longer durations \parencite{koster_understanding_2011},
+and attentional biases in depression are critically dependent on longer
+(1000 ms) exposure durations \parencite{donaldson_rumination_2007}. Probes
+appeared with equal frequency at upper and lower locations. Valid keyboard
+responses were greater than (\texttt{>}) and less than (\texttt{<}). The
+probe remained on the screen until the participant pressed a valid
+key. A correct response was recorded if the key-press matched the probe
+symbol. There was no feedback for incorrect responses. A blank screen
+with a random inter-trial interval (ITI) between 100-500ms followed each
+trial. Participants were instructed to respond as quickly and accurately
+as possible.
 
 \begin{figure}[!ht]
   \centering
@@ -547,54 +651,14 @@ pairs associated with a current concern chosen by each participant.
   \label{fig:dotprobe}
 \end{figure}
 
-Each trial began with an 25 x 25 pixel (7 pixel thick) white fixation
-cross centred on a black screen. After 500ms, this was replaced by a word
-pair from the current stimulus set.  One word from the pair appeared
-above the fixation cross location and one below. Word pairs were 125
-pixels high with a vertical space between the upper and lower words such
-that the stimuli subtended a visual angle of approximately 2$^{\circ}$
-\footnote{This angle was calculated using a height measurement of the
-visible area of each participant's computer display, and the assumption
-that participants followed the instruction to sit approximately 60cm
-from the screen.}. Neutral words occurred with equal frequency at the
-upper or lower positions. After 1250 ms, the word pair was replaced by
-either a greater than (\texttt{>}) symbol or less than (\texttt{<})
-symbol at a random letter location within one of the previous word
-locations. As our aim was to guarantee attentional engagement with word
-stimuli, this exposure duration was chosen as being slightly higher than
-the 1000 ms in which vigilance for negative words has been shown to be
-positively correlated with measures of depressed mood and vulnerability
-\parencite{bradley_attentional_1997}. Furthermore, attentional biases
-are more frequently observed when self-relevant negative information is
-presented for longer durations \parencite{koster_understanding_2011},
-and attentional biases in depression are critically dependent on longer
-(1000 ms) exposure durations \parencite{donaldson_rumination_2007}.
-
- Probes appeared with equal
-frequency at upper and lower locations. The only valid keyboard responses
-were greater than (\texttt{>}) and less than (\texttt{<}). The probe
-remained on the screen until the participant pressed a valid key. A
-correct response was recorded if the key-press matched the probe
-symbol. There was no feedback for incorrect responses. A blank screen
-with a random inter-trial interval (ITI) between 100-500ms followed
-each trial. Participants were instructed to respond as quickly and
-accurately as possible.  Each dot-probe block consisted of 96 trials
-and took approximately 5 minutes to complete.
-
-The task was developed using OpenSesame, an open-source experiment builder
-for the social sciences \parencite{mathot_opensesame_2011}. OpenSesame
-was chosen as a package which was relatively easy to install on Windows,
-Macintosh (OSX ${\geq}$ 10.9) and Linux operating systems, thereby
-eliminating any dependencies on a web server for software development or
-data collection. Installation instructions for were created using screen
-capture software and uploaded to YouTube.
+\subsubsection{Attentional bias assessment}
 
 After removing inaccurate trials or those with response times (RTs)
 exceeding 3 standard deviations beyond the mean, attentional bias scores
 were calculated from the remaining RTs using the equation \begin{equation}
   Attentional\ bias\ score = [(NuPl + NlPu) - (NuPu + NlPl)]/2\label{eq:1}
 \end{equation} where ${N}$ = Negative word, ${P}$ = Probe, ${u}$ =
-upper, ${t}$ = lower \parencite{bradley_attentional_1997}.  A bias
+upper, ${l}$ = lower \parencite{bradley_attentional_1997}. A bias
 towards negative words is reflected in longer latencies for probes
 at the opposite location (left-hand side of equation \eqref{eq:1})
 and shorter latencies for probes at the same location (right-hand side
@@ -603,235 +667,17 @@ attentional bias towards (i.e. vigilance for) negative words relative
 to neutral words, whereas more negative scores indicate avoidance
 \parencite{bradley_attentional_1997}.
 
-\subsubsection{ABM task}
+\subsubsection{ABM training}
 
-The ABM task used three minor adjustments to the dot-probe paradigm
-dot-probe to ${modify}$, rather than measure attentional bias. First,
-there were double the number (192) trials in each block. Second, only
-N-word pairs were used as stimuli. Finally, probes in ABM trials always
-appeared at the neutral word location. Thus, responses required repeated
-orientation of attention away from the negative word in the pair. Each
-ABM block took approximately 15 minutes.
-
-\subsubsection{N-word pairs}
-
-The Sussex Affective Word List (SAWL) \parencite{citron_how_2014} was
-used to create 66 N-word stimulus pairs. Starting with 66 words rated
-most negative and most neutral, pairs were created by matching words
-of equivalent character length, drawing additional words from the SAWL
-as necessary to ensure that all pairs were matched on length. A small
-number of pairs which appeared to be semantically related were adjusted
-by replacing the neutral word in the pair with an alternative from
-the SAWL.  Independent samples t-tests showed significant differences
-(${P}$s {\textless} .001) for mean ratings of valence and arousal (see
-\cref{app:nwordttests}). Pairs were matched for frequency, imageability,
-familiarity, number of characters and number of syllables (all ${P}$s
-{\textgreater} .16) (see \cref{app:nwordttests}). In addition, the mean
-valence between members of any pair was at least 1.44 (Mean: 2.15, ${SD}$
-= 0.37). To form the stimulus blocks, pairs were ranked by descending
-mean valence difference.  The 6 pairs with the lowest difference were
-assigned to the ``spare'' block, used where I-words were present in the
-N-word set (see below). The remaining 60 pairs were divided at every
-10 word boundary, forming 6 groups. Each experimental block of 6 words
-was created by taking the top pair from each group, until all groups
-were exhausted, thereby creating 10 blocks with a mixture of valence
-differences. The complete N-word list can be seen in \cref{app:nwordlist}
-
-\subsubsection{I-word pairs}
-\label{sec:iwordpairs}
-
-We refer to ideographic words (I-words) as the set of 6 words chosen
-by each participant for their likelihood to induce rumination
-about the participant's chosen current concern. Due to the
-unpredictability of these words, and the limited number of words in
-the SAWL \parencite{citron_how_2014}, a larger data set was required
-to matched pairs to I-words. A database of neutrally valenced words was
-created including frequency, imageability, familiarity, word length and
-number of syllables attributes from the MRC psycholinguistic database
-\parencite{wilson_mrc_1988}. A separate table was added to the database
-containing 1030 word valence means from the Affective Norms for English
-Words (ANEW) dataset \parencite{bradley_affective_1999}.
-
-Two different matching approaches were used, depending on whether
-each I-word word was present in, or absent from, the MRC database.
-If present, a neutral pair was selected from a pool of words having
-a frequency {\textpm}15\% that of the I-word, an ANEW valence mean
-(range 1-9) between 4.00 and 6.00 and an equal number of characters.
-After selecting a pool of matched words on the preceding criteria,
-a best match was found by inspection of candidate words based on
-number of syllables, imageability and familiarity.  Some I-words,
-such as long words or high frequency words, could not be matched
-using these criteria due to lack of available data. In these cases,
-a word with the most neutral valence was chosen that also minimised
-differences in length and frequency between the word pair. I-words
-absent from the MRC database (including proper nouns) were paired with
-words selected from a pool of 56 words having a frequency of 1 (on the
-assumption that words missing from the database would most likely be
-of low frequency), and for which an ANEW valence rating was available.
-A word was selected from this pool having an ANEW valence mean between
-4.00 and 6.00 and an equal number of characters to the I-word. If an
-I-word or its pair was a member of the N-word set, that N-word pair was
-substituted with the next available pair from the spare N-words block
-with the largest difference in valence. Resulting I-word pairs were
-validated by the experimenter's supervisor. The final sets of I-word
-pairs for each participant (\cref{tab:iwords}) and their characteristics
-(\cref{tab:iwordcharacteristics}) are show in in \cref{app:iwordlist}.
-
-\subsection{Procedure}
-
-People who met the screening criteria and accepted the invitation to
-participate, met the researcher at the University of Exeter to complete
-the initial 1 hour preparatory session. Participants gave informed,
-written consent, in line with the guidelines set by the University
-of Exeter School of Psychology Ethics Committee.  Following this they
-completed baseline measures for RRS, PHQ-9, GAD-7 and PSWQ using a web
-browser and Lime Survey \parencite{limesurvey}.
-
-Using a procedure based on \textcite{roberts_cueing_2013}, the
-participant was instructed to select an unresolved current concern (see
-\cref{sec:iwordinstructions}), and rated their concern on a 5 item scale,
-with each item in the range 1--9 (see \cref{app:concernrating}). The concern
-was accepted if ratings for the questions \enquote{How much you have
-been thinking about it over the last week?} and \enquote{How much does
-it bother you now?} were > 5, and the concern was unlikely to resolve
-within the following 5 weeks. All participants' initial concern met
-these criteria. Participants wrote a short statement summarising their
-concern and recorded the length of time that it had been bothering them.
-
-The participant then generated their ideographic words (I-words). They
-were instructed to generate up to 10 English words, excluding
-phrases, associated with their concern. When choosing these words,
-they were asked to consider \enquote{causes, meanings and implications}
-\parencite[][p.55]{watkins_concreteness_2009} relating to their concern,
-thereby encouraging abstract construal, which has been associated with
-rumination \parencite{watkins_concreteness_2009}. From their list,
-they then chose the 6 words most likely to cause them to ruminate about
-their concern.
-
-To familiarise themselves with the dot-probe task, participants
-then completed a practice block consisting of N-word block 7 and
-a set of I-word pairs generated by the experimenter. Whilst this
-was underway, the experimenter validated the participant's I-words,
-noting any which known to be difficult to match with a pair from the
-neutral word database. These including plurals, acronyms, hyphenated
-words, words with stems related to an N-word or words longer than
-10 characters. After completing the practice block, participants were
-instructed to replace any invalid words with synonyms or with alternatives
-from their list, where these were available. Care was taken to ensure that
-the semantics of any adjusted words were chosen by the participant without
-influence from the experimenter (see \cref{sec:iwordinstructions}). All
-participants successfully generated 6 I-words. They rated the valence
-of each word in relation to their concern on a 7-point scale, using
-instructions based on \textcite{citron_how_2014}. Participants then
-completed a distraction task to attenuate the effects of rumination
-\parencite{nolen-hoeksema_rethinking_2008} for 5 minutes (see
-\cref{app:distraction}).
-
-Participants were given an information sheet to help them install
-and complete the computer task (see \cref{app:taskinstructions}). As a
-motivational aid, they were also given a printed calendar on which to plan
-their daily sessions and cross them off when completed. Implementation
-intentions have been shown to improve the goal-directed behaviour
-\parencite{gollwitzer_implementation_1999}, so participants were
-instructed to write on the calendar sheet a statement indicating an
-approximate time when they would complete each session. If requested,
-the experimenter installed OpenSesame \parencite{mathot_opensesame_2011}
-on the participant's laptop. The initial session ended with the
-experimenter and participant agreeing a time on the same or the
-following day when the experimenter could be available to support the
-participant whilst installing the computer task on their own computer
-and completing their first session. All participants successfully
-completed the preparatory session (see \cref{app:initialsession} for
-full details of the session protocol). The experimenter then prepared
-the files required for the participant to run the computer task. These
-consisted of the dot-probe/ABM program, I-word pairs, N-word pairs, the
-participant's randomisation schedule\footnote{Randomisation schedules
-were generated using the \texttt{SCRT} \parencite{bulte_r_2008}
-function \texttt{selectdesign(design=AB,MT=35,limit=8)}.}, a stimulus
-configuration file and a configuration file to position stimuli based
-on the participant's screen height. These files were emailed to the
-participant for installation.
-
-\subsubsection{Case-series}
-
-Participants were instructed to complete all experimental sessions on a
-computer at their home. Each day, the experimenter sent participants a
-templated email containing instructions on how to complete the session
-(see \cref{app:reminder}). For the first session, additional instructions
-included a link to the installation video on YouTube. Participants
-began each session by completing the dot-probe task (phase A) or the ABM
-training, followed by the dot-probe (phase B). Using a web browser, they
-then used Lime Survey to upload their task data, record whether their
-concern was still unresolved and complete PANAS-SF and GRS measures. On
-a daily basis, the experimenter recorded whether each participant
-had completed a session and, if so, their accuracy on the task. The
-experimenter periodically sent additional emails to motivate participants
-by notifying them of their progress, to ensure their well-being if 3
-consecutive sessions were skipped, and to prepare them for the slightly
-longer task when transitioning to phase B. From session 25 onward,
-sessions ended with a message informing the participant of the amount
-they had earned so far. Participants provided post-intervention RRS,
-PHQ-9, GAD-7 and PSWQ measures using the Lime Survey website within
-approximately 12 hours of completing the final session. On exiting the study, all
-participants were emailed debrief information \cref{app:debrief} and
-information about sources of support \cref{app:support} and were paid
-for their participation.
-
-\subsubsection{Stimulus allocation}
-
-In phase A, dot-probe blocks consisted of 12 word pairs; the 6 I-word
-pairs and 6 N-word pairs. Session 1 used pairs 1--6 from the 66 N-word
-set, session 2 used pairs 7--12, and so on. Thus, bias associated with
-the participant's ideographic words was measured at every session,
-whereas the more general negative valence associated with N-words was
-distributed across measurement times. In phase B, dot-probe measurement was
-preceded by ABM blocks containing only N-words. To detect ${generalised}$
-changes in attentional bias in relation to emotional valence, rather
-than changes in bias to specific stimuli \parencite{see_reduction_2009},
-phase B dot-probe blocks only contained N-words not previously exposed in
-any preceding ABM block. To guarantee enough stimuli when randomisation
-resulted in a long phase B, the same 6 N-words were used for 3 consecutive
-ABM training sessions. N-words from previous ABM blocks were included in
-subsequent ABM blocks. For example, the first 3 ABM blocks used N-words
-1--6 and the subsequent dot-probe used N-words 7--12. The fourth ABM
-block used N-words 1--12 and the subsequent dot-probe used N-words 13--18,
-and so on. A random draw was used to select the 192 stimuli for each ABM
-session. As with phase A, the 6 I-words were present in every dot-probe
-block. An example stimulus allocation for a randomisation schedule is
-shown in \cref{tab:stim}.
-
-\input{procedure/stim.tex}
+The ABM task used three minor adjustments to the dot-probe paradigm to
+${modify}$, rather than measure attentional bias. First, there were
+double the number (192) of trials in each block. Second, only N-word
+pairs were used as stimuli. Finally, probes in ABM trials always appeared
+at the neutral word location. Thus, correct responses required repeated
+orientation of attention away from the negative word in the pair.
 
 % handle weird gaps that appeared between paragraphs near this page
 \raggedbottom
-\section{Ethical Considerations}
-
-Because screening measures were submitted remotely, depression was
-measured using the PHQ-8 which omits one item measuring suicidal ideation.
-Anyone scoring ${\geq}$ 10 on the PHQ-8 \parencite{kroenke_phq8_2009}
-received practical, supportive information about resources available
-to people who may be suffering from depression. The researcher
-completed training in implementing the latest risk protocol employed
-by the University of Exeter, Mood Disorders Centre. Risk cover by a
-clinically trained member of staff was arranged in advance of each PHQ-9
-(which includes a suicidal ideation question) that was administered to
-participants. No participants triggered the risk protocol.
-
-A potential risk of harm was identified arising from increasing
-rumination in high trait ruminators, along with the burden of a long
-testing period. The experimenter mitigated this risk by keeping in
-regular contact with participants, notably when more than two testing
-sessions were skipped. Any concerns were raised with the researcher's
-supervisor. On leaving the study, all participants were emailed a copy
-of the support information for people who may suffer from depression.
-
-Participants were not identifiable from their electronic data. Online
-measures were stored on a secure digital filing system and all other
-data on a memory stick. Any sensitive written information was stored
-in a locked filing cabinet. A detailed ethical submission was approved
-by the University of Exeter, School of Psychology Ethics Committee
-(see \cref{app:ethics}).
-
 \section{Analyses}
 \label{analyses}
 
@@ -939,22 +785,14 @@ of nonoverlapping data (PND) is an effect size measure frequently
 used in single-subject research, and is the percentage of treatment
 phase observations that do not overlap data in the baseline phase
 \parencite{scruggs_pnd_2013}. \textcite{scruggs_early_1986} consider
-treatments with PND scores ${\geq}$ 90\% as highly effective, scores of 70\%--90\%
-as fair, scores of 50\%--70\% as questionable effects, and scores <~ 50\%
-as unreliable.  PND was calculated using the R package \texttt{SCMA},
-using \texttt{PND-} for N-words, I-words, NA and depression as the
-treatment should case these measures to drop, and \texttt{PND+} for PA
-as the treatment should result in an increase in positive affect.
-
-Of the four items added to the PANAS-SF, `sad' and `depressed' correlated
-strongly with each other and weakly with PA items on the scale, whereas
-`anxious' and `worried' were moderately associated with NA, but not
-as highly as the NA scale itself (see \cref{app:mood}). Given these
-findings and that PANAS is an established measure, we analysed three
-mood variables: positive affect (PA scale), negative affect (NA scale)
-and `depression' (`sad' and `depressed' items). All questions on the
-daily online outcome measures were mandatory, so there was no missing
-data for any completed survey.
+treatments with PND scores ${\geq}$ 90\% as highly effective, scores
+of 70\%--90\% as fair, scores of 50\%--70\% as questionable effects,
+and scores <~ 50\% as unreliable.  PND was calculated using the R
+package \texttt{SCMA}, using \texttt{PND-} for N-words, I-words, NA
+and depression as the treatment should case these measures to drop,
+and \texttt{PND+} for PA as the treatment should result in an increase
+in positive affect. All questions on the daily online outcome measures
+were mandatory, so there was no missing data for any completed survey.
 
 \section{Results}
 
@@ -1400,7 +1238,19 @@ in my results for worriers? Were they "threatened" by their concern?
 
 \subsubsection{Limitations}
 
+Whilst the design lacks a control condition, it does provide some
+controls against alternative explanations of effects. Replication
+across participants controls for individual regression to
+the mean\todo{Nick questioned this!}, variable phase A duration controls for baseline
+assessment effects, and randomised transition to phase B
+controls for extraneous events correlated with phase transition
+\parencite{watson_nonconcurrent_1981,watkins_ruminationfocused_2007}.
+Furthermore, as this was an exploratory study, limiting Type I error
+rates was not a priority.
+
 \begin{itemize}
+\item Changing ``goal'' to ``problem'' may invalidate GRS.
+
 \item Duh! I could have easly matched the stimulus exposure to the RRS (1250ms)/PSWQ(<ms) score!
 
 \item I could calculate change in the RRS brooding subscale to
@@ -1609,9 +1459,33 @@ which populations these have desired effects on psychopathology.
 \end{sidewaysfigure}
 
 \section{N-word stimulus pairs}
-\label{app:nwordlist}
+\label{app:nwords}
 
-\begin{table}[!htbp]
+The Sussex Affective Word List (SAWL) \parencite{citron_how_2014} was
+used to create 66 N-word stimulus pairs. Starting with 66 words rated
+most negative and most neutral, pairs were created by matching words
+of equivalent character length, drawing additional words from the SAWL
+as necessary to ensure that all pairs were matched on length. A small
+number of pairs which appeared to be semantically related were adjusted
+by replacing the neutral word in the pair with an alternative from
+the SAWL. Independent samples t-tests showed significant differences
+(${P}$s {\textless} .001) for mean ratings of valence and arousal (see
+\cref{tab:nwordcharacteristics}). Pairs were matched for frequency,
+imageability, familiarity, number of characters and number of syllables
+(all ${P}$s {\textgreater} .16) (see \cref{tab:nwordcharacteristics}). In
+addition, the mean valence between members of any pair was at least 1.44
+(Mean: 2.15, ${SD}$ = 0.37). To form the stimulus blocks, pairs were
+ranked by descending mean valence difference.  The 6 pairs with the lowest
+difference were assigned to the ``spare'' block, used where I-words were
+present in the N-word set. The remaining 60 pairs were divided at every
+10 word boundary, forming 6 groups. Each experimental block of 6 words
+was created by taking the top pair from each group, until all groups
+were exhausted, thereby creating 10 blocks with a mixture of valence
+differences. The complete N-word list can be seen in \cref{tab:nwordlist}.
+
+\begin{sidewaystable}[!htbp]
+\caption{N-word stimulus pairs used in dot-probe and attentional bias training}
+\label{tab:nwordlist}
 {\tiny
   \begin{tabular}{cllllll}\hline%
     Block & Pair 1 & Pair 2 & Pair 3 & Pair 4 & Pair 5 & Pair 6\\\hline 
@@ -1622,35 +1496,91 @@ which populations these have desired effects on psychopathology.
     \hline
   \end{tabular}
 }
-\end{table}
-
-\section{N-word t-tests}
-\label{app:nwordttests}
+\end{sidewaystable}
 
 <<nwords, results='asis', echo=FALSE, error=TRUE>>=
 @
 
-\section{Distraction task}
-\label{app:distraction}
-\input{procedure/distraction.tex}
+\section{I-word stimulus pairs}
+\label{app:iwords}
+
+Due to the unpredictability of I-words, and the limited number of words
+in the SAWL \parencite{citron_how_2014}, a larger data set was required
+to matched pairs to I-words. A database of neutrally valenced words was
+created including frequency, imageability, familiarity, word length and
+number of syllables attributes from the MRC psycholinguistic database
+\parencite{wilson_mrc_1988}. A separate table was added to the database
+containing 1030 word valence means from the Affective Norms for English
+Words (ANEW) dataset \parencite{bradley_affective_1999}.
+
+Two different matching approaches were used, depending on whether each
+I-word word was present in, or absent from, the MRC database.  If present,
+a neutral pair was selected from a pool of words having a frequency
+{\textpm}15\% that of the I-word, an ANEW valence mean (range 1-9)
+between 4.00 and 6.00 and an equal number of characters.  After selecting
+a pool of matched words on the preceding criteria, a best match was
+found by inspection of candidate words based on number of syllables,
+imageability and familiarity.  Some I-words, such as long words or high
+frequency words, could not be matched using these criteria due to lack of
+available data. In these cases, a word with the most neutral valence was
+chosen that also minimised differences in length and frequency between
+the word pair. I-words absent from the MRC database (including proper
+nouns) were paired with words selected from a pool of 56 words having a
+frequency of 1 (on the assumption that words missing from the database
+would most likely be of low frequency), and for which an ANEW valence
+rating was available.  A word was selected from this pool having an ANEW
+valence mean between 4.00 and 6.00 and an equal number of characters
+to the I-word. If an I-word or its pair was a member of the N-word set,
+that N-word pair was substituted with the next available pair from the
+spare N-words block with the largest difference in valence. Resulting
+I-word pairs were validated by the experimenter's supervisor. The final
+sets of I-word pairs for each participant are shown in \cref{tab:iwords}
+and their characteristics in \cref{tab:iwordcharacteristics}.
+
+\label{app:iwordlist}
+<<iwords, results='asis', echo=FALSE, error=TRUE>>=
+@
+
+\section{I-word generation procedure}
+\label{app:iwordgen}
+
+Participants were instructed to generate up to 10 English words, excluding
+phrases, associated with their concern. When choosing these words,
+they were asked to consider \enquote{causes, meanings and implications}
+\parencite[][p.55]{watkins_concreteness_2009} relating to their concern,
+thereby encouraging abstract construal, which has been associated with
+rumination \parencite{watkins_concreteness_2009}. From their list,
+they then chose the 6 words most likely to cause them to ruminate about
+their concern.
+
+Whilst participants completed the dot-probe practise block , the
+experimenter validated their I-words, noting any which known to be
+difficult to match with a pair from the neutral word database. These
+including plurals, acronyms, hyphenated words, words with stems related
+to an N-word or words longer than 10 characters. After completing the
+practice block, participants were instructed to replace any invalid
+words with synonyms or with alternatives from their list, where these
+were available. Care was taken to ensure that the semantics of any
+adjusted words were chosen by the participant without influence
+from the experimenter (see \cref{sec:iwordinstructions}). All
+participants successfully generated 6 I-words. They rated the valence
+of each word in relation to their concern on a 7-point scale, using
+instructions based on \textcite{citron_how_2014}. Participants then
+completed a distraction task to attenuate the effects of rumination
+\parencite{nolen-hoeksema_rethinking_2008} for 5 minutes.
+
+%\label{sec:iwordinstructions}
+% probably no room for this table
+% FIXME: remove supertablular nonsense
+%\input{procedure/iwords.tex}
+
+%\section{Distraction task}
+%\label{app:distraction}
+%\input{procedure/distraction.tex}
 
 \section{Task instructions}
 \label{app:taskinstructions}
 \input{procedure/task_instructions.tex}
-
-\section{I-word stimulus pairs}
-\label{app:iwordlist}
-
-<<iwords, results='asis', echo=FALSE, error=TRUE>>=
-@
-
-\section{Current Concern Rating Scale}
-\label{app:concernrating}
-
-\section{Unresolved goal and I-word generation instructions}
-\label{sec:iwordinstructions}
-% FIXME: remove supertablular nonsense
-%\input{procedure/iwords.tex}
 
 \section{Initial Session Protocol}
 \label{app:initialsession}
@@ -1667,8 +1597,32 @@ which populations these have desired effects on psychopathology.
 \label{app:support}
 \input{procedure/support.tex}
 
-\section{Ethical Approval}
+\section{Ethical considerations and approval}
 \label{app:ethics}
+
+Because screening measures were submitted remotely, depression was
+measured using the PHQ-8 which omits one item measuring suicidal ideation.
+Anyone scoring ${\geq}$ 10 on the PHQ-8 \parencite{kroenke_phq8_2009}
+received practical, supportive information about resources available
+to people who may be suffering from depression. The researcher
+completed training in implementing the latest risk protocol employed
+by the University of Exeter, Mood Disorders Centre. Risk cover by a
+clinically trained member of staff was arranged in advance of each PHQ-9
+(which includes a suicidal ideation question) that was administered to
+participants. No participants triggered the risk protocol.
+
+A potential risk of harm was identified arising from increasing
+rumination in high trait ruminators, along with the burden of a long
+testing period. The experimenter mitigated this risk by keeping in
+regular contact with participants, notably when more than two testing
+sessions were skipped. Any concerns were raised with the researcher's
+supervisor. On leaving the study, all participants were emailed a copy
+of the support information for people who may suffer from depression.
+
+Participants were not identifiable from their electronic data. Online
+measures were stored on a secure digital filing system and all other
+data on a memory stick. Any sensitive written information was stored
+in a locked filing cabinet.
 
 \begin{figure}[hp]
 \includegraphics[width=160mm]{figure/ethics_approval.png}
