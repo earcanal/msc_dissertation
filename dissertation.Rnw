@@ -130,10 +130,22 @@ negative affect or depressive symptoms.}
 % Dilemma, doing this gets cref working for sections but adds section numbers which breaks APA
 %\setcounter{secnumdepth}{3}
 
+% Nick says no issue number or month for APA
+\AtEveryBibitem{%
+%  \ifboolexpr{test {\ifentrytype{article}} and not test {\iffieldundef{doi}}}
+  \ifboolexpr{test {\ifentrytype{article}}}
+    {
+      \clearfield{number}
+      \clearfield{month}
+      \clearfield{note}
+    }
+    {}%
+}
+
 \begin{document}\thispagestyle{empty}
 \setlength{\marginparwidth}{1cm}
-\todototoc
-\listoftodos[Todo list]
+%\todototoc
+%\listoftodos[Todo list]
 \maketitle
 \pdfbookmark{\contentsname}{toc}
 %\tableofcontents
@@ -320,17 +332,17 @@ the other location of the previously displayed stimuli. Attentional
 bias modification (ABM) manipulates the probe location, to train
 attention towards or away from particular stimuli. Numerous studies
 have indicated that ABM may be an effective treatment for anxiety
-\parencite{hakamata_attention_2010} and more recently ABM has been
-shown to reduce depressive symptoms \parencite{yang_attention_2015}. Critics
-of CBM argue that the effect sizes are too small to be clinically
-relevant \parencite{cristea_efficacy_2015}. However, advocates argue
-that this critique is based on meta-analyses which don't differentiate
-ABM from other forms of CBM, don't focus on a single psychological
-dysfunction (anxiety), or don't analyse studies which demonstrate both
-attentional bias change ${and}$ corresponding symptom change. It is
-important to note, that in demonstrating the mediating role of rumination
-in reducing depressive symptoms, \textcite{yang_attention_2015} met both
-of these final criteria.
+\parencite{hakamata_attention_2010} and more recently ABM has been shown
+to reduce depressive symptoms \parencite{yang_attention_2015}. Critics of
+CBM argue that the effect sizes are too small to be clinically relevant
+\parencite{cristea_efficacy_2015}. However, advocates argue that
+this critique is based on a meta-analysis which didn't differentiate
+ABM from other forms of CBM, didn't focus on a single psychological
+dysfunction (anxiety), or didn't analyse studies which demonstrate
+both attentional bias change ${and}$ corresponding symptom change
+\parencite{macleod_attentional_2015}. It should be noted that in
+demonstrating the mediating role of rumination in reducing depressive
+symptoms, \textcite{yang_attention_2015} met both of these final criteria.
 
 Most studies which examine rumination towards current concerns have only
 been able to measure attentional bias using the emotional Stroop task
@@ -361,8 +373,9 @@ hypotheses were as follows:
 \item Attentional bias towards ideographic words associated with a
 current concern will reduce after ABM training.
 
-\item Trait worry, rumination over the previous month, and anxiety and
-depression over the previous 2 weeks will reduce after ABM training.
+\item Trait worry, rumination over the previous month, and symptoms
+of anxiety and depression over the previous 2 weeks will reduce after
+ABM training.
 
 \item After ABM training, state rumination, negative affect and depressive
 symptoms will reduce, and state positive affect will increase.
@@ -1118,19 +1131,19 @@ meta-analysis across participants was also non-significant (${p}$ = .563).
 \subsubsection{Mood (PA, NA, depression)}
 
 Mood variable (PA, NA and depression) randomisation tests and
-meta-analysis are summarised in \cref{tab:panas}. There was an increase
-in PA for 9 participants (5, 6, 7, 9, 10, 11, 12, 15 and 18), although the
-difference was only significant (${p}$ = .05) for participant 8. Decreases
-in PA for participants 8, 16 and 19 were also non-significant, as
-was the meta-analysis across all participants for PA (${p}$ = .167).
-Although there was decrease in NA for 9 participants (5, 6, 9, 10,
-11, 12, 15, 16 and 18), none of the differences were significant (all
-${P}$s < .05). Increases in NA for participants 7, 8 and 19 were also
-non-significant, as was the meta-analysis across all participants for NA
-(${p}$ = .801). Depression scores decreased in 5 participants (6, 9, 11,
-15 and 18) and increased in 7 participants (5, 7, 8, 10, 12, 16 and 19),
-however all differences were non-significant (${P}$s < .05), as was the
-meta-analysis (${p}$ = .187).
+meta-analysis are summarised in \cref{tab:panas}. There was a
+non-significant increase in PA for 9 participants (5, 6, 7, 9, 10, 11,
+12, 15 and 18). Contrary to the hypothesised increase in PA, participant
+8 showed a significant decrease (${p}$ = .05). Decreases in PA for
+participants 16 and 19 were non-significant, as was the meta-analysis
+across all participants for PA (${p}$ = .167).  Although there was
+decrease in NA for 9 participants (5, 6, 9, 10, 11, 12, 15, 16 and 18),
+none of the differences were significant (all ${P}$s < .05). Increases
+in NA for participants 7, 8 and 19 were also non-significant, as was the
+meta-analysis across all participants for NA (${p}$ = .801). Depression
+scores decreased in 5 participants (6, 9, 11, 15 and 18) and increased in
+7 participants (5, 7, 8, 10, 12, 16 and 19), however all differences were
+non-significant (${P}$s < .05), as was the meta-analysis (${p}$ = .187).
 
 \setlength\tabcolsep{1mm}
 
@@ -1143,27 +1156,22 @@ meta-analysis (${p}$ = .187).
 \clearpage
 \section{Discussion}
 
-\subsection{ROF/WTDD (200)}
+\subsection{WTDD/ROF}
 
-This study aimed to replicate previous findings
-\parencite{yang_attention_2015} that ABM training can reduce attentional
-bias towards negative words and that this change is associated with
-concurrent reductions in trait rumination and depressive symptoms. In
-so doing, it also sought test the hypothesis that rumination occurs as
-a result of an impaired ability to disengage from negative self-referent
-information \parencite{koster_understanding_2011}.
+This study predicted that ABM training would reduce attentional
+bias, and this would be accompanied by reductions in worry, trait
+rumination, symptoms of anxiety and depression, and improvements to
+mood variables. Contrary to our hypotheses, we found no reduction
+in attentional bias towards towards negative words, no significant
+differences between pre and post worry, rumination, symptoms of anxiety
+and depression. We also found no overall changes to mood variables in
+the hypothesised directions. Also unsuported were our hypotheses that
+ABM training would reduce attentional bias towards words associated with
+an ideographic current concern, and rumination towards this concern.
 
-Attentional bias towards ideographic words associated with a
-current concern will reduce after ABM training.
+Signpost disengagement hypothesis failure here?
 
-Trait worry, rumination over the previous month, and anxiety and
-depression over the previous 2 weeks will reduce after ABM training.
-
-After ABM training, state rumination, negative affect and depressive
-symptoms will reduce, and state positive affect will increase.
-
-
-\subsection{RTC/RCL}
+\subsection{study RTC/RCL}
 
 <<power, echo=FALSE, error=TRUE>>=
 library(pwr)
@@ -1190,40 +1198,52 @@ pswq_pwr <- pwr.t.test(d=.51,n=12,sig.level=0.05,type="paired",alternative="two.
 pswq_pwr <- format_power(pswq_pwr$power)
 @
 
-Pre-post. Point out that these are trait measures so relatively coarse.
+These results failed to replicate previous findings
+\parencite{yang_attention_2015} that ABM training can reduce attentional
+bias towards sad words, and that this change is associated with
+concurrent reductions in trait rumination and depressive symptoms. One
+explanation for these null findings is that the study was underpowered
+to detect post-ABM training outcomes. \textcite{yang_attention_2015}
+found effect sizes of ${d}$=.49 for RRS, ${d}$=1.50 for BDI-II and
+${d}$=.88 STAI-T. In the current study, with 12 participants and
+$\alpha$ set at .05, two-tailed calculations of power (1-$\beta$) gave
+\Sexpr{rrs_pwr} for RRS, \Sexpr{bdi_pwr} for BDI-II and \Sexpr{stai_pwr}
+for STAI-T. \textcite{yang_attention_2015} did not measure worry,
+but in a similar paradigm, \textcite{enock_attention_2014} reported
+${d}$=.51 for PSWQ which would give the current study power (1-$\beta$)
+of \Sexpr{pswq_pwr}. Although the study used different instruments to
+measure symptoms of depression (PHQ-9 vs. BDI-II) and anxiety (GAD-7
+vs. STAI-T), it was not underpowered in this regard yet failed to detect
+effects. However, participants in this study had low initial symptoms
+of depression (in contrast with \textcite{yang_attention_2015}), and
+anxiety (see \cref{tab:prepost}). These calculations suggest additional
+power may have been required to detect changes in rumination (RRS) and
+worry (PSWQ), both of which showed moderate but non-significant effects
+(see \cref{tab:prepost}).
 
-Underpowered to detect changes in rumination (RRS) and worry (PSWQ) and
-both of these measures showed moderate but non-significant effects. Might
-be significant with more power.
+Did it work for some but not others? e.g. P11 sig. on N-words, large GRS PND
 
-Given these effect sizes,
-12 participants and $\alpha$ set at .05, two-tailed calculations of power
-(1-$\beta$) gave \Sexpr{rrs_pwr} for RRS, \Sexpr{bdi_pwr} for BDI-II and
-\Sexpr{stai_pwr} for STAI-T. In practice, these are likely to be lower
-as participants in \textcite{yang_attention_2015} were undergraduates
-with mild to severe depression in contrast with the current study where
-participants with mild depression or above were excluded. Estimates could
-also vary due to the different instruments used to measure depression
-(PHQ-9) and anxiety (GAD-7) in the current study.
+sad vs. negative stimuli
 
-A two-tailed
-calculation with 12 participants and $\alpha$ set at .05, gave power
-(1-$\beta$) of \Sexpr{pswq_pwr}. In summary, the current study is likely
-to be sufficiently powered to detect changes in depression (PHQ-9) and
-possibly anxiety (GAD-7), but underpowered to detect changes in rumination
-(RRS) and worry (PSWQ).
+Consistent with different effects in different populations? See Williams
+et al., but what about specifically rumination in non-depressed.
+
+it also sought to test the hypothesis that rumination occurs as
+a result of an impaired ability to disengage from negative self-referent
+information \parencite{koster_understanding_2011}.
+
+Was the negative information self-referent enough? Possibly not in the
+case of N-words, but it should have been in the case of I-words.
 
 GRS validity. Changing ``goal'' to ``problem'' may invalidate further.
 
 Depression items validity.
 
-Visual analysis vs. inferential.
-
-Did it work for some but not others? e.g. see trend reversal in NA for p8
-
 Were most Ps high worry but the dot-probe exposure configured for high rumination (1250ms)?
 
-\subsection{CORE (1000-1200}
+Visual analysis vs. inferential.
+
+\subsection{wider RTC/RCL}
 
 Diversity of reasons for biases.
 
@@ -1241,7 +1261,8 @@ multiple training sessions.} \parencite{hallion_metaanalysis_2011}
 
 \enquote{The therapeutic benefit of ABM is rather small for anxiety, while the amount of data
 for other symptom categories is limited.} \parencite{mogoase_clinical_2014}
-\subsection{moderators}
+
+\subsubsection{moderators}
 
 \enquote{The effects of ABM on attention bias were moderated by stimulus
 type (words vs pictures) and sample characteristics (healthy vs. high
@@ -1261,10 +1282,6 @@ modification? \parencite{williams_cognitive_1997}
 
 Still unclear and under researched
 
-More specific mechanistic hypotheses e.g. "rumination was related
-to attentional switching impairments, specifically in the context of
-emotional information" \parencite{koster_rumination_2013}
-
 \subsubsection{Goal progress and current concerns}
 
 "In contrast with current theories, we found that 34\% of participants
@@ -1281,7 +1298,6 @@ valence." \parencite{mathews_emotionality_1993}
 Does this question the use of general vs. ideographic stimuli in the
 dot-probe? Look back at the (bi-polar ambiguity of) the valence ratings in
 this study?!!!
-
 
 Were the goals chosen "higher order"? \parencite{martin_ruminative_1996}
 
@@ -1317,15 +1333,27 @@ more direct test of the disengagement hypothesis within this framework
 makes sense as it's explicitly proposed in the absence of any overt goal
 discrepancies .RFW. (looks like it hasn't been tested yet)
 
-\subsubsection{CBM vs. other treatments}
 
-CBM effect sizes are too small to be clinically relevant \parencite{cristea_efficacy_2015}
+\subsubsection{Better therapies}
 
-"it does not seem very useful to develop new psychotherapies for
-depression. There are already many different kinds of psychotherapies,
-there is no evidence that one type is considerably more effective than
-others, and it is very difficult to show such differences in trials with
-sufficient statistical power." \parencite{cuijpers_psychotherapies_2015}
+The inability to demonstrate attentional bias change in this
+study is consistent with a general critique of CBM treatments
+as having effect sizes too small to be clinically relevant
+\parencite{cristea_efficacy_2015}. \parencite{macleod_attentional_2015}
+question this finding, arguing that a selection criterion for
+meta-anlysis should be that studies demonstrate that ABM reduces
+both attention bias and symptoms. However, a meta-analysis meeting
+this criterion still found effect sizes small for anxiety and
+non-significant for depression \textcite{mogoase_clinical_2014}.
+\parencite{cuijpers_psychotherapies_2015} conclusion is that research
+seeking new psychotherapies for depression is misguided, given the many
+existing therapies and the difficulty demonstating relative efficacy
+with sufficient statistical power.
+
+But why are existing therapies relatively ineffective?
+
+\enquote{CBM had a medium effect on biases (g = 0.49) that was stronger
+for interpretation (g = 0.81) than for attention (g = 0.29) biases} \parencite{hallion_metaanalysis_2011}
 
 The presence of a bias doesn't determine the most effective treatment.
 
@@ -1334,10 +1362,9 @@ suggest a list of causes even within the goal progress theory model,
 all of which would require different treatment approaches.
 
 \begin{itemize}
-\item \enquote{CBM had a medium effect on biases (g = 0.49) that was stronger
-for interpretation (g = 0.81) than for attention (g = 0.29) biases} \parencite{hallion_metaanalysis_2011}
 
-\item What is an effective dose?
+\item Dose response? trend reversal in NA for p8 but maybe
+not enough sessions (but loads and people won't keep them up!)
 
 \item Longevity of effects treatment? Would ABA revert? Problem as
 people unlikely to keep up training. "the training-induced attentional
@@ -1348,44 +1375,34 @@ completion of this training." \parencite{see_reduction_2009}
 
 \end{itemize}
 
-\subsection{Limitations (300-400}
+\subsection{Limitations (300-400)}
 
-Whilst the design lacks a control condition, it does provide some
-controls against alternative explanations of effects. Replication
-across participants controls for individual regression to
-the mean\todo{Nick questioned this!}, variable phase A duration controls for baseline
-assessment effects, and randomised transition to phase B
-controls for extraneous events correlated with phase transition
+Whilst the multiple baseline case-series design lacks a control
+condition, it does provide some controls against alternative
+explanations of effects including regression to the mean, baseline
+assessment effects, extraneous events correlated with phase transition
 \parencite{watson_nonconcurrent_1981,watkins_ruminationfocused_2007}.
 Furthermore, as this was an exploratory study, limiting Type I error
 rates was not a priority.
 
 \begin{itemize}
 
-\item Duh! I could have easly matched the stimulus exposure to the RRS (1250ms)/PSWQ(<ms) score!
+\item RT dot-probe has poor internal consistency and test-retest reliability
+in non-clinical samples \textcite{schmukle_unreliability_2005}
+(only measuring chance error variance?). ERP isn't much better than
+RT \parencite{kappenman_behavioral_2014}.
+
+\item could have easly matched the stimulus exposure to the RRS (1250ms)/PSWQ(<ms) score!
 
 \item I could calculate change in the RRS brooding subscale to
 specifically measure changes to R*N*T?
-
-\item dot-probe has poor internal consistency and test-retest reliability
-in non-clinical samples \textcite{schmukle_unreliability_2005}
-(only measuring chance error variance?). N2pc isn't much better than
-RT \parencite{kappenman_behavioral_2014}. This ties in with stimulus
-durations. In summary, need more tasks which are more accurate and precise
-measures of AB. Most of this focusses on anxiety, but the same is needed
-for AB in depression.
-
-\item could the uncontrolled environment have amplified this problem?
 
 \item I could calculate the internal consistency (split-half correlations
 and Cronbach's alpha) and test-retest reliability of the dot-probe
 using \textcite{schmukle_unreliability_2005}. Poor correlations with
 STAI could also explain null findings for GAD-7.
 
-\item self-report measures, there are more objective measures?
-\item What happens when problem resolves?
-\item Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.
-\item Not sure about correlations between PANAS-SF and depression
+\item correlations between PANAS-SF and depression
 
 \item Did I really demonstrate *disengagement*? Felicity
 said the dot-probe doesn't do this. does 'avoidance' ==
@@ -1393,16 +1410,41 @@ said the dot-probe doesn't do this. does 'avoidance' ==
 due to impaired attentional disengagement from negative self-referent
 information." \parencite{koster_understanding_2011}
 
-\item Didn't MBD analysis due to differing numbers of sessions.
+\item self-report measures, there are more objective measures? eye-tracking?
+
+\item "Recent laboratory work suggests that biased attentional responding
+to negative information causally impacts anxiety reactivity to a
+contrived laboratory stressor. However, it remains unknown whether such
+attentional bias contributes to real-world anxiety vulnerability. In
+the present study, the authors addressed this issue by experimentally
+inducing biased attentional response to emotionally negative stimuli,
+using a home-based attentional training program and then examining the
+influence of this attentional manip- ulation on trait anxiety scores
+and on state anxiety responses to a subsequent stressful life event."
+\parencite{see_reduction_2009}
+
+\item What happens when problem resolves?
+\item Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.
+
 \end{itemize}
 
 \subsection{RFW}
 
+Need more tasks which are more reliable and precise measures of AB than dot-probe. Need same validation for
+for rumination and depression.  \parencite{kappenman_behavioral_2014}.
+
+sad vs. negative stimuli
 Emotional Stroop. Single vs. multiple concurrent stimuli
 \parencite{williams_cognitive_1997} in depression? But can only measure
 not modify.
 
 Inhibitory control \parencite{koster_understanding_2011}.
+
+More precise mechanistic hypotheses e.g. "rumination was related
+to attentional switching impairments, specifically in the context of
+emotional information" \parencite{koster_rumination_2013}
+
+"The combined cognitive bias hypothesis in depression" \parencite{everaert_combined_2012}
 
 \subsection{Conclusion}
 
