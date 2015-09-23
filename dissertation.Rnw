@@ -70,33 +70,36 @@
 \affiliation{University of Exeter}
 \leftheader{Attentional bias modification of rumination towards a self-relevant goal: A case-series}
 
-\abstract{Rumination and worry are thinking styles closely associated with
-depression and anxiety. There is evidence suggesting that an attentional
-bias towards negative stimuli plays a role in these associations. A
-hypothesis arising from the attentional bias literature is that
-depressive rumination results from an impaired ability to disengage
-attention from negative thoughts, and that reducing this bias will
-reduce rumination and depressive symptoms. The goal progress theory
-of rumination proposes that rumination is the result of discrepancies
-between perceived and expected progress towards a goal. Current concerns
-are mental states representative of such goal progress discrepancies. The
-current study tests the disengagement hypothesis by aiming to reduce
-attentional bias to towards negative words and words associated with an
-unresolved current concern, and measuring the effects on rumination,
-worry, mood and symptoms of anxiety and depression. Participants were
-12 (10 female) university students or staff scoring low for depressive
-symptoms but high for trait rumination and/or trait worry. This was a
-non-concurrent, multiple baseline case-series replication in which each
-participant completed between 25--35 sessions, a minimum of 8 including
-ABM training (ABMT). Participants ran dot-probe tasks on their own computers
-designed to first measure, then modify attentional bias towards a
-general set of negative words and words associated with a current
-concern of their choosing. There were no significant post-training
-effects on trait rumination, trait worry, and symptoms of depression and
-anxiety. Randomisation tests showed no significant post ABM reduction
-in attentional bias towards negative words, attentional bias towards
-current concern words, rumination towards the concern, positive affect,
-negative affect or depressive symptoms.}
+\abstract{Rumination and worry are thinking styles closely associated
+with depression and anxiety, and there is evidence to suggest that
+an attentional bias towards negative stimuli plays a role in these
+associations. A hypothesis arising from the attentional bias literature is
+that depressive rumination results from an impaired ability to disengage
+attention from self-referent negative thoughts, and that reducing
+this bias will reduce rumination and depressive symptoms. A broader
+theory proposes that rumination is the result of discrepancies between
+perceived and expected progress towards goals. Current concerns are
+mental states representative of such goal progress discrepancies. The
+current study tests the disengagement hypothesis within this goal
+progress theory of rumination. It aims to reduce attentional bias to
+towards negative words and words associated with an unresolved current
+concern, and detect corresponding reductions in rumination, worry, mood
+and symptoms of anxiety and depression. Participants were 12 (10 female)
+university students or staff scoring low for depressive symptoms but
+high for trait rumination and/or trait worry. Attentional bias was
+measured using a dot-probe task, and attentional bias modification
+training (ABMT) delivered using a variation of the same task. Stimuli
+were negative--neutral word pairs, and neutral words paired with words
+associated with a current concern chosen by each participant. Using
+a multiple baseline case-series design, each participant completed
+between 25--35 dot-probe sessions at home, a minimum of 8 also including
+ABMT. There were no significant post-training effects on trait rumination,
+trait worry, and symptoms of depression and anxiety. Randomisation
+tests showed no significant post ABM reduction in attentional bias
+towards negative words, attentional bias towards current concern words,
+rumination towards the concern, positive affect, negative affect or
+depressive symptoms. The limitations of the dot-probe task are discussed
+and the cost-effectiveness of ABMT as pscyhological therapy evaluated.}
 
 \authornote{Acknowledge}
 
@@ -1163,8 +1166,6 @@ non-significant (${P}$s < .05), as was the meta-analysis (${p}$ = .187).
 \clearpage
 \section{Discussion}
 
-\subsection{WTDD/ROF}
-
 This study predicted that ABMT would reduce attentional
 bias, and this would be accompanied by reductions in worry, trait
 rumination, symptoms of anxiety and depression, and improvements to
@@ -1227,8 +1228,6 @@ power may have been required to detect changes in rumination (RRS) and
 worry (PSWQ), both of which showed moderate but non-significant effects
 (see \cref{tab:prepost}).
 
-\subsection{AB: measurement and modification using the dot-probe}
-
 The dot-probe is a relatively new psychological task, and questions
 remain regarding how stimulus and population characteristics
 interact, its reliability as a measure of attentional bias, and
@@ -1252,169 +1251,123 @@ depressive symptoms found by \textcite{yang_attention_2015} were in
 participants with mild to severe depressive symptoms, in response to
 ABMT using sad and neutral words. Depression-congruent bias in the
 Stroop task has been shown to depend on self-referent elaborative
-processing \parencite{nunn_selective_1997}.  In the current study,
+processing \parencite{nunn_selective_1997}. In the current study,
 the I-words were highly self-relevant, but the ABMT only included
 N-word pairs, so it is possible that words with normative, negative
 valence were not sufficiently self-relevant for ABMT to modify bias
-in this particular sample. Mixed findings across studies which use the
-dot-probe and/or ABMT could be also be explained by its poor internal
-consistency and test-retest reliability, which has been demonstrated
-in clinical and non-clinical samples using both response times
+in this particular sample.
+
+Mixed findings across studies which use the dot-probe and/or
+ABMT could be also be explained by its poor internal consistency
+and test-retest reliability, which has been demonstrated in
+clinical and non-clinical samples using both response times
 \parencite{schmukle_unreliability_2005} and event-related potentials
 \parencite{kappenman_behavioral_2014}. Future research should try to
 identify a more reliable means of measuring and modifying attentional
-bias. Finally, there is mixed evidence as to whether ABMT could translate
-into a self-administered treatment. \textcite{see_reduction_2009}
-found that Internet delivered ABMT was effective at inducing avoidance
-of negative information and reducing anxiety scores to a subsequent
-naturalistic stressor. In the current study, only one participant showed
-a change in bias (\cref{tab:rt}) and reduced rumination (\cref{tab:grs}),
-after 24 ABMT sessions (\cref{tab:stim}). This result is more consistent
-with findings that ABMT is effective when delivered in the clinic,
-but not when delivered at home \parencite{linetzky_quantitative_2015}.
+bias. The dot-probe may also be unsuitable for studying attentional biases
+and comorbidity. \textcite{musa_selective_2003} found that attentional
+bias in patients with social phobia and a concurrent depressive disorder
+equivalent to non-patients. Short dot-probe stimulus exposures are
+needed to detect biases in anxiety (and possibly worry), whereas longer
+exposers are required to detect biases associated with depression and
+rumination. The longer exposure used in current study was more likely to
+identify identifying ruminative mechanisms rather than those common to
+worry and rumination, and this limitation of the dotprobe complicates the
+study mixed of anxiety and depression. Finally, although longer stimulus
+exposures are likely to result in prolonged processing of self-referent
+material, the dot-probe does not necessarily demonstrate attentional
+engagement, and as such may be a weak test of the disengagement hypothesis
+of depressive rumination \parencite{koster_understanding_2011}.
 
-\subsection{Mechanisms: Attention, bias, disengagement}
+Directly comparing the current study with previous research on attentional
+bias and current concerns is difficult, as this is dominated by studies
+which use the Stroop task. However, \parencite{williams_cognitive_1997}
+review many studies which suggest that words semantically related
+with an individuals schemata surrounding their concerns may be
+more influential that the valence of such stimuli. For example,
+\parencite{mathews_emotionality_1993} found more Stroop interference in
+words judged as highly related to likely concerns or relevant threats,
+irrespective of their positive or negative valence. Although dot-probe
+studies with anxious patients have failed to find similar evidence
+\parencite{musa_selective_2003}, content specificity is consistent
+with the mixture of valences in participants I-word ratings (see
+\cref{app:iwordgen}) in the current study. It is
+also suggestive of later, more elaborative information processing common
+in depressive rumination.  \textcite[][p. 309]{mogg_subliminal_1993}
+have suggested that in the Stroop task, content-specific, elaborative
+semantic processing may be more likely with blocked presentation of
+stimuli. To test these ideas, the current paradigm could be modified to
+use a dot-probe/ABMT with two (or more) words thematically related to
+a current concern, paired with thematically neutral words.
 
-(Causal) mechanimsms still unclear and under researched
+Outside of studying current concerns, the goal progress theory of
+rumination is very broad and lacking in testable hypotheses. For example,
+it is unclear what counts as a ``higher order'' goal, and therefore likely
+to trigger rumination \parencite{martin_ruminative_1996}.  Furthermore,
+\textcite{martin_ruminative_1996} don't claim that goal discrepancies are
+the exclusive cause of rumination. For example, they say the ``rebound
+effect'' of thought suppression \parencite{wegner_paradoxical_1987}
+can occur in the absence of goal discrepancies, notably in the
+case of worry. A related framework with more directly testable
+hypotheses \parencite{watkins_habitgoal_2014}, suggests that while
+goal discrepancies may cause rumination, this can become a habitual
+thinking style. Within this framework, rumination with no overt goal
+discrepancy may instead be cued by contingent contexts such as mood,
+or the physical location in which it tends to occur. Rumination is
+especially likely when contingent responses involve passive focus on
+abstractly construed, negative content. The disengagement hypothesis
+\parencite{koster_understanding_2011} is especially suited to, and
+as yet untested, within this framework. If rumination is a habitual
+thinking style, the repetitive nature of ABMT seems promising as
+a counter-conditioning technique. The current study used ABMT in a
+specific context (at home), but it was not established whether this
+context was likely to trigger rumination in each participant. Using
+a mobile phone app, it would be relatively easy to test the effects
+of ABMT on rumination in contingent contexts. Training attentional
+disengagement from negative information is also a central feature of
+MBCT \parencite{donaldson_rumination_2007}, suggesting that positive
+outcomes may result from encouraging practices such as the ``breathing
+space'' \parencite{segal_mindfulnessbased_2012} in rumination-contingent
+contexts. These suggestions raise additional questions regarding where,
+when and how much ABMT is effective. \textcite{see_reduction_2009} found
+signs of reduced attentional avoidance of negative information bias up
+to 48 hours post-ABMT, but more research on the longevity of effects
+is needed. In the current study, ABMT was relatively ineffective, and
+phase B session completion patterns (\cref{tab:completed}) suggest that
+people would be unlikely to maintain ABMT at this level of intensity.
 
-So what about disengagement?
-
-Does dot-probe really demonstrate *disengagement*? Felicity
-said the dot-probe doesn't do this. does 'avoidance' ==
-'disengagement'? "prolonged processing of self-referent material is
-due to impaired attentional disengagement from negative self-referent
-information." \parencite{koster_understanding_2011}
-
-"In contrast with current theories, we found that 34\% of participants
-expressed AB towards threat stimuli, 20.8\% AB away from threat stimuli,
-and 34\% AB towards some categories of threat stimuli and away from
-others." \parencite{zvielli_dynamics_2014}. Perhaps this is reflected
-in my results for worriers? Were they "threatened" by their concern?
-
-Need more tasks which are more reliable and precise measures of AB than dot-probe. Need same validation for
-for rumination and depression.  \parencite{kappenman_behavioral_2014}.
-
-Inhibitory control \parencite{koster_understanding_2011}.
-
-More precise mechanistic hypotheses e.g. "rumination was related
-to attentional switching impairments, specifically in the context of
-emotional information" \parencite{koster_rumination_2013}
-
-"The combined cognitive bias hypothesis in depression" \parencite{everaert_combined_2012}
-
-The presence of a bias doesn't determine the most effective treatment.
-
-Martin, Shrira and Startup \parencite{papageorgiou_depressive_2004}
-suggest a list of causes even within the goal progress theory model,
-all of which would require different treatment approaches.
-
-\subsection{Depression and anxiety}
-
-Seems clearer (to me now!) that they are likely to be distinguishable,
-especially at the measurement level.
-
-"Patients with social phobia and a concurrent depressive disorder behaved
-like non-patients, indicating that concurrent depression abolishes the
-attentional bias." \parencite{musa_selective_2003}
-
-"Overall, the results emphasise the importance of assessing comorbidity
-when investigating attentional biases." \parencite{musa_selective_2003}
-
-
-\subsection{Rumination, goal progress and current concerns}
-
-"Previous Stroop studies (see Williams, 1988, 1997 for a review)
-are consistent with the suggestion that attentional biases in anxiety
-disorders are largely restricted to disorder specific concerns. However,
-dot-probe studies with anxious patients have so far failed to find
-convincing evidence for content specificity. In particular, MacLeod
-et al. (1886) and Mogg et al. (1992) both found that the bias towards
-detection of physical-threat words that occurs found in GAD patients is
-unrelated to the extent to which the patients' concerns are predominately
-social or physical." \parencite{musa_selective_2003}
-
-"words that were judged to be highly related to likely concerns
-or relevant threats caused more interference than those
-which were not, irrespective of their positive or negative
-valence." \parencite{mathews_emotionality_1993}
-
-Does this question the use of general vs. ideographic stimuli in the
-dot-probe? Look back at the (bi-polar ambiguity of) the valence ratings in
-this study?!!!
-
-Emotional Stroop single vs. multiple concurrent stimuli in depression?
-\parencite{mogg_subliminal_1993}
-
-Were the goals chosen "higher order"? \parencite{martin_ruminative_1996}
-
-\enquote{Thus, people with high implicit motivation were less prone to ruminate
-about their goals and people with high goal commitment were more likely
-to ruminate.} \parencite{schultheiss_role_2008}
-
-Could individual's current concern(s) indicate the type of bias
-modification which might be beneficial? i.e. some psychotherapy to
-determine best treatment
-
-A development of goal progress theory \textcite{watkins_habitgoal_2014},
-suggests that while goal discrepancies may result in rumination, this
-can become a habitual thinking style. Rumination can then occur without
-a goal discrepancy, instead being cued by contingent contexts such as
-mood or physical location in which it tends to occur.
-especially when contingent responses involve passive focus on abstractly
-construed, negative content.
-
-A more direct test of the disengagement hypothesis within this framework
-makes sense as it's explicitly proposed in the absence of any overt goal
-discrepancies .RFW. (looks like it hasn't been tested yet)
-
-I only really tested this in one (uncontrolled) context i.e. at home,
-and not controlling time of day, mood or degree of state rumination.
-
-But Dose response? trend reversal in NA for p8 but maybe
-not enough sessions (but loads and people won't keep them up!) With a minimum of 8 
-note that p11 was the only sig. and high PND and also consistently did the most (24)
-
-(see \cref{tab:stim}).
-Longevity of effects treatment? Would ABA revert? Problem as
-people unlikely to keep up training. "the training-induced attentional
-avoidance of negative information bias remained in evidence 24 hours after
-completion of the final training session and appears to have influenced
-anxiety reactions to a stressful event encountered 48 hours after the
-completion of this training." \parencite{see_reduction_2009}
-
-"A central feature of MBCT is teaching skills in attentional deployment
-through the practice of mindfulness and essentially training individuals
-to disengage from negative information and reduce rumination.  [...] The
-incorporation of measures of attention and rumination into future trials
-of MBCT and assessing their role in determining MBCT outcome will be
-a useful step not only in further understanding this form of therapy
-but also in helping to reveal the key information processes involved in
-depressive relapse." \parencite{donaldson_rumination_2007}
-
-\textcite{martin_ruminative_1996} don't claim that goal discrepancies
-are the exclusive cause of rumination. So it could be a different cause in
-this sample. While they claim the rebound effect of thought suppression
-can be explained in terms of goal discrepancies they say it may also
-occur in the absence of them, notably in the case of worry.
-\subsection{Treatment efficacy}
-
-\enquote{When anxiety and depression were examined separately,
-CBM significantly modified anxiety but not depression. There was
-a nonsignificant trend toward a larger effect for studies including
-multiple training sessions.} \parencite{hallion_metaanalysis_2011}
-
-"the provision of explicit information and instructed practice in
-the desired pattern of attentional selectivity, while potentially
-enhancing patient acceptability with CBM-A, may eliminate its capacity
-to effectively alter anxiety vulnerability." \parencite{grafton_when_2014}
-
-\enquote{The therapeutic benefit of ABM is rather small for anxiety, while the amount of data
-for other symptom categories is limited.} \parencite{mogoase_clinical_2014}
+The non-significant effects of ABMT on reducing rumination
+in this study support meta-analytic findings that CBM
+is relatively ineffective as a treatment for anxiety and
+depression. \parencite{hallion_metaanalysis_2011} found that CBM
+significantly modified anxiety but not depression, with nonsignificant
+trend toward a larger effects for studies including multiple training
+sessions. \textcite{mogoase_clinical_2014} also only found small
+therapeutic benefits of ABM for anxiety, although there was less
+data for other symptom categories, reflecting a lack of research in
+this area. Interpretation biases are likely to be involved in later
+information processing stages associated with depressive rumination,
+and CBM targetting interpretation (CBM-I) does indeed show larger
+effects than ABM \parencite{hallion_metaanalysis_2011}. However,
+research in this area is limited and equivocal as to whether
+interpretive bias does \parencite{mogg_interpretation_2006} or does not
+\parencite{bisson_effect_2007} play a role in depression. Furthermore,
+recent studies which demonstrate bias reductions using CBM-I do not
+demonstrate symptom change \parencite{micco_efficacy_2014}. Evidence is
+also mixed as to whether ABMT could translate into a self-administered
+treatment. \textcite{see_reduction_2009} found that Internet delivered
+ABMT was effective at inducing avoidance of negative information and
+reducing anxiety scores to a subsequent naturalistic stressor. In
+the current study, only one participant showed a change in bias
+(\cref{tab:rt}) and reduced rumination (\cref{tab:grs}), after 24
+ABMT sessions (\cref{tab:stim}). This result is more consistent with
+findings that ABMT is effective when delivered in the clinic, but not
+when delivered at home \parencite{linetzky_quantitative_2015}.
 
 The inability to demonstrate attentional bias change in this
 study is consistent with a general critique of CBM treatments
 as having effect sizes too small to be clinically relevant
-\parencite{cristea_efficacy_2015}. \parencite{macleod_attentional_2015}
+\parencite{cristea_efficacy_2015}. \textcite{macleod_attentional_2015}
 question this finding, arguing that a selection criterion for
 meta-anlysis should be that studies demonstrate that ABM reduces
 both attention bias and symptoms. However, a meta-analysis meeting
@@ -1423,90 +1376,33 @@ non-significant for depression \textcite{mogoase_clinical_2014}.
 \parencite{cuijpers_psychotherapies_2015} conclusion is that research
 seeking new psychotherapies for depression is misguided, given the many
 existing therapies and the difficulty demonstating relative efficacy
-with sufficient statistical power.
+with sufficient statistical power. Nevertheless, the imminent emergence
+of cheap, computer-based therapies for treating anxiety and depression
+seems unlikely. One way to address the gap between demand and supply
+for treating emotional disorders is to focus research on cheaper ways,
+such as I-CBT, of delivering existing psychological therapies known to
+be effective. However, cognitive biases clearly play a role in emotional
+disorders. Future research in this are may explain why bias modification
+is relatively ineffective and may also contribute to explaining why
+existing treatments are only partially effective.
 
-In spite of it's potential cost savings of computer delivered CBM it's effectiveness is suspect.
-
-But why are existing therapies relatively ineffective? Because they're
-treating the wrong things in different people with the wrong treatments.
-
-Given the larger effect sizes for CBM-I than CBM-A and the likelihood
-that depressive rumination is associated with later information processing
-biases I RFW
-
-\enquote{CBM had a medium effect on biases (g = 0.49) that was stronger
-for interpretation (g = 0.81) than for attention (g = 0.29) biases} \parencite{hallion_metaanalysis_2011}
-
-However, existing research is limited and equivocal as to whether
-interpretive bias does \parencite{mogg_interpretation_2006} or does not
-\parencite{bisson_effect_2007} play a role in depression. Furthermore,
-recent studies which demonstrate bias reductions using CBM-I do not
-demonstrate symptom change \parencite{micco_efficacy_2014}.
-
-Maybe measurement of AB will provide support for cognitive therapies
-e.g. the interference mechanisms with the largest effects are 'schemata'
-so ABM may be only temporary relief? So RFW on measurement rather than
-modification? \parencite{williams_cognitive_1997}
-
-\subsection{Limitations (300-400)}
-
-Visual analysis vs. inferential.
-
-Whilst the multiple baseline case-series design lacks a control
-condition, it does provide some controls against alternative
-explanations of effects including regression to the mean, baseline
-assessment effects, extraneous events correlated with phase transition
+This study had a number of limitations. First, it lacked
+a control condition. Multiple baseline case-series designs
+provide some controls against alternative explanations of
+effects including regression to the mean, baseline assessment
+effects, extraneous events correlated with phase transition
 \parencite{watson_nonconcurrent_1981,watkins_ruminationfocused_2007}.
-Furthermore, as this was an exploratory study, limiting Type I error
-rates was not a priority.
+This was also an exploratory study, so limiting Type I error rates was not
+a priority and a control condition could be added to a subsequent study
+there been significant findings. The study would have benefitted from a
+more reliable state measure of depressive symptoms than the ad-hoc two
+item scale used. Similarly, the validity of the GRS could be questioned,
+especially as the the scale valence was modified to refer to a ``problem''
+rather than a ``goal''. Finally, post ABMT stressor effects required to detect effects in previous studies 
 
-correlations between PANAS-SF and depression
-  two item scale Depression items validity.
-
-GRS validity. Changing ``goal'' to ``problem'' may invalidate further.
-
-Didn't do post outcome stressor like \parencite{see_reduction_2009}
-
-\begin{itemize}
-
-\item could have easly matched the stimulus exposure to the RRS (1250ms)/PSWQ(<ms) score!
-
-\item I could calculate change in the RRS brooding subscale to
-specifically measure changes to R*N*T?
-
-\item I could calculate the internal consistency (split-half correlations
-and Cronbach's alpha) and test-retest reliability of the dot-probe
-using \textcite{schmukle_unreliability_2005}. Poor correlations with
-STAI could also explain null findings for GAD-7.
-
-\item What happens when problem resolves?
-\item Only 2 measurement times (pre/post) vs. daily changes in AB, mood, rumination.
-
-\end{itemize}
+\parencite{see_reduction_2009}
 
 \subsection{Conclusion and RFW}
-
-Establish the likely cause(s) before testing potential
-cures! Also need to subsequently match the right treatment. Maybe
-this explains why treatments are ineffective? More, not less research.
-
-We know that rumination is associated with depression and anxiety, but
-we still don't know enough about it's causes. Greater precision will
-produce better treatments.
-
-Premature to ignore cognitive and neuroscientific evidence for potentially
-beneficial bottom-up treatments before research has fully tested the
-hypotheses that these approaches are generating.
-
-Don't throw the baby out with the bathwater. Internet delivery in itself
-could provide opportunities for more precise measurement and personalised
-treatments using experience sampling/EMA. Especially with case-series
-approach and randomisation tests.
-
-On the one hand this adds to the absence of evidence. On the other hand
-it provides methods which add to the body of evidence which distinguish
-what how biases can be modified, which biases can be modified and in
-which populations these have desired effects on psychopathology.
 
 \printbibliography
 
@@ -1674,7 +1570,7 @@ rumination \parencite{watkins_concreteness_2009}. From their list,
 they then chose the 6 words most likely to cause them to ruminate about
 their concern.
 
-Whilst participants completed the dot-probe practise block , the
+Whilst participants completed the dot-probe practise block, the
 experimenter validated their I-words, noting any which known to be
 difficult to match with a pair from the neutral word database. These
 including plurals, acronyms, hyphenated words, words with stems
@@ -1686,7 +1582,9 @@ to ensure that the semantics of any adjusted words were chosen
 by the participant without influence from the experimenter. All
 participants successfully generated 6 I-words. They rated the valence
 of each word in relation to their concern on a 7-point scale, using
-instructions based on \textcite{citron_how_2014}. Participants then
+instructions based on \textcite{citron_how_2014}. Approximately
+79\% were rated negative (mean valence = -2.37), 14\% positive (mean
+valence = +1.9) and 7\% neutral (mean valence = 0). Participants then
 completed a distraction task to attenuate the effects of rumination
 \parencite{nolen-hoeksema_rethinking_2008} for 5 minutes.
 
