@@ -99,9 +99,12 @@ tests showed no significant post ABM reduction in attentional bias
 towards negative words, attentional bias towards current concern words,
 rumination towards the concern, positive affect, negative affect or
 depressive symptoms. The limitations of the dot-probe task are discussed
-and the cost-effectiveness of ABMT as pscyhological therapy evaluated.}
+and the cost-effectiveness of ABMT as psychological therapy evaluated.}
 
-\authornote{Acknowledge}
+\authornote{I would like to acknowledge the continuous support provided by
+Nick Moberly in supervising this research, and for advice on randomisation
+tests within case-series designs provided by Patrick Onghena and Stephen
+Morley.}
 
 % http://tex.stackexchange.com/questions/35532/using-newcommand-in-includegraphics-option-to-substitute-graphic-sizes
 \makeatletter
@@ -234,11 +237,11 @@ containing sub scales which can distinguish maladaptive rumination in
 the form of 'depressive brooding' from the more adaptive 'reflective
 pondering'. In support of RST, dysphoric mood is significantly
 increased by a rumination induction and significantly decreased by a
-distraction induction, in dysphoric but not in nondysphoric participants
+distraction induction, in dysphoric but not in non-dysphoric participants
 \parencite{nolen-hoeksema_rethinking_2008}.  However, the positive effects
 of distraction are temporary \parencite{nolen-hoeksema_rethinking_2008},
 and alternative models of rumination may suggest more effective ways to
-reduce its occurance.
+reduce its occurrence.
 
 The goal progress theory of rumination \parencite{martin_ruminative_1996}
 is one such model, which proposes that rumination is initiated
@@ -323,7 +326,7 @@ bias towards sad words led to reductions in rumination and depressive
 symptoms, and that the reductions in depressive symptoms was mediated
 by reduced rumination.
 
-If cognitive biases underly emotional disorders,
+If cognitive biases underlie emotional disorders,
 then cognitive bias modification (CBM) offers potential
 treatments \parencite{hertel_cognitive_2011}. The dot-probe task
 \parencite{macleod_attentional_1986} is the gold-standard measure of
@@ -337,7 +340,7 @@ interference between naming a word's colour, and affective or cognitive
 bias resulting from reading the word. First, concurrent presentation
 (colour and word) in the Stroop makes it unclear whether competition is
 between attention or response selection \parencite{macleod_half_1991}. By
-temporally seperating the stimulus from the probe, the dot-probe may be
+temporally separating the stimulus from the probe, the dot-probe may be
 a more pure measure of attentional bias. Second, the dot-probe is easily
 adapted to modify attentional bias, by manipulating the probe location
 to train attention towards, or away from particular stimuli. Numerous
@@ -1028,7 +1031,7 @@ B. Relative to phase A, 9 (participants 5, 6, 9, 10, 11, 12, 15, 16 and
 18) BMED phase B NA scores decreased. Where there was a linear fit in
 phase A, 6 participants (5, 6, 9, 10, 11, 18 and 19) showed an downward
 trend (participant 18 being especially steep), participant 15 showed
-an upward trend and the tred was relatively flat for participants 12
+an upward trend and the trend was relatively flat for participants 12
 and 18.  Where there was a linear fit in both phases, trends slowed for
 participants 6, continued for participant 11, and reversed sharply from
 positive to negative for participant 8. In summary, the BMED changes
@@ -1173,7 +1176,7 @@ mood variables. Contrary to our hypotheses, we found no reduction
 in attentional bias towards towards negative words, no significant
 differences between pre and post worry, rumination, symptoms of anxiety
 and depression. We also found no overall changes to mood variables in
-the hypothesised directions. Also unsuported were our hypotheses that
+the hypothesised directions. Also unsupported were our hypotheses that
 ABMT would reduce attentional bias towards words associated with
 an ideographic current concern, and rumination towards this concern.
 These findings do not support the hypothesis that rumination occurs as
@@ -1237,7 +1240,7 @@ indicates that shorter stimulus presentations are appropriate for
 assessing attentional biases associated with anxiety, whereas longer
 durations (${\geq}$ 1000 ms) are required when studying depressive
 symptoms and rumination. Shorter word presentations 1250 ms in
-the current study may have more effectivel measured and modified
+the current study may have more effectively measured and modified
 bias, given that the current sample scored higher on worry than
 rumination. Stimulus type (words vs pictures) and sample characteristics
 (healthy vs. high symptomatology) are known to modulate the effects
@@ -1269,10 +1272,10 @@ and comorbidity. \textcite{musa_selective_2003} found that attentional
 bias in patients with social phobia and a concurrent depressive disorder
 equivalent to non-patients. Short dot-probe stimulus exposures are
 needed to detect biases in anxiety (and possibly worry), whereas longer
-exposers are required to detect biases associated with depression and
+exposures are required to detect biases associated with depression and
 rumination. The longer exposure used in current study was more likely to
 identify identifying ruminative mechanisms rather than those common to
-worry and rumination, and this limitation of the dotprobe complicates the
+worry and rumination, and this limitation of the dot-probe complicates the
 study mixed of anxiety and depression. Finally, although longer stimulus
 exposures are likely to result in prolonged processing of self-referent
 material, the dot-probe does not necessarily demonstrate attentional
@@ -1340,14 +1343,14 @@ The non-significant effects of ABMT on reducing rumination
 in this study support meta-analytic findings that CBM
 is relatively ineffective as a treatment for anxiety and
 depression. \parencite{hallion_metaanalysis_2011} found that CBM
-significantly modified anxiety but not depression, with nonsignificant
+significantly modified anxiety but not depression, with non-significant
 trend toward a larger effects for studies including multiple training
 sessions. \textcite{mogoase_clinical_2014} also only found small
 therapeutic benefits of ABM for anxiety, although there was less
 data for other symptom categories, reflecting a lack of research in
 this area. Interpretation biases are likely to be involved in later
 information processing stages associated with depressive rumination,
-and CBM targetting interpretation (CBM-I) does indeed show larger
+and CBM targeting interpretation (CBM-I) does indeed show larger
 effects than ABM \parencite{hallion_metaanalysis_2011}. However,
 research in this area is limited and equivocal as to whether
 interpretive bias does \parencite{mogg_interpretation_2006} or does not
@@ -1369,13 +1372,13 @@ study is consistent with a general critique of CBM treatments
 as having effect sizes too small to be clinically relevant
 \parencite{cristea_efficacy_2015}. \textcite{macleod_attentional_2015}
 question this finding, arguing that a selection criterion for
-meta-anlysis should be that studies demonstrate that ABM reduces
+meta-analysis should be that studies demonstrate that ABM reduces
 both attention bias and symptoms. However, a meta-analysis meeting
 this criterion still found effect sizes small for anxiety and
 non-significant for depression \textcite{mogoase_clinical_2014}.
 \parencite{cuijpers_psychotherapies_2015} conclusion is that research
 seeking new psychotherapies for depression is misguided, given the many
-existing therapies and the difficulty demonstating relative efficacy
+existing therapies and the difficulty demonstrating relative efficacy
 with sufficient statistical power. Nevertheless, the imminent emergence
 of cheap, computer-based therapies for treating anxiety and depression
 seems unlikely. One way to address the gap between demand and supply
@@ -1394,15 +1397,20 @@ effects, extraneous events correlated with phase transition
 \parencite{watson_nonconcurrent_1981,watkins_ruminationfocused_2007}.
 This was also an exploratory study, so limiting Type I error rates was not
 a priority and a control condition could be added to a subsequent study
-there been significant findings. The study would have benefitted from a
+there been significant findings. The study would have benefited from a
 more reliable state measure of depressive symptoms than the ad-hoc two
 item scale used. Similarly, the validity of the GRS could be questioned,
 especially as the the scale valence was modified to refer to a ``problem''
-rather than a ``goal''. Finally, post ABMT stressor effects required to detect effects in previous studies 
+rather than a ``goal''. Finally, for consistency with previous research
+\parencite{see_reduction_2009}, outcome variables should be measured
+post ABMT in response to a naturalistic stressor.
 
-\parencite{see_reduction_2009}
-
-\subsection{Conclusion and RFW}
+To conclude, the null findings in this study are in line with other
+mixed findings in the attentional bias measurement and modification
+literature. However, the field has no shortage of theory or hypotheses,
+but existing tasks have a limited ability to validate them. Future
+work should look for approaches which improve on the Stroop and
+dot-probe tasks as measures and modifiers of attentional bias.
 
 \printbibliography
 
